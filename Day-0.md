@@ -1,5 +1,5 @@
-this is my first repository
-# Intel SD Training 
+
+# Syahrul Nazri-Intel SD Training 
 
 ## Table of contents
 * [ Day 0 - System/Tool Setup Check. GitHub ID creation ](https://github.com/teoh5128/intel-sd-training/blob/main/readme.md#day-0)
@@ -10,8 +10,10 @@ this is my first repository
 **Package** is a container that holds die and was connected to outside (external device) by using wire bonding.
 Example of package - Quadruple in-line package (QIP) and Dual in-line package (DIP).
 
-![die](https://user-images.githubusercontent.com/62828746/203833674-a44e1aa2-42f1-43eb-8890-016e0bc186e1.png)
+<img width="628" alt="note1" src="https://user-images.githubusercontent.com/118953939/203918518-83e1ebe2-6916-4413-8744-d658031c02b4.PNG">
 
+**Wafer Level Chip Scale Package (WLCSP)** - variant of the flip-chip interconnection technique where all packaging is done at the wafer level
+![image](https://user-images.githubusercontent.com/118953939/203918169-e7c0b441-bd87-4875-a223-f2ac44509e6d.png
 * **Pad** - used to connect inside (core) to outside (I/O), good at ESD protection to prevent charge coming from outside damage the core inside.
 * **Core** - consists of all the main logic gate (NMOS/PMOS) and cell block such as macro cell and foundry IP's.
 * **I/O** - help in communication between die with external and will be connected to die by using wire bonding.
@@ -37,7 +39,6 @@ How does a **software communicate with hardware**:
 
 ### Lab Result
 
-![Day0 Lab Result](https://user-images.githubusercontent.com/62828746/203844716-f72c32ab-2353-4f42-bbd2-c3bb49c88ecb.PNG)
 
 
 ![](day0.PNG)
