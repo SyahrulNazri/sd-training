@@ -1,8 +1,8 @@
 
 # Syahrul Nazri-Intel SD Training 
 
-## Table of contents
-* [ Day 0 - System/Tool Setup Check. GitHub ID creation ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md)
+# Table of contents
+* [ Day 0 - System/Tool Setup Check. GitHub ID creation ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-0)
 
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
