@@ -21,6 +21,7 @@ Example of package - Quadruple in-line package (QIP) and Dual in-line package (D
 * **Foundry IP's** - cell with more specific functionality and the design was patent/owned by a company. Has higher value compared to macro.
 
 **Synthesis Flow** - convert software's instructions which is written in high level language to gate level language/machine language which is normally in binary format.
+
 <img width="808" alt="3" src="https://user-images.githubusercontent.com/118953939/203920288-65b97ed6-e0c0-4679-a99e-4618555f3209.PNG">
  
 
