@@ -13,28 +13,16 @@ Example of package - Quadruple in-line package (QIP) and Dual in-line package (D
 <img width="628" alt="note1" src="https://user-images.githubusercontent.com/118953939/203918518-83e1ebe2-6916-4413-8744-d658031c02b4.PNG">
 
 **Wafer Level Chip Scale Package (WLCSP)** - variant of the flip-chip interconnection technique where all packaging is done at the wafer level
-![image](https://user-images.githubusercontent.com/118953939/203918169-e7c0b441-bd87-4875-a223-f2ac44509e6d.png
+![wlcsp](https://user-images.githubusercontent.com/118953939/203919063-b82fb9f6-838d-4b7b-a10b-52427af17cf0.gif)
 * **Pad** - used to connect inside (core) to outside (I/O), good at ESD protection to prevent charge coming from outside damage the core inside.
 * **Core** - consists of all the main logic gate (NMOS/PMOS) and cell block such as macro cell and foundry IP's.
 * **I/O** - help in communication between die with external and will be connected to die by using wire bonding.
+* **Macro** - a simple core/cell with simple functionality and can be easily found online.
+* **Foundry IP's** - cell with more specific functionality and the design was patent/owned by a company. Has higher value compared to macro.
 
-+ **Differences of macro vs foundry IP's**:
-  * **Macro** - a simple core/cell with simple functionality and can be easily found online.
-  * **Foundry IP's** - cell with more specific functionality and the design was patent/owned by a company. Has higher value compared to macro.
-  
-==========================================================================================
-
-How does a **software communicate with hardware**:
-
-**Synthesis process** will help to convert software's instructions which is written in high level language to gate level language/machine language which is normally in binary format.
-
-![software to hardware](https://user-images.githubusercontent.com/62828746/203840905-0b291241-5af6-40d1-9f6a-a8acb8176b7d.png)
-
-**Synthesis process flow**:
-1. **Specification/instructions** written in RTL (**high-level language** such as C, C++ or Java) as inputs.
-1. **Compiler** will compile the instruction into **assembly language** (.exe).
-1. **Assembler** will then convert **assembly language** into **gate level language** (low-level language.machine language) which is in binary format (operands), and it is the language understood by a computer.
-
+**Synthesis Flow** - convert software's instructions which is written in high level language to gate level language/machine language which is normally in binary format.
+<img width="808" alt="3" src="https://user-images.githubusercontent.com/118953939/203920288-65b97ed6-e0c0-4679-a99e-4618555f3209.PNG">
+ 
 
 
 ### Lab Result
