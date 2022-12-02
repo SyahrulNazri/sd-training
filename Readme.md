@@ -3,6 +3,7 @@
 
 ## Table of contents
 * [ Day 0 - System/Tool Setup Check. GitHub ID creation ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-0)
+* [ Day 1 - System/Tool Setup Check. GitHub ID creation ](https://github.com/SyahrulNazri/sd-training/blob/main/Readmeday1.md)
 
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
