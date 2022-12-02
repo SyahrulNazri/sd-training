@@ -3,7 +3,7 @@
 
 ## Table of contents
 * [ Day 0 - System/Tool Setup Check. GitHub ID creation ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-0)
-* [ Day 1 - Labs using iverilog and gtkwave ]
+* [ Day 1 - Labs using iverilog and gtkwave ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-1)
 
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
