@@ -39,3 +39,8 @@ Example of package - Quadruple in-line package (QIP) and Dual in-line package (D
 
 ## DAY 1
 ### Topic - Labs using iverilog and gtkwave
+
+<img width="933" alt="lab2part2Code" src="https://user-images.githubusercontent.com/118953939/205324331-9665f20b-102b-43d8-94e2-0d80175e8ab4.PNG">
+
+<img width="962" alt="lab2waveform" src="https://user-images.githubusercontent.com/118953939/205324453-9eb7165e-7d6f-47f8-905a-2bd511f4593b.PNG">
+
