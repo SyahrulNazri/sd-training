@@ -34,4 +34,4 @@ Example of package - Quadruple in-line package (QIP) and Dual in-line package (D
 
 
 
-![](day0.PNG)
+![](labday0.PNG)
