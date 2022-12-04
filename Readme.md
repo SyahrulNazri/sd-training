@@ -70,6 +70,8 @@ To obey the required specification or the setup to apply stimulus  to the design
 * **Technology Mapping:** Performs mapping of the generic libraries to technology 
 libraries. 
 
+------------------------------------------------------------------------------------------------------
+
 ### Topic = Lecture video Introduction to Yosys and Logic synthesis 
 
 **What is Synthesizer?** 
@@ -96,6 +98,7 @@ libraries.
 * **Why need Slow Cell?**
 -Slow cell needed to meet hold,means the time need to data stable after clock edge.
 -TholdF2<TF1+Tcombi
+------------------------------------------------------------------------------------------------------
 
 ### Topic - Labs Introduction
 
@@ -105,19 +108,23 @@ libraries.
 
 <img width="933" alt="lab2part2Code" src="https://user-images.githubusercontent.com/118953939/205489471-073f46d8-b430-465b-aef0-5216a69a781c.PNG">
 
+------------------------------------------------------------------------------------------------------
+
 ### Topic - Labs using iverilog and gtkwave
 1.Open Output File using GTKWAVE
-
-Output waveform using command **gtkwave tb_godd_mux.vcd**
+* Output waveform using command **gtkwave tb_godd_mux.vcd**
+* 
 <img width="962" alt="lab2waveform" src="https://user-images.githubusercontent.com/118953939/205324453-9eb7165e-7d6f-47f8-905a-2bd511f4593b.PNG">'
 When the sel=1 the output y will follow input i1 but when the input sel=0 the output y will follow the input=i0
-2.RTL code 
 
-RTL code for  **tb_good_mux.v** and **good_mux.v**
+2.RTL code 
+* RTL code for  **tb_good_mux.v** and **good_mux.v**
 
 <img width="382" alt="vimcode" src="https://user-images.githubusercontent.com/118953939/205324818-34a12188-1419-425f-88fd-ba0018f80a47.PNG">
 
 <img width="449" alt="vimcode2" src="https://user-images.githubusercontent.com/118953939/205324920-6ad1c570-7f5a-4619-8cbf-c4a4fda100bf.PNG">
+
+------------------------------------------------------------------------------------------------------
 
 ### Topic-Lab using Yosys and Sky130PDKs
 
