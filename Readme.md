@@ -28,18 +28,15 @@ Example of package - Quadruple in-line package (QIP) and Dual in-line package (D
 **Synthesis Flow** - convert software's instructions which is written in high level language to gate level language/machine language which is normally in binary format.
 
 <img width="808" alt="3" src="https://user-images.githubusercontent.com/118953939/203920288-65b97ed6-e0c0-4679-a99e-4618555f3209.PNG">
- 
 
 
 ### Lab Result
-
-
 
 <img width="959" alt="labday0" src="https://user-images.githubusercontent.com/118953939/205489130-4253ae38-30fa-458d-9cea-a238e9445fd1.PNG">
 
 
 ## DAY 1
-### Topic-Lecture Introduction to iverilog design test bench 
+### Topic-Lecture Video  Introduction to iverilog design test bench 
 
 **What is Simulator ?**
 
@@ -73,12 +70,38 @@ To obey the required specification or the setup to apply stimulus  to the design
 * **Technology Mapping:** Performs mapping of the generic libraries to technology 
 libraries. 
 
+### Topic = Lecture video Introduction to Yosys and Logic synthesis 
+
+**What is Synthesizer?** 
+
+-Tool that used for converting the RTL to netlist 
+-Yosys is the synthesizer used in this course. 
+
+![GetImage (2)](https://user-images.githubusercontent.com/118953939/205494889-542c0afd-d07e-422a-b146-991b5bc650e7.png)
+
+* **Read_verilog=** To read the design  
+* **Read_liberty=** To read .lib 
+* **Write_Verilog=** to write netflist file  
+* **.lib=** collection of logical module  like And,Or,Not  
+
+**How to verify the Synthesis**
+* Netlist & test bench(same as RTl tb)  -->iverilog --> vcd file --> gtkwave(same as output aboserve during RTL simulation)
 ### Topic - Introduction to lab 
 
-1.Git clone from other directory.
+**Combinational delay in logic path**
+* **Why need Fast Cell?**
+- To meet setup,meen the time needed for the data stable before clock edge.
+- Tclk> TF1+Tcombi+TsetupofF2 (data must be stable before the capturing edge of clock)
+
+* **Why need Slow Cell?**
+-Slow cell needed to meet hold,means the time need to data stable after clock edge.
+-TholdF2<TF1+Tcombi
+
+### Topic - Labs Introduction
+
 * Using command **git clone** https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
 
-**GitClone**= used to point to an existing repo and make a clone or copy of that repo at in a new directory.
+* **GitClone**= used to point to an existing repo and make a clone or copy of that repo at in a new directory.
 
 <img width="933" alt="lab2part2Code" src="https://user-images.githubusercontent.com/118953939/205489471-073f46d8-b430-465b-aef0-5216a69a781c.PNG">
 
