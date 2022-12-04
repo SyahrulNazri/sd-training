@@ -6,7 +6,7 @@
 * [ Day 1 - Labs using iverilog and gtkwave ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-1)
 
 ## Day 0
-### Topic - System/Tool Setup Check. GitHub ID creation
+# Topic - System/Tool Setup Check. GitHub ID creation
 
 **Package** is a container that holds die and was connected to outside (external device) by using wire bonding.
 Example of package - Quadruple in-line package (QIP) and Dual in-line package (DIP).
