@@ -39,6 +39,34 @@ Example of package - Quadruple in-line package (QIP) and Dual in-line package (D
 
 
 ## DAY 1
+### Topic-Lecture Introdcution to iverilog design test bench 
+
+**What is Simulator ?**
+
+The tools that used to checking the design for example iverilog 
+
+**Design ?**
+
+Actual Verilog code or set of verilog code which has the intended functionality to meet with the required specifications. 
+
+**TestBench ?** 
+
+To obey the required specification or the setup to apply stimulus  to the design to check its  functionality. 
+
+**How simulator works ?** 
+-changes value of the inputs. 
+
+![GetImage (1)](https://user-images.githubusercontent.com/118953939/205494411-6372f70c-ca9e-4af6-9ea4-795fc3e24f4c.png)
+
+![GetImage](https://user-images.githubusercontent.com/118953939/205494417-a25becfa-e3d3-484d-9e90-b0db171bf96e.png)
+
+* **Syntax Analysis:** Takes input of HDL files and checks for syntax errors. 
+* **Library Definition:** Provides and allocates standard cells and IP libraries. 
+* **Elaboration and Binding:** Translates RTL into the Boolean structure. Binds all cells and  makes libraries available. 
+* **Constraint Definition:** For building a customized and specific chip, we need to define constraints according to which the chip will function. For example, clock frequency, power efficiency, etc. 
+* **Pre-mapping Optimization:** It performs mapping to generic cells in the library. 
+* **Technology Mapping:** Performs mapping of the generic libraries to technology 
+libraries. 
 ### Topic - Introduction to lab 
 
 1.Git clone from other directory.
