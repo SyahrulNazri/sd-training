@@ -160,6 +160,7 @@ There are 3 input signals,1 output signals and 0 internal signals.
 6.Show the gate design
 * Using command **show**
 <img width="656" alt="show" src="https://user-images.githubusercontent.com/118953939/205490977-c7929ce8-64e3-4f6f-a01a-4cfea35db691.PNG">
+
 i0,i1 and sel is primary input.
 
 
