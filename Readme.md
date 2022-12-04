@@ -42,14 +42,14 @@ Example of package - Quadruple in-line package (QIP) and Dual in-line package (D
 ### Topic - Labs using iverilog and gtkwave
 
 1.Git clone from other directory.
-
+* Using command **git clone** https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
 **GitClone**= used to point to an existing repo and make a clone or copy of that repo at in a new directory.
 
 <img width="933" alt="lab2part2Code" src="https://user-images.githubusercontent.com/118953939/205489471-073f46d8-b430-465b-aef0-5216a69a781c.PNG">
 
 2.Open Output File using GTKWAVE
 
-Output waveform from tb_godd_mux.vcd using  **gtkwave** 
+Output waveform using command **gtkwave tb_godd_mux.vcd**
 <img width="962" alt="lab2waveform" src="https://user-images.githubusercontent.com/118953939/205324453-9eb7165e-7d6f-47f8-905a-2bd511f4593b.PNG">
 
 3.RTL code 
@@ -63,7 +63,7 @@ RTL code for  **tb_good_mux.v** and **good_mux.v**
 ### Topic-Lab using Yosys and Sky130PDKs
 
 1.How to open Yosys
-* Using **yosys** command
+* Using command **yosys** 
 <img width="528" alt="Openyosys" src="https://user-images.githubusercontent.com/118953939/205490668-1637ca90-4ba6-421a-8ce9-26b5c8ba860f.PNG">
 
 2.Read Liberty 
