@@ -75,7 +75,6 @@ libraries.
 ### Topic = Lecture video Introduction to Yosys and Logic synthesis 
 
 **What is Synthesizer?** 
-
 -Tool that used for converting the RTL to netlist 
 -Yosys is the synthesizer used in this course. 
 
@@ -140,7 +139,11 @@ When the sel=1 the output y will follow input i1 but when the input sel=0 the ou
 * Using command **read_verilog good_mux.v**
 <img width="296" alt="readdesign " src="https://user-images.githubusercontent.com/118953939/205490680-081022c7-9035-4cb0-9d0a-2e4dc03d0b21.PNG">
 
-4.Convert RTl code and specified gate design  
+4.Synthesize the module 
+* Using command **synth -top good_mux**
+<img width="298" alt="top" src="https://user-images.githubusercontent.com/118953939/205496851-fe6d4c8e-403e-42e9-8f72-fb21c7ce2994.PNG">
+
+5.Convert RTl code and specified gate design  
 * Using command **abc -liberty**
 <img width="740" alt="Generating rtl code to netlist " src="https://user-images.githubusercontent.com/118953939/205490960-e0caca40-74a3-4d4b-b904-e847b0e38577.PNG">
 
@@ -149,17 +152,17 @@ When the sel=1 the output y will follow input i1 but when the input sel=0 the ou
 <img width="492" alt="genpar3" src="https://user-images.githubusercontent.com/118953939/205490975-f8414c28-1c3a-48a7-864c-104ce7a84b12.PNG">
 There are 3 input signals,1 output signals and 0 internal signals.
 
-5.Show the gate design 
+6.Show the gate design 
 * Using command **show**
 <img width="656" alt="show" src="https://user-images.githubusercontent.com/118953939/205490977-c7929ce8-64e3-4f6f-a01a-4cfea35db691.PNG">
 i0,i1 and sel is primary input.
 
-6.Show the netlist 
+7.Show the netlist 
 * Using command **write_verilog good_mux_netlist.v** 
 * Using vim to open the scripting  **!vim write_verilog good_mux_netlist.v** 
 <img width="440" alt="show netlist" src="https://user-images.githubusercontent.com/118953939/205492020-6ebaf762-7f59-4e2e-beb8-d63bfc1d1bc5.PNG">
 
-7.Make the netlist more simple 
+8.Make the netlist more simple 
 * Using command  **write_verilog -noattr good_mux_netlist.v**
 * Using command  **gvim good_mux_netlist.v**
 <img width="483" alt="modified " src="https://user-images.githubusercontent.com/118953939/205492030-b8579566-06ba-4ee7-bec8-c9a854b49fa2.PNG">
