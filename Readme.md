@@ -49,12 +49,12 @@ Example of package - Quadruple in-line package (QIP) and Dual in-line package (D
 
 2.Open Output File using GTKWAVE
 
-Figure below shows the **gtkwave** for tb_godd_mux.vcd 
+Output waveform from tb_godd_mux.vcd using  **gtkwave** 
 <img width="962" alt="lab2waveform" src="https://user-images.githubusercontent.com/118953939/205324453-9eb7165e-7d6f-47f8-905a-2bd511f4593b.PNG">
 
 3.RTL code 
 
-File structure for **tb_good_mux.v** and **good_mux.v**
+RTL code for  **tb_good_mux.v** and **good_mux.v**
 
 <img width="382" alt="vimcode" src="https://user-images.githubusercontent.com/118953939/205324818-34a12188-1419-425f-88fd-ba0018f80a47.PNG">
 
