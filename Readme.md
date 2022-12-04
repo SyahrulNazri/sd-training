@@ -39,7 +39,7 @@ Example of package - Quadruple in-line package (QIP) and Dual in-line package (D
 
 
 ## DAY 1
-### Topic - Labs using iverilog and gtkwave
+### Topic - Introduction to lab 
 
 1.Git clone from other directory.
 * Using command **git clone** https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
@@ -48,12 +48,13 @@ Example of package - Quadruple in-line package (QIP) and Dual in-line package (D
 
 <img width="933" alt="lab2part2Code" src="https://user-images.githubusercontent.com/118953939/205489471-073f46d8-b430-465b-aef0-5216a69a781c.PNG">
 
-2.Open Output File using GTKWAVE
+### Topic - Labs using iverilog and gtkwave
+1.Open Output File using GTKWAVE
 
 Output waveform using command **gtkwave tb_godd_mux.vcd**
-<img width="962" alt="lab2waveform" src="https://user-images.githubusercontent.com/118953939/205324453-9eb7165e-7d6f-47f8-905a-2bd511f4593b.PNG">
-
-3.RTL code 
+<img width="962" alt="lab2waveform" src="https://user-images.githubusercontent.com/118953939/205324453-9eb7165e-7d6f-47f8-905a-2bd511f4593b.PNG">'
+When the sel=1 the output y will follow input i1 but when the input sel=0 the output y will follow the input=i0
+2.RTL code 
 
 RTL code for  **tb_good_mux.v** and **good_mux.v**
 
@@ -82,10 +83,12 @@ RTL code for  **tb_good_mux.v** and **good_mux.v**
 <img width="481" alt="genpart2" src="https://user-images.githubusercontent.com/118953939/205490966-66dd3f9b-2870-44cc-8352-32ae6ab42084.PNG">
 
 <img width="492" alt="genpar3" src="https://user-images.githubusercontent.com/118953939/205490975-f8414c28-1c3a-48a7-864c-104ce7a84b12.PNG">
+There are 3 input signals,1 output signals and 0 internal signals.
 
 5.Show the gate design 
 * Using command **show**
 <img width="656" alt="show" src="https://user-images.githubusercontent.com/118953939/205490977-c7929ce8-64e3-4f6f-a01a-4cfea35db691.PNG">
+i0,i1 and sel is primary input.
 
 6.Show the netlist 
 * Using command **write_verilog good_mux_netlist.v** 
