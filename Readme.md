@@ -74,7 +74,7 @@ RTL code for  **tb_good_mux.v** and **good_mux.v**
 * Using command **read_verilog good_mux.v**
 <img width="296" alt="readdesign " src="https://user-images.githubusercontent.com/118953939/205490680-081022c7-9035-4cb0-9d0a-2e4dc03d0b21.PNG">
 
-4.Generate RTL code to net list 
+4.Convert RTl code and specified gate design  
 * Using command **abc -liberty**
 <img width="740" alt="Generating rtl code to netlist " src="https://user-images.githubusercontent.com/118953939/205490960-e0caca40-74a3-4d4b-b904-e847b0e38577.PNG">
 
@@ -82,6 +82,16 @@ RTL code for  **tb_good_mux.v** and **good_mux.v**
 
 <img width="492" alt="genpar3" src="https://user-images.githubusercontent.com/118953939/205490975-f8414c28-1c3a-48a7-864c-104ce7a84b12.PNG">
 
-5.Show the circuit 
+5.Show the gate design 
 * Using command **show**
 <img width="656" alt="show" src="https://user-images.githubusercontent.com/118953939/205490977-c7929ce8-64e3-4f6f-a01a-4cfea35db691.PNG">
+
+6.Show the netlist 
+* Using command **write_verilog good_mux_netlist.v** 
+* Using vim to open the scripting  **!vim write_verilog good_mux_netlist.v** 
+<img width="440" alt="show netlist" src="https://user-images.githubusercontent.com/118953939/205492020-6ebaf762-7f59-4e2e-beb8-d63bfc1d1bc5.PNG">
+
+7.Make the netlist more simple 
+* Using command  **write_verilog -noattr good_mux_netlist.v**
+* Using command  **gvim good_mux_netlist.v**
+<img width="483" alt="modified " src="https://user-images.githubusercontent.com/118953939/205492030-b8579566-06ba-4ee7-bec8-c9a854b49fa2.PNG">
