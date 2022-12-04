@@ -152,12 +152,12 @@ When the sel=1 the output y will follow input i1 but when the input sel=0 the ou
 <img width="492" alt="genpar3" src="https://user-images.githubusercontent.com/118953939/205490975-f8414c28-1c3a-48a7-864c-104ce7a84b12.PNG">
 There are 3 input signals,1 output signals and 0 internal signals.
 
-6.Show the gate design 
+6.Show the gate design
 * Using command **show**
 <img width="656" alt="show" src="https://user-images.githubusercontent.com/118953939/205490977-c7929ce8-64e3-4f6f-a01a-4cfea35db691.PNG">
 i0,i1 and sel is primary input.
 
-7.Show the netlist 
+7.Show the netlist
 * Using command **write_verilog good_mux_netlist.v** 
 * Using vim to open the scripting  **!vim write_verilog good_mux_netlist.v** 
 <img width="440" alt="show netlist" src="https://user-images.githubusercontent.com/118953939/205492020-6ebaf762-7f59-4e2e-beb8-d63bfc1d1bc5.PNG">
