@@ -42,13 +42,18 @@ Example of package - Quadruple in-line package (QIP) and Dual in-line package (D
 ### Topic - Labs using iverilog and gtkwave
 
 1.Git clone from other directory.
+
 **GitClone**= used to point to an existing repo and make a clone or copy of that repo at in a new directory.
 
+<img width="961" alt="yosysShow" src="https://user-images.githubusercontent.com/118953939/205489386-3cf9525c-e099-49e9-94e4-5bfecbdef077.PNG">
+
 2.Open Output File using GTKWAVE
+
 Figure below shows the **gtkwave** for tb_godd_mux.vcd 
 <img width="962" alt="lab2waveform" src="https://user-images.githubusercontent.com/118953939/205324453-9eb7165e-7d6f-47f8-905a-2bd511f4593b.PNG">
 
 3.RTL code 
+
 File structure for **tb_good_mux.v** and **good_mux.v**
 
 <img width="382" alt="vimcode" src="https://user-images.githubusercontent.com/118953939/205324818-34a12188-1419-425f-88fd-ba0018f80a47.PNG">
