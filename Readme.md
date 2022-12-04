@@ -56,10 +56,14 @@ To obey the required specification or the setup to apply stimulus  to the design
 **How simulator works ?** 
 -changes value of the inputs. 
 
-![GetImage (1)](https://user-images.githubusercontent.com/118953939/205494411-6372f70c-ca9e-4af6-9ea4-795fc3e24f4c.png)
-
 ![GetImage](https://user-images.githubusercontent.com/118953939/205494417-a25becfa-e3d3-484d-9e90-b0db171bf96e.png)
 
+![GetImage (1)](https://user-images.githubusercontent.com/118953939/205494411-6372f70c-ca9e-4af6-9ea4-795fc3e24f4c.png)
+
+* **Hdl=** hardware description language  
+           Others ways than HDL is high level Synthesis(HLS) 
+* **IVerilog=** compiler translates verilog code to executable programs. 
+* **GTKWave=** analysis tool used to perform debugging on Verilog or VHDL. 
 * **Syntax Analysis:** Takes input of HDL files and checks for syntax errors. 
 * **Library Definition:** Provides and allocates standard cells and IP libraries. 
 * **Elaboration and Binding:** Translates RTL into the Boolean structure. Binds all cells and  makes libraries available. 
@@ -67,6 +71,7 @@ To obey the required specification or the setup to apply stimulus  to the design
 * **Pre-mapping Optimization:** It performs mapping to generic cells in the library. 
 * **Technology Mapping:** Performs mapping of the generic libraries to technology 
 libraries. 
+
 ### Topic - Introduction to lab 
 
 1.Git clone from other directory.
