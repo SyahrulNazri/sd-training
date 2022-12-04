@@ -43,6 +43,7 @@ Example of package - Quadruple in-line package (QIP) and Dual in-line package (D
 
 1.Git clone from other directory.
 * Using command **git clone** https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
+
 **GitClone**= used to point to an existing repo and make a clone or copy of that repo at in a new directory.
 
 <img width="933" alt="lab2part2Code" src="https://user-images.githubusercontent.com/118953939/205489471-073f46d8-b430-465b-aef0-5216a69a781c.PNG">
