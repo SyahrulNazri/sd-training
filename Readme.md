@@ -39,7 +39,7 @@ Example of package - Quadruple in-line package (QIP) and Dual in-line package (D
 
 
 ## DAY 1
-### Topic-Lecture Introdcution to iverilog design test bench 
+### Topic-Lecture Introduction to iverilog design test bench 
 
 **What is Simulator ?**
 
@@ -54,6 +54,7 @@ Actual Verilog code or set of verilog code which has the intended functionality 
 To obey the required specification or the setup to apply stimulus  to the design to check its  functionality. 
 
 **How simulator works ?** 
+
 -changes value of the inputs. 
 
 ![GetImage](https://user-images.githubusercontent.com/118953939/205494417-a25becfa-e3d3-484d-9e90-b0db171bf96e.png)
