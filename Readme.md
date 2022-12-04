@@ -35,7 +35,8 @@ Example of package - Quadruple in-line package (QIP) and Dual in-line package (D
 
 
 
-![](labday0.PNG)
+<img width="959" alt="labday0" src="https://user-images.githubusercontent.com/118953939/205489130-4253ae38-30fa-458d-9cea-a238e9445fd1.PNG">
+
 
 ## DAY 1
 ### Topic - Labs using iverilog and gtkwave
