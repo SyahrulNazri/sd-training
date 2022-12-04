@@ -45,7 +45,7 @@ Example of package - Quadruple in-line package (QIP) and Dual in-line package (D
 
 **GitClone**= used to point to an existing repo and make a clone or copy of that repo at in a new directory.
 
-<img width="961" alt="yosysShow" src="https://user-images.githubusercontent.com/118953939/205489386-3cf9525c-e099-49e9-94e4-5bfecbdef077.PNG">
+<img width="933" alt="lab2part2Code" src="https://user-images.githubusercontent.com/118953939/205489471-073f46d8-b430-465b-aef0-5216a69a781c.PNG">
 
 2.Open Output File using GTKWAVE
 
