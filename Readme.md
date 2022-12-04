@@ -87,6 +87,9 @@ libraries.
 
 **How to verify the Synthesis**
 * Netlist & test bench(same as RTl tb)  -->iverilog --> vcd file --> gtkwave(same as output aboserve during RTL simulation)
+
+------------------------------------------------------------------------------------------------------
+
 ### Topic - Introduction to lab 
 
 **Combinational delay in logic path**
