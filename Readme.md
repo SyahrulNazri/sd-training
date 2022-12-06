@@ -216,6 +216,8 @@ i0,i1 and sel is primary input.
 ![image](https://user-images.githubusercontent.com/118953939/205939144-08b4a37f-5877-4b43-a8ca-3b3779376878.png)
 *As we can see form the figure above when the area large the power will be more and delay will be less.But when area low,the power will low and delay will more.*
 
+-------------------------------------------------------------------------
+
 ### Topic-hierarchical vs FLat Synthesis 
 
 * **Setup Design**
@@ -235,6 +237,10 @@ vi)Show multiple_module
 vii)write_verilog multiple_modules_hier.v
 
 
-![image](https://user-images.githubusercontent.com/118953939/205957886-5aafdeb7-d2f3-42da-884e-2d85cb370c1a.png)
-![image](https://user-images.githubusercontent.com/118953939/205957929-84c1e141-9cfe-494f-933a-5f7a4a37e9d6.png)
-![image](https://user-images.githubusercontent.com/118953939/205957647-1dcadc13-e10e-4139-b44b-ba8341d0f829.png)
+
+![image](https://user-images.githubusercontent.com/118953939/205958229-b10636d0-3215-4402-b75c-5d3e35e9cbc5.png)
+
+![image](https://user-images.githubusercontent.com/118953939/205958260-6421517a-61f2-4aeb-bb5e-8a2fe6acc867.png)
+
+![image](https://user-images.githubusercontent.com/118953939/205958288-8c0a0a8c-5909-4dd6-b72f-73805aacc080.png)
+
