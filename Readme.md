@@ -196,12 +196,23 @@ i0,i1 and sel is primary input.
 
 2.lib content of the std cell
 * Each cell have different flavour  and in the lib we can see all the detail of the cell.
-* As we can see from the figure below ,in the circle shows the  gate with 5 input and  have the 32 input possible combination.
-
-
 
 <img width="348" alt="3" src="https://user-images.githubusercontent.com/118953939/205858806-16963ea3-f24d-4b15-9414-4e53bbeb9532.PNG">
 
 <img width="794" alt="1" src="https://user-images.githubusercontent.com/118953939/205858861-1afdbfa5-0791-47ff-9299-4f3dda5e6f03.PNG">
+* As we can see from the figure above,in the circle shows the  gate with 5 input and  have the 32 input possible combination.To see all the detail command **:vsp ../my_lib/verilog_model/sky130_fd_sc_hd.v"** 
 
+* The lib also shows the other detail such as power pot and information of the each cell pin
+
+![image](https://user-images.githubusercontent.com/118953939/205938000-279e0c20-2f30-4bcc-bd8b-7fd9c4a0be2e.png)
+*Figure above shows the area and power port information. 
+![image](https://user-images.githubusercontent.com/118953939/205938060-ff56c886-66b1-46cb-858a-69617719ea36.png)
+*Figure above shows the information of capacitance,transition,power associated to the pin.
+* In the lib also shows the timing information 
+
+![image](https://user-images.githubusercontent.com/118953939/205939075-a263e287-4781-4565-8933-2eb09a263d0e.png)
+
+* Lastly,the comaprison of the 3 types of cell :And2_0,And_2 & And_4
+![image](https://user-images.githubusercontent.com/118953939/205939144-08b4a37f-5877-4b43-a8ca-3b3779376878.png)
+*As we can see form the figure above when the area large the power will be more and delay will be less.But when area low,the power will low and delay will more.
 
