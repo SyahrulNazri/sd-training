@@ -205,4 +205,3 @@ i0,i1 and sel is primary input.
 <img width="794" alt="1" src="https://user-images.githubusercontent.com/118953939/205858861-1afdbfa5-0791-47ff-9299-4f3dda5e6f03.PNG">
 
 
-![image](https://user-images.githubusercontent.com/118953939/205935405-d61a5fd6-8691-4a45-b25b-f7e24dafc52b.png)
