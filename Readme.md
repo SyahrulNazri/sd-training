@@ -240,6 +240,9 @@ vii)write_verilog multiple_modules_hier.v
 
 ![image](https://user-images.githubusercontent.com/118953939/205958229-b10636d0-3215-4402-b75c-5d3e35e9cbc5.png)
 ![image](https://user-images.githubusercontent.com/118953939/205958260-6421517a-61f2-4aeb-bb5e-8a2fe6acc867.png)
-![image](https://user-images.githubusercontent.com/118953939/205958288-8c0a0a8c-5909-4dd6-b72f-73805aacc080.png)
 
-*As you can see from the figure above the module was devided to 2 which is module 1 and module 2.Module 1 was and2 gate and module 2 was or2 gate.*
+![image](https://user-images.githubusercontent.com/118953939/205962951-69ba773b-eeaa-4f7c-b649-e1e3e5fc74c0.png)
+*As you can see from the lecture video,the 2 inverter and 1 nand gate will convert to the Or gate using the boolean expression*
+![image](https://user-images.githubusercontent.com/118953939/205958288-8c0a0a8c-5909-4dd6-b72f-73805aacc080.png)
+*As you can see from the figure above,the module 2 was converted to the or gate.*
+![image](https://user-images.githubusercontent.com/118953939/205963866-f9a36fc4-0858-4589-a077-964a2d477e87.png)
