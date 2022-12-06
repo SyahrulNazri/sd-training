@@ -193,3 +193,6 @@ i0,i1 and sel is primary input.
 **Tt=** typical 
 C=temperature 
 V=voltage 
+2.Behavioral of the cell
+**vim ../my_lib/verilog_model/sky130_fd_sc_hd.v**
+<img width="794" alt="1" src="https://user-images.githubusercontent.com/118953939/205851237-89727b26-a2d4-4f68-a964-3b0e573d6c1c.PNG">
