@@ -219,6 +219,7 @@ i0,i1 and sel is primary input.
 ### Topic-hierarchical vs FLat Synthesis 
 
 * **Setup Design**
+
 i)Gvim multiple_module.v
 ii)Launch yosys 
 iii)Read_liberty –lib ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
