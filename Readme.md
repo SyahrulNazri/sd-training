@@ -188,13 +188,19 @@ i0,i1 and sel is primary input.
 1.Open .lib content 
 * **vim../my_lib/lib/sky130_fd_sc_hd_tt_025C_1v80.lib**
 * :syn off --->switch off the syntax
-<img width="337" alt="read library" src="https://user-images.githubusercontent.com/118953939/205845146-d225ac43-555b-4d9a-9d4e-ed0d40253b89.PNG">
+<img width="275" alt="0PNG" src="https://user-images.githubusercontent.com/118953939/205858752-781f8077-b72c-4ca8-8706-0af672aa04a1.PNG">
 
-**Tt=** typical 
+**Tt=** typical(fas/slow/typical)
 **C=** temperature 
 **V=** voltage 
 
 2.lib content of the std cell
-![Slide1](https://user-images.githubusercontent.com/118953939/205855320-aaeaa518-cbf9-4024-b3e7-8692cdf25420.PNG)
-**vim ../my_lib/verilog_model/sky130_fd_sc_hd.v**
-<img width="794" alt="1" src="https://user-images.githubusercontent.com/118953939/205851237-89727b26-a2d4-4f68-a964-3b0e573d6c1c.PNG">
+* Each cell have different flavour  and in the lib we can see all the detail of the cell.
+
+
+
+<img width="348" alt="3" src="https://user-images.githubusercontent.com/118953939/205858806-16963ea3-f24d-4b15-9414-4e53bbeb9532.PNG">
+
+<img width="794" alt="1" src="https://user-images.githubusercontent.com/118953939/205858861-1afdbfa5-0791-47ff-9299-4f3dda5e6f03.PNG">
+
+
