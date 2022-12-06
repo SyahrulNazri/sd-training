@@ -196,6 +196,7 @@ i0,i1 and sel is primary input.
 
 2.lib content of the std cell
 * Each cell have different flavour  and in the lib we can see all the detail of the cell.
+* As we can see from the figure below ,in the circle shows the  gate with 5 input and  have the 32 input possible combination.
 
 
 
