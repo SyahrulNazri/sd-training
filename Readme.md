@@ -220,15 +220,12 @@ i0,i1 and sel is primary input.
 
 * **Setup Design**
 i)Gvim multiple_module.v
-Launch yosys 
-Read_liberty –lib ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
-Synth –top multiple module
-Abc –liberty
-../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
-
-Show multiple_module 
-write_verilog multiple_modules_hier.v
-![image](https://user-images.githubusercontent.com/118953939/205956005-c1a95443-b133-454e-86e7-ba77a479ae75.png)
+ii)Launch yosys 
+iii)Read_liberty –lib ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
+iv)Synth –top multiple module
+v)Abc –liberty ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
+vi)Show multiple_module 
+vii)write_verilog multiple_modules_hier.v
 
 ![image](https://user-images.githubusercontent.com/118953939/205955462-2cb6b8c9-5f1a-4915-a785-1e55d3c6d6ac.png)
 
