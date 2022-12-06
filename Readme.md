@@ -4,7 +4,7 @@
 ## Table of contents
 * [ Day 0 - System/Tool Setup Check. GitHub ID creation ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-0)
 * [ Day 1 - Labs using iverilog and gtkwave ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-1)
-* [ Day 2 - Labs using iverilog and gtkwave ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-2)
+* [ Day 2 - Timing libs,hierarchical vs flatsynthesis and effecient flop coding styles ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-2)
 
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
@@ -212,7 +212,7 @@ i0,i1 and sel is primary input.
 
 ![image](https://user-images.githubusercontent.com/118953939/205939075-a263e287-4781-4565-8933-2eb09a263d0e.png)
 
-* Lastly,the comaprison of the 3 types of cell :And2_0,And_2 & And_4
+* Lastly,the comparison of the 3 types of cell :And2_0,And_2 & And_4
 ![image](https://user-images.githubusercontent.com/118953939/205939144-08b4a37f-5877-4b43-a8ca-3b3779376878.png)
 *As we can see form the figure above when the area large the power will be more and delay will be less.But when area low,the power will low and delay will more.*
 
