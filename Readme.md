@@ -234,6 +234,7 @@ vi)Show multiple_module
 
 vii)write_verilog multiple_modules_hier.v
 
-![image](https://user-images.githubusercontent.com/118953939/205955462-2cb6b8c9-5f1a-4915-a785-1e55d3c6d6ac.png)
 
-![image](https://user-images.githubusercontent.com/118953939/205955510-506180b4-8124-49b2-bf7f-19a4a4676e93.png)
+![image](https://user-images.githubusercontent.com/118953939/205957886-5aafdeb7-d2f3-42da-884e-2d85cb370c1a.png)
+![image](https://user-images.githubusercontent.com/118953939/205957929-84c1e141-9cfe-494f-933a-5f7a4a37e9d6.png)
+![image](https://user-images.githubusercontent.com/118953939/205957647-1dcadc13-e10e-4139-b44b-ba8341d0f829.png)
