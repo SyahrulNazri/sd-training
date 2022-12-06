@@ -186,4 +186,10 @@ i0,i1 and sel is primary input.
 ### Topic-Lab Introduction to dot Lib 
 
 1.Open .lib content 
-**vim../my_lib/lib/sky130_fd_sc_hd_tt_025C_1v80.lib**
+* **vim../my_lib/lib/sky130_fd_sc_hd_tt_025C_1v80.lib**
+* :syn off --->switch off the syntax
+<img width="337" alt="read library" src="https://user-images.githubusercontent.com/118953939/205845146-d225ac43-555b-4d9a-9d4e-ed0d40253b89.PNG">
+
+**Tt=** typical 
+C=temperature 
+V=voltage 
