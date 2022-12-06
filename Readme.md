@@ -183,7 +183,7 @@ i0,i1 and sel is primary input.
 
 ### Day 2
 
-### Topic-Lab Introduction to dot Lib 
+### Topic-Lab Introduction to .Lib 
 
 1.Open .lib content 
 * **vim../my_lib/lib/sky130_fd_sc_hd_tt_025C_1v80.lib**
@@ -194,6 +194,7 @@ i0,i1 and sel is primary input.
 **C=** temperature 
 **V=** voltage 
 
-2.Behavioral of the cell
+2.lib content of the std cell
+![Slide1](https://user-images.githubusercontent.com/118953939/205855320-aaeaa518-cbf9-4024-b3e7-8692cdf25420.PNG)
 **vim ../my_lib/verilog_model/sky130_fd_sc_hd.v**
 <img width="794" alt="1" src="https://user-images.githubusercontent.com/118953939/205851237-89727b26-a2d4-4f68-a964-3b0e573d6c1c.PNG">
