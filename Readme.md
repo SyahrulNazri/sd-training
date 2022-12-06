@@ -4,6 +4,7 @@
 ## Table of contents
 * [ Day 0 - System/Tool Setup Check. GitHub ID creation ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-0)
 * [ Day 1 - Labs using iverilog and gtkwave ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-1)
+* [ Day 2 - Labs using iverilog and gtkwave ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-2)
 
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
@@ -178,3 +179,11 @@ i0,i1 and sel is primary input.
 * Using command  **write_verilog -noattr good_mux_netlist.v**
 * Using command  **gvim good_mux_netlist.v**
 <img width="483" alt="modified " src="https://user-images.githubusercontent.com/118953939/205492030-b8579566-06ba-4ee7-bec8-c9a854b49fa2.PNG">
+
+
+### Day 2
+
+### Topic-Lab Introduction to dot Lib 
+
+1.Open .lib content 
+**vim../my_lib/lib/sky130_fd_sc_hd_tt_025C_1v80.lib**
