@@ -302,3 +302,4 @@ vi) show
  >*Diagram below shows the when reset become the 1,the q automatically become 1 and not waiting to the clock edge.* 
 ![image](https://user-images.githubusercontent.com/118953939/206140751-4857b0bf-bb86-407c-929d-87488b8d821c.png)
 
+![image](https://user-images.githubusercontent.com/118953939/206141715-6831ef51-937a-43a1-9134-924d555fa65d.png)
