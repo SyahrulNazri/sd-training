@@ -294,6 +294,7 @@ vi) show
 >The output of DFF will triggered when the posedge clock and posedge async_reset.If the async_reset the output will be low else the output will follow the input D.This asynchronous reset does not wait for the clock or inrespective of clockThis synchronous reset respective to the clock.So,diagram below shows the comparison of flop ?with Synchronous and asynchronous or both of it.
 ![image](https://user-images.githubusercontent.com/118953939/206091531-3b8641ac-c1dc-4cfd-bc74-fd8c3d41a7dd.png)
 
+---------------------------------------------------------------------------------------------
 ### Topic- Lab Flops synthesis simulation
 
 >*As from figure below,when reset low before clock,the output q  not immediately going to 1 but it wait for the clock edge .So,D align with the clock and q synchronous to the clock*
@@ -308,6 +309,26 @@ vi) show
 >*Async_set=1 the output q follow the async_set not effected by D* 
 ![image](https://user-images.githubusercontent.com/118953939/206143006-993866cf-a6ce-4bc5-aa9b-0aa26c7d352d.png)
 
->*When Sync_reset was 1,the output of y was change to 0 no immediately because it follow the clock edge.
+>*When Sync_reset was 1,the output of y was change to 0 no immediately because it follow the clock edge.*
 ![image](https://user-images.githubusercontent.com/118953939/206143074-83a0e5fe-38e5-403f-8c18-e2b0e263579d.png)
+
+* **Synthesis**
+>i)Launch yosys
+
+ii)Read_liberty –lib ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
+
+iii)read_Verilog dff_asyncres
+
+iv)Synth –top dff_asyncres
+
+v)Dfflibmap –liberty ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
+
+vi)Abc –liberty ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
+ 
+vii)Show
+
+![image](https://user-images.githubusercontent.com/118953939/206144049-2d08e800-adb0-473d-9cdc-4e7115992ada.png)
+![image](https://user-images.githubusercontent.com/118953939/206144093-4bf33a89-efd4-4b1a-8ff4-e7f8f7ffe064.png)
+![image](https://user-images.githubusercontent.com/118953939/206144141-2d0acb83-af53-485e-854e-ddb84c7ddbc7.png)
+
 
