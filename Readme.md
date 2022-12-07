@@ -246,5 +246,5 @@ vii)write_verilog multiple_modules_hier.v
 ![image](https://user-images.githubusercontent.com/118953939/205958288-8c0a0a8c-5909-4dd6-b72f-73805aacc080.png)
 
 *Figure Below shows the slack PMOS and slack NMOS .Slack PMOS is always bad, and it requires a wide cell to improve.*
-![image](https://user-images.githubusercontent.com/118953939/205963866-f9a36fc4-0858-4589-a077-964a2d477e87.png)
+![image](https://user-images.githubusercontent.com/118953939/206068346-116714cd-193b-4c75-8ab0-29f155626143.png)
 
