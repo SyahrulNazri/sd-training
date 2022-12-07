@@ -331,4 +331,32 @@ vi) show
 ![image](https://user-images.githubusercontent.com/118953939/206144093-4bf33a89-efd4-4b1a-8ff4-e7f8f7ffe064.png)
 ![image](https://user-images.githubusercontent.com/118953939/206144141-2d0acb83-af53-485e-854e-ddb84c7ddbc7.png)
 
+>i)Launch yosys
+
+>ii)Read_liberty –lib ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
+
+>iii)read_Verilog dff_asyncres
+
+>iv)Synth –top dff_asyncres
+
+>v)Dfflibmap –liberty ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
+
+>vi)Abc –liberty ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
+
+>vii)Show
+
+>viii)write_verilog -noattr mult2_net.v
+
+>ix)!vim mult2_net.v
+
+* **Mult_2**
+![image](https://user-images.githubusercontent.com/118953939/206145353-d3478f83-eb7f-4da6-a2b6-34973aa7777e.png)
+![image](https://user-images.githubusercontent.com/118953939/206145381-47948de4-65b4-4367-80a4-e4fbfc906de0.png)
+![image](https://user-images.githubusercontent.com/118953939/206145404-74720fe9-ba52-4a6c-9866-004a538929d1.png)
+
+* **Mult_2**
+![image](https://user-images.githubusercontent.com/118953939/206146353-2edd7a04-3b86-486b-9ec3-cd280bebcbf3.png)
+![image](https://user-images.githubusercontent.com/118953939/206146517-f0e75fbd-4dfe-4a96-90d1-ec4e6212c0da.png)
+![image](https://user-images.githubusercontent.com/118953939/206146528-89fbab50-2c00-4c50-8e40-a4ed2ba5db81.png)
+
 
