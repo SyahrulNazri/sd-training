@@ -327,7 +327,9 @@ vi) show
 
 >vii)Show
 
+>*The inverter needed because the active high reset.
 ![image](https://user-images.githubusercontent.com/118953939/206144049-2d08e800-adb0-473d-9cdc-4e7115992ada.png)
+>*Because the library have active low set so the inverter was needed.
 ![image](https://user-images.githubusercontent.com/118953939/206144093-4bf33a89-efd4-4b1a-8ff4-e7f8f7ffe064.png)
 ![image](https://user-images.githubusercontent.com/118953939/206144141-2d0acb83-af53-485e-854e-ddb84c7ddbc7.png)
 
