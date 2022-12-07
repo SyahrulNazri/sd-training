@@ -314,17 +314,11 @@ vi) show
 
 * **Synthesis**
 >i)Launch yosys
-
 ii)Read_liberty –lib ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
-
 iii)read_Verilog dff_asyncres
-
 iv)Synth –top dff_asyncres
-
 v)Dfflibmap –liberty ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
-
 vi)Abc –liberty ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
- 
 vii)Show
 
 ![image](https://user-images.githubusercontent.com/118953939/206144049-2d08e800-adb0-473d-9cdc-4e7115992ada.png)
