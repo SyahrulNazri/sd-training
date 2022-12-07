@@ -249,12 +249,13 @@ vii)write_verilog multiple_modules_hier.v
 *Figure Below shows the slack PMOS and slack NMOS .Slack PMOS is always bad, and it requires a wide cell to improve.*
 ![image](https://user-images.githubusercontent.com/118953939/206068346-116714cd-193b-4c75-8ab0-29f155626143.png)
 
-*The diagram below compares the hierarchy to the flat. We only see the net netlist in flat, and the modules for 1 and 2 are not visible.
+*The diagram below compares the hierarchy to the flat. We only see the net netlist in flat, and the modules for 1 and 2 are not visible.*
 ![image](https://user-images.githubusercontent.com/118953939/206075155-e587e8d2-2df2-4624-9372-17474f01b4c8.png)
-*The diagram below also shows the nmultiple modules netlist.The output of U! will be inoout to the U2 and with another input coming from C.
+*The diagram below also shows the multiple modules netlist.The output of U! will be input to the U2 and with another input coming from C.*
 ![image](https://user-images.githubusercontent.com/118953939/206075469-12b7e8dd-4977-41d3-8d4d-1404dce8d7b4.png)
 
 * **Excuting the Sub module 1 & 2**
+
 i) yosys
 
 ii) read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
@@ -276,4 +277,23 @@ vi) show
 (a)When we have multiple instances of same module.
 
 (b)Devide and conquer approach .Instead giving massive to the tool better to give in one portion.
+
+--------------------------------------------------------------------------------------------------
+### TOpic-Why Flops and Flop coding styles 
+
+There are many of the gate in the combinational circuit that lead to the glitch.So glitch is the result when an input signal changes state, provided the signal takes two or more paths through a circuit  and one path has a longer delay than the other. The increased delay on one path can cause a glitch when the signal paths are recombined at an output gate.To prevent this glitch we need flop.
+![image](https://user-images.githubusercontent.com/118953939/206084373-7212fe3f-7490-4143-bbc7-14dfc3dfb838.png)
+
+* **Why we need Flop**
+> To avoid the glitch 
+> Output will be stable or setlle down.
+>To initialise the flop will need reset or set.Both of this can be asynchronous and synchronous.
+
+
+* **DFF asynchronous**
+>The output of DFF will triggered when the posedge clock and posedge async_reset.If the async_reset the output will be low else the output will follow the input D.
+>This asynchronous reset does not wait for the clock or inrespective of clock
+>This synchronous reset respective to the clock.
+>So,diagram below shows the comparison of flop with Synchronous and asynchronous or both of it.
+![image](https://user-images.githubusercontent.com/118953939/206089081-384ade58-86c7-4df1-b7f6-c38169d8fc1e.png)
 
