@@ -294,4 +294,11 @@ vi) show
 >The output of DFF will triggered when the posedge clock and posedge async_reset.If the async_reset the output will be low else the output will follow the input D.This asynchronous reset does not wait for the clock or inrespective of clockThis synchronous reset respective to the clock.So,diagram below shows the comparison of flop ?with Synchronous and asynchronous or both of it.
 ![image](https://user-images.githubusercontent.com/118953939/206091531-3b8641ac-c1dc-4cfd-bc74-fd8c3d41a7dd.png)
 
+### Topic- Lab Flops synthesis simulation
+
+>*As from figure below,when reset low before clock,the output q  not immediately going to 1 but it wait for the clock edge .So,D align with the clock and q synchronous to the clock*
+![image](https://user-images.githubusercontent.com/118953939/206140716-3b79cf85-9346-4a22-829f-69e512d8615d.png)
+ 
+ >*Diagram below shows the when reset become the 1,the q automatically become 1 and not waiting to the clock edge.* 
+![image](https://user-images.githubusercontent.com/118953939/206140751-4857b0bf-bb86-407c-929d-87488b8d821c.png)
 
