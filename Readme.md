@@ -350,11 +350,13 @@ vi) show
 >ix)!vim mult2_net.v
 
 * **Mult_2**
+ 
 ![image](https://user-images.githubusercontent.com/118953939/206145353-d3478f83-eb7f-4da6-a2b6-34973aa7777e.png)
 ![image](https://user-images.githubusercontent.com/118953939/206145381-47948de4-65b4-4367-80a4-e4fbfc906de0.png)
 ![image](https://user-images.githubusercontent.com/118953939/206145404-74720fe9-ba52-4a6c-9866-004a538929d1.png)
 
-* **Mult_2**
+* **Mult_8**
+
 ![image](https://user-images.githubusercontent.com/118953939/206146353-2edd7a04-3b86-486b-9ec3-cd280bebcbf3.png)
 ![image](https://user-images.githubusercontent.com/118953939/206146517-f0e75fbd-4dfe-4a96-90d1-ec4e6212c0da.png)
 ![image](https://user-images.githubusercontent.com/118953939/206146528-89fbab50-2c00-4c50-8e40-a4ed2ba5db81.png)
