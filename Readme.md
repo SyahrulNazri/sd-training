@@ -354,6 +354,7 @@ vi) show
 
 >ix)!vim mult2_net.v
 
+
 * **Mult_2**
  ![image](https://user-images.githubusercontent.com/118953939/206194970-5c330404-b213-4054-872b-f4ae71d5fa15.png)
 
