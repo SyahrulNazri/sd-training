@@ -281,7 +281,7 @@ vi) show
 --------------------------------------------------------------------------------------------------
 ### TOpic-Why Flops and Flop coding styles 
 
-There are many of the gate in the combinational circuit that lead to the glitch.So glitch is the result when an input signal changes state, provided the signal takes two or more paths through a circuit  and one path has a longer delay than the other. The increased delay on one path can cause a glitch when the signal paths are recombined at an output gate.To prevent this glitch we need flop.
+>There are many of the gate in the combinational circuit that lead to the glitch.So glitch is the result when an input signal changes state, provided the signal takes >two or more paths through a circuit  and one path has a longer delay than the other. The increased delay on one path can cause a glitch when the signal paths are >recombined at an output gate.To prevent this glitch we need flop.
 ![image](https://user-images.githubusercontent.com/118953939/206091415-301dbb22-4f2b-41f6-9c23-6bf8cec1a30b.png)
 
 * **Why we need Flop**
@@ -291,7 +291,7 @@ There are many of the gate in the combinational circuit that lead to the glitch.
 
 
 * **DFF asynchronous**
->The output of DFF will triggered when the posedge clock and posedge async_reset.If the async_reset the output will be low else the output will follow the input D.This asynchronous reset does not wait for the clock or inrespective of clockThis synchronous reset respective to the clock.So,diagram below shows the comparison of flop with Synchronous and asynchronous or both of it.
+>The output of DFF will triggered when the posedge clock and posedge async_reset.If the async_reset the output will be low else the output will follow the input D.This >asynchronous reset does not wait for the clock or inrespective of clockThis synchronous reset respective to the clock.So,diagram below shows the comparison of flop ?>with Synchronous and asynchronous or both of it.
 ![image](https://user-images.githubusercontent.com/118953939/206091531-3b8641ac-c1dc-4cfd-bc74-fd8c3d41a7dd.png)
 
 
