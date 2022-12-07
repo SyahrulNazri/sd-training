@@ -249,3 +249,22 @@ vii)write_verilog multiple_modules_hier.v
 *Figure Below shows the slack PMOS and slack NMOS .Slack PMOS is always bad, and it requires a wide cell to improve.*
 ![image](https://user-images.githubusercontent.com/118953939/206068346-116714cd-193b-4c75-8ab0-29f155626143.png)
 
+*The diagram below compares the hierarchy to the flat. We only see the net netlist in flat, and the modules for 1 and 2 are not visible.
+![image](https://user-images.githubusercontent.com/118953939/206075155-e587e8d2-2df2-4624-9372-17474f01b4c8.png)
+*The diagram below also shows the nmultiple modules netlist.The output of U! will be inoout to the U2 and with another input coming from C.
+![image](https://user-images.githubusercontent.com/118953939/206075469-12b7e8dd-4977-41d3-8d4d-1404dce8d7b4.png)
+
+* **Excuting the Sub module 1 & 2**
+i) yosys
+ii) read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+iii) read_verilog multiple_modules
+iv) synth -top sub_module1 --> If want to see module 2 change it to sub_module2
+v) abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+vi) show 
+
+*As you can see the figure below is sub module 1 and sub module 2
+![image](https://user-images.githubusercontent.com/118953939/206075488-fa0827bf-dbae-4679-aec1-6d0e57c12c90.png)
+![image](https://user-images.githubusercontent.com/118953939/206075498-caed48a7-5b7e-49f3-8834-f27a89a6a666.png)
+* **Why sub module level synth**
+(a)When we have multiple instances of same module.
+(b)Devide and conquer approach .Instead giving massive to the tool better to give in one portion.
