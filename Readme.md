@@ -349,18 +349,17 @@ vi) show
 
 >viii)write_verilog -noattr mult2_net.v
 
+>*Explanation from lecture video*
+![image](https://user-images.githubusercontent.com/118953939/206195075-74bd67f7-9e15-4deb-844a-499f01f3f9ad.png)
+
 >ix)!vim mult2_net.v
 
 * **Mult_2**
- 
-![image](https://user-images.githubusercontent.com/118953939/206145353-d3478f83-eb7f-4da6-a2b6-34973aa7777e.png)
-![image](https://user-images.githubusercontent.com/118953939/206145381-47948de4-65b4-4367-80a4-e4fbfc906de0.png)
-![image](https://user-images.githubusercontent.com/118953939/206145404-74720fe9-ba52-4a6c-9866-004a538929d1.png)
+ ![image](https://user-images.githubusercontent.com/118953939/206194970-5c330404-b213-4054-872b-f4ae71d5fa15.png)
 
 * **Mult_8**
 
-![image](https://user-images.githubusercontent.com/118953939/206146353-2edd7a04-3b86-486b-9ec3-cd280bebcbf3.png)
-![image](https://user-images.githubusercontent.com/118953939/206146517-f0e75fbd-4dfe-4a96-90d1-ec4e6212c0da.png)
-![image](https://user-images.githubusercontent.com/118953939/206146528-89fbab50-2c00-4c50-8e40-a4ed2ba5db81.png)
+![image](https://user-images.githubusercontent.com/118953939/206194887-d89c0422-b304-4d80-a370-257eb6aebee9.png)
+
 
 
