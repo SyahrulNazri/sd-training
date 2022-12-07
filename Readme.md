@@ -256,10 +256,15 @@ vii)write_verilog multiple_modules_hier.v
 
 * **Excuting the Sub module 1 & 2**
 i) yosys
+
 ii) read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
 iii) read_verilog multiple_modules
+
 iv) synth -top sub_module1 --> If want to see module 2 change it to sub_module2
+
 v) abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
 vi) show 
 
 *As you can see the figure below is sub module 1 and sub module 2
