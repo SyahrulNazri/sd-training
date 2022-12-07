@@ -200,12 +200,12 @@ i0,i1 and sel is primary input.
 <img width="348" alt="3" src="https://user-images.githubusercontent.com/118953939/205858806-16963ea3-f24d-4b15-9414-4e53bbeb9532.PNG">
 
 <img width="794" alt="1" src="https://user-images.githubusercontent.com/118953939/205858861-1afdbfa5-0791-47ff-9299-4f3dda5e6f03.PNG">
->* As we can see from the figure above,in the circle shows the  gate with 5 input and  have the 32 input possible combination.To see all the detail command **:vsp ../my_lib/verilog_model/sky130_fd_sc_hd.v"** 
+>*As we can see from the figure above,in the circle shows the  gate with 5 input and  have the 32 input possible combination.To see all the detail command* **:vsp ../my_lib/verilog_model/sky130_fd_sc_hd.v"** 
 
-* The lib also shows the other detail such as power pot and information of the each cell pin
+>*The lib also shows the other detail such as power pot and information of the each cell pin*
 
 ![image](https://user-images.githubusercontent.com/118953939/205938000-279e0c20-2f30-4bcc-bd8b-7fd9c4a0be2e.png)
->*Figure above shows the area and power port information. 
+>*Figure above shows the area and power port information.* 
 ![image](https://user-images.githubusercontent.com/118953939/205938060-ff56c886-66b1-46cb-858a-69617719ea36.png)
 >*Figure above shows the information of capacitance,transition,power associated to the pin.*
 * In the lib also shows the timing information 
