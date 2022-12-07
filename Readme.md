@@ -239,7 +239,6 @@ vii)write_verilog multiple_modules_hier.v
 
 
 ![image](https://user-images.githubusercontent.com/118953939/205958229-b10636d0-3215-4402-b75c-5d3e35e9cbc5.png)
-![image](https://user-images.githubusercontent.com/118953939/206068585-bdc6a836-48d8-417a-b3b5-bcb93c504c7f.png)
 
 ![image](https://user-images.githubusercontent.com/118953939/206068452-5b534257-0a82-4062-b8e9-e3efc3e04d75.png)
 *As you can see from the lecture video,the 2 inverter and 1 nand gate will convert to the Or gate using the boolean expression*
