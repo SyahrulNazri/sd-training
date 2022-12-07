@@ -282,18 +282,16 @@ vi) show
 ### TOpic-Why Flops and Flop coding styles 
 
 There are many of the gate in the combinational circuit that lead to the glitch.So glitch is the result when an input signal changes state, provided the signal takes two or more paths through a circuit  and one path has a longer delay than the other. The increased delay on one path can cause a glitch when the signal paths are recombined at an output gate.To prevent this glitch we need flop.
-![image](https://user-images.githubusercontent.com/118953939/206084373-7212fe3f-7490-4143-bbc7-14dfc3dfb838.png)
+![image](https://user-images.githubusercontent.com/118953939/206091415-301dbb22-4f2b-41f6-9c23-6bf8cec1a30b.png)
 
 * **Why we need Flop**
 > To avoid the glitch 
 > Output will be stable or setlle down.
->To initialise the flop will need reset or set.Both of this can be asynchronous and synchronous.
+> To initialise the flop will need reset or set.Both of this can be asynchronous and synchronous.
 
 
 * **DFF asynchronous**
->The output of DFF will triggered when the posedge clock and posedge async_reset.If the async_reset the output will be low else the output will follow the input D.
->This asynchronous reset does not wait for the clock or inrespective of clock
->This synchronous reset respective to the clock.
->So,diagram below shows the comparison of flop with Synchronous and asynchronous or both of it.
-![image](https://user-images.githubusercontent.com/118953939/206089081-384ade58-86c7-4df1-b7f6-c38169d8fc1e.png)
+>The output of DFF will triggered when the posedge clock and posedge async_reset.If the async_reset the output will be low else the output will follow the input D.This asynchronous reset does not wait for the clock or inrespective of clockThis synchronous reset respective to the clock.So,diagram below shows the comparison of flop with Synchronous and asynchronous or both of it.
+![image](https://user-images.githubusercontent.com/118953939/206091531-3b8641ac-c1dc-4cfd-bc74-fd8c3d41a7dd.png)
+
 
