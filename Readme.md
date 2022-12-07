@@ -302,4 +302,12 @@ vi) show
  >*Diagram below shows the when reset become the 1,the q automatically become 1 and not waiting to the clock edge.* 
 ![image](https://user-images.githubusercontent.com/118953939/206140751-4857b0bf-bb86-407c-929d-87488b8d821c.png)
 
+>*When async_set=0 the,q follow the D respective to clock.*
 ![image](https://user-images.githubusercontent.com/118953939/206141715-6831ef51-937a-43a1-9134-924d555fa65d.png)
+
+>*Async_set=1 the output q follow the async_set not effected by D* 
+![image](https://user-images.githubusercontent.com/118953939/206143006-993866cf-a6ce-4bc5-aa9b-0aa26c7d352d.png)
+
+>*When Sync_reset was 1,the output of y was change to 0 no immediately because it follow the clock edge.
+![image](https://user-images.githubusercontent.com/118953939/206143074-83a0e5fe-38e5-403f-8c18-e2b0e263579d.png)
+
