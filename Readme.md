@@ -349,11 +349,10 @@ vi) show
 
 >viii)write_verilog -noattr mult2_net.v
 
->*Explanation from lecture video*
-![image](https://user-images.githubusercontent.com/118953939/206195075-74bd67f7-9e15-4deb-844a-499f01f3f9ad.png)
-
 >ix)!vim mult2_net.v
 
+>*Explanation from lecture video*
+![image](https://user-images.githubusercontent.com/118953939/206195075-74bd67f7-9e15-4deb-844a-499f01f3f9ad.png)
 
 * **Mult_2**
  ![image](https://user-images.githubusercontent.com/118953939/206194970-5c330404-b213-4054-872b-f4ae71d5fa15.png)
