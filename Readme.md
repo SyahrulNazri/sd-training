@@ -265,7 +265,10 @@ vi) show
 *As you can see the figure below is sub module 1 and sub module 2
 ![image](https://user-images.githubusercontent.com/118953939/206075488-fa0827bf-dbae-4679-aec1-6d0e57c12c90.png)
 ![image](https://user-images.githubusercontent.com/118953939/206075498-caed48a7-5b7e-49f3-8834-f27a89a6a666.png)
+
 * **Why sub module level synth**
 
 (a)When we have multiple instances of same module.
+
 (b)Devide and conquer approach .Instead giving massive to the tool better to give in one portion.
+
