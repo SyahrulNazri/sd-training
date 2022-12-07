@@ -241,7 +241,9 @@ vii)write_verilog multiple_modules_hier.v
 ![image](https://user-images.githubusercontent.com/118953939/205958229-b10636d0-3215-4402-b75c-5d3e35e9cbc5.png)
 
 ![image](https://user-images.githubusercontent.com/118953939/206068452-5b534257-0a82-4062-b8e9-e3efc3e04d75.png)
+
 *As you can see from the lecture video,the 2 inverter and 1 nand gate will convert to the Or gate using the boolean expression*
+
 ![image](https://user-images.githubusercontent.com/118953939/205958288-8c0a0a8c-5909-4dd6-b72f-73805aacc080.png)
 
 *Figure Below shows the slack PMOS and slack NMOS .Slack PMOS is always bad, and it requires a wide cell to improve.*
