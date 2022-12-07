@@ -200,14 +200,14 @@ i0,i1 and sel is primary input.
 <img width="348" alt="3" src="https://user-images.githubusercontent.com/118953939/205858806-16963ea3-f24d-4b15-9414-4e53bbeb9532.PNG">
 
 <img width="794" alt="1" src="https://user-images.githubusercontent.com/118953939/205858861-1afdbfa5-0791-47ff-9299-4f3dda5e6f03.PNG">
-* As we can see from the figure above,in the circle shows the  gate with 5 input and  have the 32 input possible combination.To see all the detail command **:vsp ../my_lib/verilog_model/sky130_fd_sc_hd.v"** 
+>* As we can see from the figure above,in the circle shows the  gate with 5 input and  have the 32 input possible combination.To see all the detail command **:vsp ../my_lib/verilog_model/sky130_fd_sc_hd.v"** 
 
 * The lib also shows the other detail such as power pot and information of the each cell pin
 
 ![image](https://user-images.githubusercontent.com/118953939/205938000-279e0c20-2f30-4bcc-bd8b-7fd9c4a0be2e.png)
-*Figure above shows the area and power port information. 
+>*Figure above shows the area and power port information. 
 ![image](https://user-images.githubusercontent.com/118953939/205938060-ff56c886-66b1-46cb-858a-69617719ea36.png)
-*Figure above shows the information of capacitance,transition,power associated to the pin.*
+>*Figure above shows the information of capacitance,transition,power associated to the pin.*
 * In the lib also shows the timing information 
 
 ![image](https://user-images.githubusercontent.com/118953939/205939075-a263e287-4781-4565-8933-2eb09a263d0e.png)
@@ -242,14 +242,14 @@ vii)write_verilog multiple_modules_hier.v
 
 ![image](https://user-images.githubusercontent.com/118953939/206068452-5b534257-0a82-4062-b8e9-e3efc3e04d75.png)
 
-*As you can see from the lecture video,the 2 inverter and 1 nand gate will convert to the Or gate using the boolean expression*
+>*As you can see from the lecture video,the 2 inverter and 1 nand gate will convert to the Or gate using the boolean expression*
 
 ![image](https://user-images.githubusercontent.com/118953939/205958288-8c0a0a8c-5909-4dd6-b72f-73805aacc080.png)
 
-*Figure Below shows the slack PMOS and slack NMOS .Slack PMOS is always bad, and it requires a wide cell to improve.*
+>*Figure Below shows the slack PMOS and slack NMOS .Slack PMOS is always bad, and it requires a wide cell to improve.*
 ![image](https://user-images.githubusercontent.com/118953939/206068346-116714cd-193b-4c75-8ab0-29f155626143.png)
 
-*The diagram below compares the hierarchy to the flat. We only see the net netlist in flat, and the modules for 1 and 2 are not visible.*
+>*The diagram below compares the hierarchy to the flat. We only see the net netlist in flat, and the modules for 1 and 2 are not visible.*
 ![image](https://user-images.githubusercontent.com/118953939/206075155-e587e8d2-2df2-4624-9372-17474f01b4c8.png)
 *The diagram below also shows the multiple modules netlist.The output of U! will be input to the U2 and with another input coming from C.*
 ![image](https://user-images.githubusercontent.com/118953939/206075469-12b7e8dd-4977-41d3-8d4d-1404dce8d7b4.png)
@@ -279,9 +279,9 @@ vi) show
 (b)Devide and conquer approach .Instead giving massive to the tool better to give in one portion.
 
 --------------------------------------------------------------------------------------------------
-### TOpic-Why Flops and Flop coding styles 
+### Topic-Why Flops and Flop coding styles 
 
->There are many of the gate in the combinational circuit that lead to the glitch.So glitch is the result when an input signal changes state, provided the signal takes >two or more paths through a circuit  and one path has a longer delay than the other. The increased delay on one path can cause a glitch when the signal paths are >recombined at an output gate.To prevent this glitch we need flop.
+>There are many of the gate in the combinational circuit that lead to the glitch.So glitch is the result when an input signal changes state, provided the signal takes two or more paths through a circuit  and one path has a longer delay than the other. The increased delay on one path can cause a glitch when the signal paths are recombined at an output gate.To prevent this glitch we need flop.
 ![image](https://user-images.githubusercontent.com/118953939/206091415-301dbb22-4f2b-41f6-9c23-6bf8cec1a30b.png)
 
 * **Why we need Flop**
@@ -291,7 +291,7 @@ vi) show
 
 
 * **DFF asynchronous**
->The output of DFF will triggered when the posedge clock and posedge async_reset.If the async_reset the output will be low else the output will follow the input D.This >asynchronous reset does not wait for the clock or inrespective of clockThis synchronous reset respective to the clock.So,diagram below shows the comparison of flop ?>with Synchronous and asynchronous or both of it.
+>The output of DFF will triggered when the posedge clock and posedge async_reset.If the async_reset the output will be low else the output will follow the input D.This asynchronous reset does not wait for the clock or inrespective of clockThis synchronous reset respective to the clock.So,diagram below shows the comparison of flop ?with Synchronous and asynchronous or both of it.
 ![image](https://user-images.githubusercontent.com/118953939/206091531-3b8641ac-c1dc-4cfd-bc74-fd8c3d41a7dd.png)
 
 
