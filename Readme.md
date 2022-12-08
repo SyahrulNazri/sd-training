@@ -299,6 +299,11 @@ vii)write_verilog -noattr multiple_modules_hier.v
 
 ---------------------------------------------------------------------------------------------
 ### Topic- Lab Flops synthesis simulation
+* **Steps**
+>* iverilog dff_asyncres.v tb_dff_asyncres.v
+>* ./a/out 
+>* gtkwave tb_dff_asyncres.vcd
+![image](https://user-images.githubusercontent.com/118953939/206333736-945ecfd2-1bd3-4158-af50-b1b0b7023244.png)
 
 >*As from figure below,when reset low before clock,the output q  not immediately going to 1 but it wait for the clock edge .So,D align with the clock and q synchronous to the clock*
 ![image](https://user-images.githubusercontent.com/118953939/206140716-3b79cf85-9346-4a22-829f-69e512d8615d.png)
@@ -336,7 +341,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
 ![image](https://user-images.githubusercontent.com/118953939/206144093-4bf33a89-efd4-4b1a-8ff4-e7f8f7ffe064.png)
 ![image](https://user-images.githubusercontent.com/118953939/206144141-2d0acb83-af53-485e-854e-ddb84c7ddbc7.png)
 
->i)Launch yosys
+>i)yosys
 
 >ii)Read_liberty –lib ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
 
