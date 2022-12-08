@@ -186,11 +186,11 @@ i0,i1 and sel is primary input.
 ### Topic-Lab Introduction to .Lib 
 
 1.Open .lib content 
-* **vim../my_lib/lib/sky130_fd_sc_hd_tt_025C_1v80.lib**
+*  vim../my_lib/lib/sky130_fd_sc_hd_tt_025C_1v80.lib
 * :syn off --->switch off the syntax
 <img width="275" alt="0PNG" src="https://user-images.githubusercontent.com/118953939/205858752-781f8077-b72c-4ca8-8706-0af672aa04a1.PNG">
 
-**Tt=** typical(fas/slow/typical)
+**Tt=** typical(fast/slow/typical)
 **C=** temperature 
 **V=** voltage 
 
