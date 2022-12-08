@@ -181,7 +181,7 @@ i0,i1 and sel is primary input.
 <img width="483" alt="modified " src="https://user-images.githubusercontent.com/118953939/205492030-b8579566-06ba-4ee7-bec8-c9a854b49fa2.PNG">
 
 
-### Day 2
+## Day 2
 
 ### Topic-Lab Introduction to .Lib 
 
@@ -321,7 +321,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
 ![image](https://user-images.githubusercontent.com/118953939/206143074-83a0e5fe-38e5-403f-8c18-e2b0e263579d.png)
 
 * **Synthesis**
->i)Launch yosys
+>i) yosys
 
 >ii)Read_liberty –lib ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
 
@@ -334,6 +334,8 @@ vii)write_verilog -noattr multiple_modules_hier.v
 >vi)Abc –liberty ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
 
 >vii)Show
+
+![image](https://user-images.githubusercontent.com/118953939/206335570-38eb0ba3-54f9-4e84-ba91-f9fb1b91e9a2.png)
 
 >*The inverter needed because the active high reset.*
 ![image](https://user-images.githubusercontent.com/118953939/206144049-2d08e800-adb0-473d-9cdc-4e7115992ada.png)
