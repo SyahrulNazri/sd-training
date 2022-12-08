@@ -254,8 +254,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
 ![image](https://user-images.githubusercontent.com/118953939/206075469-12b7e8dd-4977-41d3-8d4d-1404dce8d7b4.png)
 
 >*Figure Below shows the slack PMOS and slack NMOS .Slack PMOS is always bad, and it requires a wide cell to improve.*
-![image](https://user-images.githubusercontent.com/118953939/206068346-116714cd-193b-4c75-8ab0-29f155626143.png)
-
+![image](https://user-images.githubusercontent.com/118953939/206349611-6f629aa5-29bf-47c8-b342-2c68e7d5a905.png)
 
 
 * **Excuting the Sub module 1 & 2**
@@ -296,7 +295,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
 
 * **DFF asynchronous**
 >The output of DFF will triggered when the posedge clock and posedge async_reset.If the async_reset the output will be low else the output will follow the input D.This asynchronous reset does not wait for the clock or inrespective of clockThis synchronous reset respective to the clock.So,diagram below shows the comparison of flop with Synchronous and asynchronous or both of it.
-![image](https://user-images.githubusercontent.com/118953939/206091531-3b8641ac-c1dc-4cfd-bc74-fd8c3d41a7dd.png)
+![image](https://user-images.githubusercontent.com/118953939/206349631-75774c3b-3fc0-4565-befb-1ae412288bef.png)
 
 ---------------------------------------------------------------------------------------------
 ### Topic- Lab Flops synthesis simulation
