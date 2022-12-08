@@ -388,19 +388,20 @@ vii)write_verilog -noattr multiple_modules_hier.v
 
 >vii)Show
 
->viii)write_verilog -noattr mult2_net.v -->if want to see other mux change to mult8_net.v
+>viii)write_verilog mul2_simp.v -->if want to see other mux change tomult_8_simp.v 
 
->ix)!vim mult2_net.v --> if want to see other mux change to mult8_net.v
+>ix)!vim mul2_simp.v --> if want to see other mux change to mult_8_simp.v 
 
 >*Explanation from lecture video*
 ![image](https://user-images.githubusercontent.com/118953939/206195075-74bd67f7-9e15-4deb-844a-499f01f3f9ad.png)
 
 * **Mult_2**
- ![image](https://user-images.githubusercontent.com/118953939/206194970-5c330404-b213-4054-872b-f4ae71d5fa15.png)
+![image](https://user-images.githubusercontent.com/118953939/206339930-bc5f93d8-070f-4e18-b433-a34f0acd8a7a.png)
 
 * **Mult_8**
 
-![image](https://user-images.githubusercontent.com/118953939/206194887-d89c0422-b304-4d80-a370-257eb6aebee9.png)
+![image](https://user-images.githubusercontent.com/118953939/206340719-32f94a4f-7cae-4b51-a9ca-c2dea6b7ab2a.png)
+
 
 
 
