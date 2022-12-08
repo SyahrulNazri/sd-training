@@ -220,9 +220,8 @@ i0,i1 and sel is primary input.
 
 ### Topic-hierarchical vs FLat Synthesis 
 
-* **Setup Design**
 
-i)Gvim multiple_module.v
+i)vim multiple_module.v
 
 ii)Launch yosys 
 
@@ -234,25 +233,29 @@ v)Abc –liberty ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
 
 vi)Show multiple_module 
 
-vii)write_verilog multiple_modules_hier.v
+vii)write_verilog -noattr multiple_modules_hier.v
+
+**Result**
+
+![image](https://user-images.githubusercontent.com/118953939/206330522-d9c4ff26-360d-4dba-bd25-c4d37dc4933b.png)
+![image](https://user-images.githubusercontent.com/118953939/206330550-46a98643-a9b5-4f7a-80ec-b1d971db2710.png)
+![image](https://user-images.githubusercontent.com/118953939/206331720-5a7c59cc-6e47-4cc6-9be5-f95c1b0dde5d.png)
 
 
-
-![image](https://user-images.githubusercontent.com/118953939/205958229-b10636d0-3215-4402-b75c-5d3e35e9cbc5.png)
-
-![image](https://user-images.githubusercontent.com/118953939/206068452-5b534257-0a82-4062-b8e9-e3efc3e04d75.png)
-
->*As you can see from the lecture video,the 2 inverter and 1 nand gate will convert to the Or gate using the boolean expression*
-
-![image](https://user-images.githubusercontent.com/118953939/205958288-8c0a0a8c-5909-4dd6-b72f-73805aacc080.png)
-
->*Figure Below shows the slack PMOS and slack NMOS .Slack PMOS is always bad, and it requires a wide cell to improve.*
-![image](https://user-images.githubusercontent.com/118953939/206068346-116714cd-193b-4c75-8ab0-29f155626143.png)
+* **Flat Synthesis**
+>* Flatten
+>* Write_verilog -noattr multiple_modules_flat.v
+>* !vim multiple_modules_flat.v
 
 >*The diagram below compares the hierarchy to the flat. We only see the net netlist in flat, and the modules for 1 and 2 are not visible.*
 ![image](https://user-images.githubusercontent.com/118953939/206075155-e587e8d2-2df2-4624-9372-17474f01b4c8.png)
 *The diagram below also shows the multiple modules netlist.The output of U! will be input to the U2 and with another input coming from C.*
 ![image](https://user-images.githubusercontent.com/118953939/206075469-12b7e8dd-4977-41d3-8d4d-1404dce8d7b4.png)
+
+>*Figure Below shows the slack PMOS and slack NMOS .Slack PMOS is always bad, and it requires a wide cell to improve.*
+![image](https://user-images.githubusercontent.com/118953939/206068346-116714cd-193b-4c75-8ab0-29f155626143.png)
+
+
 
 * **Excuting the Sub module 1 & 2**
 
