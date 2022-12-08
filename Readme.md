@@ -321,6 +321,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
 ![image](https://user-images.githubusercontent.com/118953939/206143074-83a0e5fe-38e5-403f-8c18-e2b0e263579d.png)
 
 * **Synthesis**
+**1. Read asyncrhronous reset** flop netlist
 >i) yosys
 
 >ii)Read_liberty –lib ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
@@ -335,6 +336,34 @@ vii)write_verilog -noattr multiple_modules_hier.v
 
 >vii)Show
 
+**2. Read asyncrhronous set**
+
+>i)Read_liberty –lib ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
+
+>ii)read_Verilog dff_async_set
+
+>iii)Synth –top  dff_async_set
+
+>iv)Dfflibmap –liberty ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
+
+>v)Abc –liberty ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
+
+>vi)Show
+
+**3. Read syncrhronous set**
+
+>i)Read_liberty –lib ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
+
+>ii)read_Verilog dff_sync_set
+
+>iii)Synth –top  dff_sync_set
+
+>iv)Dfflibmap –liberty ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
+
+>v)Abc –liberty ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
+
+>vi)Show
+
 ![image](https://user-images.githubusercontent.com/118953939/206335570-38eb0ba3-54f9-4e84-ba91-f9fb1b91e9a2.png)
 
 >*The inverter needed because the active high reset.*
@@ -342,6 +371,8 @@ vii)write_verilog -noattr multiple_modules_hier.v
 >*Because the library have active low set so the inverter was needed.*
 ![image](https://user-images.githubusercontent.com/118953939/206144093-4bf33a89-efd4-4b1a-8ff4-e7f8f7ffe064.png)
 ![image](https://user-images.githubusercontent.com/118953939/206144141-2d0acb83-af53-485e-854e-ddb84c7ddbc7.png)
+
+### Topic = Interesting Optimisations 
 
 >i)yosys
 
