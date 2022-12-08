@@ -378,9 +378,9 @@ vii)write_verilog -noattr multiple_modules_hier.v
 
 >ii)Read_liberty –lib ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
 
->iii)read_Verilog dff_asyncres
+>iii)read_Verilog  mult_2.v  -->if want to see other mux change to mult8
 
->iv)Synth –top dff_asyncres
+>iv)Synth –top mul2 -->if want to see other mux change to mult8
 
 >v)Dfflibmap –liberty ../my_lib/lib/sky130_fd_sc_hd__tt025C_1v80.lib
 
@@ -388,9 +388,9 @@ vii)write_verilog -noattr multiple_modules_hier.v
 
 >vii)Show
 
->viii)write_verilog -noattr mult2_net.v
+>viii)write_verilog -noattr mult2_net.v -->if want to see other mux change to mult8_net.v
 
->ix)!vim mult2_net.v
+>ix)!vim mult2_net.v --> if want to see other mux change to mult8_net.v
 
 >*Explanation from lecture video*
 ![image](https://user-images.githubusercontent.com/118953939/206195075-74bd67f7-9e15-4deb-844a-499f01f3f9ad.png)
