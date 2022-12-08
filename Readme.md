@@ -285,7 +285,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
 ### Topic-Why Flops and Flop coding styles 
 
 >There are many of the gate in the combinational circuit that lead to the glitch.So glitch is the result when an input signal changes state, provided the signal takes two or more paths through a circuit  and one path has a longer delay than the other. The increased delay on one path can cause a glitch when the signal paths are recombined at an output gate.To prevent this glitch we need flop.
-![image](https://user-images.githubusercontent.com/118953939/206091415-301dbb22-4f2b-41f6-9c23-6bf8cec1a30b.png)
+![image](https://user-images.githubusercontent.com/118953939/206349620-b7212ab4-ae30-46f2-a74d-3a759d361ba7.png)
 
 * **Why we need Flop**
 > To avoid the glitch 
