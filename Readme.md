@@ -259,21 +259,21 @@ vii)write_verilog -noattr multiple_modules_hier.v
 
 * **Excuting the Sub module 1 & 2**
 
-i) yosys
+>i) yosys
 
-ii) read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+>ii) read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
-iii) read_verilog multiple_modules
+>iii) read_verilog multiple_modules.v
 
-iv) synth -top sub_module1 --> If want to see module 2 change it to sub_module2
+>iv) synth -top sub_module1 --> If want to see module 2 change it to sub_module2
 
-v) abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+>v) abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
 
-vi) show 
+>vi) show 
 
 >*As you can see the figure below is sub module 1 and sub module 2*
-![image](https://user-images.githubusercontent.com/118953939/206075488-fa0827bf-dbae-4679-aec1-6d0e57c12c90.png)
-![image](https://user-images.githubusercontent.com/118953939/206075498-caed48a7-5b7e-49f3-8834-f27a89a6a666.png)
+![image](https://user-images.githubusercontent.com/118953939/206332888-e96cfcbf-6103-464e-885d-dc8454cb4258.png)
+
 
 * **Why sub module level synth**
 
