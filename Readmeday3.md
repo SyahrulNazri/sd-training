@@ -19,6 +19,21 @@
 
 ------------------------------------------------------------------------------------------------------------------
 ### Topic - Lab Combinational Logic Optimizations 
+* **Synthesize**
+>yosys
+
+>read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd_tt__-25C_1v80.lib
+
+>read_verilog opt_check --------> can change toif want  opt_check3,opt_check4,opt_check5
+
+>synth -top opt_check
+
+>opt -clean_purge
+
+>abc -liberty ../my_lib/lib/sky130_fd_sc_hd_tt__-25C_1v80.lib
+
+>show
+
 **(1) Opt_check1**
 *2 input AND Gate*
 >![Slide1](https://user-images.githubusercontent.com/118953939/206689873-b8e86a1f-e66a-4c10-904a-a50ab3e9d769.PNG)
