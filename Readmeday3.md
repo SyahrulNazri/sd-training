@@ -19,7 +19,4 @@
 
 ------------------------------------------------------------------------------------------------------------------
 ### Topic - Lab Combinational Logic Optimizations 
-![Slide1](https://user-images.githubusercontent.com/118953939/206665138-e77a87a2-c551-4077-86cd-ffe44a1615e8.JPG)
-![Slide2](https://user-images.githubusercontent.com/118953939/206665438-92e39411-8c20-494a-b244-53e51bbb7ff5.JPG)
-![Slide3](https://user-images.githubusercontent.com/118953939/206665452-423f6562-1bd1-48c4-9276-e27f71326e9e.JPG)
-![Slide4](https://user-images.githubusercontent.com/118953939/206665468-12f43759-6cb9-45fd-9a15-3e1b06c305ec.JPG)
+![image](https://user-images.githubusercontent.com/118953939/206672606-45271f34-80be-4e75-97a7-3d8f1e5b0fc9.png)
