@@ -9,7 +9,7 @@
   * **Boelean Logic Optimisation** = Kmap & Quaine McKluskey 
   * **Kmap** = K-map can take two forms Sum of Product (SOP) and Product of Sum (POS) according to the need of problem. K-map is table like representation but it gives                  more information than TRUTH TABLE. 
   
-  ![image](https://user-images.githubusercontent.com/118953939/206657513-c8093880-d8bb-4a8a-88f4-458b2f891aee.png)
+ ![image](https://user-images.githubusercontent.com/118953939/206657513-c8093880-d8bb-4a8a-88f4-458b2f891aee.png)
   
  * **Notes from the lecture video**
 
@@ -19,7 +19,7 @@
 
 ------------------------------------------------------------------------------------------------------------------
 ### Topic - Lab Combinational Logic Optimizations 
-* **Synthesize**
+* **Invoke yosys**
 >yosys
 
 >read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd_tt__-25C_1v80.lib
@@ -35,30 +35,53 @@
 >show
 
 **(1).Opt_check1**
+
 *2 input AND Gate*
->![Slide1](https://user-images.githubusercontent.com/118953939/206689873-b8e86a1f-e66a-4c10-904a-a50ab3e9d769.PNG)
+>![Slide1](https://user-images.githubusercontent.com/118953939/206728179-97377bd2-8fb9-4fa4-a0b3-837465825c8f.PNG)
 
 **(2).Opt_check2**
-*2 input OR gate *
->![Slide2](https://user-images.githubusercontent.com/118953939/206689955-32c36f1f-8215-4708-8e4b-c1d7051748d5.PNG)
+
+*2 input OR gate*
+>![Slide2](https://user-images.githubusercontent.com/118953939/206728251-6cbcde34-008f-4bce-bab4-ba1bcd4f7119.PNG)
 
 
 **(3).Opt_check3**
-*3 Input AND gate *
->![Slide3](https://user-images.githubusercontent.com/118953939/206690007-a17ffa59-252f-4257-ba51-8eb385b0d286.PNG)
+
+*3 Input AND gate*
+>![Slide3](https://user-images.githubusercontent.com/118953939/206728273-07e8b3d8-b9ed-49ee-9e66-b96829c91aff.PNG)
 
 
 **(4).Opt_check4**
-*2 Input XNOR gate *
->![Slide4](https://user-images.githubusercontent.com/118953939/206690056-148a4ab9-d103-4588-aeae-21fca31f72dd.PNG)
+
+*2 Input XNOR gate*
+>![Slide4](https://user-images.githubusercontent.com/118953939/206728317-a88e7e0d-7974-482d-8754-b8f81bff769f.PNG)
+
+**Invoke yosys**
+>yosys
+
+>read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+>read_verilog multiple_module_opt.v   ----> if want sys opt2 change command to multiple_module_opt2 
+
+>synth -top multiple_module_opt    ----> if want sys opt2 change command to multiple_module_opt2 
+
+>flatten
+
+>opt_clean -purge
+
+>abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+
+>show
+
 
 **(5).Multiple_module_opt**
->![Slide5](https://user-images.githubusercontent.com/118953939/206690095-f491284c-f166-47fd-b5f3-36b26137c951.PNG)
+>![Slide5](https://user-images.githubusercontent.com/118953939/206729044-df195939-409c-40ae-b264-3180d5116928.PNG)
 
 
 **(6).Multiple_module_opt2**
+
 *sub_module1= AND gate*
-![Slide7](https://user-images.githubusercontent.com/118953939/206690176-c9a91b7a-470a-44cd-860a-0e868a9313f0.PNG)
+!![Slide6](https://user-images.githubusercontent.com/118953939/206729075-31462252-f244-473d-9885-cbb48bab6253.PNG)
 
 
 ----------------------------------------------------------------------------------------------------------------------
@@ -66,55 +89,54 @@
 ### Topic-Sequential logic Optimizations 
 **(1).dff_const1**
 *If reset was high the output  q will below and it turn back to high on next positive clock edge  if reset was high . 
->![Slide9](https://user-images.githubusercontent.com/118953939/206690244-091b663e-df84-41a1-9370-8e94b9818a28.PNG)
->
->![Slide10](https://user-images.githubusercontent.com/118953939/206690269-a5bece2b-aacf-487c-adc1-4b3186157d23.PNG)
+>![Slide7](https://user-images.githubusercontent.com/118953939/206729234-d49990f2-32a9-476f-8d2f-439214319015.PNG)
+>![Slide8](https://user-images.githubusercontent.com/118953939/206729280-c4bbe0ae-abc6-45c3-b107-969a1f9576f8.PNG)
+
 
 **(2).dff_const2**
 
 *If reset  was high the q will high  and even the reset was low the q will not change.In conlusion, q was not make anychanges even the reset high or low.*
->![Slide11](https://user-images.githubusercontent.com/118953939/206690312-275c4f63-d8b1-4ee9-8a24-375597a077a6.PNG)
+>![Slide9](https://user-images.githubusercontent.com/118953939/206729417-86f0dc3d-6af1-4d7b-a81b-9be18a894f2c.PNG)
 
->![Slide12](https://user-images.githubusercontent.com/118953939/206690337-c23f42d8-c99f-4d35-ac4e-4160e244cac8.PNG)
+>![Slide10](https://user-images.githubusercontent.com/118953939/206729469-80e01574-c7ba-4c4d-ac0d-768117be7f07.PNG)
 
 **(3).dff_const3**
 
 *There are 2 flip flop and the output q1 will be low iff the reset high and it will change high if the reset low.But for q it will be always high except for 1 clock cycle.More detail on the diagram below.*
 
->![Slide13](https://user-images.githubusercontent.com/118953939/206690372-bb6be053-8b96-4fc9-b02a-972d1144b775.PNG)
+>![Slide11](https://user-images.githubusercontent.com/118953939/206729530-aff0840b-aab7-4fc8-8368-8843e7a74adb.PNG)
 
->![Slide14](https://user-images.githubusercontent.com/118953939/206690390-0ad7490a-f646-4119-a261-c89c7569a44b.PNG)
+>![Slide12](https://user-images.githubusercontent.com/118953939/206729562-c67081de-02eb-4510-ad16-0fe9f52480be.PNG)
 
 **(4).dff_const4**
 
 *Q and q1 always 1.No change.*
->![Slide16](https://user-images.githubusercontent.com/118953939/206690461-33493517-0871-4884-b0fa-cdfbb9c82717.PNG)
+>![Slide13](https://user-images.githubusercontent.com/118953939/206729622-dfeddbf9-36a9-4d91-b7cf-7c9cb37b52b8.PNG)
 
->![Slide17](https://user-images.githubusercontent.com/118953939/206690488-05203fbd-ebd7-40b2-9fae-00da4ae7f4c1.PNG)
+>![Slide14](https://user-images.githubusercontent.com/118953939/206729673-cfdd1f3b-109d-42cf-89b1-fdfb4dff893b.PNG)
 
 **(5).dff_const5**
->![Slide18](https://user-images.githubusercontent.com/118953939/206690708-ccd514aa-3b1d-4635-9650-bafa10013800.PNG)
+>![Slide15](https://user-images.githubusercontent.com/118953939/206729699-b0b5c740-5bb1-4b2b-ab5b-d4fd5144ec91.PNG)
+>![Slide16](https://user-images.githubusercontent.com/118953939/206729837-d8b2e865-bd29-4ec6-bbd7-b3095b9eaac1.PNG)
 
 
 ## Topic-Unused Output Optimization
 **(1).counter_opt**
 
 *The count[0] used the 1 bit and others bit are unused.From netlist diagram we can show the only one flop was available because only count[o] was used.The others unsed flop was not showed.*
->![Slide19](https://user-images.githubusercontent.com/118953939/206690778-97266468-2031-492a-9ea8-31448921a71d.PNG)
+>![Slide17](https://user-images.githubusercontent.com/118953939/206729992-a194188f-5661-4840-b2e0-f62d1ef1a2e1.PNG)
 
->![Slide20](https://user-images.githubusercontent.com/118953939/206690918-cc3ca693-9820-48e0-99db-bf249d3aef41.PNG)
+>![Slide18](https://user-images.githubusercontent.com/118953939/206730011-5c69efd6-9869-47b3-b7f2-750f384b2daf.PNG)
 
 **(2).counter_opt2**
 
 *In this case the q was assign  count[2:0] .So from the diagram below,we can see that the netlist are shows the 3 avalaible flop because all of them are used.We have a large amount of logic within the design since all the bit was used.*
 *Modified count[0] --->count [2:0]
->![Slide21](https://user-images.githubusercontent.com/118953939/206691124-b0f49c40-3c05-4513-a687-de992698f429.PNG)
+>![Slide19](https://user-images.githubusercontent.com/118953939/206730040-3469b5c5-5b75-4fba-91e4-8e6a4e823f9b.PNG)
 
 >![Slide22](https://user-images.githubusercontent.com/118953939/206691179-ebe9a1c3-103d-40e1-8f31-3b99133080db.PNG)
 
->![Slide23](https://user-images.githubusercontent.com/118953939/206691206-f51ae6c0-b816-4425-9454-1638620e7326.PNG)
-
->![Slide24](https://user-images.githubusercontent.com/118953939/206691243-45d3d9d1-ad1f-4714-a4f6-cee85253c430.PNG)
+>![Slide21](https://user-images.githubusercontent.com/118953939/206730086-bae6966a-afc3-492d-963f-9fe875128ca4.PNG)
 
 
 
