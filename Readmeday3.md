@@ -88,6 +88,7 @@
 
 ### Topic-Sequential logic Optimizations 
 **(1).dff_const1**
+
 *If reset was high the output  q will below and it turn back to high on next positive clock edge  if reset was high . 
 >![Slide7](https://user-images.githubusercontent.com/118953939/206729234-d49990f2-32a9-476f-8d2f-439214319015.PNG)
 >![Slide8](https://user-images.githubusercontent.com/118953939/206729280-c4bbe0ae-abc6-45c3-b107-969a1f9576f8.PNG)
