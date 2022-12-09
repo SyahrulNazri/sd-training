@@ -16,7 +16,7 @@
   * [Why flop and FLops Coding Styles](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-why-flops-and-flop-coding-styles)
   * [Lab flops Synthesis Simulation](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic--lab-flops-synthesis-simulation)
  
-* [ Day 3 -Combinational and Sequential Optimizations](https://github.com/SyahrulNazri/sd-training/edit/main/Readme.md#day3)
+* [ Day 3 -Combinational and Sequential Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day3)
   * [Introduction to Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---introduction-to-optimizations)
   * [Lab Combitional & lLogic Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---lab-combinational-logic-optimizations)
   * [Sequential Logic Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-sequential-logic-optimizations)
