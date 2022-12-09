@@ -510,7 +510,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
 ## Topic-Sequential logic Optimizations 
 **(1).dff_const1**
 
-*If reset was high the output  q will below and it turn back to high on next positive clock edge  if reset was high . 
+*If reset was high the output  q will below and it turn back to high on next positive clock edge  if reset was high .*
 >![Slide7](https://user-images.githubusercontent.com/118953939/206729234-d49990f2-32a9-476f-8d2f-439214319015.PNG)
 >![Slide8](https://user-images.githubusercontent.com/118953939/206729280-c4bbe0ae-abc6-45c3-b107-969a1f9576f8.PNG)
 
@@ -545,7 +545,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
 ## Topic-Unused Output Optimization
 **(1).counter_opt**
 
-*The count[0] used the 1 bit and others bit are unused.From netlist diagram we can show the only one flop was available because only count[o] was used.The others unsed flop was not showed.*
+*The count[0] used the 1 bit and others bit are unused.From netlist diagram we can show the only one flop was available because only count[o] was used.The others unused flop was not showed.*
 >![Slide17](https://user-images.githubusercontent.com/118953939/206729992-a194188f-5661-4840-b2e0-f62d1ef1a2e1.PNG)
 
 >![Slide18](https://user-images.githubusercontent.com/118953939/206730011-5c69efd6-9869-47b3-b7f2-750f384b2daf.PNG)
