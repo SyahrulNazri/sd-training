@@ -81,8 +81,8 @@
 
 >![Slide19](https://user-images.githubusercontent.com/118953939/206690778-97266468-2031-492a-9ea8-31448921a71d.PNG)
 
-
-**(6) counter_opt**
+## Topic-Unused Output Optimization
+**(1) counter_opt**
 >![Slide20](https://user-images.githubusercontent.com/118953939/206690918-cc3ca693-9820-48e0-99db-bf249d3aef41.PNG)
 
 *Modified count[0] --->count [2:0]
