@@ -3,9 +3,25 @@
 
 ## Table of contents
 * [ Day 0 - System/Tool Setup Check. GitHub ID creation ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-0)
+  * [System Tool Setup Check git Hub id Creation](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---systemtool-setup-check-github-id-creation')
 * [ Day 1 - Labs using iverilog and gtkwave ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-1)
+  * [Introduction to iverilog design test bench](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-lecture-video--introduction-to-iverilog-design-test-bench)
+  * [Introduction to Yosys and Logic Synthesis](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic--lecture-video-introduction-to-yosys-and-logic-synthesis)
 * [ Day 2 - Timing libs,hierarchical vs flatsynthesis and effecient flop coding styles ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-2)
+  * [Introduction to Lab](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---labs-introduction)
+  * [Introduction to Lusing iverilog and gtkwave](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---labs-using-iverilog-and-gtkwave)
+  * [Lab using Yosys and Sky13pdk](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-lab-using-yosys-and-sky130pdks)
+  * [Lab Introductionto lib](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-lab-introduction-to-lib)
+  * [Hierarchical vs FLat Synthesis](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-hierarchical-vs-flat-synthesi)
+  * [Why flop and FLops Coding Styles](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-why-flops-and-flop-coding-styles)
+  * [Lab flops Synthesis Simulation](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic--lab-flops-synthesis-simulation)
+ 
 * [ Day 3 - Timing libs,hierarchical vs flatsynthesis and effecient flop coding styles ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-2)
+  * [Introduction to Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---introduction-to-optimizations)
+  * [Lab Combitional & lLogic Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---lab-combinational-logic-optimizations)
+  * [Sequential Logic Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-sequential-logic-optimizations)
+  * [Unused Output Optimization](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-unused-output-optimization)
+
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 
