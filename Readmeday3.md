@@ -71,6 +71,7 @@
 >![Slide14](https://user-images.githubusercontent.com/118953939/206690390-0ad7490a-f646-4119-a261-c89c7569a44b.PNG)
 
 **(4) dff_const4**
+
 *Q and q1 always 1.No change.*
 >![Slide16](https://user-images.githubusercontent.com/118953939/206690461-33493517-0871-4884-b0fa-cdfbb9c82717.PNG)
 
@@ -82,12 +83,14 @@
 
 ## Topic-Unused Output Optimization
 **(1) counter_opt**
+
 *The count[0] used the 1 bit and others bit are unused.From netlist diagram we can show the only one flop was available because only count[o] was used.The others unsed flop was not showed.*
 >![Slide19](https://user-images.githubusercontent.com/118953939/206690778-97266468-2031-492a-9ea8-31448921a71d.PNG)
 
 >![Slide20](https://user-images.githubusercontent.com/118953939/206690918-cc3ca693-9820-48e0-99db-bf249d3aef41.PNG)
 
 **(1) counter_opt2**
+
 *In this case the q was assign  count[2:0] .So from the diagram below,we can see that the netlist are shows the 3 avalaible flop because all of them are used.We have a large amount of logic within the design since all the bit was used.*
 *Modified count[0] --->count [2:0]
 >![Slide21](https://user-images.githubusercontent.com/118953939/206691124-b0f49c40-3c05-4513-a687-de992698f429.PNG)
