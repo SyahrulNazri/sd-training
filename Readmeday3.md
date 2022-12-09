@@ -17,8 +17,8 @@
   
  ![nota2](https://user-images.githubusercontent.com/118953939/206659884-945fb74a-9344-4323-b65c-01d1d316bda6.JPG)
 
-------------------------------------------------------------------------------------------------------------------
-### Topic - Lab Combinational Logic Optimizations 
+
+## Topic - Lab Combinational Logic Optimizations 
 * **Invoke yosys**
 >yosys
 
@@ -84,9 +84,9 @@
 !![Slide6](https://user-images.githubusercontent.com/118953939/206729075-31462252-f244-473d-9885-cbb48bab6253.PNG)
 
 
-----------------------------------------------------------------------------------------------------------------------
 
-### Topic-Sequential logic Optimizations 
+
+## Topic-Sequential logic Optimizations 
 **(1).dff_const1**
 
 *If reset was high the output  q will below and it turn back to high on next positive clock edge  if reset was high . 
