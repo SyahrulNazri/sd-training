@@ -47,17 +47,20 @@
 
 ### Topic-Sequential logic Optimizations 
 **(1) dff_const1**
+*If reset was high the output  q will below and it turn back to high on next positive clock edge  if reset was high . 
 >![Slide9](https://user-images.githubusercontent.com/118953939/206681957-8326375f-1566-455c-ac48-f67c658d6b35.JPG)
 
 >![Slide10](https://user-images.githubusercontent.com/118953939/206681975-584743e3-2900-4360-bb01-288033e08a26.JPG)
 
 **(2) dff_const2**
+
 *If reset  was high the q will high  and even the reset was low the q will not change.In conlusion, q was not make anychanges even the reset high or low.
 >![Slide11](https://user-images.githubusercontent.com/118953939/206682904-062ccec1-9b14-4d18-a307-e58bb8e12724.JPG)
 
 >![Slide12](https://user-images.githubusercontent.com/118953939/206682929-0827199f-4214-44b1-bf48-2c969b00cafa.JPG)
 
 **(3) dff_const3**
+
 *There are 2 flip flop and the output q1 will be low iff the reset high and it will change high if the reset low.But for q it will be always high except for 1 clock cycle.More detail on the diagram below.*
 
 >![Slide13](https://user-images.githubusercontent.com/118953939/206683896-76ebc3a8-2789-4508-ac45-19cb70454097.JPG)
