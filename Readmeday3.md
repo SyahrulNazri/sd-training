@@ -57,7 +57,7 @@
 
 **(2) dff_const2**
 
-*If reset  was high the q will high  and even the reset was low the q will not change.In conlusion, q was not make anychanges even the reset high or low.
+*If reset  was high the q will high  and even the reset was low the q will not change.In conlusion, q was not make anychanges even the reset high or low.*
 >![Slide11](https://user-images.githubusercontent.com/118953939/206690312-275c4f63-d8b1-4ee9-8a24-375597a077a6.PNG)
 
 >![Slide12](https://user-images.githubusercontent.com/118953939/206690337-c23f42d8-c99f-4d35-ac4e-4160e244cac8.PNG)
@@ -82,10 +82,13 @@
 
 ## Topic-Unused Output Optimization
 **(1) counter_opt**
+*The count[0] used the 1 bit and others bit are unused.From netlist diagram we can show the only one flop was available because only count[o] was used.The others unsed flop was not showed.*
 >![Slide19](https://user-images.githubusercontent.com/118953939/206690778-97266468-2031-492a-9ea8-31448921a71d.PNG)
 
 >![Slide20](https://user-images.githubusercontent.com/118953939/206690918-cc3ca693-9820-48e0-99db-bf249d3aef41.PNG)
 
+**(1) counter_opt2**
+*In this case the q was assign  count[2:0] .So from the diagram below,we can see that the netlist are shows the 3 avalaible flop because all of them are used.We have a large amount of logic within the design since all the bit was used.*
 *Modified count[0] --->count [2:0]
 >![Slide21](https://user-images.githubusercontent.com/118953939/206691124-b0f49c40-3c05-4513-a687-de992698f429.PNG)
 
