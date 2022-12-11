@@ -21,13 +21,13 @@
  
 ## Topic - Lab On GLS Synthesis_simulation Mismatch 
 
->Ternary_operator_mux
+>**Ternary_operator_mux**
 
 >![image](https://user-images.githubusercontent.com/118953939/206909753-03bb0ffa-4109-4ec8-918e-b6634bbb9137.png)
 >![image](https://user-images.githubusercontent.com/118953939/206909830-fa0a712a-6abc-4c7d-9881-e4723512540e.png)
 >![image](https://user-images.githubusercontent.com/118953939/206909853-63cc18c0-8e52-4995-9a0a-f74e7c6770ee.png)
 
->Bad_mux
+>**Bad_mux**
 
 >![image](https://user-images.githubusercontent.com/118953939/206909881-f89e218a-8c84-474a-b5c2-07b88f3d8b97.png)
 >![image](https://user-images.githubusercontent.com/118953939/206909917-63654fb3-70a8-4d0b-9fed-551f5101ee9a.png)
