@@ -22,6 +22,12 @@
   * [Sequential Logic Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-sequential-logic-optimizations)
   * [Unused Output Optimization](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-unused-output-optimization)
 
+* [ Day 3 -Combinational and Sequential Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day3)
+  * [Introduction to Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---introduction-to-optimizations)
+  * [Lab Combitional & lLogic Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---lab-combinational-logic-optimizations)
+  * [Sequential Logic Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-sequential-logic-optimizations)
+  * [Unused Output Optimization](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-unused-output-optimization)
+
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 
@@ -563,6 +569,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
 ## Day4
 ### Topic - GLS,Blocking vs non-blocking and Synthesis-Simulation mismatch  
 
+### Topic-Introdcution to GLS,Synthesis-Simulation mismatch and Blocking/Non-blocking statements
  * **Notes from the lecture video**
  
  >**GLS Concept and Flow Using Iverilog** 
