@@ -48,6 +48,7 @@ Example of package - Quadruple in-line package (QIP) and Dual in-line package (D
   
 ## DAY 1
 
+### Topic-Introduction to Verilog RTL design and Synthesis 
 <details>
  <summary>Lecture Video  Introduction to iverilog design test bench</summary>
  
@@ -208,7 +209,10 @@ i0,i1 and sel is primary input.
  </details>
 
 ## Day 2
- 
+
+### Topic-Timing libs,hierarchical vs flat synthesis and efficient flop coding styles
+
+### Topic-Introduction to Verilog RTL
  <details>
  <summary>Lab Introdcution to .lib</summary>
 
@@ -446,6 +450,8 @@ vii)write_verilog -noattr multiple_modules_hier.v
  </details>
  
 ## Day3
+
+### Topic-Combinational and sequential Optimizations
 
 <details>
  <summary>Lab Introdcution to Opitmizations</summary>
