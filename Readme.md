@@ -598,12 +598,12 @@ vii)write_verilog -noattr multiple_modules_hier.v
   
 ## Day4
 
-### Topic - GLS,Blocking vs non-blocking and Synthesis-Simulation mismatch  
+🔎### Topic - GLS,Blocking vs non-blocking and Synthesis-Simulation mismatch  
 
 <details>
  <summary>Introduction to GLS,Synthesis-Simulation mismatch and Blocking/Non-blocking statements</summary>
  
-### Topic-Introduction to GLS,Synthesis-Simulation mismatch and Blocking/Non-blocking statements
+📖### Topic-Introduction to GLS,Synthesis-Simulation mismatch and Blocking/Non-blocking statements
  * **Notes from the lecture video**
  
  >**GLS Concept and Flow Using Iverilog** 
@@ -628,14 +628,41 @@ vii)write_verilog -noattr multiple_modules_hier.v
 📖## Topic - Lab On GLS Synthesis_simulation Mismatch 
  
  **Step**
- >>iverilog ternary_operator_mux.v tb_ternary_operator_mux.v
- >>./a.out
- >>gtkwave_tb_ternary_operator_mux.vcd
+>>iverilog ternary_operator_mux.v tb_ternary_operator_mux.v
+>>./a.out
+>>gtkwave_tb_ternary_operator_mux.vcd
  
 >**Ternary_operator_mux**
 
 >![image](https://user-images.githubusercontent.com/118953939/206979815-dcd38240-a46e-4b06-9776-2b90a58795c4.png)
->![image](https://user-images.githubusercontent.com/118953939/206909830-fa0a712a-6abc-4c7d-9881-e4723512540e.png)
+
+**Step Synthesis**
+>>yosys
+
+>>read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80
+
+>>read_verilog ternary_operator_mux.v
+
+>>synth -top ternary_operator_mux.v
+
+>>abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80
+
+>>write_verilog -noattr ternary_operator_mux.net.v
+
+>>show
+
+>![image](https://user-images.githubusercontent.com/118953939/206983673-a2bf9733-024d-4705-b581-1756c3cc7b3a.png)
+
+ 
+**GLS output**
+**Step**
+
+>>iverilog ../my_lib/verilog_model/primitives.v ../my_lib/verilog_model/sky130_fd_sc_hd.v ternary_operator_mux_net.v tb_ternary_operator_mux.v
+
+>>./a.out
+
+>>gtkwave tb_ternary_operator_mux.vcd
+
 >![image](https://user-images.githubusercontent.com/118953939/206909853-63cc18c0-8e52-4995-9a0a-f74e7c6770ee.png)
 
 >**Bad_mux**
@@ -657,6 +684,8 @@ vii)write_verilog -noattr multiple_modules_hier.v
  
 >![image](https://user-images.githubusercontent.com/118953939/206910002-3fbf310a-d377-49bd-aeb8-70d098256f7f.png)
  
+**Step Synthesis**
+>>yosys
 >>read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80
 
 >>read_verilog blocking_caveat.v
@@ -670,5 +699,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
 >>show
  
 >![image](https://user-images.githubusercontent.com/118953939/206910018-3400ae9a-d2f6-4102-9b9c-2bd84619a0c8.png)
+
+**GLS Output**
 >![image](https://user-images.githubusercontent.com/118953939/206910031-2e0b3072-3771-4f01-b09f-8398b8129124.png)
  </details>
