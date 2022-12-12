@@ -211,8 +211,6 @@ i0,i1 and sel is primary input.
 ## Day 2
 
 ### Topic-Timing libs,hierarchical vs flat synthesis and efficient flop coding styles
-
-### Topic-Introduction to Verilog RTL
  <details>
  <summary>Lab Introdcution to .lib</summary>
 
@@ -339,8 +337,9 @@ vii)write_verilog -noattr multiple_modules_hier.v
  
 <details>
  <summary>Lab Flops Synthesis Simulation</summary>
+
 ### Topic- Lab Flops synthesis simulation
-* **Steps**
+**Steps**
 >* iverilog dff_asyncres.v tb_dff_asyncres.v
 >* ./a/out 
 >* gtkwave tb_dff_asyncres.vcd
