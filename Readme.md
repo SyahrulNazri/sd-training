@@ -23,7 +23,7 @@
   * [Unused Output Optimization](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-unused-output-optimization)
 
 * [ Day 4 -GLS,Blocking vs non-blocking and Synthesis-Simulation mismatch]( https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---glsblocking-vs-non-blocking-and-synthesis-simulation-mismatch)
-  * [Introdcution to GLS,Synthesis-Simulation mismatch and Blocking/Non-blocking statements](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---introduction-to-optimizations)
+  * [Introduction to GLS,Synthesis-Simulation mismatch and Blocking/Non-blocking statements](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---introduction-to-optimizations)
   * [Lab Combitional & lLogic Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-introdcution-to-glssynthesis-simulation-mismatch-and-blockingnon-blocking-statements)
   * [Lab On GLS Synthesis_simulation Mismatch ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---lab-on-gls-synthesis_simulation-mismatch)
   * [Labs on Synth-sim mismatch for blocking statement](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-labs-on-synth-sim-mismatch-for-blocking-statement)
