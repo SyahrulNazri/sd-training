@@ -636,10 +636,12 @@ vii)write_verilog -noattr multiple_modules_hier.v
  
  **Step**
 >>iverilog ternary_operator_mux.v tb_ternary_operator_mux.v
+
 >>./a.out
+
 >>gtkwave_tb_ternary_operator_mux.vcd
  
->**Ternary_operator_mux**
+>**(1).Ternary_operator_mux**
 
 >![image](https://user-images.githubusercontent.com/118953939/206979815-dcd38240-a46e-4b06-9776-2b90a58795c4.png)
 
@@ -672,7 +674,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
 
 >![image](https://user-images.githubusercontent.com/118953939/206909853-63cc18c0-8e52-4995-9a0a-f74e7c6770ee.png)
 
->**Bad_mux**
+>**(2).Bad_mux**
 
 >![image](https://user-images.githubusercontent.com/118953939/206980742-9d626d6c-6f78-47a9-a328-e51ebb205b71.png)
 >![image](https://user-images.githubusercontent.com/118953939/206909917-63654fb3-70a8-4d0b-9fed-551f5101ee9a.png)
