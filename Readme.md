@@ -603,6 +603,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
   
 ## Day4
 
+ 
 ### Topic - GLS,Blocking vs non-blocking and Synthesis-Simulation mismatch  
 
 <details>
