@@ -30,7 +30,10 @@
 
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
-
+<Details>
+ <summary>Theory</summary>
+ 
+### Theory 
 **Package** is a container that holds die and was connected to outside (external device) by using wire bonding.
 Example of package - Quadruple in-line package (QIP) and Dual in-line package (DIP).
 
@@ -50,15 +53,24 @@ Example of package - Quadruple in-line package (QIP) and Dual in-line package (D
 
 **Synthesis Flow** - convert software's instructions which is written in high level language to gate level language/machine language which is normally in binary format.
 
-<img width="808" alt="3" src="https://user-images.githubusercontent.com/118953939/203920288-65b97ed6-e0c0-4679-a99e-4618555f3209.PNG">
+<img width="808" alt="3" src="https://user-images.githubusercontent.com/118953939/203920288-65b97ed6-e0c0-4679-a99e-4618555f3209.PNG">\
+</details>
 
-
+<details>
+ <summary>Lab Results</summary>
+ 
 ### Lab Result
+
 
 <img width="959" alt="labday0" src="https://user-images.githubusercontent.com/118953939/205489130-4253ae38-30fa-458d-9cea-a238e9445fd1.PNG">
 
-
+</details>
+  
 ## DAY 1
+
+<details>
+ <summary>Lecture Video  Introduction to iverilog design test bench</summary>
+ 
 ### Topic-Lecture Video  Introduction to iverilog design test bench 
 
 **What is Simulator ?**
@@ -92,8 +104,10 @@ To obey the required specification or the setup to apply stimulus  to the design
 * **Pre-mapping Optimization:** It performs mapping to generic cells in the library. 
 * **Technology Mapping:** Performs mapping of the generic libraries to technology 
 libraries. 
+</details>
 
-------------------------------------------------------------------------------------------------------
+<details>
+ <summary>Lecture Video Introduction to Yosys and Logic Synthesis</summary>
 
 ### Topic = Lecture video Introduction to Yosys and Logic synthesis 
 
@@ -110,8 +124,10 @@ libraries.
 
 **How to verify the Synthesis**
 * Netlist & test bench(same as RTl tb)  -->iverilog --> vcd file --> gtkwave(same as output aboserve during RTL simulation)
+</details>
 
-------------------------------------------------------------------------------------------------------
+  <details>
+ <summary>Introduction to Lab</summary>
 
 ### Topic - Introduction to lab 
 
@@ -123,8 +139,10 @@ libraries.
 * **Why need Slow Cell?**
 -Slow cell needed to meet hold,means the time need to data stable after clock edge.
 -TholdF2<TF1+Tcombi
+ </details>
 
-------------------------------------------------------------------------------------------------------
+ <details>
+ <summary>Lab Introduction</summary>
 
 ### Topic - Labs Introduction
 
@@ -134,8 +152,11 @@ libraries.
 
 <img width="933" alt="lab2part2Code" src="https://user-images.githubusercontent.com/118953939/205489471-073f46d8-b430-465b-aef0-5216a69a781c.PNG">
 
-------------------------------------------------------------------------------------------------------
+</details>
 
+ <details>
+ <summary>Lab Using iverilog and gtkwave</summary>
+  
 ### Topic - Labs using iverilog and gtkwave
 1.Open Output File using GTKWAVE
 * Output waveform using command **gtkwave tb_godd_mux.vcd**
@@ -150,7 +171,10 @@ When the sel=1 the output y will follow input i1 but when the input sel=0 the ou
 
 <img width="449" alt="vimcode2" src="https://user-images.githubusercontent.com/118953939/205324920-6ad1c570-7f5a-4619-8cbf-c4a4fda100bf.PNG">
 
-------------------------------------------------------------------------------------------------------
+ </details>
+ 
+ <details>
+ <summary>Lab Using Yosys and Sky130PDKs</summary>
 
 ### Topic-Lab using Yosys and Sky130PDKs
 
@@ -201,9 +225,12 @@ i0,i1 and sel is primary input.
 * Using command  **write_verilog -noattr good_mux_netlist.v**
 * Using command  **gvim good_mux_netlist.v**
 <img width="483" alt="modified " src="https://user-images.githubusercontent.com/118953939/205492030-b8579566-06ba-4ee7-bec8-c9a854b49fa2.PNG">
-
+ </details>
 
 ## Day 2
+ 
+ <details>
+ <summary>Lab Introdcution to .lib</summary>
 
 ### Topic-Lab Introduction to .Lib 
 
@@ -239,11 +266,13 @@ i0,i1 and sel is primary input.
 ![image](https://user-images.githubusercontent.com/118953939/205939144-08b4a37f-5877-4b43-a8ca-3b3779376878.png)
 *As we can see form the figure above when the area large the power will be more and delay will be less.But when area low,the power will low and delay will more.*
 
--------------------------------------------------------------------------
+ </details>
+ 
+ <details>
+ <summary>Hierarchical vs Flat Synthesis</summary>
 
 ### Topic-hierarchical vs FLat Synthesis 
-
-
+  
 i)vim multiple_module.v
 
 ii)Launch yosys 
@@ -303,7 +332,11 @@ vii)write_verilog -noattr multiple_modules_hier.v
 
 (b)Devide and conquer approach .Instead giving massive to the tool better to give in one portion.
 
---------------------------------------------------------------------------------------------------
+ </details>
+ 
+ <details>
+ <summary>Why Flops and Flop Coding Styles</summary>
+  
 ### Topic-Why Flops and Flop coding styles 
 
 >There are many of the gate in the combinational circuit that lead to the glitch.So glitch is the result when an input signal changes state, provided the signal takes two or more paths through a circuit  and one path has a longer delay than the other. The increased delay on one path can cause a glitch when the signal paths are recombined at an output gate.To prevent this glitch we need flop.
@@ -319,7 +352,8 @@ vii)write_verilog -noattr multiple_modules_hier.v
 >The output of DFF will triggered when the posedge clock and posedge async_reset.If the async_reset the output will be low else the output will follow the input D.This asynchronous reset does not wait for the clock or inrespective of clockThis synchronous reset respective to the clock.So,diagram below shows the comparison of flop with Synchronous and asynchronous or both of it.
 ![image](https://user-images.githubusercontent.com/118953939/206349631-75774c3b-3fc0-4565-befb-1ae412288bef.png)
 
----------------------------------------------------------------------------------------------
+ </details>
+ 
 ### Topic- Lab Flops synthesis simulation
 * **Steps**
 >* iverilog dff_asyncres.v tb_dff_asyncres.v
@@ -394,6 +428,11 @@ vii)write_verilog -noattr multiple_modules_hier.v
 ![image](https://user-images.githubusercontent.com/118953939/206144093-4bf33a89-efd4-4b1a-8ff4-e7f8f7ffe064.png)
 ![image](https://user-images.githubusercontent.com/118953939/206144141-2d0acb83-af53-485e-854e-ddb84c7ddbc7.png)
 
+ </details>
+ 
+ <details>
+ <summary>Interesting Optimisations</summary>
+ 
 ### Topic-Interesting Optimisations 
 
 >i)yosys
@@ -424,8 +463,12 @@ vii)write_verilog -noattr multiple_modules_hier.v
 
 ![image](https://user-images.githubusercontent.com/118953939/206340719-32f94a4f-7cae-4b51-a9ca-c2dea6b7ab2a.png)
 
-
+ </details>
+ 
 ## Day3
+
+<details>
+ <summary>Lab Introdcution to Opitmizations</summary>
 ### Topic - Introduction to optimizations 
 
 * **Combinational logic Optimisation**  
@@ -443,8 +486,11 @@ vii)write_verilog -noattr multiple_modules_hier.v
  ![nota1](https://user-images.githubusercontent.com/118953939/206659875-2f57c570-1e59-4199-b51d-30607b323d78.JPG)
   
  ![nota2](https://user-images.githubusercontent.com/118953939/206659884-945fb74a-9344-4323-b65c-01d1d316bda6.JPG)
+</details>
 
-
+<details>
+ <summary>Lab Combinational Logic Optimizations</summary>
+ 
 ## Topic - Lab Combinational Logic Optimizations 
 * **Invoke yosys**
 >yosys
@@ -509,9 +555,10 @@ vii)write_verilog -noattr multiple_modules_hier.v
 
 *sub_module1= AND gate*
 !![Slide6](https://user-images.githubusercontent.com/118953939/206729075-31462252-f244-473d-9885-cbb48bab6253.PNG)
+</details>
 
-
-
+<details>
+ <summary>Sequential Logic Optimizations</summary>
 
 ## Topic-Sequential logic Optimizations 
 **(1).dff_const1**
@@ -566,10 +613,16 @@ vii)write_verilog -noattr multiple_modules_hier.v
 
 >![Slide21](https://user-images.githubusercontent.com/118953939/206730086-bae6966a-afc3-492d-963f-9fe875128ca4.PNG)
 
+ </details>
+  
 ## Day4
+
 ### Topic - GLS,Blocking vs non-blocking and Synthesis-Simulation mismatch  
 
-### Topic-Introdcution to GLS,Synthesis-Simulation mismatch and Blocking/Non-blocking statements
+<details>
+ <summary>Introduction to GLS,Synthesis-Simulation mismatch and Blocking/Non-blocking statements</summary>
+ 
+### Topic-Introduction to GLS,Synthesis-Simulation mismatch and Blocking/Non-blocking statements
  * **Notes from the lecture video**
  
  >**GLS Concept and Flow Using Iverilog** 
@@ -586,7 +639,10 @@ vii)write_verilog -noattr multiple_modules_hier.v
 
  >![image](https://user-images.githubusercontent.com/118953939/206909429-07cfa9f2-c9a2-4c93-b91b-ca8b7841c772.png)
  >![image](https://user-images.githubusercontent.com/118953939/206909451-7a608dbe-9d00-415a-9fbd-0466d0436031.png)
+</details>
 
+<details>
+ <summary>Lab On Gls Synthesis_simulation Mismatch</summary>
  
 ## Topic - Lab On GLS Synthesis_simulation Mismatch 
 
@@ -601,7 +657,10 @@ vii)write_verilog -noattr multiple_modules_hier.v
 >![image](https://user-images.githubusercontent.com/118953939/206909881-f89e218a-8c84-474a-b5c2-07b88f3d8b97.png)
 >![image](https://user-images.githubusercontent.com/118953939/206909917-63654fb3-70a8-4d0b-9fed-551f5101ee9a.png)
 >![image](https://user-images.githubusercontent.com/118953939/206909948-d642c1ba-bb91-4e6e-99c7-16dda7c45701.png)
+</details>
 
+<details>
+ <summary>Lab on Synth-Sim mismatch for blocking statement</summary>
 ## Topic-Labs on Synth-sim mismatch for blocking statement
 >![image](https://user-images.githubusercontent.com/118953939/206910002-3fbf310a-d377-49bd-aeb8-70d098256f7f.png)
 >![image](https://user-images.githubusercontent.com/118953939/206910018-3400ae9a-d2f6-4102-9b9c-2bd84619a0c8.png)
