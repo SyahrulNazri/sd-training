@@ -3,31 +3,11 @@
 
 ## Table of contents
 * [ Day 0 - System/Tool Setup Check. GitHub ID creation ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-0)
-  * [System Tool Setup Check git Hub id Creation](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---systemtool-setup-check-github-id-creation)
 * [ Day 1 - Labs using iverilog and gtkwave ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-1)
-  * [Introduction to iverilog design test bench](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-lecture-video--introduction-to-iverilog-design-test-bench)
-  * [Introduction to Yosys and Logic Synthesis](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic--lecture-video-introduction-to-yosys-and-logic-synthesis)
 * [ Day 2 - Timing libs,hierarchical vs flatsynthesis and effecient flop coding styles ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-2)
-  * [Introduction to Lab](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---labs-introduction)
-  * [Introduction to Lusing iverilog and gtkwave](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---labs-using-iverilog-and-gtkwave)
-  * [Lab using Yosys and Sky13pdk](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-lab-using-yosys-and-sky130pdks)
-  * [Lab Introductionto lib](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-lab-introduction-to-lib)
-  * [Hierarchical vs FLat Synthesis](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-hierarchical-vs-flat-synthesi)
-  * [Why flop and FLops Coding Styles](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-why-flops-and-flop-coding-styles)
-  * [Lab flops Synthesis Simulation](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic--lab-flops-synthesis-simulation)
- 
 * [ Day 3 -Combinational and Sequential Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day3)
-  * [Introduction to Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---introduction-to-optimizations)
-  * [Lab Combitional & lLogic Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---lab-combinational-logic-optimizations)
-  * [Sequential Logic Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-sequential-logic-optimizations)
-  * [Unused Output Optimization](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-unused-output-optimization)
-
 * [ Day 4 -GLS,Blocking vs non-blocking and Synthesis-Simulation mismatch]( https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---glsblocking-vs-non-blocking-and-synthesis-simulation-mismatch)
-  * [Introduction to GLS,Synthesis-Simulation mismatch and Blocking/Non-blocking statements](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---introduction-to-optimizations)
-  * [Lab Combitional & lLogic Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-introdcution-to-glssynthesis-simulation-mismatch-and-blockingnon-blocking-statements)
-  * [Lab On GLS Synthesis_simulation Mismatch ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---lab-on-gls-synthesis_simulation-mismatch)
-  * [Labs on Synth-sim mismatch for blocking statement](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic-labs-on-synth-sim-mismatch-for-blocking-statement)
-
+ 
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 <Details>
