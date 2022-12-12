@@ -598,7 +598,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
   
 ## Day4
 
-🔎### Topic - GLS,Blocking vs non-blocking and Synthesis-Simulation mismatch  
+### Topic - GLS,Blocking vs non-blocking and Synthesis-Simulation mismatch  
 
 <details>
  <summary>Introduction to GLS,Synthesis-Simulation mismatch and Blocking/Non-blocking statements</summary>
