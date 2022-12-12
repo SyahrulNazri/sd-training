@@ -351,9 +351,10 @@ vii)write_verilog -noattr multiple_modules_hier.v
 * **DFF asynchronous**
 >The output of DFF will triggered when the posedge clock and posedge async_reset.If the async_reset the output will be low else the output will follow the input D.This asynchronous reset does not wait for the clock or inrespective of clockThis synchronous reset respective to the clock.So,diagram below shows the comparison of flop with Synchronous and asynchronous or both of it.
 ![image](https://user-images.githubusercontent.com/118953939/206349631-75774c3b-3fc0-4565-befb-1ae412288bef.png)
-
- </details>
+</details>
  
+<details>
+ <summary>Lab Flops Synthesis Simulation</summary>
 ### Topic- Lab Flops synthesis simulation
 * **Steps**
 >* iverilog dff_asyncres.v tb_dff_asyncres.v
@@ -427,7 +428,6 @@ vii)write_verilog -noattr multiple_modules_hier.v
 >*Because the library have active low set so the inverter was needed.*
 ![image](https://user-images.githubusercontent.com/118953939/206144093-4bf33a89-efd4-4b1a-8ff4-e7f8f7ffe064.png)
 ![image](https://user-images.githubusercontent.com/118953939/206144141-2d0acb83-af53-485e-854e-ddb84c7ddbc7.png)
-
  </details>
  
  <details>
