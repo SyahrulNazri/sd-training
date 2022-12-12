@@ -677,8 +677,21 @@ vii)write_verilog -noattr multiple_modules_hier.v
 >**(2).Bad_mux**
 
 >![image](https://user-images.githubusercontent.com/118953939/206980742-9d626d6c-6f78-47a9-a328-e51ebb205b71.png)
+ 
+ **Synthesis**
 >![image](https://user-images.githubusercontent.com/118953939/206909917-63654fb3-70a8-4d0b-9fed-551f5101ee9a.png)
+
+**GLS output**
 >![image](https://user-images.githubusercontent.com/118953939/206909948-d642c1ba-bb91-4e6e-99c7-16dda7c45701.png)
+ 
+>**(3).Good_mux**
+ 
+>![image](https://user-images.githubusercontent.com/118953939/207000028-a4cd727b-7e3d-4449-b6cc-58753cf1eb2d.png)
+ 
+**Synthesis& GLS output*
+>![image](https://user-images.githubusercontent.com/118953939/207000117-caf23d4b-298d-40dd-bc50-d8c9f3bf7dd7.png)
+
+
 </details>
 
 <details>
