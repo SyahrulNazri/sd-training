@@ -625,17 +625,22 @@ vii)write_verilog -noattr multiple_modules_hier.v
 <details>
  <summary>Lab On GLS Synthesis_simulation Mismatch</summary>
  
-## Topic - Lab On GLS Synthesis_simulation Mismatch 
-
+📖## Topic - Lab On GLS Synthesis_simulation Mismatch 
+ 
+ **Step**
+ >>iverilog ternary_operator_mux.v tb_ternary_operator_mux.v
+ >>./a.out
+ >>gtkwave_tb_ternary_operator_mux.vcd
+ 
 >**Ternary_operator_mux**
 
->![image](https://user-images.githubusercontent.com/118953939/206909753-03bb0ffa-4109-4ec8-918e-b6634bbb9137.png)
+>![image](https://user-images.githubusercontent.com/118953939/206979815-dcd38240-a46e-4b06-9776-2b90a58795c4.png)
 >![image](https://user-images.githubusercontent.com/118953939/206909830-fa0a712a-6abc-4c7d-9881-e4723512540e.png)
 >![image](https://user-images.githubusercontent.com/118953939/206909853-63cc18c0-8e52-4995-9a0a-f74e7c6770ee.png)
 
 >**Bad_mux**
 
->![image](https://user-images.githubusercontent.com/118953939/206909881-f89e218a-8c84-474a-b5c2-07b88f3d8b97.png)
+>![image](https://user-images.githubusercontent.com/118953939/206980742-9d626d6c-6f78-47a9-a328-e51ebb205b71.png)
 >![image](https://user-images.githubusercontent.com/118953939/206909917-63654fb3-70a8-4d0b-9fed-551f5101ee9a.png)
 >![image](https://user-images.githubusercontent.com/118953939/206909948-d642c1ba-bb91-4e6e-99c7-16dda7c45701.png)
 </details>
@@ -643,8 +648,27 @@ vii)write_verilog -noattr multiple_modules_hier.v
 <details>
  <summary>Lab on Synth-Sim mismatch for blocking statement</summary>
  
-## Topic-Labs on Synth-sim mismatch for blocking statement
+📖## Topic-Labs on Synth-sim mismatch for blocking statement
+
+**Step**
+ >>iverilog blocking_caveat.v tb_blocking_caveat.v
+ >>./a.out
+ >>gtkwave tb_blocking_caveat.vcd
+ 
 >![image](https://user-images.githubusercontent.com/118953939/206910002-3fbf310a-d377-49bd-aeb8-70d098256f7f.png)
+ 
+>>read_liberty -lib ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80
+
+>>read_verilog blocking_caveat.v
+
+>>synth -top blocking_caveat
+
+>>abc -liberty ../my_lib/lib/sky130_fd_sc_hd__tt_025C_1v80
+
+>>write_verilog -noattr blocking_caveat_net.v
+
+>>show
+ 
 >![image](https://user-images.githubusercontent.com/118953939/206910018-3400ae9a-d2f6-4102-9b9c-2bd84619a0c8.png)
 >![image](https://user-images.githubusercontent.com/118953939/206910031-2e0b3072-3771-4f01-b09f-8398b8129124.png)
  </details>
