@@ -609,6 +609,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
  <summary>Introduction to GLS,Synthesis-Simulation mismatch and Blocking/Non-blocking statements</summary>
  
 📖### Topic-Introduction to GLS,Synthesis-Simulation mismatch and Blocking/Non-blocking statements
+ 
  * **Notes from the lecture video**
  
  >**GLS Concept and Flow Using Iverilog** 
