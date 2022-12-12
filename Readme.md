@@ -662,7 +662,9 @@ vii)write_verilog -noattr multiple_modules_hier.v
 
 <details>
  <summary>Lab on Synth-Sim mismatch for blocking statement</summary>
+ 
 ## Topic-Labs on Synth-sim mismatch for blocking statement
 >![image](https://user-images.githubusercontent.com/118953939/206910002-3fbf310a-d377-49bd-aeb8-70d098256f7f.png)
 >![image](https://user-images.githubusercontent.com/118953939/206910018-3400ae9a-d2f6-4102-9b9c-2bd84619a0c8.png)
 >![image](https://user-images.githubusercontent.com/118953939/206910031-2e0b3072-3771-4f01-b09f-8398b8129124.png)
+ </details>
