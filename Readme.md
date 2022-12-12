@@ -609,7 +609,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
  <summary>Introduction to GLS,Synthesis-Simulation mismatch and Blocking/Non-blocking statements</summary>
 
  
-📖### Topic-Introduction to GLS,Synthesis-Simulation mismatch and Blocking/Non-blocking statements
+📖 Topic-Introduction to GLS,Synthesis-Simulation mismatch and Blocking/Non-blocking statements
  
  * **Notes from the lecture video**
  
@@ -632,7 +632,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
 <details>
  <summary>Lab On GLS Synthesis_simulation Mismatch</summary>
  
-📖## Topic - Lab On GLS Synthesis_simulation Mismatch 
+📖 Topic - Lab On GLS Synthesis_simulation Mismatch 
  
  **Step**
 >>iverilog ternary_operator_mux.v tb_ternary_operator_mux.v
@@ -682,7 +682,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
 <details>
  <summary>Lab on Synth-Sim mismatch for blocking statement</summary>
  
-📖## Topic-Labs on Synth-sim mismatch for blocking statement
+📖Topic-Labs on Synth-sim mismatch for blocking statement
 
 **Step**
  >>iverilog blocking_caveat.v tb_blocking_caveat.v
