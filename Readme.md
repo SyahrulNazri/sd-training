@@ -218,7 +218,7 @@ i0,i1 and sel is primary input.
 **V=** voltage 
 
 2.lib content of the std cell
-* Each cell have different flavour  and in the lib we can see all the detail of the cell.
+* Each cell have different flavour  and in the lib we can see all the detail of the cell.*
 
 <img width="348" alt="3" src="https://user-images.githubusercontent.com/118953939/205858806-16963ea3-f24d-4b15-9414-4e53bbeb9532.PNG">
 
