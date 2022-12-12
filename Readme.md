@@ -643,7 +643,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
 </details>
 
 <details>
- <summary>Lab On GlS Synthesis_simulation Mismatch</summary>
+ <summary>Lab On GLS Synthesis_simulation Mismatch</summary>
  
 ## Topic - Lab On GLS Synthesis_simulation Mismatch 
 
