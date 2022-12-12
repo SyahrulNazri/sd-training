@@ -688,7 +688,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
  
 >![image](https://user-images.githubusercontent.com/118953939/207000028-a4cd727b-7e3d-4449-b6cc-58753cf1eb2d.png)
  
-**Synthesis& GLS output*
+**Synthesis & GLS output**
 >![image](https://user-images.githubusercontent.com/118953939/207000117-caf23d4b-298d-40dd-bc50-d8c9f3bf7dd7.png)
 
 
