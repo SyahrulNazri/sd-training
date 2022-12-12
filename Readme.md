@@ -469,6 +469,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
 
 <details>
  <summary>Lab Introdcution to Opitmizations</summary>
+ 
 ### Topic - Introduction to optimizations 
 
 * **Combinational logic Optimisation**  
