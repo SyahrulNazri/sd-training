@@ -1,10 +1,7 @@
 ## Day5
 ### Topic - Design of Testability.  
 
- * **Notes from the lecture video**
-
- <details>
- 
+<details>
  <summary>Introduction of DFT</summary>
  
  >![CamScanner 12-15-2022 12 46 (2)-01](https://user-images.githubusercontent.com/118953939/207797227-0310528f-5e06-45ce-b8c4-5ecab603a7a8.png)
