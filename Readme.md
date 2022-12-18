@@ -799,7 +799,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
 </details>
 
 <details>
-<summary>Introduction to Tcl 
+<summary>Introduction to Tcl<summary> 
 ![day6 (1)-5](https://user-images.githubusercontent.com/118953939/208287236-dfd3392e-aa66-4e79-b2e8-f825ad916f0f.png)
 ![day6 (1)-6](https://user-images.githubusercontent.com/118953939/208287240-3344d529-e387-40fe-a0b5-323de260d3fd.png)
 </details>
