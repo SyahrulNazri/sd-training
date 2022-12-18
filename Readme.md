@@ -8,6 +8,7 @@
 * [ Day 3 -Combinational and Sequential Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day3)
 * [ Day 4 -GLS,Blocking vs Non-blocking and Synthesis-Simulation mismatch]( https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---glsblocking-vs-non-blocking-and-synthesis-simulation-mismatch)
 * [ Day 5 -Design of Testability](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day5)
+* * [ Day 6 -Introduction Logic Synthesis](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day5)
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 <Details>
@@ -831,7 +832,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
  </details>
  
  <details>
- <summary>ddc gui with Design Vision<summary>
+ <summary>ddc gui with Design Vision</summary>
 
 >![image](https://user-images.githubusercontent.com/118953939/208297610-9d9f253b-acf8-4d40-9219-d672eee3442e.png)
 
@@ -840,7 +841,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
 </details>
 
 <details>
-<summary>DC Synopsys DC Setup<summary>
+<summary>DC Synopsys DC Setup</summary>
 
 >![image](https://user-images.githubusercontent.com/118953939/208297943-3f415606-6964-4493-a8f4-b49038c98ea3.png)
 
@@ -848,7 +849,9 @@ vii)write_verilog -noattr multiple_modules_hier.v
 
 </details>
  
- <summary>TCL</summary>
+
+<details>
+<summary>TCL</summary>
 
 >![image](https://user-images.githubusercontent.com/118953939/208298013-8f647f7d-e75f-45cd-a1bc-89b1b4c111f5.png)
  
@@ -861,4 +864,5 @@ vii)write_verilog -noattr multiple_modules_hier.v
 >![image](https://user-images.githubusercontent.com/118953939/208298066-795d7881-db1b-433a-910d-843790ebb7df.png)
  
 >![image](https://user-images.githubusercontent.com/118953939/208298087-3e693a2b-36c6-4357-b4cc-6f7974bc9795.png)
- </details>
+
+</details>
