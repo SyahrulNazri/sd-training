@@ -815,7 +815,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
 >**Lib Information**
 ![image](https://user-images.githubusercontent.com/118953939/208297262-23eea680-5352-4ae8-be0b-8639446c60eb.png)
  
->**Invoke DC*
+>**Invoke DC**
 >>i)git_clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
 >>ii)/p/hdk/pu_tu/prd/sams/mig76_wlw/setup/enter_p31 -cfg ip76p31r08hp7rev03 -ov ./
 >>iii)dc_shell
