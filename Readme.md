@@ -790,11 +790,12 @@ vii)write_verilog -noattr multiple_modules_hier.v
  ## Day 6 
  ### Topic-Introduction to Synthesis 
  <details>
-<summary>Introduction to the Course and DC
-![day6 (1)-1](https://user-images.githubusercontent.com/118953939/208287161-7aae30dd-58ae-4e6b-8086-c30fc121c2a1.png)
-![day6 (1)-2](https://user-images.githubusercontent.com/118953939/208287180-5875b396-32d9-48f4-b62e-3616c45193ab.png)
-![day6 (1)-3](https://user-images.githubusercontent.com/118953939/208287184-8c35d86e-878f-4306-a3a6-b345057318f8.png)
-![day6 (1)-4](https://user-images.githubusercontent.com/118953939/208287233-ddb2748c-ccbd-40cd-b41b-3da84ec8763c.png)
+<summary>Introduction to the Course and DC<summary>
+ 
+>![day6 (1)-1](https://user-images.githubusercontent.com/118953939/208287161-7aae30dd-58ae-4e6b-8086-c30fc121c2a1.png)
+>![day6 (1)-2](https://user-images.githubusercontent.com/118953939/208287180-5875b396-32d9-48f4-b62e-3616c45193ab.png)
+>![day6 (1)-3](https://user-images.githubusercontent.com/118953939/208287184-8c35d86e-878f-4306-a3a6-b345057318f8.png)
+>![day6 (1)-4](https://user-images.githubusercontent.com/118953939/208287233-ddb2748c-ccbd-40cd-b41b-3da84ec8763c.png)
 </details>
 
 <details>
