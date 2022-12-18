@@ -789,8 +789,9 @@ vii)write_verilog -noattr multiple_modules_hier.v
  
  ## Day 6 
  ### Topic-Introduction to Synthesis 
- <details>
-<summary>Introduction to the Course and DC<summary>
+
+<details>
+<summary>Introduction to the Course and DC</summary>
  
 >![day6 (1)-1](https://user-images.githubusercontent.com/118953939/208287161-7aae30dd-58ae-4e6b-8086-c30fc121c2a1.png)
 >![day6 (1)-2](https://user-images.githubusercontent.com/118953939/208287180-5875b396-32d9-48f4-b62e-3616c45193ab.png)
@@ -799,11 +800,65 @@ vii)write_verilog -noattr multiple_modules_hier.v
 </details>
 
 <details>
-<summary>Introduction to Tcl<summary> 
-![day6 (1)-5](https://user-images.githubusercontent.com/118953939/208287236-dfd3392e-aa66-4e79-b2e8-f825ad916f0f.png)
-![day6 (1)-6](https://user-images.githubusercontent.com/118953939/208287240-3344d529-e387-40fe-a0b5-323de260d3fd.png)
+<summary>Introduction to Tcl</summary> 
+
+>![day6 (1)-5](https://user-images.githubusercontent.com/118953939/208287236-dfd3392e-aa66-4e79-b2e8-f825ad916f0f.png)
+
+>![day6 (1)-6](https://user-images.githubusercontent.com/118953939/208287240-3344d529-e387-40fe-a0b5-323de260d3fd.png)
+
 </details>
 
 <details>
-<summary>Invoking to DC setup >summary>
+<summary>Invoking to DC setup</summary>
 
+>**Lib Information**
+![image](https://user-images.githubusercontent.com/118953939/208297262-23eea680-5352-4ae8-be0b-8639446c60eb.png)
+ 
+>**Invoke DC*
+>>i)git_clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
+>>ii)/p/hdk/pu_tu/prd/sams/mig76_wlw/setup/enter_p31 -cfg ip76p31r08hp7rev03 -ov ./
+>>iii)dc_shell
+
+>![image](https://user-images.githubusercontent.com/118953939/208297486-e6a21602-eb4c-41d4-8d20-81597232cb0f.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/208297503-485d9f3d-aa01-4e56-9b13-66bac6cd3b37.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/208297519-0c4fbcff-20c2-46aa-98fa-f0a04c31fc21.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/208297550-2b35e39a-7b94-487c-b63a-c63a11230730.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/208297568-6af2d520-f180-4238-a11d-4cf96d117466.png)
+ </details>
+ 
+ <details>
+ <summary>ddc gui with Design Vision<summary>
+
+>![image](https://user-images.githubusercontent.com/118953939/208297610-9d9f253b-acf8-4d40-9219-d672eee3442e.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/208297623-0055df3d-0b29-41cf-b256-bf442b9286e2.png)>
+
+</details>
+
+<details>
+<summary>DC Synopsys DC Setup<summary>
+
+>![image](https://user-images.githubusercontent.com/118953939/208297943-3f415606-6964-4493-a8f4-b49038c98ea3.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/208297954-05912442-d792-428b-89c6-295b1f3d0b28.png)
+
+</details>
+ 
+ <summary>TCL</summary>
+
+>![image](https://user-images.githubusercontent.com/118953939/208298013-8f647f7d-e75f-45cd-a1bc-89b1b4c111f5.png)
+ 
+>![image](https://user-images.githubusercontent.com/118953939/208298028-f2695a51-5f46-4ae8-b81c-0c6dee465c25.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/208298035-5b2ee4c5-ff02-4afb-bee8-3e42e54de6e1.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/208298043-b48e7f06-f1f8-42e4-a0dd-3d452e91f13a.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/208298066-795d7881-db1b-433a-910d-843790ebb7df.png)
+ 
+>![image](https://user-images.githubusercontent.com/118953939/208298087-3e693a2b-36c6-4357-b4cc-6f7974bc9795.png)
+ </details>
