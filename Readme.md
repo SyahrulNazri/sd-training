@@ -839,11 +839,15 @@ vii)write_verilog -noattr multiple_modules_hier.v
 
 >![image](https://user-images.githubusercontent.com/118953939/208297519-0c4fbcff-20c2-46aa-98fa-f0a04c31fc21.png)
 
->![image](https://user-images.githubusercontent.com/118953939/208297550-2b35e39a-7b94-487c-b63a-c63a11230730.png)
+>![image](https://user-images.githubusercontent.com/118953939/208350177-8aac85ba-97e3-400b-838a-43c64af2ab64.png)
+
 
 >>Set target_library
+
 >>set library_link 
+
 >>compile 
+
 >>write -f verilog -out lab1_net
 
 >![image](https://user-images.githubusercontent.com/118953939/208297568-6af2d520-f180-4238-a11d-4cf96d117466.png)
