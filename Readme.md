@@ -832,6 +832,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
 >>ii)/p/hdk/pu_tu/prd/sams/mig76_wlw/setup/enter_p31 -cfg ip76p31r08hp7rev03 -ov ./
 >>iii)dc_shell
 
+
 >![image](https://user-images.githubusercontent.com/118953939/208297486-e6a21602-eb4c-41d4-8d20-81597232cb0f.png)
 
 >![image](https://user-images.githubusercontent.com/118953939/208297503-485d9f3d-aa01-4e56-9b13-66bac6cd3b37.png)
@@ -839,6 +840,11 @@ vii)write_verilog -noattr multiple_modules_hier.v
 >![image](https://user-images.githubusercontent.com/118953939/208297519-0c4fbcff-20c2-46aa-98fa-f0a04c31fc21.png)
 
 >![image](https://user-images.githubusercontent.com/118953939/208297550-2b35e39a-7b94-487c-b63a-c63a11230730.png)
+
+>>Set target_library
+>>set library_link 
+>>compile 
+>>write -f verilog -out lab1_net
 
 >![image](https://user-images.githubusercontent.com/118953939/208297568-6af2d520-f180-4238-a11d-4cf96d117466.png)
  </details>
