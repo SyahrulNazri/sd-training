@@ -948,7 +948,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
  >![image](https://user-images.githubusercontent.com/118953939/208854957-08599a49-616b-4089-82d6-c740a5bda282.png)
 
 
- >> Sourcing from myscript.tcl
+ >> **Sourcing from myscript.tcl**
  >![image](https://user-images.githubusercontent.com/118953939/208855052-87fd6cb7-bca2-4498-8bce-ea27e6b510e1.png)
  >![image](https://user-images.githubusercontent.com/118953939/208855113-0ea3332b-f9c6-471a-a0f7-5fff54c045a4.png)
 
