@@ -965,5 +965,5 @@ vii)write_verilog -noattr multiple_modules_hier.v
 >> sh gvim a  
 >get_lib_pins sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__dfbnn_2/CLK_N capacitance
 
- >![image](https://user-images.githubusercontent.com/118953939/208856456-967d75f7-c334-44ab-b9f6-4787ff5f08fd.png)
+>>![image](https://user-images.githubusercontent.com/118953939/208856456-967d75f7-c334-44ab-b9f6-4787ff5f08fd.png)
 
