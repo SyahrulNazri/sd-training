@@ -968,6 +968,6 @@ vii)write_verilog -noattr multiple_modules_hier.v
 
 >>list_attributes -app > a
 >> sh gvim a  
- 
+*Can see all the attributes such as area on lib_cell and cell,capacitance on the port and pin,fucntion also shows the on the cell and port.
 >>![image](https://user-images.githubusercontent.com/118953939/208856456-967d75f7-c334-44ab-b9f6-4787ff5f08fd.png)
 
