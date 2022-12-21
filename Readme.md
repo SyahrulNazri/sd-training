@@ -962,7 +962,6 @@ vii)write_verilog -noattr multiple_modules_hier.v
 >![image](https://user-images.githubusercontent.com/118953939/208855303-dccd6eea-9618-4638-b9a6-82127f86cba5.png)
 
 >>list_attributes -app > a
- 
 >> sh gvim a  
  
 >>![image](https://user-images.githubusercontent.com/118953939/208856456-967d75f7-c334-44ab-b9f6-4787ff5f08fd.png)
