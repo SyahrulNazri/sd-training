@@ -9,6 +9,7 @@
 * [ Day 4 -GLS,Blocking vs Non-blocking and Synthesis-Simulation mismatch]( https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#topic---glsblocking-vs-non-blocking-and-synthesis-simulation-mismatch)
 * [ Day 5 -Design of Testability](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day5)
 * [ Day 6 -Introduction Logic Synthesis](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-6)
+* [ Day 7 -Basic of Static Timing Analysis(STA)](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-7)
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 <Details>
@@ -888,3 +889,79 @@ vii)write_verilog -noattr multiple_modules_hier.v
 >![image](https://user-images.githubusercontent.com/118953939/208298087-3e693a2b-36c6-4357-b4cc-6f7974bc9795.png)
 
 </details>
+ 
+## Day 7 
+### Topic-Basic of Static Timing Analysis (STA)
+
+<details>
+<summary>Introduction to STA </summary>
+ 
+>![CamScanner 12-21-2022 14 11-1](https://user-images.githubusercontent.com/118953939/208837684-04d6afc8-8502-4ca2-9693-4bd95034212c.png)
+>![CamScanner 12-21-2022 14 11-2](https://user-images.githubusercontent.com/118953939/208837689-3db2067f-8aaf-4d0d-8bf0-0f813f8ea2a4.png)
+>![image](https://user-images.githubusercontent.com/118953939/208845407-d8c9e8ce-f1e0-4e08-b889-1e8a39ef5090.png)
+>![image](https://user-images.githubusercontent.com/118953939/208845474-ee2c9e8e-0006-4e4d-a631-c55f84bd32dc.png)
+>![CamScanner 12-21-2022 14 11-3](https://user-images.githubusercontent.com/118953939/208837695-313b7601-ff92-4fed-aeda-e129c290dd05.png)
+>![CamScanner 12-21-2022 14 11-4](https://user-images.githubusercontent.com/118953939/208837699-2d9fe5ab-0cca-4ecb-a880-e878f507e678.png)
+>![CamScanner 12-21-2022 14 11-5](https://user-images.githubusercontent.com/118953939/208837703-3b4f9c55-2983-4ae4-92dc-50f10b9ee631.png)
+>![CamScanner 12-21-2022 14 11-6](https://user-images.githubusercontent.com/118953939/208837708-5a97bf00-ea65-4a7a-b563-0643add0f5d8.png)
+</details>
+
+<details>
+<summary>Timing dot lib</summary>
+ 
+>![image](https://user-images.githubusercontent.com/118953939/208848579-0ec71077-f3d7-4d13-bef5-5b5505769ba0.png)
+>![image](https://user-images.githubusercontent.com/118953939/208848653-177b43e3-c65f-4dbe-9017-bd324bfaa994.png)
+>![image](https://user-images.githubusercontent.com/118953939/208848878-dfb8fa27-01b5-4309-8a41-393c4567d04c.png)>
+>![image](https://user-images.githubusercontent.com/118953939/208849021-8065243e-72b0-4c3a-8a76-bf29c86d3041.png)
+>![image](https://user-images.githubusercontent.com/118953939/208850551-0866a2a7-59a9-4ceb-8543-dee4afed92d0.png)
+>![image](https://user-images.githubusercontent.com/118953939/208850668-4acc35e2-b276-4bbe-8f5d-385a1f2e2b5c.png)
+>![image](https://user-images.githubusercontent.com/118953939/208850721-360a8c66-751e-4b6c-84ee-c3499bbe1650.png)
+ </details>
+
+ <details>
+<summary>Exploring dot libs</summary>
+  
+ >![image](https://user-images.githubusercontent.com/118953939/208850960-a324e847-8921-4b4a-ba9d-8d4521ab719c.png)
+ >![image](https://user-images.githubusercontent.com/118953939/208850998-759fa0d6-0920-47a1-b5b6-94c22c1392da.png)
+ >![image](https://user-images.githubusercontent.com/118953939/208851029-34414c8e-9bb4-4d42-aab4-8af1f6c94e91.png)
+ 
+ >>foreach_in_collection my_lib_cell [get_lib_cells */*] {
+ >>  set my_lib_cell_name [get_object_name $my_lib_cell];
+ >>    echo $my_lib_cell_name;
+ 
+ >![image](https://user-images.githubusercontent.com/118953939/208852402-f9502867-bcfe-4e4d-9f5e-0620878d8ad1.png)
+
+ >>get_lib_pins sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__and2_0
+ 
+ >>foreach_in_collection my_pins [get_lib_pins  sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__and2_0/*] {
+ >>    set my_pin_name[get_object_naem $my_pins];
+ >>    set pin_dir [get_lib_attribute $my_pins_name direction];
+ >>    echo $my_pin_naem $pin_dir: }
+ 
+ >>get_lib_attribute sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__and2_0/X function
+ 
+ >![image](https://user-images.githubusercontent.com/118953939/208854873-297586f2-e0e4-4e0f-9fe8-adc2ecbe969e.png)
+
+  
+ >>get_lib_attribute sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__and2b_1/X function
+ 
+ >![image](https://user-images.githubusercontent.com/118953939/208854957-08599a49-616b-4089-82d6-c740a5bda282.png)
+
+
+ >> Sourcing from myscript.tcl
+ >![image](https://user-images.githubusercontent.com/118953939/208855052-87fd6cb7-bca2-4498-8bce-ea27e6b510e1.png)
+ >![image](https://user-images.githubusercontent.com/118953939/208855113-0ea3332b-f9c6-471a-a0f7-5fff54c045a4.png)
+
+>> **Other ways**
+
+>> get_lib_cells */* -filter "is_sequential == True "
+>>get_lib_pins sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__dfbnn_2/*
+>>get_lib_pins sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__dfbnn_2/CLK_N capacitance
+>>get_lib_pins sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__dfbnn_2/D capacitance  
+
+>![image](https://user-images.githubusercontent.com/118953939/208855303-dccd6eea-9618-4638-b9a6-82127f86cba5.png)
+
+>>list_attributes -app > a
+>> sh gvim a  
+>get_lib_pins sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__dfbnn_2/CLK_N capacitance
+
