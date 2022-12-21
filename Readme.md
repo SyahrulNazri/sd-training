@@ -954,11 +954,13 @@ vii)write_verilog -noattr multiple_modules_hier.v
 
 >> **Other ways**
 
+>>list_lib
 >> get_lib_cells */* -filter "is_sequential == True "
 >>get_lib_pins sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__dfbnn_2/*
 >>get_lib_pins sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__dfbnn_2/CLK_N capacitance
 >>get_lib_pins sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__dfbnn_2/D capacitance  
 
+>![image](https://user-images.githubusercontent.com/118953939/208861690-9a7565c5-9dcf-4ac9-a33c-7b8b5f10898c.png)
 >![image](https://user-images.githubusercontent.com/118953939/208855303-dccd6eea-9618-4638-b9a6-82127f86cba5.png)
 
 >>list_attributes -app > a
