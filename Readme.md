@@ -913,7 +913,7 @@ vii)write_verilog -noattr multiple_modules_hier.v
 >![image](https://user-images.githubusercontent.com/118953939/208848653-177b43e3-c65f-4dbe-9017-bd324bfaa994.png)
 >![image](https://user-images.githubusercontent.com/118953939/208848878-dfb8fa27-01b5-4309-8a41-393c4567d04c.png)>
 >![image](https://user-images.githubusercontent.com/118953939/208849021-8065243e-72b0-4c3a-8a76-bf29c86d3041.png)
->![image](https://user-images.githubusercontent.com/118953939/208850551-0866a2a7-59a9-4ceb-8543-dee4afed92d0.png)
+>![image](https://user-images.githubusercontent.com/118953939/208859296-3a6d6f86-eddd-427a-bee2-2c4e44c4c556.png)
 >![image](https://user-images.githubusercontent.com/118953939/208850668-4acc35e2-b276-4bbe-8f5d-385a1f2e2b5c.png)
 >![image](https://user-images.githubusercontent.com/118953939/208850721-360a8c66-751e-4b6c-84ee-c3499bbe1650.png)
  </details>
