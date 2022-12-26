@@ -10,7 +10,7 @@
 * [ Day 5 -Design of Testability](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day5)
 * [ Day 6 -Introduction Logic Synthesis](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-6)
 * [ Day 7 -Basic of Static Timing Analysis(STA)](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-7)
-* [ Day 8 -Advance Constraints ] (https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-8)
+* [ Day 8 -Advance Constraints](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-8)
 
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
@@ -1247,3 +1247,108 @@ echo $pin_name $dir;
  ``` 
 ![image](https://user-images.githubusercontent.com/118953939/209527901-f3d31d03-9a0a-4d4a-9c2b-fd1f415e4385.png)
  </details>
+
+<details>
+<summary>SDC Generated_clk(Theory)</summary>
+> ![image](https://user-images.githubusercontent.com/118953939/209528784-2fee7d66-c0d6-4b92-96f2-d9f257478741.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209528828-c9883989-e877-48df-ba04-1b0250d35871.png)
+</details>
+	
+<details>
+<summary>SDC Generated_clk(LAB)</summary>
+
+- Generated Clock 
+```
+-create_generated_clock -name MYGEN_CLK -master MYCLK -source [get_ports clk ] -div 1 [get_ports out_clk]
+-report_clocks *
+ ```
+>![image](https://user-images.githubusercontent.com/118953939/209529041-e498fd37-968c-4ccd-9792-ea2d639e735d.png)
+
+- Generated Clock 
+```
+-set_clock_latency -max 1 [get_clocks MYGEN_Clk]
+-set_output_delay -max 5 [get_ports OUT_Y ] -clock [get_clocks MYGEN_CLK]
+-report_timing -to OUT_Y
+```
+>![image](https://user-images.githubusercontent.com/118953939/209529066-763e5a18-fcb9-44e4-b6d4-6695cfd83cad.png)
+
+- Reset Design and Put in GVIM  
+```
+-reset_design
+-sh gvim lab8_cons.tcl 
+-create_clock -name MYCLK -per 10 [get_ports clk];
+	set_clock_latency -source 2 [get_clocks MYCLK];
+	set_clock_latency 1 [get_clocks MYCLK];
+	set_clock_uncertainty -setup 0.5 [get_clocks MYCLK];
+	set_clock_uncertainty -hold 0.1 [get_clocks MYCLK];
+	set_input_delay -max 5 -clock [get_clocks MYCLK]  [get_ports IN_A];
+	set_input_delay -max 5 -clock [get_clocks MYCLK]  [get_ports IN_B];
+	set_input_delay -min 1 -clock [get_clocks MYCLK]  [get_ports IN_A];
+	set_input_delay -min 1 -clock [get_clocks MYCLK]  [get_ports IN_B];
+	set_input_transition -max 0.4 [get_ports IN_A];
+	set_input_transition -max 0.4 [get_ports IN_B];
+	set_input_transition -min 0.1 [get_ports IN_A];
+	set_input_transition -min 0.1 [get_ports IN_B];
+	create_generated_clock -name MYGEN_CLK -master MYCLK  -source [get_ports clk] -div 1 [get_ports out_clk];
+	create_generated_clock -name MYGEN_DIV_CLK -master MYCLK  -source [get_ports clk] -div 2 [get_ports out_div_clk];
+	set_output_delay -max 5 -clock [get_clocks MYGEN_CLK] [get_ports OUT_Y];
+	set_output_delay -min 1  -clock [get_clocks MYGEN_CLK] [get_ports OUT_Y];
+	set_load -max 0.4 [get_ports OUT_Y];
+	set_load -min 0.1 [get_ports OUT_Y];
+-source lab8_cons.tcl 
+-report_clock *
+-report_port -verbose
+```
+>![image](https://user-images.githubusercontent.com/118953939/209529888-a1bb0670-773a-43e2-a350-8de5034dce69.png)
+>![image](https://user-images.githubusercontent.com/118953939/209530255-28dd0195-c604-4a2e-b0f3-9adad6d2f4be.png)
+>![image](https://user-images.githubusercontent.com/118953939/209530333-07ee15f2-f80e-4560-a99a-f463034077e9.png)
+</details>
+
+	
+<details>
+<summary>VCLK,MAX_LATENCY,RISE_FALL IO DELAYS (Theory)</summary>
+
+>![image](https://user-images.githubusercontent.com/118953939/209530521-d87817b5-0c70-4732-b35c-075fe4b28d1f.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209530575-062b87f0-6480-43df-8085-98e5d6f78266.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209530685-62054522-c998-4d08-a6ca-6b6dd3bf1d93.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209530743-c49aca60-042f-4229-8337-47919b89cda7.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209530795-1b7e70eb-c6b6-4ced-9ade-f925455e517e.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209530853-4c70d0e9-25db-4c20-a0c6-1105f42b09c0.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209530904-9ba0de4c-7d51-4dcf-9367-4b325a64fb7a.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209530936-48b29745-d04b-4eb9-9a66-b478749c0240.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209531032-37bde9f5-9a9d-4fe3-b718-6c8f2155e82e.png)
+	</details>
+	
+<details>
+<summary>Set_max_delay (LAB)</summary>
+- Open Lab14_circuit.v   
+```
+-sh gvim Lab14_circuit.v
+ ```
+>![image](https://user-images.githubusercontent.com/118953939/209531229-ebc0a315-1f88-450c-945e-5d752231b042.png)
+
+- seting max delay 
+```
+-report_timing to OUT_Z   (to see if the path is constrained or not)
+-set_max_delay 0.1 -from [all_inputs] -to [get_ports OUT_Z]
+-report_timing -to OUT_Z  (the path constrained)	
+ ```
+![image](https://user-images.githubusercontent.com/118953939/209531360-b553a72b-611c-4bca-8229-be67c577d875.png)
+
+- Optimized
+```
+-report_timing to OUT_Z  -sig 4	
+ ```
+![image](https://user-images.githubusercontent.com/118953939/209531752-5a07d9dc-1823-437b-9695-72de333f5805.png)
+	
+![image](https://user-images.githubusercontent.com/118953939/209531969-e98d4317-a080-4dfa-89ba-b9b57b66f63d.png)
+
