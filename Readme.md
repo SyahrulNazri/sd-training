@@ -1250,6 +1250,7 @@ echo $pin_name $dir;
 
 <details>
 <summary>SDC Generated_clk(Theory)</summary>
+
 > ![image](https://user-images.githubusercontent.com/118953939/209528784-2fee7d66-c0d6-4b92-96f2-d9f257478741.png)
 
 >![image](https://user-images.githubusercontent.com/118953939/209528828-c9883989-e877-48df-ba04-1b0250d35871.png)
@@ -1330,6 +1331,7 @@ echo $pin_name $dir;
 	
 <details>
 <summary>Set_max_delay (LAB)</summary>
+
 - Open Lab14_circuit.v   
 ```
 -sh gvim Lab14_circuit.v
@@ -1371,3 +1373,4 @@ echo $pin_name $dir;
  ```
 >![image](https://user-images.githubusercontent.com/118953939/209532415-24e0adcf-e592-47fa-a98f-9109afc4ebd6.png)
 >![image](https://user-images.githubusercontent.com/118953939/209532803-8e73393f-a558-45f3-b372-9feca52099e8.png)
+	</details>
