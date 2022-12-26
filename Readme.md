@@ -10,6 +10,8 @@
 * [ Day 5 -Design of Testability](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day5)
 * [ Day 6 -Introduction Logic Synthesis](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-6)
 * [ Day 7 -Basic of Static Timing Analysis(STA)](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-7)
+* [ Day 8 -Advance Constraints ] (https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-8)
+
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 <Details>
@@ -971,4 +973,46 @@ vii)write_verilog -noattr multiple_modules_hier.v
 *Can see all the attributes such as area on lib_cell and cell,capacitance on the port and pin,fucntion also shows the on the cell and port.*
  
 >>![image](https://user-images.githubusercontent.com/118953939/208856456-967d75f7-c334-44ab-b9f6-4787ff5f08fd.png)
+ </details>
 
+  ## Day 8
+  ### Topic 8 -Advance Constraints
+
+<details>
+<summary>Clock-Clock Tree Modelling-Uncertainty (Theory)</summary>
+  
+
+ >![image](https://user-images.githubusercontent.com/118953939/209515539-b3534155-4683-4e05-a7f8-cb21e67022c4.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/209515571-1014b790-a8af-432a-a3f1-bcfc30c18401.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/209515597-cf5b0026-6397-4c0e-8fd7-f10552e8d974.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/209515610-bcefac0d-3cd8-47c4-b2bd-81fab60ea2af.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/209515678-21afa0c3-3960-4f51-b6b2-ab96f786b131.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/209515789-2c1aab93-08a3-489e-ba50-6f21f90915fc.png)
+ </details>
+
+<details>
+<summary>SDC Part 2 -IO delay (Theory)</summary>
+  
+![image](https://user-images.githubusercontent.com/118953939/209516086-b5b5e02a-a4c7-46cb-ab0b-9b9da4b5f7f0.png)
+
+**Getting the Ports in DC**
+get_ports clk ;	= command query the ports call clk  in the design  (.port,pin,clock etc all name  are case-sensitive).
+get_ports *clk*;	= A collection of ports whose name contains clk
+get_ports*; 	= all of ports of design 
+Get_ports *-filter ‘direction == in”; 	= all input ports
+Get_ports *-filter ‘direction ;==out” 	= all output ports
+
+**Getting the clocks in DC**
+get_clocks * = all the clocks in the design 
+get_clocks *clk* = all clocks which has the name clk in it.
+get_glock *filter “period >10” = filter the clk that greater than 10ns
+get_attribute [get_clocks my_clk ] period = attributed the clock period
+get_attribute [get_clocks my_clk ]is_generated 
+Report_clocks my_clock 
+
+![image](https://user-images.githubusercontent.com/118953939/209516362-611f5f71-c48b-4f30-bc4d-81128e4559c7.png)
