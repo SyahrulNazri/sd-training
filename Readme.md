@@ -1348,7 +1348,26 @@ echo $pin_name $dir;
 ```
 -report_timing to OUT_Z  -sig 4	
  ```
-![image](https://user-images.githubusercontent.com/118953939/209531752-5a07d9dc-1823-437b-9695-72de333f5805.png)
-	
-![image](https://user-images.githubusercontent.com/118953939/209531969-e98d4317-a080-4dfa-89ba-b9b57b66f63d.png)
+>![image](https://user-images.githubusercontent.com/118953939/209531752-5a07d9dc-1823-437b-9695-72de333f5805.png)
 
+- Design
+```
+-start_gui 
+-lab8_circuit.ddc
+ ```	
+![image](https://user-images.githubusercontent.com/118953939/209531969-e98d4317-a080-4dfa-89ba-b9b57b66f63d.png)
+	</details>
+<details>
+<summary>Virtual CLock-VCLK (LAB)</summary>
+
+- Created Virtual Clock 
+```
+-Created_clock -nmae MYVCLK -per 10 
+-report_clocks 
+-set_input_delay -max 5 [get_ports IN_C] -clock [get_clocks MYVCLK]
+-set_input_delay -max 5 [get_ports IN_D] -clock [get_clocks MYVCLK]
+-set_output_delay -max 4.9 [get_ports OUT_Z -clock [get_clocks MYVCLK]
+-report_timing
+ ```
+>![image](https://user-images.githubusercontent.com/118953939/209532415-24e0adcf-e592-47fa-a98f-9109afc4ebd6.png)
+>![image](https://user-images.githubusercontent.com/118953939/209532803-8e73393f-a558-45f3-b372-9feca52099e8.png)
