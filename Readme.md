@@ -992,6 +992,21 @@ vii)write_verilog -noattr multiple_modules_hier.v
 
  >![image](https://user-images.githubusercontent.com/118953939/209515678-21afa0c3-3960-4f51-b6b2-ab96f786b131.png)
 
+
+ 
+- Clock modelling
+```
+ 
+* Period
+-Source latency: time taken by the clock source to generate clock
+-Clock Network Latency: time taken by clock distribution network
+-Clock skew: clock path delay mismatches which causes difference in the arrival of the clock
+  > CTS will balance the clocks, but still the skew cannot be reduced to 0
+-Jitter: stochastic variations in the arrival of clock edge
+  > Duty cycle jitter
+  > Period jitter 
+-Collectively clock skew and jitter are called Clock Uncertainty
+ ```
  >![image](https://user-images.githubusercontent.com/118953939/209515789-2c1aab93-08a3-489e-ba50-6f21f90915fc.png)
  </details>
 
@@ -1000,19 +1015,135 @@ vii)write_verilog -noattr multiple_modules_hier.v
   
 ![image](https://user-images.githubusercontent.com/118953939/209516086-b5b5e02a-a4c7-46cb-ab0b-9b9da4b5f7f0.png)
 
-**Getting the Ports in DC**
+
+
+-	Command Getting the Ports in DC
+```
 get_ports clk ;	= command query the ports call clk  in the design  (.port,pin,clock etc all name  are case-sensitive).
 get_ports *clk*;	= A collection of ports whose name contains clk
 get_ports*; 	= all of ports of design 
 Get_ports *-filter ‘direction == in”; 	= all input ports
 Get_ports *-filter ‘direction ;==out” 	= all output ports
+```
 
-**Getting the clocks in DC**
+- Command Getting the clocks in DC
+```
 get_clocks * = all the clocks in the design 
 get_clocks *clk* = all clocks which has the name clk in it.
 get_glock *filter “period >10” = filter the clk that greater than 10ns
 get_attribute [get_clocks my_clk ] period = attributed the clock period
 get_attribute [get_clocks my_clk ]is_generated 
 Report_clocks my_clock 
+```
+>![image](https://user-images.githubusercontent.com/118953939/209516362-611f5f71-c48b-4f30-bc4d-81128e4559c7.png)
 
-![image](https://user-images.githubusercontent.com/118953939/209516362-611f5f71-c48b-4f30-bc4d-81128e4559c7.png)
+>![image](https://user-images.githubusercontent.com/118953939/209517574-6d08e031-467e-43dc-abaf-946922abfcda.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209517625-291ad8b6-3173-4ae8-a3c0-196290f011e4.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209517694-c698ac0a-c409-42fb-8529-00e800072982.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209517784-a0f84995-ff37-4f9c-a743-4f290175923c.png)>
+
+>![image](https://user-images.githubusercontent.com/118953939/209517856-6ba95a06-70e3-4ccf-9398-3d4dbe229dab.png)
+
+- Summary
+```
+1.Create_clock 
+2.Set_clock_latency
+3.Set_clock_uncertainty  skew + jitter pre cts and only jitter on post cts 
+4.Set_input_delay 
+5.Set_input_trainsition 
+6.Set_output_delay
+7.Set_load
+8.Get_ports,get_clocks,get_cells,etc
+```
+</details>
+ 
+<details>
+<summary>Lab 8 -Loading Design get_cells,get_ports,get_nets (LAB)</summary>
+ 
+
+>![image](https://user-images.githubusercontent.com/118953939/209518209-48b94cfb-723c-4414-b6a9-cb00586faae9.png)
+
+- Command
+```
+-csh                                                        
+-dc_shell                                
+-echo $target_library 
+-echo $link_library 
+-read_verilog DC_WORKSHOP/verilog_files/lab8_circuit.v 
+-link
+-compile_ultra
+```
+- Listing the collection of port name and its direction
+```
+foreach_in_collection my_port [get_ports *] {                   
+set my_port_name [get_object_name $my_port];
+set dir [get_attribute [get_ports $my_port_name] direction];     
+echo $my_port_name $dir;
+}
+Get Cells 
+get_attribute [get_cells U9] is_hierarchical                        (Checking the desired cell is hierarchical/not)
+get_cells * -hier -filter "is_hierarchical == false"                (Listing the false hierarchical cell)
+get_cells * -hier -filter "is_hierarchical == true"                 (Listing the true hierarchical cell)
+```
+>![image](https://user-images.githubusercontent.com/118953939/209518233-2b144e05-5632-464a-915c-f183cd78926e.png)
+
+- Get reference Name 
+```
+foreach_in_collection my_cell [get_cells * -hier] {                 (Listing cell name and its reference name)
+set my_cell_name [get_object_name $my_cell];
+set rname [get_attribute [get_cells $my_cell_name] ref_name];
+echo $my_cell_name $rname;
+} 
+```
+- Write DDC
+ ```
+write -f ddc -out lab8_circuit.ddc
+csh
+design_vision
+read_ddc DC_WORKSHOP/verilog_files/lab8_circuit.ddc
+get_nets *
+all_connected N1
+all_connected n5
+```
+
+>![image](https://user-images.githubusercontent.com/118953939/209518318-be26f497-b3fd-48ad-b9d8-709721306463.png)
+
+ - Driving 
+ ```
+ foreach_in_collection my_pin [all_connected n5] {                   (Listing the driver of the net)
+set pin_name [get_object_name $my_pin];
+set dir [get_attribute [get_pins $pin_name] direction];
+echo $pin_name $dir;
+}
+```
+>![image](https://user-images.githubusercontent.com/118953939/209518373-6c407beb-231f-48ca-9253-e3d98e1413b3.png)
+</details>
+ 
+ 
+<details>
+<summary>Get Clocks and Querying Clocks (LAB)</summary>
+
+- Get All the Pin Name 
+ 
+foreach_in_collection my_pin [get_pins *] {                            (Listing out the pins)
+set pin_name [get_object_name $my_pin];
+echo $pin_name;
+}
+
+```
+- Get the pin name and Direction 
+ 
+foreach_in_collection my_pin [get_pins *] {
+set pin_name [get_object_name $my_pin];
+set dir [get_attribute [get_pins $pin_name] direction];
+echo $pin_name $dir;
+}
+ ```
+>![image](https://user-images.githubusercontent.com/118953939/209520858-7ad91127-0168-42f8-8bb9-3579fa5b32a3.png)
+
+- Create Clock waveform 
+  ```
+ ![image](https://user-images.githubusercontent.com/118953939/209520956-f94a9361-36d7-43f0-b81a-6e4e5a76f685.png)
