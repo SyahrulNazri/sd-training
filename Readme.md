@@ -1143,7 +1143,107 @@ echo $pin_name $dir;
 }
  ```
 >![image](https://user-images.githubusercontent.com/118953939/209520858-7ad91127-0168-42f8-8bb9-3579fa5b32a3.png)
+ </details>
+ 
+ <details>
+ <summary>Create Clock waveform </summary>
 
-- Create Clock waveform 
+ - Create Clock waveform 
+ ```
+ -create_clock -name MYCLK -per 1-[get_ports clk]
+ -get_clock *
+ -report_clocks *
   ```
- ![image](https://user-images.githubusercontent.com/118953939/209520956-f94a9361-36d7-43f0-b81a-6e4e5a76f685.png)
+ - Put in Gvim 
+  ```
+-foreach_in_collection my_pin [get_pins *] {                              (Listing input pin name with clock - The pin is meant to be a clock pin/not)
+	       set my_pin_name [get_object_name $my_pin];
+        set dir [get_attribute [get_pins $my_pin_name] direction];                                                                                              
+	       if { [regexp $dir in] } {
+	      	if { [get_attribute [get_pins $my_pin_name] clock] } {
+		       echo $my_pin_name $clk_name;
+	     	          }
+	         }
+        } 
+ -source query_clock_pin.tcl
+ ```
+ 
+ > ![image](https://user-images.githubusercontent.com/118953939/209520956-f94a9361-36d7-43f0-b81a-6e4e5a76f685.png)
+ 
+ - Create Clock and what happen if we change arrangement 
+ ```
+ -create_clock -name MYCLK -per 1-[get_ports clk] -waive (5 10)
+ -report_clocks *
+ -create_clock -name MYCLK -waive (15 20) [get_ports clk] -per 10
+ 
+ ```
+ 
+ >![image](https://user-images.githubusercontent.com/118953939/209522657-081b2117-db8d-4813-a850-a2eb5cb5793c.png)
+
+ </details>
+ 
+<details>
+<summary>Uncertainty Report Timing  (LAB)</summary>
+
+ - Modelling the clock Tree Attribute
+  ```
+ -create_clock -name MYCLK -per 1-[get_ports clk]
+ -report_timing
+ -set_clock_latency 1 [get_clocks MYCLK]
+ -report_clocks *
+ -set_clock_latency 1 [get_clocks MYCLK]						(Modelling the network latency)
+ -set_clock_uncertainty 0.5 [get_clocks MYCLK]					(Max delay for setup time by default)
+ -set_clock_uncertainty -hold 0.1 [get_clocks MYCLK]				(Min delay for hold time) 
+  ```
+>![image](https://user-images.githubusercontent.com/118953939/209523205-69448219-d46a-4ac6-a9b0-3355679a9afb.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209524767-0982ed02-69c5-48c7-afff-6b218d707453.png)
+
+- Report delay 
+ ```
+-report_timing -to REGC_reg/D -delay min
+ ```
+ ![image](https://user-images.githubusercontent.com/118953939/209525984-7f59c1db-1e7e-47a6-8367-63875cec8aca.png)
+ 
+ - Report all ports
+ ```
+ - set_input_delay -max -clock [get_clocks MYCLK] [get_ports IN A]
+ - set_input_delay -max -clock [get_clocks MYCLK] [get_ports IN B]
+ -report_port -verbose 
+ ```
+ >![image](https://user-images.githubusercontent.com/118953939/209526016-8a52f8e7-18ea-443e-ae20-c6890197a47e.png)
+ 
+ </details>
+ 
+ <details>
+  <summary>IO Delays (LAB)</summary>
+  
+ * External delay and Capacitance  
+ >![image](https://user-images.githubusercontent.com/118953939/209526883-3d770902-2491-4288-a22f-54745e0052e7.png)
+
+  - Setting Input Transition 
+ ```
+-set_input_transition -max 0.3 [get_ports IN_A]
+-set_input_transition -max 0.3 [get_ports IN_B]
+-set_input_transition -min 0.1 [get_ports IN_B]
+-set_input_transition -min 0.1 [get_ports IN_A]
+-report_timing -from IN_A -trans  -cap -delay_type max
+ ```
+>![image](https://user-images.githubusercontent.com/118953939/209527270-7de2f4a6-db77-4a80-ad0d-8050d177613e.png)
+
+ - Setting Output Delay 
+ ```
+-set_output_delay  -max 5 -clock [get_ports MYCLK] [get_ports OUT_Y]
+-set_output_delay  -min 1  -clock [get_clocks MYCLK] [get_ports OUT_Y]
+-report_timing -to OUT_Y -cap -trans
+ ```
+ >![image](https://user-images.githubusercontent.com/118953939/209527833-1ab9c5df-b89d-41a0-ba2c-80c88c0f9ca7.png)
+  
+- Setting for load
+ ```
+-set_load -max 0.4 [get_ports OUT_Y]
+-report_timing -to OUT_Y -cap -trans -nosplit > out_load
+-set_load -min 0.1 [get_ports OUT_Y]- report_timing -to OUT_Y -cap -trans -nosplit -delay min  > out_load
+ ``` 
+![image](https://user-images.githubusercontent.com/118953939/209527901-f3d31d03-9a0a-4d4a-9c2b-fd1f415e4385.png)
+ </details>
