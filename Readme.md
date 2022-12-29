@@ -1430,6 +1430,8 @@ Compile_register_replication (advance technique)
      --> for cloning register !
 ```
 
+	</details>
+	
 <details>
 <summary>Combinational Optimizations</summary>
 
