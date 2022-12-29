@@ -1429,13 +1429,13 @@ Compile_delete_unloaded_sequential_cells
 Compile_register_replication (advance technique) 
      --> for cloning register !
 ```
-
-	</details>
+</details>
 	
 <details>
 <summary>Combinational Optimizations</summary>
 
-Optimization of Opt_Check.v
+- Optimization of Opt_Check.v
+	
 ```
 IN DESIGN COMPILER
 sh gvim DC_WORKSHOP/verilog_files/opt_check*.v -o
@@ -1450,7 +1450,7 @@ write -f ddc -out opt_check.ddc
 >![image](https://user-images.githubusercontent.com/118953939/209914894-50088c89-327c-451a-9330-b12ab5e012b2.png)
 >![image](https://user-images.githubusercontent.com/118953939/209914905-4e968dcc-4024-43e7-a564-274bbf3d82da.png)
 
--Optimization of opt_check2.v
+- Optimization of opt_check2.v
 
 ```
 IN DESIGN COMPILER
@@ -1468,7 +1468,8 @@ read_ddc DC_WORKSHOP/verilog_files/opt_check2.ddc
 >![image](https://user-images.githubusercontent.com/118953939/209914954-425a20df-6ab5-4145-8282-0ab58176e3fb.png)
 
 
--Optimization of opt_check3.v
+- Optimization of opt_check3.v
+	
 ```
 IN DESIGN COMPILER
 reset_design
@@ -1485,7 +1486,7 @@ read_ddc DC_WORKSHOP/verilog_files/opt_check3.ddc
 >![image](https://user-images.githubusercontent.com/118953939/209915189-72d350dc-0609-4ced-9a1a-de748d50fa5a.png)
 
 
--Optimization of opt_check4.v
+- Optimization of opt_check4.v
 
 ```
 IN DESIGN COMPILER
