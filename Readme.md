@@ -1499,6 +1499,5 @@ read_ddc DC_WORKSHOP/verilog_files/opt_check4.ddc
 	
 >![image](https://user-images.githubusercontent.com/118953939/209915246-33d477f4-5aab-4d58-ba82-59934cd9bb9e.png)
 >![image](https://user-images.githubusercontent.com/118953939/209915261-6b4a86d0-1317-4e66-84f2-c1ffb0bfa439.png)
-
 </details>
 
