@@ -1374,3 +1374,55 @@ echo $pin_name $dir;
 >![image](https://user-images.githubusercontent.com/118953939/209532415-24e0adcf-e592-47fa-a98f-9109afc4ebd6.png)
 >![image](https://user-images.githubusercontent.com/118953939/209532803-8e73393f-a558-45f3-b372-9feca52099e8.png)
 	</details>
+
+## Day 9 
+### Topic -Optimization 
+ 
+<details>
+<summary>Optimizations Combinational Opt</summary>
+
+**What is goal of Optimization ?**
+Optimization till cost is met. Over optimization of one will harm other goals.
+
+**Goal for Synthesis ?**
+To meet timing, area and power .If we want to meet timing we make cell faster but the power and area will be bad situation. But when area is smaller the power will higher but the timing is still in bad condition.
+Timing cost function  IO Delay ,Clock period and max delay.
+
+**Combinational Logic Optimisation** 
+-Squeezing the logic to get them most optimised design which is area and power saving.
+-Constant propagation --> Direct optimisation 
+-Boolean Logic Optimisation 
+   >K-Map 
+   >Quine McKluskey
+
+>![image](https://user-images.githubusercontent.com/118953939/209912053-29f354f9-a4eb-49c3-91e5-70a3cd73ba5f.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209912293-a80e16e7-7ba8-4da9-8c3d-eff69af576d2.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209912375-c3b0fe96-db9c-4ee5-bd86-dc7fcedc17e2.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209912417-c6e49661-30c4-4d31-b97d-f3ad0ff7583e.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209912441-594c5faf-b7c4-4aca-94b5-54d8672efeba.png)
+
+	</details>
+
+<details>
+<summary>Sequential Logic Optimisations</summary>
+
+>![image](https://user-images.githubusercontent.com/118953939/209912578-f1a18bc6-1a53-4677-8bf7-0173c49ac6b8.png)
+	
+>![image](https://user-images.githubusercontent.com/118953939/209912635-89672f1a-ae31-436d-891d-ea90245c812d.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209912691-c4c22112-f359-4c5b-8a4b-fdcffca4575b.png)>
+
+>![image](https://user-images.githubusercontent.com/118953939/209912975-bc0ee78b-59be-46f2-bef3-2b442a4db2ca.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209912992-bce2e5a9-cf34-42fb-b4b0-aca321141beb.png)
+Controlling sequential optimizations in DC
+Compile_seqmap_propagate_constants
+     --> for constant optimization 
+Compile_delete_unloaded_sequential_cells 
+     -->for sequential optimization 
+Compile_register_replication (advance technique) 
+     --> for cloning register !
