@@ -1419,6 +1419,8 @@ Timing cost function  IO Delay ,Clock period and max delay.
 >![image](https://user-images.githubusercontent.com/118953939/209912975-bc0ee78b-59be-46f2-bef3-2b442a4db2ca.png)
 
 >![image](https://user-images.githubusercontent.com/118953939/209912992-bce2e5a9-cf34-42fb-b4b0-aca321141beb.png)
+
+```
 Controlling sequential optimizations in DC
 Compile_seqmap_propagate_constants
      --> for constant optimization 
@@ -1426,3 +1428,4 @@ Compile_delete_unloaded_sequential_cells
      -->for sequential optimization 
 Compile_register_replication (advance technique) 
      --> for cloning register !
+```
