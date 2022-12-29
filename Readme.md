@@ -1477,13 +1477,14 @@ write -f ddc -out opt_check3.ddc
 IN DESIGN VISION
 reset_design
 read_ddc DC_WORKSHOP/verilog_files/opt_check3.ddc
-'''
+```
 
 >![image](https://user-images.githubusercontent.com/118953939/209914980-f608b398-5cac-4a73-bf0d-28a65633348e.png)
 >![image](https://user-images.githubusercontent.com/118953939/209915189-72d350dc-0609-4ced-9a1a-de748d50fa5a.png)
 
 
 -Optimization of opt_check4.v
+
 ```
 IN DESIGN COMPILER
 reset_design
