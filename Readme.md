@@ -1504,3 +1504,51 @@ read_ddc DC_WORKSHOP/verilog_files/opt_check4.ddc
 >![image](https://user-images.githubusercontent.com/118953939/209915261-6b4a86d0-1317-4e66-84f2-c1ffb0bfa439.png)
 </details>
 
+<details>
+<summary>Resource Sharing optimizations</summary
+
+- resource_sharing_mult_check.v balance optimization (no constrain set)
+
+```
+read_verilog DC_WORKSHOP/verilog_files/resource_sharing_mult_check.v
+link
+compile_ultra
+report_area
+```
+>![image](https://user-images.githubusercontent.com/118953939/209917404-df838fbd-7461-4872-8475-971ed40b339f.png)
+
+- resource_sharing_mult_check.v (max delay 2.5ns)
+```
+set_max_delay -from [all_inputs] -to [all_outputs] 2.5
+report_timing
+compile_ultra
+report_timing
+report_area
+```
+>![image](https://user-images.githubusercontent.com/118953939/209917876-4c8eb1f0-c864-418c-a059-c39e1a20825c.png)
+
+- resource_sharing_mult_check.v (max delay 0.1ns)
+```
+set_max_delay -from [all_inputs] -to [all_outputs] 0.1
+report_timing
+compile_ultra
+report_timing
+report_area
+```
+>![image](https://user-images.githubusercontent.com/118953939/209918285-9ff4c0aa-0893-4463-a51d-63a3a39e6a7e.png)
+
+- resource_sharing_mult_check.v (area 800)
+```
+set_max_area 800
+compile_ultra
+report_timing
+report_area
+```
+>![image](https://user-images.githubusercontent.com/118953939/209918409-b395be1a-828e-4083-ad1d-21d074fce1fe.png)
+	
+>![image](https://user-images.githubusercontent.com/118953939/209917587-73adaacd-2ddc-4511-84dc-f0ad6a772173.png)
+```
+- Conclusion for all run 
+```
+>![image](https://user-images.githubusercontent.com/118953939/209918482-d5307969-0987-470f-87eb-111001ebf6d5.png)
+ </details>
