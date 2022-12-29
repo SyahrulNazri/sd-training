@@ -1478,6 +1478,7 @@ IN DESIGN VISION
 reset_design
 read_ddc DC_WORKSHOP/verilog_files/opt_check3.ddc
 '''
+
 >![image](https://user-images.githubusercontent.com/118953939/209914980-f608b398-5cac-4a73-bf0d-28a65633348e.png)
 >![image](https://user-images.githubusercontent.com/118953939/209915189-72d350dc-0609-4ced-9a1a-de748d50fa5a.png)
 
@@ -1493,10 +1494,10 @@ write -f ddc -out opt_check4.ddc
 IN DESIGN VISION
 reset_design
 read_ddc DC_WORKSHOP/verilog_files/opt_check4.ddc
-'''
+```
 	
 >![image](https://user-images.githubusercontent.com/118953939/209915246-33d477f4-5aab-4d58-ba82-59934cd9bb9e.png)
 >![image](https://user-images.githubusercontent.com/118953939/209915261-6b4a86d0-1317-4e66-84f2-c1ffb0bfa439.png)
 
-
+</details>
 
