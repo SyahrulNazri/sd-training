@@ -1429,3 +1429,36 @@ Compile_delete_unloaded_sequential_cells
 Compile_register_replication (advance technique) 
      --> for cloning register !
 ```
+
+<details>
+<summary>Combinational Optimizations</summary>
+Optimization of Opt_Check.v
+```
+IN DESIGN COMPILER
+sh gvim DC_WORKSHOP/verilog_files/opt_check*.v -o
+read_verilog DC_WORKSHOP/verilog_files/opt_check.v
+report_timing
+get_cells *
+report_timing -to y2
+report_timing -to y1
+write -f ddc -out opt_check.ddc
+```
+	
+>![image](https://user-images.githubusercontent.com/118953939/209914443-2444eb07-b3a0-4a9d-8e40-8fabd0218a86.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209913616-0f529eae-72ff-449d-9aa1-c2e7685a8770.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209913632-6fa48734-4de5-48f1-a3c5-24f17cb5feda.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209913680-5b87329d-57b3-4510-ab78-95768f4ac390.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209913700-9bac38b4-3edf-46fb-8653-ca9e813f8b42.png)
+	
+>![image](https://user-images.githubusercontent.com/118953939/209913793-ad85a109-67c9-4c3b-a729-69da33e8bcc3.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209913827-b1571db6-ec95-4fd6-9610-f0e56288930e.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/209913859-b677f3f3-bb2c-4105-ac35-d797348c3d82.png)
+	
+>![image](https://user-images.githubusercontent.com/118953939/209913968-3cd77000-a8a5-4a3e-979b-66d0889658ef.png)
+
