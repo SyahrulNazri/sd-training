@@ -11,7 +11,7 @@
 * [ Day 6 -Introduction Logic Synthesis](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-6)
 * [ Day 7 -Basic of Static Timing Analysis(STA)](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-7)
 * [ Day 8 -Advance Constraints](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-8)
-* [ Day 9 -Advance Constraints](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-9)
+* [ Day 9 -Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-9)
 *
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
@@ -1432,6 +1432,7 @@ Compile_register_replication (advance technique)
 
 <details>
 <summary>Combinational Optimizations</summary>
+
 Optimization of Opt_Check.v
 ```
 IN DESIGN COMPILER
@@ -1444,21 +1445,58 @@ report_timing -to y1
 write -f ddc -out opt_check.ddc
 ```
 	
->![image](https://user-images.githubusercontent.com/118953939/209914443-2444eb07-b3a0-4a9d-8e40-8fabd0218a86.png)
+>![image](https://user-images.githubusercontent.com/118953939/209914894-50088c89-327c-451a-9330-b12ab5e012b2.png)
+>![image](https://user-images.githubusercontent.com/118953939/209914905-4e968dcc-4024-43e7-a564-274bbf3d82da.png)
 
->![image](https://user-images.githubusercontent.com/118953939/209913616-0f529eae-72ff-449d-9aa1-c2e7685a8770.png)
+-Optimization of opt_check2.v
 
->![image](https://user-images.githubusercontent.com/118953939/209913632-6fa48734-4de5-48f1-a3c5-24f17cb5feda.png)
-
->![image](https://user-images.githubusercontent.com/118953939/209913680-5b87329d-57b3-4510-ab78-95768f4ac390.png)
-
->![image](https://user-images.githubusercontent.com/118953939/209913700-9bac38b4-3edf-46fb-8653-ca9e813f8b42.png)
+```
+IN DESIGN COMPILER
+reset_design
+read_ddc DC_WORKSHOP/verilog_files/opt_check2.v 
+link
+compile
+write -f ddc -out opt_check2.ddc
+IN DESIGN VISION
+reset_design
+read_ddc DC_WORKSHOP/verilog_files/opt_check2.ddc
+```
 	
->![image](https://user-images.githubusercontent.com/118953939/209913793-ad85a109-67c9-4c3b-a729-69da33e8bcc3.png)
+>![image](https://user-images.githubusercontent.com/118953939/209914938-7bb6e658-c323-4407-bec7-9cfe44c63fed.png)
+>![image](https://user-images.githubusercontent.com/118953939/209914954-425a20df-6ab5-4145-8282-0ab58176e3fb.png)
 
->![image](https://user-images.githubusercontent.com/118953939/209913827-b1571db6-ec95-4fd6-9610-f0e56288930e.png)
 
->![image](https://user-images.githubusercontent.com/118953939/209913859-b677f3f3-bb2c-4105-ac35-d797348c3d82.png)
+-Optimization of opt_check3.v
+```
+IN DESIGN COMPILER
+reset_design
+read_ddc DC_WORKSHOP/verilog_files/opt_check3.v 
+link
+compile
+write -f ddc -out opt_check3.ddc
+IN DESIGN VISION
+reset_design
+read_ddc DC_WORKSHOP/verilog_files/opt_check3.ddc
+'''
+>![image](https://user-images.githubusercontent.com/118953939/209914980-f608b398-5cac-4a73-bf0d-28a65633348e.png)
+>![image](https://user-images.githubusercontent.com/118953939/209915189-72d350dc-0609-4ced-9a1a-de748d50fa5a.png)
+
+
+-Optimization of opt_check4.v
+```
+IN DESIGN COMPILER
+reset_design
+read_ddc DC_WORKSHOP/verilog_files/opt_check4.v 
+link
+compile
+write -f ddc -out opt_check4.ddc
+IN DESIGN VISION
+reset_design
+read_ddc DC_WORKSHOP/verilog_files/opt_check4.ddc
+'''
 	
->![image](https://user-images.githubusercontent.com/118953939/209913968-3cd77000-a8a5-4a3e-979b-66d0889658ef.png)
+>![image](https://user-images.githubusercontent.com/118953939/209915246-33d477f4-5aab-4d58-ba82-59934cd9bb9e.png)
+>![image](https://user-images.githubusercontent.com/118953939/209915261-6b4a86d0-1317-4e66-84f2-c1ffb0bfa439.png)
+
+
 
