@@ -1546,7 +1546,6 @@ report_area
 ```
 >![image](https://user-images.githubusercontent.com/118953939/209918409-b395be1a-828e-4083-ad1d-21d074fce1fe.png)
 	
->![image](https://user-images.githubusercontent.com/118953939/209917587-73adaacd-2ddc-4511-84dc-f0ad6a772173.png)
 ```
 - Conclusion for all run 
 ```
