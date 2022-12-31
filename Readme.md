@@ -1679,4 +1679,93 @@ report_area
  -compile
  ```
 >![image](https://user-images.githubusercontent.com/118953939/210133170-ba9ea212-bfc0-40cb-89a2-e9a16bbe8567.png)
+	</details>
+	
+ <details>
+<summary>Special Optimization(Theory)</summary
+>![image](https://user-images.githubusercontent.com/118953939/210133281-e690cb59-2702-445f-8fac-9655faee9091.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/210133286-9e339ad8-42d5-4e83-a112-308456c043e8.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/210133289-fe0d5b02-4154-4360-8dec-91d3cb346e6e.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/210133300-34483916-1024-4536-b088-e4b688b25b1f.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/210133323-bcc0a390-d342-4d17-8e6e-0a0a105b283e.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/210133352-77a89b65-2833-48f4-83a7-6d7ba1cb79ea.png)
+
+	</details>
+	
+ <details>
+<summary>How Paths are timed MCP? (Theory)</summary
+
+>![image](https://user-images.githubusercontent.com/118953939/210133392-a040a8aa-26cf-4746-b476-fd72f84a03c3.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/210133398-4cfd65a5-792a-45a1-ac87-b2c2e4027dd2.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/210133413-0f63f947-ce20-4d74-94a0-3ad01e1fc130.png)
+</details>
+
+ <details>
+	 <summary>Boundary Optimization ? (LAB)</summary>
+
+- Boundary Optimization 
+```
+sh gvim DC_WORKSHOP/verilog_files/check_boundary.v
+	read_verilog DC_WORKSHOP/verilog_files/check_boundary.v
+-link
+-compile_ultra
+-write -f ddc -out boundary.ddc
+-get_cells
+	
+>In design_vision
+-read_verilog DC_WORKSHOP/verilog_files/check_boundary.v
+-link
+-get_cells						
+-set_boundary_optimization u_im false
+-compile_ultra
+-start_gui
+```
+
+>![image](https://user-images.githubusercontent.com/118953939/210133514-4b0b9d09-c38d-4edc-ad72-acfc3cfffe31.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/210133521-f2a3dbf0-e15f-4a73-bae8-6f7317ee78a4.png)
+	</details>
+	
+ <details>
+	 <summary>Register Timing ? (LAB)</summary>
+	 
+- Command 
+```
+-sh gvim DC_WORKSHOP/verilog_files/check_reg_retime.v
+```
+>![image](https://user-images.githubusercontent.com/118953939/210133670-0f754cca-7858-45ed-82b7-aa51213483b3.png)
+
+- In Design Vision 
+```
+-read_verilog DC_WORKSHOP/verilog_files/check_reg_retime.v
+-link
+-compile
+-start_gui
+-sh gvim DC_WORKSHOP/verilog_files/reg_retime_cons.tcl			(Setting the constraints)
+-source DC_WORKSHOP/verilog_files/reg_retime_cons.tcl
+-report_clocks
+-report_timing
+-compile_ultra -retime
+-start_gui
+```
+>![image](https://user-images.githubusercontent.com/118953939/210133678-5ede04fd-3fe0-41ff-b29d-67b6aca6cc9a.png)
+
+
+
+- Report Timing  
+```
+report_timing
+compile_ultra
+report_timing -from [all_inputs]
+report_timing -from [all_inputs] -trans -cap -nosplit -sig 4
+```
+>![image](https://user-images.githubusercontent.com/118953939/210133686-e82e1539-71a4-4dd6-89b8-ac5c15feebe8.png)
+
 
