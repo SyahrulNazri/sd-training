@@ -12,7 +12,7 @@
 * [ Day 7 -Basic of Static Timing Analysis(STA)](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-7)
 * [ Day 8 -Advance Constraints](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-8)
 * [ Day 9 -Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-9)
-* [ Day 10 -Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-10)
+* [ Day 10 -Quality Checks ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-10)
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 <Details>
@@ -1874,10 +1874,10 @@ report_timing -delay min -to prod_reg[*]/D -from [all_inputs]
 </details>
 
 ## Day 10 
- #Topic -Quality Checks
+###Topic -Quality Checks
  
  <details>
-<summary>Multi Cyle Path (LAB)</summary>
+<summary>Report Timing (Theory)</summary>
 
 >![image](https://user-images.githubusercontent.com/118953939/210150544-5837b65c-7971-4c26-ae34-604848969670.png)
 
@@ -1888,3 +1888,28 @@ report_timing -delay min -to prod_reg[*]/D -from [all_inputs]
 >![image](https://user-images.githubusercontent.com/118953939/210150566-2b6b688c-85a5-4169-8a00-7dc1ca453731.png)
 
 >![image](https://user-images.githubusercontent.com/118953939/210150581-5c8c97c7-b613-49df-ba3f-236028c98f3c.png)
+	</details>
+
+<details>
+<summary>Report Timing (LAB)</summary>	
+	
+```	
+report_timing -nosplit -trans -cap -nets -inp -from IN_A > t1.rpt
+report_timing -rise_from IN_A -sig 4 -trans -cap -nets -inp > t2.rpt
+```
+>![image](https://user-images.githubusercontent.com/118953939/210150664-3ddc61b5-f50a-4c60-873e-d941ca827d1c.png)
+
+```
+report_timing -nosplit -trans -cap -nets -inp -from IN_A > t1.rpt
+report_timing -rise_from IN_A -sig 4 -trans -cap -nets -inp -to REGA_reg/D
+```
+>![image](https://user-images.githubusercontent.com/118953939/210150779-2717bc93-0ca2-4276-97ab-f13a39067be1.png)
+
+```
+report_timing -delay min -from IN_A
+report_timing -thr U15/Y
+report_timing -thr U15/Y –delay min
+```
+>![image](https://user-images.githubusercontent.com/118953939/210150814-dd7c0839-f924-4b81-a071-9d7b2f7a768c.png)
+
+</details>
