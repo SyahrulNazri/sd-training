@@ -1776,13 +1776,15 @@ report_timing -from [all_inputs] -trans -cap -nosplit -sig 4
 
 </details>
 
- <details>
-	 <summary>Isolating Output Ports (LAB)</summary>
+<details>
+<summary>Isolating Output Ports (LAB)</summary>
+	
 ```
 sh gvim DC_WORKSHOP/verilog_files/check_boundary.v
 ```
 >![image](https://user-images.githubusercontent.com/118953939/210134334-57050b2e-0fc1-416e-adef-ab7ca68c4fdc.png)
 
+	 
 - isolated setup 
 	 
 ```
@@ -1795,7 +1797,8 @@ sh gvim DC_WORKSHOP/verilog_files/check_boundary.v
 -start_gui
 	
 >![image](https://user-images.githubusercontent.com/118953939/210134342-0ce51d8a-304e-4f9e-82e4-eb11a36f84eb.png)
-
+```
+	
 - Set constraints and vie report before isolated
 ```
 read_verilog DC_WORKSHOP/verilog_files/check_boundary.v
@@ -1808,8 +1811,8 @@ set_load -max 0.3 [all_outputs]
 report_timing -nosplit -inp -cap -trans -sig 4
 report_timing -to val_out_reg[0]/D -inp -trans -nosplit -cap -sig 4		(Viewing report timing before isolating portr -> reg to reg path)
 ```
-- Report Timing After isolated
-	 
+	
+- Report Timing After isolated	 
 ```
 set_isolate_ports -type buffer [all_outputs]
 compile_ultra
@@ -1819,4 +1822,53 @@ report_timing -from val_out_reg[0]/CLK -to val_out_reg[0]/D -nosplit -inp -cap -
 >![image](https://user-images.githubusercontent.com/118953939/210134351-338b3938-3f8a-4ad3-815f-96f3708e2bb7.png)
 </details>
 
+<details>
+<summary>Multi Cyle Path (LAB)</summary>
 
+```
+sh gvim DC_WORKSHOP/verilog_files/mcp_check.v
+```
+![image](https://user-images.githubusercontent.com/118953939/210134607-45925f53-a463-4380-ab46-6129275b960d.png)
+
+- set constraints 
+```
+read_verilog DC_WORKSHOP/verilog_files/mcp_check.v
+link
+compile_ultra
+sh gvim DC_WORKSHOP/verilog_files/mcp_check_cons.tcl
+source DC_WORKSHOP/verilog_files/mcp_check_cons.tcl
+report_timing
+compile_ultra
+report_timing
+set_multicycle_path -setup 2 -to prod_reg[*]/D -from [all_inputs] 	(Must put all_inputs -> valid to prod_reg is a single cycle path. If [all_inputs] didn't     	                                                         there, it will mcp the valid to prod_reg path too. This is a CRIMINAL MISTAKE!)
+report_timing -to prod_reg[*]/D -from valid_reg/CLK
+report_clock *
+report_timing -to prod_reg[*]/D -from [all_inputs]
+```
+>![image](https://user-images.githubusercontent.com/118953939/210134697-d9cdc8d6-8d95-4119-ae4c-65640625a90d.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/210134705-212464ff-f6ae-4628-928a-a3857e870627.png)
+
+- Hold time
+```
+-report_timing -delay min
+```
+- Apply MCP hold time 
+```
+set_multicycle_path -hold 1 -from [all_inputs] -to prod_reg[*]/D
+report_timing -delay min -to prod_reg[*]/D -from [all_inputs]
+```	
+![image](https://user-images.githubusercontent.com/118953939/210134821-15373113-6e9c-466b-a320-0600c58b1490.png)
+
+- Isolated Output ports 
+
+```
+-set_isolate set_isolate_ports -type buffer 
+-report_timing -nosplit -inp -cap -trans -sig 4
+-report_timing -to prod_reg[*]/D -from [all_inputs]
+```
+
+![image](https://user-images.githubusercontent.com/118953939/210134838-957e43dc-2f0e-45bb-a867-578be4017152.png)
+![image](https://user-images.githubusercontent.com/118953939/210134850-9453d20d-8c89-42d8-84f8-c90b661ed0ce.png)
+
+</details>
