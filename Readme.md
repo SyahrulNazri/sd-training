@@ -1505,7 +1505,7 @@ read_ddc DC_WORKSHOP/verilog_files/opt_check4.ddc
 </details>
 
 <details>
-<summary>Resource Sharing optimizations</summary
+<summary>Resource Sharing optimizations(LAB)</summary
 
 - resource_sharing_mult_check.v balance optimization (no constrain set)
 
@@ -1551,3 +1551,132 @@ report_area
 ```
 >![image](https://user-images.githubusercontent.com/118953939/209918482-d5307969-0987-470f-87eb-111001ebf6d5.png)
  </details>
+ 
+ <details>
+<summary>Sequential Optimizations (LAB)</summary
+ 
+ - DFF_CONST1 
+ ``` 
+ -sh gvim DC_WORKSHOP/verilog_files/dff_cons* -o
+ 
+ -foreach_in_collection my_cell [get_cells *] {
+   set cell_name [get_object_name $my_cell];
+   echo $cell_name; 
+   }
+	
+ -foreach_in_collection my_cell [get_cells *] {
+    set cell_name [get_object_name $my_cell];
+    set rn [get_attribute [get_cells $cell_name] ref_name];  
+    echo $cell_name $rn; 
+    }
+ -read_verilog DC_WORKSHOP/verilog_files/dff_const1.v
+ -link
+ -compile
+ >Run in Design Vision 
+ -read_verilog DC_WORKSHOP/verilog_files/dff_const1.v
+ -link
+ -compile
+ ```
+ 
+ ![image](https://user-images.githubusercontent.com/118953939/210133066-21ac035a-1ab9-42ab-b22c-ee0b0bfaa7fb.png)
+ 
+ - DFF_CONST2
+ ``` 
+ -sh gvim DC_WORKSHOP/verilog_files/dff_cons* -o
+ 
+ -foreach_in_collection my_cell [get_cells *] {
+   set cell_name [get_object_name $my_cell];
+   echo $cell_name; 
+   }
+	
+ -foreach_in_collection my_cell [get_cells *] {
+    set cell_name [get_object_name $my_cell];
+    set rn [get_attribute [get_cells $cell_name] ref_name];  
+    echo $cell_name $rn; 
+    }
+ -read_verilog DC_WORKSHOP/verilog_files/dff_const2.v
+ -link
+ -compile
+
+ >Run in Design Vision 
+ -read_verilog DC_WORKSHOP/verilog_files/dff_const2.v
+ -link
+ -compile
+ ```
+>![image](https://user-images.githubusercontent.com/118953939/210133127-19396d57-e22f-4c74-8be4-4e9227575fc7.png)
+
+- DFF_CONST3
+ ``` 
+ -sh gvim DC_WORKSHOP/verilog_files/dff_cons* -o
+ 
+ -foreach_in_collection my_cell [get_cells *] {
+   set cell_name [get_object_name $my_cell];
+   echo $cell_name; 
+   }
+	
+ -foreach_in_collection my_cell [get_cells *] {
+    set cell_name [get_object_name $my_cell];
+    set rn [get_attribute [get_cells $cell_name] ref_name];  
+    echo $cell_name $rn; 
+    }
+ -read_verilog DC_WORKSHOP/verilog_files/dff_const3.v
+ -link
+ -compile
+
+ >Run in Design Vision 
+ -read_verilog DC_WORKSHOP/verilog_files/dff_const3.v
+ -link
+ -compile
+ ```
+>![image](https://user-images.githubusercontent.com/118953939/210133132-9ca8a4c0-e989-4286-8dcf-2e16bef09c4d.png)
+
+- DFF_CONST4
+ ``` 
+ -sh gvim DC_WORKSHOP/verilog_files/dff_cons* -o
+ 
+ -foreach_in_collection my_cell [get_cells *] {
+   set cell_name [get_object_name $my_cell];
+   echo $cell_name; 
+   }
+	
+ -foreach_in_collection my_cell [get_cells *] {
+    set cell_name [get_object_name $my_cell];
+    set rn [get_attribute [get_cells $cell_name] ref_name];  
+    echo $cell_name $rn; 
+    }
+ -read_verilog DC_WORKSHOP/verilog_files/dff_const4.v
+ -link
+ -compile
+
+ >Run in Design Vision 
+ -read_verilog DC_WORKSHOP/verilog_files/dff_const4.v
+ -link
+ -compile
+ ```
+>![image](https://user-images.githubusercontent.com/118953939/210133150-a7a593ff-2d7f-4b73-8002-c5ba03df13bc.png)
+
+- DFF_CONST5
+ ``` 
+ -sh gvim DC_WORKSHOP/verilog_files/dff_cons* -o
+ 
+ -foreach_in_collection my_cell [get_cells *] {
+   set cell_name [get_object_name $my_cell];
+   echo $cell_name; 
+   }
+	
+ -foreach_in_collection my_cell [get_cells *] {
+    set cell_name [get_object_name $my_cell];
+    set rn [get_attribute [get_cells $cell_name] ref_name];  
+    echo $cell_name $rn; 
+    }
+ -read_verilog DC_WORKSHOP/verilog_files/dff_const5.v
+ -link
+ -compile
+
+ >Run in Design Vision 
+ -read_verilog DC_WORKSHOP/verilog_files/dff_const5.v
+ -link
+ -compile
+ ```
+>![image](https://user-images.githubusercontent.com/118953939/210133170-ba9ea212-bfc0-40cb-89a2-e9a16bbe8567.png)
+
