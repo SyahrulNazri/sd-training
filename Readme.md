@@ -1874,7 +1874,7 @@ report_timing -delay min -to prod_reg[*]/D -from [all_inputs]
 </details>
 
 ## Day 10 
-###Topic -Quality Checks
+### Topic -Quality Checks
  
  <details>
 <summary>Report Timing (Theory)</summary>
