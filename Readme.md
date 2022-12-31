@@ -1518,6 +1518,7 @@ report_area
 >![image](https://user-images.githubusercontent.com/118953939/209917404-df838fbd-7461-4872-8475-971ed40b339f.png)
 
 - resource_sharing_mult_check.v (max delay 2.5ns)
+	
 ```
 set_max_delay -from [all_inputs] -to [all_outputs] 2.5
 report_timing
@@ -1682,7 +1683,8 @@ report_area
 	</details>
 	
  <details>
-<summary>Special Optimization(Theory)</summary
+	 <summary>Special Optimization(Theory)</summary>
+	 
 >![image](https://user-images.githubusercontent.com/118953939/210133281-e690cb59-2702-445f-8fac-9655faee9091.png)
 
 >![image](https://user-images.githubusercontent.com/118953939/210133286-9e339ad8-42d5-4e83-a112-308456c043e8.png)
@@ -1768,4 +1770,4 @@ report_timing -from [all_inputs] -trans -cap -nosplit -sig 4
 ```
 >![image](https://user-images.githubusercontent.com/118953939/210133686-e82e1539-71a4-4dd6-89b8-ac5c15feebe8.png)
 
-
+	</details>
