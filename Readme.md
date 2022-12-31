@@ -12,7 +12,7 @@
 * [ Day 7 -Basic of Static Timing Analysis(STA)](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-7)
 * [ Day 8 -Advance Constraints](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-8)
 * [ Day 9 -Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-9)
-*
+* [ Day 10 -Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-10)
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 <Details>
@@ -1872,3 +1872,19 @@ report_timing -delay min -to prod_reg[*]/D -from [all_inputs]
 ![image](https://user-images.githubusercontent.com/118953939/210134850-9453d20d-8c89-42d8-84f8-c90b661ed0ce.png)
 
 </details>
+
+## Day 10 
+ #Topic -Quality Checks
+ 
+ <details>
+<summary>Multi Cyle Path (LAB)</summary>
+
+>![image](https://user-images.githubusercontent.com/118953939/210150544-5837b65c-7971-4c26-ae34-604848969670.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/210150554-7f645bcd-f5f6-4103-a7c0-59d68c35902c.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/210150562-7def7570-1878-4a4b-8466-87c8b8d4371f.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/210150566-2b6b688c-85a5-4169-8a00-7dc1ca453731.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/210150581-5c8c97c7-b613-49df-ba3f-236028c98f3c.png)
