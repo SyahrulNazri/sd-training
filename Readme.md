@@ -1557,6 +1557,7 @@ report_area
 <summary>Sequential Optimizations (LAB)</summary
  
  - DFF_CONST1 
+	
  ``` 
  -sh gvim DC_WORKSHOP/verilog_files/dff_cons* -o
  
@@ -1657,6 +1658,7 @@ report_area
 >![image](https://user-images.githubusercontent.com/118953939/210133150-a7a593ff-2d7f-4b73-8002-c5ba03df13bc.png)
 
 - DFF_CONST5
+	 
  ``` 
  -sh gvim DC_WORKSHOP/verilog_files/dff_cons* -o
  
@@ -1678,12 +1680,15 @@ report_area
  -read_verilog DC_WORKSHOP/verilog_files/dff_const5.v
  -link
  -compile
+	 
  ```
+
 >![image](https://user-images.githubusercontent.com/118953939/210133170-ba9ea212-bfc0-40cb-89a2-e9a16bbe8567.png)
-	</details>
+	
+</details>
 	
  <details>
-	 <summary>Special Optimization(Theory)</summary>
+<summary>Special Optimization(Theory)</summary>
 	 
 >![image](https://user-images.githubusercontent.com/118953939/210133281-e690cb59-2702-445f-8fac-9655faee9091.png)
 
@@ -1696,8 +1701,7 @@ report_area
 >![image](https://user-images.githubusercontent.com/118953939/210133323-bcc0a390-d342-4d17-8e6e-0a0a105b283e.png)
 
 >![image](https://user-images.githubusercontent.com/118953939/210133352-77a89b65-2833-48f4-83a7-6d7ba1cb79ea.png)
-
-	</details>
+</details>
 	
  <details>
 <summary>How Paths are timed MCP? (Theory)</summary
@@ -1710,7 +1714,7 @@ report_area
 </details>
 
  <details>
-	 <summary>Boundary Optimization ? (LAB)</summary>
+	 <summary>Boundary Optimization  (LAB)</summary>
 
 - Boundary Optimization 
 ```
@@ -1736,7 +1740,7 @@ sh gvim DC_WORKSHOP/verilog_files/check_boundary.v
 	</details>
 	
  <details>
-	 <summary>Register Timing ? (LAB)</summary>
+	 <summary>Register Timing  (LAB)</summary>
 	 
 - Command 
 ```
@@ -1770,4 +1774,49 @@ report_timing -from [all_inputs] -trans -cap -nosplit -sig 4
 ```
 >![image](https://user-images.githubusercontent.com/118953939/210133686-e82e1539-71a4-4dd6-89b8-ac5c15feebe8.png)
 
-	</details>
+</details>
+
+ <details>
+	 <summary>Isolating Output Ports (LAB)</summary>
+```
+sh gvim DC_WORKSHOP/verilog_files/check_boundary.v
+```
+>![image](https://user-images.githubusercontent.com/118953939/210134334-57050b2e-0fc1-416e-adef-ab7ca68c4fdc.png)
+
+- isolated setup 
+	 
+```
+-read_verilog DC_WORKSHOP/verilog_files/check_boundary.v
+-link
+-compile_ultra
+-start_gui
+-set_isolate_ports -type buffer [all_outputs]
+-compile_ultra
+-start_gui
+	
+>![image](https://user-images.githubusercontent.com/118953939/210134342-0ce51d8a-304e-4f9e-82e4-eb11a36f84eb.png)
+
+- Set constraints and vie report before isolated
+```
+read_verilog DC_WORKSHOP/verilog_files/check_boundary.v
+link
+compile_ultra
+create_clock -per 5 -name myclk [get_ports clk]
+set_input_delay -max 2 [all_inputs] -clock myclk
+set_output_delay -max 2 [all_outputs] -clock myclk
+set_load -max 0.3 [all_outputs]
+report_timing -nosplit -inp -cap -trans -sig 4
+report_timing -to val_out_reg[0]/D -inp -trans -nosplit -cap -sig 4		(Viewing report timing before isolating portr -> reg to reg path)
+```
+- Report Timing After isolated
+	 
+```
+set_isolate_ports -type buffer [all_outputs]
+compile_ultra
+report_timing -nosplit -inp -cap -trans -sig 4
+report_timing -from val_out_reg[0]/CLK -to val_out_reg[0]/D -nosplit -inp -cap -trans -sig 4
+```
+>![image](https://user-images.githubusercontent.com/118953939/210134351-338b3938-3f8a-4ad3-815f-96f3708e2bb7.png)
+</details>
+
+
