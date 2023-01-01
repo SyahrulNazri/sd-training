@@ -1432,7 +1432,7 @@ Compile_register_replication (advance technique)
 </details>
 	
 <details>
-<summary>Combinational Optimizations</summary>
+<summary>Combinational Optimizations(LAB)</summary>
 
 - Optimization of Opt_Check.v
 	
