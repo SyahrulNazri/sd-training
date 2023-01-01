@@ -1498,10 +1498,20 @@ write -f ddc -out opt_check4.ddc
 IN DESIGN VISION
 reset_design
 read_ddc DC_WORKSHOP/verilog_files/opt_check4.ddc
+report_timing -to y
+set_max_delay 0.06 -from [all_inputs] -to [get_ports y]
+compile_ultra 
+report_timing 
+size_cell U3  sky130_fd_sc_hd__tt_025C_1v80/sky130_fd_sc_hd__xnor2_4
+report_timing
+compile_ultra
+report_timing
+
 ```
 	
 >![image](https://user-images.githubusercontent.com/118953939/209915246-33d477f4-5aab-4d58-ba82-59934cd9bb9e.png)
->![image](https://user-images.githubusercontent.com/118953939/209915261-6b4a86d0-1317-4e66-84f2-c1ffb0bfa439.png)
+>![image](https://user-images.githubusercontent.com/118953939/210177616-519e2287-41ad-42de-bc73-683cb9173114.png)
+
 </details>
 
 <details>
