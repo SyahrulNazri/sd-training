@@ -1993,12 +1993,12 @@ Report_timing
 ```
 report_timing -from en -inp -nets -cap -trans -sig 4 -from en -to y[116]	
 ```
-![image](https://user-images.githubusercontent.com/118953939/210175552-5861d687-67f2-4d14-925e-1479a14cfb5b.png)
+>![image](https://user-images.githubusercontent.com/118953939/210175552-5861d687-67f2-4d14-925e-1479a14cfb5b.png)
 
-	</details>
+</details>
 
 <details>
 <summary>Summarizing Synthesis</summary>
 
 >![image](https://user-images.githubusercontent.com/118953939/210175592-7571fa42-f71b-4406-916d-638cd04dd6e3.png)
-	</details>
+</details>
