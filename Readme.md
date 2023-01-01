@@ -1913,3 +1913,92 @@ report_timing -thr U15/Y –delay min
 >![image](https://user-images.githubusercontent.com/118953939/210150814-dd7c0839-f924-4b81-a071-9d7b2f7a768c.png)
 
 </details>
+
+<details>
+<summary>Lab check_timing,Check_design,Set_max_capacitance and HFN(LAB)</summary>
+	
+```
+read_verilog DC_WORKSHOP/verilog_files/lab8_circuit.v
+link
+check_design
+compile_ultra
+checking_timing 
+report_constraint
+```
+>![image](https://user-images.githubusercontent.com/118953939/210175392-c2f75285-8933-4cca-8a72-2750df1bdec5.png)
+
+```
+source DC_WORKSHOP/verilog_files/lab8_cons_modified.tcl
+checking_timing 
+report_constraint
+```
+>![image](https://user-images.githubusercontent.com/118953939/210175403-343e18b8-a3ac-443a-9e52-a9b755f12276.png)
+
+```
+read_verilog mux_generate_128_1.v 
+link
+compile_ultra
+write -f verilog -out mux_generate_128_1_net.v
+sh gvim mux_generate_128_1_net.v &
+dc_shell> get_cells * -hier -filter "is_sequential == true"
+dc_shell> get_cells * -hier -filter "is_sequential == false“
+```
+>![image](https://user-images.githubusercontent.com/118953939/210175421-afb13551-62c7-4dd6-8704-67865e6de048.png)
+
+```
+report_timing -net -cap -sig 4
+check_timing
+set_max_delay -from [all_inputs] -to [all_outputs] 3.5
+````
+>![image](https://user-images.githubusercontent.com/118953939/210175450-32a68566-a06b-4554-94ff-72aacc9d54f6.png)
+	
+```
+set_max_capacitance 0.025 [current_design]
+report_constraint -all_violators
+compile_ultra
+report_constraint
+report_timing
+report_timing –net –cap –sig 4
+```
+![image](https://user-images.githubusercontent.com/118953939/210175488-6cf3450b-a444-43a6-820d-adb729fc285d.png)
+
+```
+reset_design 
+read_verilog en_128.v
+link
+compile_ultra
+report_timing -from en -inp -nets –cap
+report_constraint
+```
+```
+set_max_capacitance 0.03 [current_design]
+compile_ultra
+report_timing -from en -inp -nets –cap
+report_constraint
+write -f ddc -out en_128.ddc
+Design vision
+Read_en_18.ddc
+```
+>![image](https://user-images.githubusercontent.com/118953939/210175517-6e83772e-b655-4857-86be-eb36e44afcaa.png)
+
+```	
+report_timing -from en -inp -nets –cap –trans –sig 4
+set_max_transition 0.150 [current_design]
+report_constraints
+Check_timing 
+Report_timing 
+```
+>![image](https://user-images.githubusercontent.com/118953939/210175536-e2a79a89-2251-4cc0-ab86-9800e999b400.png)
+
+```
+report_timing -from en -inp -nets -cap -trans -sig 4 -from en -to y[116]	
+```
+![image](https://user-images.githubusercontent.com/118953939/210175552-5861d687-67f2-4d14-925e-1479a14cfb5b.png)
+
+	</details>
+
+<details>
+<summary>Summarizing Synthesis</summary>
+
+>![image](https://user-images.githubusercontent.com/118953939/210175592-7571fa42-f71b-4406-916d-638cd04dd6e3.png)
+	</details>
