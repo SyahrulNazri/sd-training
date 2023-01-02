@@ -2023,12 +2023,19 @@ If we want to perform static timing analysis on a chip using PrimeTime, every le
 * ETM (Extracted Timing Models) ?
 The Extracted Timing Model (ETM) is an abstraction of the block using sequential and combinational timing arcs. NLDM lookup tables are extracted for each of the timing arcs whose delay is a function of input transitions and output loads, which makes the ETM usable with different input transition times and different output loads.Using ETMs to abstract the timing model of a complex block or IP hides the detailed design implementation information. This usage model is ideal for IP providers.
 
+	
 1.Block based model (.lib)
+	
 2.Contents of block are hidden
+	
 3.Original netlist replaced by model containing timing arcs for block interfaces.
+	
 4.NLDM lookup tables are extracted for each of the timing arcs.
+	
 5.These arcs whose delay are a function of input transition and output load. This makes ETM usable with different input transition times and different output loads.
+	
 6.Multiple modes per model
+	
 7.Single PVT per model
 
 * QTM (Quick Timing Models):
