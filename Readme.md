@@ -2014,7 +2014,7 @@ report_timing -from en -inp -nets -cap -trans -sig 4 -from en -to y[116]
 </details>
 
 <details>
-<summary>Summarizing Synthesis</summary>
+<summary>Timing Models(ETM,QTM)</summary>
 Timing Models (ETM & QTM)
 
 * Timing Model 
