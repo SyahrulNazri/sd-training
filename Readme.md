@@ -2012,3 +2012,27 @@ report_timing -from en -inp -nets -cap -trans -sig 4 -from en -to y[116]
 
 >![image](https://user-images.githubusercontent.com/118953939/210175592-7571fa42-f71b-4406-916d-638cd04dd6e3.png)
 </details>
+
+<details>
+<summary>Summarizing Synthesis</summary>
+Timing Models (ETM & QTM)
+
+* Timing Model 
+If we want to perform static timing analysis on a chip using PrimeTime, every leaf cell must have a timing model. For static timing purposes, a leaf cell can be a simple macro cell (such as a NAND, NOR, or flip-flop) or a complex block (such as a RAM or microprocessor).
+
+* ETM (Extracted Timing Models) ?
+The Extracted Timing Model (ETM) is an abstraction of the block using sequential and combinational timing arcs. NLDM lookup tables are extracted for each of the timing arcs whose delay is a function of input transitions and output loads, which makes the ETM usable with different input transition times and different output loads.Using ETMs to abstract the timing model of a complex block or IP hides the detailed design implementation information. This usage model is ideal for IP providers.
+
+1.Block based model (.lib)
+2.Contents of block are hidden
+3.Original netlist replaced by model containing timing arcs for block interfaces.
+4.NLDM lookup tables are extracted for each of the timing arcs.
+5.These arcs whose delay are a function of input transition and output load. This makes ETM usable with different input transition times and different output loads.
+6.Multiple modes per model
+7.Single PVT per model
+
+* QTM (Quick Timing Models):
+In the early stages of the design cycle, if a block does not yet have a netlist, you can use a quick timing model to describe its initial timing. Later in the cycle, you can replace each quick timing model with a netlist block to obtain more accurate timing
+
+Reference
+http://mantravlsi.blogspot.com/2014/06/timing-models-etm-qtm-ilm.html
