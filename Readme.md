@@ -2134,7 +2134,8 @@ VSDBabySoC is a small
 The VSDBabySoC is a small but capable RISCV-based SoC. The primary goal of creating such a small SoC is to **test three open-source IP cores together for the first time and calibrate the analogue portion of it**. The **RVMYTH CPU, an 8x-PLL to provide a reliable clock, and a 10-bit DAC** to interface with other analogue devices are all included in the VSDBabySoC.
 
 >![image](https://user-images.githubusercontent.com/118953939/210303616-3abe26cc-a177-4295-b426-e8831ee4c8a4.png)
-	
+
+**Credit : VLSI System Design https://www.vlsisystemdesign.com/
 
 * **What is RVMYTH**?
 RVMYTH core is a simple RISCV-based CPU,introduced in a workshop by RedwoodEDA and VSD .RVMYTH is designed and created by the TL-Verilog lanuage.So,we need a way to compile and transform it to the Verilog Language and use the result in our SoC.
