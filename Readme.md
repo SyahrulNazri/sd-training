@@ -2060,7 +2060,6 @@ Chips begin with a very simple raw ingredient called SAND. Complex chemical and 
 
 
 * **How to allow wafer become conductive ?.**
-
 Small quantities of specific atoms are added as impurities to the wafer. These impurity atoms must have a number of outer electrons that is either one more or one less than that of silicon. For example boron and phosphorus.The material becomes p-conductive or n-conductive depending on the amount of outside electrons. Transistors are formed on the doped wafer's p- and n-conductive layers. Microchips' smallest control units are transistors. They are the most crucial components of electronic circuits because they control electric voltages and currents.
 
 
