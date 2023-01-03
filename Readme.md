@@ -2052,7 +2052,7 @@ http://mantravlsi.blogspot.com/2014/06/timing-models-etm-qtm-ilm.html
 Topic - BabySoC
 	
 <details>
-<summary>BabySoC</summary>
+<summary>SoC</summary>
 
 * **What is SoC ?**
 	
@@ -2088,6 +2088,12 @@ To increased performance and reduced power consumption as well as a smaller semi
 * **SoC Design Flow**
 
 >![image](https://user-images.githubusercontent.com/118953939/210301229-0affa0bb-e865-445c-b52c-545d3b7f16fb.png)
+
+</details>
+	
+	
+<details>
+<summary>BabySoC</summary>
 
 * **Introduction to BabySoC**
 VSDBabySoC is a small 
