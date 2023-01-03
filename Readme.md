@@ -2044,7 +2044,8 @@ In the early stages of the design cycle, if a block does not yet have a netlist,
 
 Reference
 http://mantravlsi.blogspot.com/2014/06/timing-models-etm-qtm-ilm.html
-
+	
+	</details>
 
 <details>
 <summary>BabySoC</summary>
