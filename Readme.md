@@ -2047,18 +2047,21 @@ http://mantravlsi.blogspot.com/2014/06/timing-models-etm-qtm-ilm.html
 	
 </details>
 
+	
 ## Day 11
 Topic - BabySoC
+	
 <details>
 <summary>BabySoC</summary>
 
-*What is SoC ?*
+* **What is SoC ?**
+	
 Soc acronym for system on chip is an IC which intergrates all the components into a single chip.It may contain analog,digital mixed signal and other radio frequency.Today,SoCs are very common in electronics industry due to its low power consumption.
 
-*Why is SoC ?*
+* **Why is SoC ?**
 To increased performance and reduced power consumption as well as a smaller semiconductor die area.
 
-*SoCs consists :*
+* **SoCs consists :**
 
 1.Control Unit :In SoCs,the major control units are microprocessors,microcontrollers and digital signal processors.
 	
@@ -2070,7 +2073,45 @@ To increased performance and reduced power consumption as well as a smaller semi
 	
 5.Analog interfaces,external interfaces,voltage regulators adn power management units form the basic interfaces of the SoCs.
 
+* **Structure of Snapdragon**
+	
+>![image](https://user-images.githubusercontent.com/118953939/210299468-67724854-53b7-49c0-a4d0-1c0764ea046b.png)
 
+* **Type of SoC**
+ 
+1.SoCs built around a microcontroller.
+
+2.SoCs built around a microprocessor.
+
+3.Specialized application-specific integrated circuit SoCs designed for specific application that cannot fit into theabove two categories.
+	
+* **SoC Design Flow**
+
+>![image](https://user-images.githubusercontent.com/118953939/210301229-0affa0bb-e865-445c-b52c-545d3b7f16fb.png)
+
+* **Introduction to BabySoC**
+VSDBabySoC is a small 
+
+The VSDBabySoC is a small but capable RISCV-based SoC. The primary goal of creating such a small SoC is to **test three open-source IP cores together for the first time and calibrate the analogue portion of it**. The **RVMYTH CPU, an 8x-PLL to provide a reliable clock, and a 10-bit DAC** to interface with other analogue devices are all included in the VSDBabySoC.
+
+>![image](https://user-images.githubusercontent.com/118953939/210303616-3abe26cc-a177-4295-b426-e8831ee4c8a4.png)
+	
+
+* **What is RVMYTH**
+RVMYTH core is a simple RISCV-based CPU,introduced in a workshop by RedwoodEDA and VSD .RVMYTH is designed and created by the TL-Verilog lanuage.So,we need a way to compile and transform it to the Verilog Language and use the result in our SoC.
+
+
+* **What is PLL**
+PLL or Phase-locked Loop  is a control system that generated an output signal whose phase is related to the phase of an inout signal.
+	
+* **What is Digital-to Analog converter(DAC)**
+A digital-to-analog converter or DAC is a system that converts a digital signal to an analog signal.
 </details>
+	
+
+
+	
+
+
 
 
