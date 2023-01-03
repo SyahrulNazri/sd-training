@@ -2063,7 +2063,7 @@ To increased performance and reduced power consumption as well as a smaller semi
 4.Other perpherals of SoCs are counter timers,real-time timers and power on reset generators.
 5.Analog interfaces,external interfaces,voltage regulators adn power management units form the basic interfaces of the SoCs.
 
-
+</details>
 
 
 
