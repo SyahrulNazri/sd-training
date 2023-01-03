@@ -2050,9 +2050,35 @@ http://mantravlsi.blogspot.com/2014/06/timing-models-etm-qtm-ilm.html
 	
 ## Day 11
 Topic - BabySoC
+
+<details>
+<summary>How Chips Manufactured ?</summary>
+	
+* **How Chips are made**? 
+Chips begin with a very simple raw ingredient called SAND. Complex chemical and physical techniques are necessary to manufacture a pure monocrystalline silicon ingot, known as a boule, from sand, with only one impurity atom for every ten million silicon atoms. A specific sawing process is then used to cut extremely thin wafers from the silicon boules. Wafer sizes of 150, 200, and 300 mm are the most popular. Larger diameter wafers provide greater area for semiconductors. This wafer has the ability to carry electricity while also acting as an insulator.
+
+
+* **How to allow wafer become conductive ?.**
+
+Small quantities of specific atoms are added as impurities to the wafer. These impurity atoms must have a number of outer electrons that is either one more or one less than that of silicon. For example boron and phosphorus.The material becomes p-conductive or n-conductive depending on the amount of outside electrons. Transistors are formed on the doped wafer's p- and n-conductive layers. Microchips' smallest control units are transistors. They are the most crucial components of electronic circuits because they control electric voltages and currents.
+
+
+* **How layer created on a wafer?**
+
+1.The manufacturing of chips from a wafer begins with the layout and design phase. Highly complicated chips are composed of billions of integrated and connected     
+  transistors, allowing complex circuits such as microcontrollers and crypto chips to be created on a semiconductor surface as small as a few square millimetres.
+
+2.The wafer's surface is oxidised in a high-temperature furnace operating at around 1000 degrees Celsius to form a non-conductive layer. Then, employing centrifugal  	force, a photo resist substance is uniformly placed on this non-conductive layer. The wafer is then exposed to light through the photomask in steppers, which are     special exposure devices. The chip pattern's exposed area is created, disclosing the layer of oxide beneath. The exposed area is left alone to safeguard the oxide     layer. The wafer is then exposed to light via the mask after another application of photoresist.
+
+3.The following step is the doping procedure, which involves introducing impurity atoms into the exposed silicon. To inject impurity atoms into the silicon, an ion     implanter is employed. Following the removal of the photoresist residue, another oxide layer is placed. The wafer goes through another cycle of photoresist    	       application, mask exposure, and stripping. To get access to the conductive layers, contact holes are etched, allowing the contacts and interconnections to be 	     incorporated onto the wafer. The photoresist and mask are applied once again. A chemical-mechanical technique is used to polish away surplus material with 	   millimetre accuracy to provide the insulating layer above the interconnections the smooth finish it requires. During the fabrication process, these individual         processes may be performed several times.
+
+4.Assembly is the final stage of manufacture. Individual chips are placed in a package and terminals are connected. The end product is a completed semiconductor         device that may be installed on circuit boards using several types of connections. It is possible to make over a thousand connection contacts.
+</details>
+	
 	
 <details>
 <summary>SoC</summary>
+
 
 * **What is SoC ?**
 	
@@ -2103,14 +2129,14 @@ The VSDBabySoC is a small but capable RISCV-based SoC. The primary goal of creat
 >![image](https://user-images.githubusercontent.com/118953939/210303616-3abe26cc-a177-4295-b426-e8831ee4c8a4.png)
 	
 
-* **What is RVMYTH**
+* **What is RVMYTH**?
 RVMYTH core is a simple RISCV-based CPU,introduced in a workshop by RedwoodEDA and VSD .RVMYTH is designed and created by the TL-Verilog lanuage.So,we need a way to compile and transform it to the Verilog Language and use the result in our SoC.
 
 
-* **What is PLL**
+* **What is PLL**?
 PLL or Phase-locked Loop  is a control system that generated an output signal whose phase is related to the phase of an inout signal.
 	
-* **What is Digital-to Analog converter(DAC)**
+* **What is Digital-to Analog converter(DAC)**?
 A digital-to-analog converter or DAC is a system that converts a digital signal to an analog signal.
 </details>
 	
