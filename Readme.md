@@ -13,6 +13,7 @@
 * [ Day 8 -Advance Constraints](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-8)
 * [ Day 9 -Optimizations](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-9)
 * [ Day 10 -Quality Checks ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-10)
+* [ Day 11 -Baby SoC  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-11)
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 <Details>
@@ -2073,8 +2074,11 @@ Small quantities of specific atoms are added as impurities to the wafer. These i
 3.The following step is the doping procedure, which involves introducing impurity atoms into the exposed silicon. To inject impurity atoms into the silicon, an ion     implanter is employed. Following the removal of the photoresist residue, another oxide layer is placed. The wafer goes through another cycle of photoresist    	       application, mask exposure, and stripping. To get access to the conductive layers, contact holes are etched, allowing the contacts and interconnections to be 	     incorporated onto the wafer. The photoresist and mask are applied once again. A chemical-mechanical technique is used to polish away surplus material with 	   millimetre accuracy to provide the insulating layer above the interconnections the smooth finish it requires. During the fabrication process, these individual         processes may be performed several times.
 
 4.Assembly is the final stage of manufacture. Individual chips are placed in a package and terminals are connected. The end product is a completed semiconductor         device that may be installed on circuit boards using several types of connections. It is possible to make over a thousand connection contacts.
+	
+**REFERENCE : https://www.infineon.com/cms/en/product/promopages/how-a-chip-is-made-video/**
 </details>
 	
+
 	
 <details>
 <summary>SoC</summary>
