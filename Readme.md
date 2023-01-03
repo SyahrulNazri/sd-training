@@ -2047,6 +2047,8 @@ http://mantravlsi.blogspot.com/2014/06/timing-models-etm-qtm-ilm.html
 	
 </details>
 
+## Day 11
+Topic - BabySoC
 <details>
 <summary>BabySoC</summary>
 
@@ -2059,9 +2061,13 @@ To increased performance and reduced power consumption as well as a smaller semi
 *SoCs consists :*
 
 1.Control Unit :In SoCs,the major control units are microprocessors,microcontrollers and digital signal processors.
+	
 2.Memory Blocks :ROM,RAM.Flash memory and EEPROM are the basic memory units inside a SoC chip.
+	
 3.Timing Units :Oscillators and PLLs are timing units of the System on Chip.
+	
 4.Other perpherals of SoCs are counter timers,real-time timers and power on reset generators.
+	
 5.Analog interfaces,external interfaces,voltage regulators adn power management units form the basic interfaces of the SoCs.
 
 
