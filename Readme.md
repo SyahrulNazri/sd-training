@@ -2066,14 +2066,17 @@ Small quantities of specific atoms are added as impurities to the wafer. These i
 
 * **How layer created on a wafer?**
 
-1.The manufacturing of chips from a wafer begins with the layout and design phase. Highly complicated chips are composed of billions of integrated and connected     
-  transistors, allowing complex circuits such as microcontrollers and crypto chips to be created on a semiconductor surface as small as a few square millimetres.
+1.The manufacturing of chips from a wafer begins with the layout and design phase. Highly complicated chips are composed of billions of integrated and connected         transistors.
 
-2.The wafer's surface is oxidised in a high-temperature furnace operating at around 1000 degrees Celsius to form a non-conductive layer. Then, employing centrifugal  	force, a photo resist substance is uniformly placed on this non-conductive layer. The wafer is then exposed to light through the photomask in steppers, which are     special exposure devices. The chip pattern's exposed area is created, disclosing the layer of oxide beneath. The exposed area is left alone to safeguard the oxide     layer. The wafer is then exposed to light via the mask after another application of photoresist.
+2.The wafer's surface is oxidised in a high-temperature furnace operating at around 1000 degrees Celsius to form a non-conductive layer. Then, employing centrifugal  	force, a photo resist substance is uniformly placed on this non-conductive layer.
 
-3.The following step is the doping procedure, which involves introducing impurity atoms into the exposed silicon. To inject impurity atoms into the silicon, an ion     implanter is employed. Following the removal of the photoresist residue, another oxide layer is placed. The wafer goes through another cycle of photoresist    	       application, mask exposure, and stripping. To get access to the conductive layers, contact holes are etched, allowing the contacts and interconnections to be 	     incorporated onto the wafer. The photoresist and mask are applied once again. A chemical-mechanical technique is used to polish away surplus material with 	   millimetre accuracy to provide the insulating layer above the interconnections the smooth finish it requires. During the fabrication process, these individual         processes may be performed several times.
+3.The wafer is then exposed to light through the photomask in steppers. The chip pattern's exposed area is created, disclosing the layer of oxide beneath. The wafer      is then exposed to light via the mask after another application of photoresist.
 
-4.Assembly is the final stage of manufacture. Individual chips are placed in a package and terminals are connected. The end product is a completed semiconductor         device that may be installed on circuit boards using several types of connections. It is possible to make over a thousand connection contacts.
+4.The following step is the doping procedure, which involves introducing impurity atoms into the exposed silicon. To inject impurity atoms into the silicon, an ion     implanter is employed. 
+
+5.Following the removal of the photoresist residue, another oxide layer is placed. The wafer goes through another cycle of photoresist application, mask exposure, and stripping. A chemical-mechanical technique is used to polish away surplus material with millimetre accuracy to provide the insulating layer above the interconnections the smooth finish it requires. During the fabrication process, these individual processes may be performed several times.
+
+6.Assembly is the final stage of manufacture. Individual chips are placed in a package and terminals are connected. The end product is a completed semiconductor         device that may be installed on circuit boards using several types of connections. It is possible to make over a thousand connection contacts.
 	
 **REFERENCE : https://www.infineon.com/cms/en/product/promopages/how-a-chip-is-made-video/**
 </details>
