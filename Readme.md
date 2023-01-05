@@ -2235,13 +2235,13 @@ references :https://www.electronics-tutorials.ws/combination/r-2r-dac.html
 
 - Step Open GUi with normal mode
 
-1.Run the design with valid testbench 
+  1.Run the design with valid testbench 
 
-2.compile 
+  2.compile 
 
-3.cross check .vcd file
+  3.cross check .vcd file
 
-4.invoking DVE tool.
+  4.invoking DVE tool.
 
 **DVE (Interactive mode)**
 
@@ -2249,11 +2249,11 @@ references :https://www.electronics-tutorials.ws/combination/r-2r-dac.html
 
 - Steps to open GUI with interactive mode:
 
-1.Run the design with a valid testbench
+  1.Run the design with a valid testbench
 
-2.Get the code dump file (.vcd)
+  2.Get the code dump file (.vcd)
 
-3.This should open the tool automatically and we can fully run our test bench or debug it step by step
+  3.This should open the tool automatically and we can fully run our test bench or debug it step by step
 
 **RVMYTH modelling**
 
