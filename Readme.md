@@ -2175,6 +2175,7 @@ System models are created to assist in the analysis, specification, design, veri
 
 **Simple one cycle CPU for Risc-V**
 >![image](https://user-images.githubusercontent.com/118953939/210682666-f16d8ac8-85e0-4565-afd6-54990d05bb48.png)
+
 Refference : https://www.vlsisystemdesign.com/
 
 
@@ -2196,3 +2197,49 @@ Main components:
 -Voltage controlled oscillator
 -Frequency divider
 	
+**Digital Analg Converter**
+-puporse-converts a digital input signal to an analog output signal.
+-digital signal is repsented with binary code (combinations logic 0 adn 1).
+-consists of anumber of binary inputs and a single output.
+-Two types DACs 
+	-Weighted Resistor DAC = resistor DAC prduces an analog output,which is almost equal to the digital(binary) input by using binary weighted resistor in the                                      inverting adder circuit.
+	-R-2R Ladder DAC =overcomes the disadvantages of a binary weighted resistor DAC.It produces an analog output which is almost equal to the digital(binary) inpu tby using aR-2R ladder network in the 
+
+**Weighted Resistor DAC**
+![image](https://user-images.githubusercontent.com/118953939/210687752-54a2f06c-1e63-4842-9f77-fbb37be73864.png)
+
+reference : https://microcontrollerslab.com/binary-weighted-resistor-dac-working-example-circuits-advantages/
+
+**R-2R Ladder DAC**
+	
+![image](https://user-images.githubusercontent.com/118953939/210688990-348d0537-c5d8-48f5-97ea-634892929c8b.png)
+
+references :https://www.electronics-tutorials.ws/combination/r-2r-dac.html
+	
+**Tips modelling in design**
+-Avoid race conditions (use VCS race detection tool).
+-Use a optimized Testbench for debugging your design.
+-Creating models that simulate faster.
+-case statement behavior.
+
+**DVE(Normal mode**
+-provides graphical user interface(GUI) to debug the design.
+-Step Open GUi with normal mode
+1.Run the design with valid testbench 
+2.compile 
+3.cross check .vcd file
+4.invoking DVE tool.
+
+**DVE (Interactive mode)**
+
+-Debugging the design in interactive mode or in post-processing mode with a valid testbench
+-Steps to open GUI with interactive mode:
+1.Run the design with a valid testbench
+2.Get the code dump file (.vcd)
+3.This should open the tool automatically and we can fully run our test bench or debug it step by step
+
+**RVMYTH modelling**
+
+-RISC-V CPU core has been written in Verilog and already written testbench code for the same
+-Entire C program will be converted into a hex format and will be loaded into memory
+-CPU will then read the contents of the memory, process it and display the output result of sum numbers from 1 to n
