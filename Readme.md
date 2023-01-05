@@ -2199,11 +2199,16 @@ Main components:
 	
 **Digital Analg Converter**
 -puporse-converts a digital input signal to an analog output signal.
+
 -digital signal is repsented with binary code (combinations logic 0 adn 1).
+
 -consists of anumber of binary inputs and a single output.
+
 -Two types DACs 
+	
 	-Weighted Resistor DAC = resistor DAC prduces an analog output,which is almost equal to the digital(binary) input by using binary weighted resistor in the                                      inverting adder circuit.
-	-R-2R Ladder DAC =overcomes the disadvantages of a binary weighted resistor DAC.It produces an analog output which is almost equal to the digital(binary) inpu tby using aR-2R ladder network in the 
+	
+	-R-2R Ladder DAC =overcomes the disadvantages of a binary weighted resistor DAC.It produces an analog output which is almost equal to the digital(binary) inpu          tby using aR-2R ladder network in the 
 
 **Weighted Resistor DAC**
 ![image](https://user-images.githubusercontent.com/118953939/210687752-54a2f06c-1e63-4842-9f77-fbb37be73864.png)
