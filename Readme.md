@@ -2262,3 +2262,51 @@ references :https://www.electronics-tutorials.ws/combination/r-2r-dac.html
 - Entire C program will be converted into a hex format and will be loaded into memory
 
 - CPU will then read the contents of the memory, process it and display the output result of sum numbers from 1 to n
+</details>
+
+<details>
+<summary>Lab 12</summary>
+
+- Modelling RVMYTH Core
+>![image](https://user-images.githubusercontent.com/118953939/210833664-23ad940e-096b-4960-bf08-81601bb59e25.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/210833707-99000591-a1b6-41f8-8d44-9e33f847fbf7.png)
+
+- DAC modelling (avsddac.v & avsddac_tb_test.v)
+> ![image](https://user-images.githubusercontent.com/118953939/210834328-99579ae1-de0a-48ed-b36c-ea17f3f0c9fd.png)
+
+> ![image](https://user-images.githubusercontent.com/118953939/210834389-9703585b-d791-4742-95fc-ab0f54c0d614.png)
+
+- PLL(avsd_pll_1v8.v & pll_tb)
+
+>![image](https://user-images.githubusercontent.com/118953939/210835668-07e78d0b-39f6-4746-a3a0-ca0280b8fa62.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/210835746-5ac92cee-40ac-445d-99e4-7d8eca5dc692.png)
+
+- Debug mode 
+
+>![image](https://user-images.githubusercontent.com/118953939/210835855-af3ebc9a-4c01-49da-b7fe-80aea017dc7b.png)
+
+* **Verified Block Separately**
+
+- rvmyth_pll.v & rvmyth_pll_tb.v
+
+>![image](https://user-images.githubusercontent.com/118953939/210836041-430b1f0f-7d3e-4a44-b665-197acbdc372f.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/210836185-642de8cf-05ff-43df-b8da-d5a3c270c6b5.png)
+
+- rvmyth_avsddac.v & rvmyth_avsddac_TB.v
+
+>![image](https://user-images.githubusercontent.com/118953939/210837004-c419b9bc-9a0f-4cb6-840f-bf6b743b9628.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/210837058-c1c7f68f-b2e4-419a-8082-401fcd62db3e.png)
+
+- Difference Modes
+
+>![image](https://user-images.githubusercontent.com/118953939/210837347-32558eb1-3a99-4d85-9052-45ab7d017cf7.png)
+
+- Up Counter 
+
+> ![image](https://user-images.githubusercontent.com/118953939/210837598-8d2a160f-e8bf-4395-a72c-f164c5ae85e5.png)
+
+</details>
