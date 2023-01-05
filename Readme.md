@@ -2218,28 +2218,42 @@ references :https://www.electronics-tutorials.ws/combination/r-2r-dac.html
 	
 **Tips modelling in design**
 -Avoid race conditions (use VCS race detection tool).
+
 -Use a optimized Testbench for debugging your design.
+
 -Creating models that simulate faster.
+
 -case statement behavior.
 
 **DVE(Normal mode**
 -provides graphical user interface(GUI) to debug the design.
+
 -Step Open GUi with normal mode
+
 1.Run the design with valid testbench 
+
 2.compile 
+
 3.cross check .vcd file
+
 4.invoking DVE tool.
 
 **DVE (Interactive mode)**
 
 -Debugging the design in interactive mode or in post-processing mode with a valid testbench
+
 -Steps to open GUI with interactive mode:
+
 1.Run the design with a valid testbench
+
 2.Get the code dump file (.vcd)
+
 3.This should open the tool automatically and we can fully run our test bench or debug it step by step
 
 **RVMYTH modelling**
 
 -RISC-V CPU core has been written in Verilog and already written testbench code for the same
+
 -Entire C program will be converted into a hex format and will be loaded into memory
+
 -CPU will then read the contents of the memory, process it and display the output result of sum numbers from 1 to n
