@@ -2147,10 +2147,52 @@ PLL or Phase-locked Loop  is a control system that generated an output signal wh
 A digital-to-analog converter or DAC is a system that converts a digital signal to an analog signal.
 </details>
 	
+## Day-12
+### Topic:BabySoC Modelling 
 
-
+<details>
+<summary>Theory</summary>
 	
+**What exactly is modelling?**
+
+The use of a physical/logical representation of a given system to create data and help determine decisions/predictions about the system is known as modelling and simulation (M&S).In the VLSI arena, M&S is commonly used.
+	
+**Purpose of modelling**
+
+System models are created to assist in the analysis, specification, design, verification, and validation of a system, as well as to communicate specialised information.
+
+**What are we modelling ?**
+
+-Some initial input signal will be fed into vsdbabysoc module.
+-That will get the pll start generating the proper CLK for the circuit.
+-The clock signal will make the rvmyth to execute instructions and some are values are generated.
+-3 main element(IP cores) and a wrapper as an SoC.
+
+**RVMYTH-Risc-V based MYTH (Microsprocessor for you in Thirty Hours)**
+-RISC = RISC stand for Reduced Intruction set computer.
+-RISC-V(Risk-Five) -Instruction set Architecture(ISA) is defined as base integer ISA,which must be present in any implementation plus optional extensions to the base ISA.
+-The width of the integer registers and the associated size of the address space, as well as the number of integer registers, distinguish each base integer instruction set. RV32I and RV64I are the two basic base integer versions.
+
+**Simple one cycle CPU for Risc-V**
+>![image](https://user-images.githubusercontent.com/118953939/210682666-f16d8ac8-85e0-4565-afd6-54990d05bb48.png)
+Refference : https://www.vlsisystemdesign.com/
 
 
+**Phase Locked Loop(PLL)**
+- An electronic circuit with a voltage or voltage -driven oscillator that constantly adjusts to match the frequency of an input signal.
+- This PLLs are used to generate,stabilize,modulate,demodulate.
 
+**WHy off-chip clocks can't be used all the time ?**
+-Clock will be supply for a lot of blocks on the chip.If we used only one clock source it will have delays due to long wires.
+-One small cip will suply on some block with different frequency 200Mhzs adn some might need 100Mhz.
+-A concept of ppm(parts per million) clock accuracy comes in,when ever quarts is acquired,it comes with a x ppm error.
+	
+**PLL used on SoC**
 
+Main components:
+
+-Phase detector
+-Loop filter
+-Voltage controlled oscillator
+-Frequency divider
+	
