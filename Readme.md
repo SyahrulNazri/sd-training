@@ -2184,31 +2184,31 @@ Refference : https://www.vlsisystemdesign.com/
 - This PLLs are used to generate,stabilize,modulate,demodulate.
 
 **WHy off-chip clocks can't be used all the time ?**
--Clock will be supply for a lot of blocks on the chip.If we used only one clock source it will have delays due to long wires.
--One small cip will suply on some block with different frequency 200Mhzs adn some might need 100Mhz.
--A concept of ppm(parts per million) clock accuracy comes in,when ever quarts is acquired,it comes with a x ppm error.
+- Clock will be supply for a lot of blocks on the chip.If we used only one clock source it will have delays due to long wires.
+- One small cip will suply on some block with different frequency 200Mhzs adn some might need 100Mhz.
+- A concept of ppm(parts per million) clock accuracy comes in,when ever quarts is acquired,it comes with a x ppm error.
 	
 **PLL used on SoC**
 
 Main components:
 
--Phase detector
--Loop filter
--Voltage controlled oscillator
--Frequency divider
+- Phase detector
+- Loop filter
+- Voltage controlled oscillator
+- Frequency divider
 	
 **Digital Analg Converter**
--puporse-converts a digital input signal to an analog output signal.
+- puporse-converts a digital input signal to an analog output signal.
 
--digital signal is repsented with binary code (combinations logic 0 adn 1).
+- digital signal is repsented with binary code (combinations logic 0 adn 1).
 
--consists of anumber of binary inputs and a single output.
+- consists of anumber of binary inputs and a single output.
 
--Two types DACs 
+- Two types DACs 
 	
-	-Weighted Resistor DAC = resistor DAC prduces an analog output,which is almost equal to the digital(binary) input by using binary weighted resistor in the                                      inverting adder circuit.
+	- Weighted Resistor DAC = resistor DAC prduces an analog output,which is almost equal to the digital(binary) input by using binary weighted resistor in the                                      inverting adder circuit.
 	
-	-R-2R Ladder DAC =overcomes the disadvantages of a binary weighted resistor DAC.It produces an analog output which is almost equal to the digital(binary) inpu          tby using aR-2R ladder network in the 
+	- R-2R Ladder DAC =overcomes the disadvantages of a binary weighted resistor DAC.It produces an analog output which is almost equal to the digital(binary)               input by using aR-2R ladder network in the 
 
 **Weighted Resistor DAC**
 ![image](https://user-images.githubusercontent.com/118953939/210687752-54a2f06c-1e63-4842-9f77-fbb37be73864.png)
@@ -2222,18 +2222,18 @@ reference : https://microcontrollerslab.com/binary-weighted-resistor-dac-working
 references :https://www.electronics-tutorials.ws/combination/r-2r-dac.html
 	
 **Tips modelling in design**
--Avoid race conditions (use VCS race detection tool).
+- Avoid race conditions (use VCS race detection tool).
 
--Use a optimized Testbench for debugging your design.
+- Use a optimized Testbench for debugging your design.
 
--Creating models that simulate faster.
+- Creating models that simulate faster.
 
--case statement behavior.
+- case statement behavior.
 
 **DVE(Normal mode**
--provides graphical user interface(GUI) to debug the design.
+- provides graphical user interface(GUI) to debug the design.
 
--Step Open GUi with normal mode
+- Step Open GUi with normal mode
 
 1.Run the design with valid testbench 
 
@@ -2245,9 +2245,9 @@ references :https://www.electronics-tutorials.ws/combination/r-2r-dac.html
 
 **DVE (Interactive mode)**
 
--Debugging the design in interactive mode or in post-processing mode with a valid testbench
+- Debugging the design in interactive mode or in post-processing mode with a valid testbench
 
--Steps to open GUI with interactive mode:
+- Steps to open GUI with interactive mode:
 
 1.Run the design with a valid testbench
 
@@ -2257,8 +2257,8 @@ references :https://www.electronics-tutorials.ws/combination/r-2r-dac.html
 
 **RVMYTH modelling**
 
--RISC-V CPU core has been written in Verilog and already written testbench code for the same
+- RISC-V CPU core has been written in Verilog and already written testbench code for the same
 
--Entire C program will be converted into a hex format and will be loaded into memory
+- Entire C program will be converted into a hex format and will be loaded into memory
 
--CPU will then read the contents of the memory, process it and display the output result of sum numbers from 1 to n
+- CPU will then read the contents of the memory, process it and display the output result of sum numbers from 1 to n
