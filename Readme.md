@@ -2164,28 +2164,39 @@ System models are created to assist in the analysis, specification, design, veri
 **What are we modelling ?**
 
 -Some initial input signal will be fed into vsdbabysoc module.
+
 -That will get the pll start generating the proper CLK for the circuit.
+
 -The clock signal will make the rvmyth to execute instructions and some are values are generated.
+
 -3 main element(IP cores) and a wrapper as an SoC.
 
 **RVMYTH-Risc-V based MYTH (Microsprocessor for you in Thirty Hours)**
+
 -RISC = RISC stand for Reduced Intruction set computer.
+
 -RISC-V(Risk-Five) -Instruction set Architecture(ISA) is defined as base integer ISA,which must be present in any implementation plus optional extensions to the base ISA.
 -The width of the integer registers and the associated size of the address space, as well as the number of integer registers, distinguish each base integer instruction set. RV32I and RV64I are the two basic base integer versions.
 
 **Simple one cycle CPU for Risc-V**
+
 >![image](https://user-images.githubusercontent.com/118953939/210682666-f16d8ac8-85e0-4565-afd6-54990d05bb48.png)
 
 Refference : https://www.vlsisystemdesign.com/
 
 
 **Phase Locked Loop(PLL)**
+
 - An electronic circuit with a voltage or voltage -driven oscillator that constantly adjusts to match the frequency of an input signal.
+
 - This PLLs are used to generate,stabilize,modulate,demodulate.
 
 **WHy off-chip clocks can't be used all the time ?**
+
 - Clock will be supply for a lot of blocks on the chip.If we used only one clock source it will have delays due to long wires.
+
 - One small cip will suply on some block with different frequency 200Mhzs adn some might need 100Mhz.
+
 - A concept of ppm(parts per million) clock accuracy comes in,when ever quarts is acquired,it comes with a x ppm error.
 	
 **PLL used on SoC**
@@ -2193,11 +2204,15 @@ Refference : https://www.vlsisystemdesign.com/
 Main components:
 
 - Phase detector
+
 - Loop filter
+
 - Voltage controlled oscillator
+
 - Frequency divider
 	
 **Digital Analg Converter**
+	
 - puporse-converts a digital input signal to an analog output signal.
 
 - digital signal is repsented with binary code (combinations logic 0 adn 1).
@@ -2211,6 +2226,7 @@ Main components:
 	- R-2R Ladder DAC =overcomes the disadvantages of a binary weighted resistor DAC.It produces an analog output which is almost equal to the digital(binary)               input by using aR-2R ladder network in the 
 
 **Weighted Resistor DAC**
+	
 ![image](https://user-images.githubusercontent.com/118953939/210687752-54a2f06c-1e63-4842-9f77-fbb37be73864.png)
 
 reference : https://microcontrollerslab.com/binary-weighted-resistor-dac-working-example-circuits-advantages/
@@ -2222,6 +2238,7 @@ reference : https://microcontrollerslab.com/binary-weighted-resistor-dac-working
 references :https://www.electronics-tutorials.ws/combination/r-2r-dac.html
 	
 **Tips modelling in design**
+
 - Avoid race conditions (use VCS race detection tool).
 
 - Use a optimized Testbench for debugging your design.
@@ -2308,4 +2325,9 @@ references :https://www.electronics-tutorials.ws/combination/r-2r-dac.html
 
 > ![image](https://user-images.githubusercontent.com/118953939/210837598-8d2a160f-e8bf-4395-a72c-f164c5ae85e5.png)
 
+- Block Diagram 
+
+>![image](https://user-images.githubusercontent.com/118953939/210839918-4c6626ad-8194-4012-bc54-af5ac411216a.png)
+
+refferences : https://www.electronics-tutorials.ws/counter/count_3.html
 </details>
