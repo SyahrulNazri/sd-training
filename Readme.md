@@ -2289,8 +2289,6 @@ references :https://www.electronics-tutorials.ws/combination/r-2r-dac.html
 
 * **Verified Block Separately**
 
-- rvmyth_pll.v & rvmyth_pll_tb.v
-
 >![image](https://user-images.githubusercontent.com/118953939/210836041-430b1f0f-7d3e-4a44-b665-197acbdc372f.png)
 
 >![image](https://user-images.githubusercontent.com/118953939/210836185-642de8cf-05ff-43df-b8da-d5a3c270c6b5.png)
@@ -2305,6 +2303,7 @@ references :https://www.electronics-tutorials.ws/combination/r-2r-dac.html
 
 >![image](https://user-images.githubusercontent.com/118953939/210837347-32558eb1-3a99-4d85-9052-45ab7d017cf7.png)
 
+* **ADDTIONAL CIRCUIT**
 - Up Counter 
 
 > ![image](https://user-images.githubusercontent.com/118953939/210837598-8d2a160f-e8bf-4395-a72c-f164c5ae85e5.png)
