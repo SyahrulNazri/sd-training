@@ -2320,6 +2320,9 @@ references :https://www.electronics-tutorials.ws/combination/r-2r-dac.html
 - Difference Modes
 
 >![image](https://user-images.githubusercontent.com/118953939/210837347-32558eb1-3a99-4d85-9052-45ab7d017cf7.png)
+	
+>![image](https://user-images.githubusercontent.com/118953939/210956227-11ba413a-50cd-4f86-97a9-e6bc10b067ec.png)
+
 
 * **ADDTIONAL CIRCUIT**
 - Up Counter 
