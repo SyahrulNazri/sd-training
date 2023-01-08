@@ -2391,7 +2391,7 @@ To make sure we consider each and every gate delays into account.How ever the pr
 
 4.Quit 
 
-- **After getting the .db let us resume **
+- **After getting the .db let us resume**
 
 1.Invoke DC and Read the verilog file -> rvmyth_avsddac.v
 
