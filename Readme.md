@@ -15,7 +15,7 @@
 * [ Day 10 -Quality Checks ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-10)
 * [ Day 11 -Baby SoC  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-11)
 * [ Day 12 -Baby SoC Modelling ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-12)
-* [ Day 13 -Baby SoC Modelling ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-13)
+* [ Day 13 -Post-Synthesis](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-13)
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 <Details>
