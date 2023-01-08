@@ -2374,7 +2374,7 @@ Post synthesis /gate level simualtion (GLS) is done after synthesis considering 
 
 full timing mode. 
 
-- ** Synthesize using DC Compiler**
+- **Synthesize using DC Compiler**
 
 1.Point to one file and invoke DC & read the verilog file.For example tvmyth_avsddac.v
 
