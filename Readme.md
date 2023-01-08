@@ -15,6 +15,7 @@
 * [ Day 10 -Quality Checks ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-10)
 * [ Day 11 -Baby SoC  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-11)
 * [ Day 12 -Baby SoC Modelling ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-12)
+* [ Day 13 -Baby SoC Modelling ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-13)
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 <Details>
@@ -2335,3 +2336,66 @@ references :https://www.electronics-tutorials.ws/combination/r-2r-dac.html
 
 refferences : https://www.electronics-tutorials.ws/counter/count_3.html
 </details>
+
+## Day 13
+### Topic - Post Synthesis Simulation 
+
+What did  Pre-synthesis ?
+Basically - modelled and simulated the IP cores in VSDBabySoC(for checking its functionality) 
+
+<details>
+<summary>Recap on Pre-Synthesis </summary>
+
+- **Why we did pre-synthesis** = modelled and simulated the ip cores in VSDBabySoc (for checking its functionality).
+
+- **Synthesizable and non-Synthesiszable constructs?**
+ 
+- **Why we do pre-synthesis ?**
+-Pre-synthesis simulation is done according to the logic you have designed for and written which is functionality.
+
+</details>
+
+<details>
+<summary>Post-Synthesis </summary>
+
+- **What Post-Synthesis ?**
+Post synthesis /gate level simualtion (GLS) is done after synthesis considering each and every gate delays into account.This synthesis was reports the violations in both functionality and timing.This also shows's the mismatches we are likely to get due to wrong usage of operators and inteference of lathces.
+
+- **Why we need to do Post-Synthesis ?**
+
+- **Gate level Simualtion (GLS)**
+1.The term "gate level" refers to the netlist view of a circuit, usually produced by logic synthesis. 
+
+2.So while RTL simulation is pre-synthesis, GLS is post-synthesis. 
+
+3.The netlist view is a complete connection list consisting of gates and IP models with full functional and timing behavior. 
+
+4.RTL simulation is a zero delay environment and events generally occur on the active clock edge. GLS can be zero delay also, but is more often used in unit delay or
+
+full timing mode. 
+
+- ** Synthesize using DC Compiler**
+
+1.Point to one file and invoke DC & read the verilog file.For example tvmyth_avsddac.v
+
+2.read.db file and set target library to sky130_fd_sc_hd__tt_025C_1v80.lib, avsddac.lib
+
+- **What we need to do if we dont have .lib**
+To make sure we consider each and every gate delays into account.How ever the pre-synthesis simulations were done using VCS and DVE(./simv) we do the samea nd observe the output.
+
+1.lc_shell
+
+2.read_lib library.lib(if in the same directory as the .lib) Else - > read_lib <your_path>/library.lib
+
+3.write_lib library -format db -output library.db
+
+4.Quit 
+
+- **After getting the .db let us resume **
+
+1.Invoke DC and Read the verilog file -> rvmyth_avsddac.v
+
+2. Read .db file and set target_lib -> sky130_fd_sc_hd__tt_025C_1v80.db, avsddac.db(use both the timing libraries)
+
+3.Write -f verilog command, synthesizing the code
+ </setails>
