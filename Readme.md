@@ -2349,7 +2349,9 @@ Basically - modelled and simulated the IP cores in VSDBabySoC(for checking its f
 - **Why we did pre-synthesis** = modelled and simulated the ip cores in VSDBabySoc (for checking its functionality).
 
 - **Synthesizable and non-Synthesiszable constructs?**
- 
+	
+>![image](https://user-images.githubusercontent.com/118953939/211203816-b1137e5d-9b23-4489-9e90-b5d2a3e80dab.png)
+
 - **Why we do pre-synthesis ?**
 -Pre-synthesis simulation is done according to the logic you have designed for and written which is functionality.
 
