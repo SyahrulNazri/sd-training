@@ -2400,4 +2400,39 @@ To make sure we consider each and every gate delays into account.How ever the pr
 2. Read .db file and set target_lib -> sky130_fd_sc_hd__tt_025C_1v80.db, avsddac.db(use both the timing libraries)
 
 3.Write -f verilog command, synthesizing the code
- </setails>
+ </details>
+ 
+ <details>
+<summary>Lab 13 </summary>
+
+**Invoke lc_shell --> to change .lib to .db.THis step can be skip if we have .db file** 
+
+- Step 
+```
+1.lc_shell
+2.read_lib library.lib(if in the same directory as the .lib) Else - > read_lib <your_path>/library.lib
+3.write_lib library -format db -output library.db
+4.quit 
+```
+>![image](https://user-images.githubusercontent.com/118953939/211346771-5c7fc83c-4599-47fd-a0aa-d126bc3f278c.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/211347136-09be2a28-c308-4fec-a013-03847df6bc66.png)
+```
+we need to modified the error 
+```
+>![image](https://user-images.githubusercontent.com/118953939/211347171-a9dd19ed-f7c2-456e-8676-52abc8bf1e75.png)
+
+**Synthesis can be resume after we have .db by invoke Dc_shell**
+```
+Target library and link library must be set with sky130_fd_sc_hd__tt_025C_1v80.db &  avsddac.db
+read_verilog <file name>
+>![image](https://user-images.githubusercontent.com/118953939/211348047-aa45b44a-5ca7-4e02-9cff-a61b0ce3f66d.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/211348110-74490e5d-f3b2-48a8-bada-0a8e1e75469f.png)
+
+Target library  set target_library [list sky130_fd_sc_hd__tt_025C_1v80.db avsddac.db]set link_library [list {*} sky130_fd_sc_hd__tt_025C_1v80.db avsddac.db]
+Read_Verilog avsddac.v
+Compile 
+write -f verilog -out lab1_net.v
+write -f ddc -out lab1.ddc
+![image](https://user-images.githubusercontent.com/118953939/211346630-5594dce9-45de-445f-9ec7-53215599b67a.png)
