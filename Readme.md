@@ -2426,13 +2426,18 @@ we need to modified the error
 ```
 Target library and link library must be set with sky130_fd_sc_hd__tt_025C_1v80.db &  avsddac.db
 read_verilog <file name>
+```	 
 >![image](https://user-images.githubusercontent.com/118953939/211348047-aa45b44a-5ca7-4e02-9cff-a61b0ce3f66d.png)
 
+** Compile **
+```
+Compile design until  optimization sucessfully
+```
 >![image](https://user-images.githubusercontent.com/118953939/211348110-74490e5d-f3b2-48a8-bada-0a8e1e75469f.png)
 
-Target library  set target_library [list sky130_fd_sc_hd__tt_025C_1v80.db avsddac.db]set link_library [list {*} sky130_fd_sc_hd__tt_025C_1v80.db avsddac.db]
-Read_Verilog avsddac.v
-Compile 
-write -f verilog -out lab1_net.v
-write -f ddc -out lab1.ddc
-![image](https://user-images.githubusercontent.com/118953939/211346630-5594dce9-45de-445f-9ec7-53215599b67a.png)
+**Create netlist file **
+write -f verilog -out <new file>
+
+>![image](https://user-images.githubusercontent.com/118953939/211349089-1e98d8c1-7b3a-42cb-aec9-094f7e8754f5.png)
+
+will update 
