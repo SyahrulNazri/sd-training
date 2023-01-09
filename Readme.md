@@ -2435,9 +2435,10 @@ Compile design until  optimization sucessfully
 ```
 >![image](https://user-images.githubusercontent.com/118953939/211348110-74490e5d-f3b2-48a8-bada-0a8e1e75469f.png)
 
-**Create netlist file **
+**Create netlist file**
+```
 write -f verilog -out <new file>
-
+```
 >![image](https://user-images.githubusercontent.com/118953939/211349089-1e98d8c1-7b3a-42cb-aec9-094f7e8754f5.png)
 
 will update 
