@@ -2407,6 +2407,8 @@ To make sure we consider each and every gate delays into account.How ever the pr
 
 **Invoke lc_shell --> to change .lib to .db.THis step can be skip if we have .db file** 
 
+(i)rvmyth_avsddac
+
 - Step 
 ```
 1.lc_shell
@@ -2425,20 +2427,51 @@ we need to modified the error
 **Synthesis can be resume after we have .db by invoke Dc_shell**
 ```
 Target library and link library must be set with sky130_fd_sc_hd__tt_025C_1v80.db &  avsddac.db
-read_verilog <file name>
+read_file {mod_avsd_pll_1v8.v mod_mythcore_test.v clk_gate.v mod_rvmyth_pll.v } -autoread -format verilog -top rvmyth_pll_interface
 ```	 
->![image](https://user-images.githubusercontent.com/118953939/211348047-aa45b44a-5ca7-4e02-9cff-a61b0ce3f66d.png)
+>![image](https://user-images.githubusercontent.com/118953939/211759934-7c4a7af4-8648-4968-958e-e2635035db43.png)
 
-** Compile **
+**Compile**
 ```
 Compile design until  optimization sucessfully
 ```
->![image](https://user-images.githubusercontent.com/118953939/211348110-74490e5d-f3b2-48a8-bada-0a8e1e75469f.png)
+>![image](https://user-images.githubusercontent.com/118953939/211760397-8ae380b2-f22f-49d8-bee0-c3751b415248.png)
+
+**Report constraint and report timing**
+
+```
+-report_constraint
+-report_timing 
+```
+>![image](https://user-images.githubusercontent.com/118953939/211760505-ad0604fe-36c2-47e8-abd7-458f73418682.png)
 
 **Create netlist file**
 ```
 write -f verilog -out <new file>
 ```
->![image](https://user-images.githubusercontent.com/118953939/211349089-1e98d8c1-7b3a-42cb-aec9-094f7e8754f5.png)
+>![image](https://user-images.githubusercontent.com/118953939/211760719-a3427c8e-99bb-466c-8301-f0d0e22af164.png)
 
-will update 
+
+(ii)rvmyth_pll 
+
+The step was same as previous on rvmyth_avsddac.v 
+
+**Target Library**
+>![image](https://user-images.githubusercontent.com/118953939/211761272-ae42d39e-3c80-4c96-92f9-6051c8c39753.png)
+
+**read_file**
+
+```
+Before read the file we need to fix all the error in rvmyth_pll.v mythcore_test.v and avsd_pll_1v8.v
+read_file {mod_avsd_pll_1v8.v mod_mythcore_test.v clk_gate.v mod_rvmyth_pll.v } -autoread -format verilog -top rvmyth_pll_interface
+```
+>![image](https://user-images.githubusercontent.com/118953939/211763376-2d40e5fa-7637-4ab2-afb7-c906a151769f.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/211763423-bdc85de6-cb7f-4b41-b593-9ccc92be06f0.png)
+
+
+**Report constraints and Report_timing**
+>![image](https://user-images.githubusercontent.com/118953939/211761521-7546efae-9395-427b-a71d-cdf0a6b51b50.png)
+
+**Creating netlist file**
+>![image](https://user-images.githubusercontent.com/118953939/211763875-f3208bef-b796-461e-94bc-1d358890187c.png)
