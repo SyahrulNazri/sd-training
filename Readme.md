@@ -2475,3 +2475,28 @@ read_file {mod_avsd_pll_1v8.v mod_mythcore_test.v clk_gate.v mod_rvmyth_pll.v } 
 
 **Creating netlist file**
 >![image](https://user-images.githubusercontent.com/118953939/211763875-f3208bef-b796-461e-94bc-1d358890187c.png)
+	 
+(iii) VsdbabySoC
+	 
+**Repeat the same step as previous**
+>![image](https://user-images.githubusercontent.com/118953939/212089894-657e22b4-7a7f-49ff-8d81-24095bf22739.png)
+	 
+**check report timing before constraints**
+
+>![image](https://user-images.githubusercontent.com/118953939/212090089-d6a9d469-8c9c-4ad8-b6b7-0dd81b782722.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/212090126-7cd9755f-98e3-4fb7-a190-39eb48de0a18.png)
+
+**After Constraint**
+	 
+>![image](https://user-images.githubusercontent.com/118953939/212090444-447b7787-d5d6-4769-a457-c9cfc5f20855.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/212090491-fa5a4af1-9bbf-46c2-a22d-d5048d7ad001.png)
+
+**VSDBabySoc netlist**
+	 
+>![image](https://user-images.githubusercontent.com/118953939/212090583-cd9dfa36-bd35-499f-b56e-59e08b316c93.png)
+	 
+>![image](https://user-images.githubusercontent.com/118953939/212090934-d1c9bfc7-5b76-4b01-9c4a-0c4afa49fd71.png)
+
+ </details>
