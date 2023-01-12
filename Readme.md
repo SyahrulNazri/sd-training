@@ -16,6 +16,7 @@
 * [ Day 11 -Baby SoC  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-11)
 * [ Day 12 -Baby SoC Modelling ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-12)
 * [ Day 13 -Post-Synthesis](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-13)
+* * [ Day 14 -PVT Corner](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-14)
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 <Details>
@@ -2500,3 +2501,68 @@ read_file {mod_avsd_pll_1v8.v mod_mythcore_test.v clk_gate.v mod_rvmyth_pll.v } 
 >![image](https://user-images.githubusercontent.com/118953939/212090934-d1c9bfc7-5b76-4b01-9c4a-0c4afa49fd71.png)
 
  </details>
+	 
+
+## Day 14
+## Topic - PVT corner 
+	 
+<details>
+<summary>Theory PVT Corner (Theory) </summary>
+
+**What is PVT**
+	
+Process: refers to the variation.The parameters of transistors during fabrication, as layers getting fabricated cannot be uniform across the die.Process type 
+	(tt=typical-typical,ff=fast-fast,ss=slow-slow,fs=fast-slow,sf=slow-fast)
+	
+Voltage: refers to the varying voltages on chip during operation, can be cause by few reason such as IO drop or supply noise from parasitic inductance
+
+Temperature: refers to the varying temperature of chip during operation due to power dissipation in the MOS-transistors which will affect the delay on the cells
+
+| PROCESS       | VOLTAGE       | TEMPERATURE   | 
+| ------------- | ------------- | ------------- |
+|![image](https://user-images.githubusercontent.com/118953939/212098886-d56b7836-eaef-4cbe-9101-28fb30dceb5e.png)|![image](https://user-images.githubusercontent.com/118953939/212100152-758840ef-7b85-4c45-9af2-d5a191f6c30d.png)|![image](https://user-images.githubusercontent.com/118953939/212098980-5bb72365-767f-4426-8323-ed2df74da7c6.png)| 
+|During fabrication, different tasks or die areas have different process variations.|The voltage change is caused by an IR dip or supply noise.|The density of transistors varies across the chip, resulting in power dissipation and temperature variations.|
+	
+**WNS=** Worst Negative Slack
+
+**TNS=** Total Negative Slack = sum of the negative slack paths
+
+**WHS=** Worst Hold Slack
+
+**THS=** Total Hold Slack = sum of the negative hold slack paths
+	
+</details>
+	
+	 
+<details>
+<summary>Theory PVT Corner (Lab ) </summary>
+ 
+- Step 
+```
+1) source setup.tcl
+2) source target library 
+3) read_file { mod_mythcore_test.v avsdpll_new.v mod_vsdbabysoc.v clk_gate.v} -autoread -format verilog -top vsdbabysoc
+4) source vsdbabysocconstraint_new.tcl ---> constraints file 
+5)link
+6)compile
+All step repeated by changing the .lib on target library 
+```
+** target library and set constraints**
+	
+![image](https://user-images.githubusercontent.com/118953939/212093524-04b075de-6e2f-4f44-8d8f-56019079fe5c.png)
+
+
+
+	 
+>![image](https://user-images.githubusercontent.com/118953939/212094064-e99d989e-d187-4b1a-b2c2-2686572f1250.png)
+ 
+>![image](https://user-images.githubusercontent.com/118953939/212094090-b4f21912-b80b-459d-a641-5a189c95f9fb.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/212094129-15396c9a-2561-43c7-9feb-835cae6f2358.png)
+ 
+**Summarizing**
+	 
+As we can see the base PVT has been choise because the wns and tns on the hold and setup small.
+>![image](https://user-images.githubusercontent.com/118953939/212094283-3339b1bf-c4c7-489b-aa1f-ad12cdae6bdd.png)
+
+</details>
