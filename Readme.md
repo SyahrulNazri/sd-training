@@ -16,7 +16,7 @@
 * [ Day 11 -Baby SoC  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-11)
 * [ Day 12 -Baby SoC Modelling ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-12)
 * [ Day 13 -Post-Synthesis](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-13)
-* * [ Day 14 -PVT Corner](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-14)
+* [ Day 14 -PVT Corner](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-14)
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 <Details>
@@ -2520,7 +2520,7 @@ Temperature: refers to the varying temperature of chip during operation due to p
 
 | PROCESS       | VOLTAGE       | TEMPERATURE   | 
 | ------------- | ------------- | ------------- |
-|![image](https://user-images.githubusercontent.com/118953939/212098886-d56b7836-eaef-4cbe-9101-28fb30dceb5e.png)|![image](https://user-images.githubusercontent.com/118953939/212100152-758840ef-7b85-4c45-9af2-d5a191f6c30d.png)|![image](https://user-images.githubusercontent.com/118953939/212098980-5bb72365-767f-4426-8323-ed2df74da7c6.png)| 
+|![image](https://user-images.githubusercontent.com/118953939/212098886-d56b7836-eaef-4cbe-9101-28fb30dceb5e.png)|![image](https://user-images.githubusercontent.com/118953939/212100152-758840ef-7b85-4c45-9af2-d5a191f6c30d.png)|![image](https://user-images.githubusercontent.com/118953939/212102082-a1826235-0026-4346-8e86-7364ad828cc2.png)| 
 |During fabrication, different tasks or die areas have different process variations.|The voltage change is caused by an IR dip or supply noise.|The density of transistors varies across the chip, resulting in power dissipation and temperature variations.|
 	
 **WNS=** Worst Negative Slack
