@@ -23,7 +23,7 @@
  <Details>
  <summary>Introduction to RISC-V</summary>
  
- Process of converting RISC-V architecture to layout 
+ **Process of converting RISC-V architecture to layout** 
  
   1) C++ codes will be compiled in RISC-V assembly language program.
   2) This assembly language will convert the code to the machine language which is binary language that containing logc 0 and logic .This binary language only              undertstood by the computer and it will be used to sketched in a layout by the computer program and we will get the required output.
@@ -37,13 +37,45 @@
  <summary>From Software Aplications to Hardware</summary>
  
  **Flow fo The Synthesis Process**
+  
  - Software(HLL) --> System Sofware(aseembly Language) --> Hardware(machine language)
  - Essentially, the application software would enter the system software's clock, and the system software would turn the application programme into binary code.
  -  The Operating System (OS) is a major process in system software that takes specific applications and converts them into relevant assembly language programmes and      binary programmes so that the programme may be understood by the hardware.
  - The transformed binary language/machine language is fed into the hardware, which produces the output.
  
  - Operating Systems (OS) --> Handle IO operations,allocate memory and low level system functions
- - Compiler --> Cenverting the programming language intro the respective instructions.The syntax instruction is depending upon what kind of the hardware belong to        RISc_V format,the syntax would haev the syntax of RISC-V format instructions.
+ - Compiler --> Cenverting the programming language intro the respective instructions.The syntax instruction is depending upon what kind of the hardware belong to        RISC-V format,the syntax would haev the syntax of RISC-V format instructions.
  - Assembler --> take particular instructions and convert it into the respective binary number which is machine language program.
 
  >![image](https://user-images.githubusercontent.com/118953939/212260151-810c2458-81aa-472d-893d-bb41b7a284ee.png)
+ source :https://www.vlsisystemdesign.com/
+</details>
+
+  
+ ### Topic SoC design and OpenLANE.
+ 
+  <Details>
+<summary>Introduction to all components of open-source digital asic design </summary>
+ 
+**Element that required to designing an automated ASIC flow** 
+  
+ - Hardware Description Language (HDL) which Register Transfer Level (RTL) model of the function we want to implement including RTL's IP.
+ - Tool used for automation such as Electronic Design Automation (EDA) tools.
+ - Process Design Kit (PDK) data.
+    - The interface between the FAB and the designers 
+    - Collection of files used to model a fabrication process for the EDA tools used to design and IC.
+        - Process Design Rules :DRC,LVS and PEX
+        - Device Models
+        - Digital Standard Cell Libraries
+        - I/O Libraries
+  
+>![image](https://user-images.githubusercontent.com/118953939/212272437-d8b736be-8326-4716-b03d-bb0b107312b6.png)
+
+  </details>
+  
+     
+ <Details>
+ <summary>ASIC Design Flow</summary>
+
+ - ASIC Flow Objective :RTL to GDSII = Take Design from REsistor transfer level (RTL) to GDSII format for the final layout and it also called as Automated PnR and        Physical Implementation.
+ - ![image](https://user-images.githubusercontent.com/118953939/212274137-89230947-0306-4e81-987d-dd887d607aac.png)
