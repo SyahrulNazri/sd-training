@@ -117,16 +117,18 @@
     -Usually a tree (H,X,..)
   
   >![image](https://user-images.githubusercontent.com/118953939/212286257-cb528e70-0bc8-4a2f-9cdd-8ef6f19dba35.png)
-  
- **Routing**
+   source :lecture's video
+ 
+  **Routing**
   
  - The process of implementing the interconnect using the available metal layers.
  - Metals is tracks from a routing grid and this routing grid is huge.So,devide and conquere approach.
     - Global Routing :Generating routing guides 
     - Detailed Routing :Using routing guides to implement the actual wiring.
 >![image](https://user-images.githubusercontent.com/118953939/212286543-ea5ea5c5-516a-48c7-a418-a818235bd70e.png)
-  
- **Sign Off** 
+   source :lecture's video
+ 
+  **Sign Off** 
  
  Final layout 
  -Physical Verifications 
@@ -156,7 +158,7 @@
 |striVe | strive 2 with DFT |
  
 >![image](https://user-images.githubusercontent.com/118953939/212358770-b274f615-572c-4323-8af2-b7ea0975ad6d.png)
-
+ source :lecture's video
 - strive 2 was identical with strive 1 but it used 1 kbytes Open Ram instead of SRAM 
 - Strive 2  also similar with strive 2 except its have different  hierarchy
 - strive 3 have same strive 1.
@@ -191,9 +193,67 @@ source :lecture's video
 -From RTL to synthesis using yosys with the design constraints.This Yosys will translate the RTL into logic circuits component and optimized it and then mapped using abc.
 -Synthesis Exploration = used to generate reports that shows how the design delay and area(can pick the best strategy base on this).Its also generate report design .
 
->![image](https://user-images.githubusercontent.com/118953939/212361445-77e075a2-76bc-4278-beac-b0e76f1991a4.png)
-
+>![image](https://user-images.githubusercontent.com/118953939/212361936-789849f1-f538-4321-92a6-6fb0035eec1c.png)
+source :lecture's video
+  
 - Opelane Regression Testing 
     - The design exploration uitlity is also used of rregression testing (CI)
     - We run OpenLane on ~70 desgn and compare the results to the best known ones.
 >![image](https://user-images.githubusercontent.com/118953939/212361588-045c58e0-de7a-47f8-9339-c54d29eb9a41.png)
+source :lecture's video
+  
+- DFT (optional) 
+   - After sysnthesis process have been done,Design for testability or DFT is ready to be testing before fabrication usng open source priject which is fault.
+   - Step included :
+      - Scan Insertion 
+      - Automatic Test Pattern Generation (ATPG)
+      - Test patterns Compaction 
+      - Fault Coverage 
+      - Fault simulation
+  
+  >![image](https://user-images.githubusercontent.com/118953939/212362643-2936b505-1d6f-4283-8227-d3e56b122171.png)
+  source :lecture's video
+  
+- Physical Impelementation
+   - Called Automated place and rouce or PnR
+   - Using OpenRoad Open source to perform the implementation.
+   - Involves several steps including 
+      - Floor/Power Planning
+      - End Decoupling Capacitors and Tap cells insertion.
+      - placement :Global and Detailed 
+      - Post placement optimizations
+      - Clock Tree Synthesis (CTS)
+      - Routing : Global and detailed.
+  - Logic Equivalence Check (LEC) 
+    - every time netlist is modified,verification must be performaed 
+      - CTS modifies the netlist 
+      - Post placement optimizations modifed the netlist
+    - LEC is used to formally confirm that the function did not change after modifying the netlist. 
+  - Dealing with antenna Rules Violations 
+    - A special step during pysical impementation is called antenna diodes insertion.
+    - This step is required for antenna worst violations
+    - When a metal wire segment is fabircated and it is long enough,it can acts as antenna.
+      -Reactive ion etching causes cahrge to accumulate on the wire.
+      - Transistor gates can be damaged during fabrication
+    - Solution 
+      - Bridging attaches a high layer intermediary(requires routes awareness)
+      - Add antenna dioded cell toleak away chages (antenna diodes are provided by SCL)
+      >![image](https://user-images.githubusercontent.com/118953939/212366305-dd1958ee-c206-47d7-858e-929c8a4cf238.png)
+        source :lecture's video
+      
+      **Dealing with antenna rules violations** 
+      - We took a preventive approach  
+        - Add a fake antenna diode next to every cell input after placement 
+        - Run the antenna checker (MAGIC) in the routed layout 
+        - Ift he checker reports a vilation ont he cell input pin,replace fake diode cell by a real one.
+      
+       >![image](https://user-images.githubusercontent.com/118953939/212366895-e6a891c0-d232-421d-b11d-1738fdf70713.png)
+         source :lecture's video
+      
+      **Static Timing Analysis**
+   
+         - RC Extraction: DEF2SPEF
+         - STA: OpenSTA (OpenROAD)
+      **Physical verification DRC and LVS
+          - Magic is used for DRC and SPICE Extraction from Layout
+          - Magic and Netgen are used for LVS where extracted SPICE by Magic vs. Verilog netlist
