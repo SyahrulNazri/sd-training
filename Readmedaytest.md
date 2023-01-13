@@ -2,8 +2,6 @@
 ## Day 15 
 ### Topic Inception of Open-source EDA,OpenLANE and Sky130 PDK
 
-<Details>
- <summary>How to Talk to computer</summary>
   
  <Details>
  <summary>Introduction to QFN-48 PAckage,Chips,PAds,Core,Die adn IPs</summary>
@@ -29,9 +27,23 @@
  
   1) C++ codes will be compiled in RISC-V assembly language program.
   2) This assembly language will convert the code to the machine language which is binary language that containing logc 0 and logic .This binary language only              undertstood by the computer and it will be used to sketched in a layout by the computer program and we will get the required output.
-  3) But another interface also played their role between architecture and layout of RISC-V which is Hardware Description LAnguage(HDL) where it used impmeneting the        specification of RISC-V
+  3) But another interface also played their role between architecture and layout of RISC-V which is Hardware Description LAnguage(HDL) where it used implementing the        specification of RISC-V.
+ 
  >![image](https://user-images.githubusercontent.com/118953939/212260209-f2a32a5a-afc7-4dac-a3b5-8d1398282856.png)
   source :https://www.vlsisystemdesign.com/
    </details>
    
- ![image](https://user-images.githubusercontent.com/118953939/212260151-810c2458-81aa-472d-893d-bb41b7a284ee.png)
+  <Details>
+ <summary>From Software Aplications to Hardware</summary>
+ 
+ **Flow fo The Synthesis Process**
+ - Software(HLL) --> System Sofware(aseembly Language) --> Hardware(machine language)
+ - Essentially, the application software would enter the system software's clock, and the system software would turn the application programme into binary code.
+ -  The Operating System (OS) is a major process in system software that takes specific applications and converts them into relevant assembly language programmes and      binary programmes so that the programme may be understood by the hardware.
+ - The transformed binary language/machine language is fed into the hardware, which produces the output.
+ 
+ - Operating Systems (OS) --> Handle IO operations,allocate memory and low level system functions
+ - Compiler --> Cenverting the programming language intro the respective instructions.The syntax instruction is depending upon what kind of the hardware belong to        RISc_V format,the syntax would haev the syntax of RISC-V format instructions.
+ - Assembler --> take particular instructions and convert it into the respective binary number which is machine language program.
+
+ >![image](https://user-images.githubusercontent.com/118953939/212260151-810c2458-81aa-472d-893d-bb41b7a284ee.png)
