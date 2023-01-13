@@ -145,5 +145,36 @@
  - Strive is a family of open everything SoCs 
     -Open PDK,Open EDA,Open RTL
  
- |Soc|Features|
- |striVe|Sky130
+**Example of strive SoC family and its features**
+| SoC  | Features |
+| ------------- | ------------- |
+| StriVe  | Sky130SCL + Synthesized 1 Kbytes SRAM |
+| striVe 2 | Sky130 SCL + 1Kybtes OpenRAM block   |
+|StriVe 2a | striVe 2 with a single chip core module|
+|striVe 3| OSU SCL + Synthesized 1 Kbytes SRAM |
+|striVe 5 | Sky130SCL + 8x1 Kbytes Open RAM banks|
+|striVe | strive 2 with DFT |
+
+- strive 2 was identical with strive 1 but it used 1 kbytes Open Ram instead of SRAM 
+- Strive 2  also similar with strive 2 except its have different  hierarchy
+- strive 3 have same strive 1.
+- strive 5 same as strive 2 but its using 8 x 1 open ram banks 
+- strive 6 same as strive 2it use for design testing.
+  
+ **Main Goal**
+ - Produce a clean GDSII with no human intervention (no human in the loop)
+ -Tuned for skywater 130nm Open PDK 
+   -also support XFAB180 and GF130G
+ **Containerized** 
+   - Functional out of the box.
+   - Instructions to build and run natively will follow.
+ - Can be used harden Macros and chips
+ **Two modes of operation**
+    - Autonomous or interactive
+    - Autonomous push button flow will configure the flow and push button to wait for some time and wait the GDS
+    - Interactive we can run command step by step.
+ **Design Space Exploration** 
+    - Find the best set of flow configurations.
+ **Large number of design example**
+    - 43 design with the best configuration 
+    
