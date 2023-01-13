@@ -154,6 +154,8 @@
 |striVe 3| OSU SCL + Synthesized 1 Kbytes SRAM |
 |striVe 5 | Sky130SCL + 8x1 Kbytes Open RAM banks|
 |striVe | strive 2 with DFT |
+ 
+>![image](https://user-images.githubusercontent.com/118953939/212358770-b274f615-572c-4323-8af2-b7ea0975ad6d.png)
 
 - strive 2 was identical with strive 1 but it used 1 kbytes Open Ram instead of SRAM 
 - Strive 2  also similar with strive 2 except its have different  hierarchy
@@ -177,4 +179,16 @@
     - Find the best set of flow configurations.
  **Large number of design example**
     - 43 design with the best configuration 
-    
+  </details>
+  
+  <Details>
+ <summary>Intorduction to OpenLANE  and ASIC design flow</summary>
+**OpenLANE ASIC Flow**
+![image](https://user-images.githubusercontent.com/118953939/212359133-ccbb0fa4-de22-43eb-805f-ee24a4bce08a.png)
+source :lecture's video
+  
+-From RTL to synthesis using yosys with the design constraints.This Yosys will translate the RTL into logic circuits component and optimized it and then mapped using abc.
+-Synthesis Exploration = used to generate reports that shows how the design delay and area(can pick the best strategy base on this).Its also generate report design .
+- Opelane Regression Testing 
+    - The design exploration uitlity is also used of rregression testing (CI)
+    - We run OpenLane on ~70 desgn and compare the results to the best known ones.
