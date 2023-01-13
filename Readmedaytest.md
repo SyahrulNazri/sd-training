@@ -185,6 +185,7 @@
   
   <Details>
  <summary>Intorduction to OpenLANE  and ASIC design flow</summary>
+  
 **OpenLANE ASIC Flow**
 
 >![image](https://user-images.githubusercontent.com/118953939/212359133-ccbb0fa4-de22-43eb-805f-ee24a4bce08a.png)
@@ -242,6 +243,7 @@ source :lecture's video
         source :lecture's video
       
       **Dealing with antenna rules violations** 
+  
       - We took a preventive approach  
         - Add a fake antenna diode next to every cell input after placement 
         - Run the antenna checker (MAGIC) in the routed layout 
@@ -254,6 +256,7 @@ source :lecture's video
    
          - RC Extraction: DEF2SPEF
          - STA: OpenSTA (OpenROAD)
+  
       **Physical verification DRC and LVS
           - Magic is used for DRC and SPICE Extraction from Layout
           - Magic and Netgen are used for LVS where extracted SPICE by Magic vs. Verilog netlist
