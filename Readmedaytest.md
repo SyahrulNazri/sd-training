@@ -135,3 +135,15 @@
  - Timing Verification
     - Static Timing Analysis (STA) -To make sure all the timing constraints are met and the circuit will run at designated clock frequencies.
   </details>
+
+ 
+ <Details>
+ <summary>Intorduction to OpenLANE  and Strive chipset</summary>
+  
+ **OpenLANE** 
+ - Started as an Open_source flow for a True Open source Tape-out Experiment.
+ - Strive is a family of open everything SoCs 
+    -Open PDK,Open EDA,Open RTL
+ 
+ |Soc|Features|
+ |striVe|Sky130
