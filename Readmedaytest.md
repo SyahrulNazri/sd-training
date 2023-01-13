@@ -88,3 +88,11 @@
  - Standard cells have regular layout and each cell has different views or model which is Electrical,HDL,SPICE and Layout (Abstract and Detailed)
  
  >![image](https://user-images.githubusercontent.com/118953939/212276687-de4befaa-9a3e-457e-9827-c811e5e8bdb8.png)
+
+ **Floor and Power Planing**
+   - The objective to plan the silicon area and create robust distribution to the power circuit.
+   - Chip Floor-planning = partition the chip die between different system building blocks and place the I/O Pads.
+   - Macro floor-planing : Dimensions,pin locations and rows definition.
+   - Power Planning : The power is provided to the every macros,standard cells and all other cells are present in the design.Typically,the power distribution network        using upper metal layers sice they are thicker than lower metal layers.
+  
+  >![image](https://user-images.githubusercontent.com/118953939/212283483-036fb3f7-8eb5-44f0-84e1-3e98ef5fa8f4.png)
