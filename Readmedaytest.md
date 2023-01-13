@@ -77,5 +77,14 @@
  <Details>
  <summary>ASIC Design Flow</summary>
 
- - ASIC Flow Objective :RTL to GDSII = Take Design from REsistor transfer level (RTL) to GDSII format for the final layout and it also called as Automated PnR and        Physical Implementation.
- - ![image](https://user-images.githubusercontent.com/118953939/212274137-89230947-0306-4e81-987d-dd887d607aac.png)
+ - ASIC Flow Objective :RTL to GDSII = Take Design from Resistor transfer level (RTL) to GDSII format for the final layout and it also called as Automated PnR and        Physical Implementation.
+ - RTL to GDSII flow 
+    - Synthesis --> Floor/Power Planing --> Placement --> Clock Tree Synthesis --> Routing --> Sign OFF 
+ ![image](https://user-images.githubusercontent.com/118953939/212274137-89230947-0306-4e81-987d-dd887d607aac.png)
+
+ **Synthesis**
+ - Purpose of synthesis is to convert RTL to a circuit out of component from the stadndar cell library(SCL)
+ - The result of circuit is described in HDL or in gate level netlist.
+ - Standard cells have regular layout and each cell has different views or model which is Electrical,HDL,SPICE and Layout (Abstract and Detailed)
+ 
+ >![image](https://user-images.githubusercontent.com/118953939/212276687-de4befaa-9a3e-457e-9827-c811e5e8bdb8.png)
