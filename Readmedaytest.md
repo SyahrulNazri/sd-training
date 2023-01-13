@@ -184,11 +184,16 @@
   <Details>
  <summary>Intorduction to OpenLANE  and ASIC design flow</summary>
 **OpenLANE ASIC Flow**
-![image](https://user-images.githubusercontent.com/118953939/212359133-ccbb0fa4-de22-43eb-805f-ee24a4bce08a.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/212359133-ccbb0fa4-de22-43eb-805f-ee24a4bce08a.png)
 source :lecture's video
   
 -From RTL to synthesis using yosys with the design constraints.This Yosys will translate the RTL into logic circuits component and optimized it and then mapped using abc.
 -Synthesis Exploration = used to generate reports that shows how the design delay and area(can pick the best strategy base on this).Its also generate report design .
+
+>![image](https://user-images.githubusercontent.com/118953939/212361445-77e075a2-76bc-4278-beac-b0e76f1991a4.png)
+
 - Opelane Regression Testing 
     - The design exploration uitlity is also used of rregression testing (CI)
     - We run OpenLane on ~70 desgn and compare the results to the best known ones.
+>![image](https://user-images.githubusercontent.com/118953939/212361588-045c58e0-de7a-47f8-9339-c54d29eb9a41.png)
