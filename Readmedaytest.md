@@ -70,7 +70,7 @@
         - I/O Libraries
   
 >![image](https://user-images.githubusercontent.com/118953939/212272437-d8b736be-8326-4716-b03d-bb0b107312b6.png)
-
+ Source : Takens from lecture video.
   </details>
   
      
@@ -81,7 +81,8 @@
  - RTL to GDSII flow 
     - Synthesis --> Floor/Power Planing --> Placement --> Clock Tree Synthesis --> Routing --> Sign OFF 
  ![image](https://user-images.githubusercontent.com/118953939/212274137-89230947-0306-4e81-987d-dd887d607aac.png)
-
+  Source : Takens from lecture video.
+  
  **Synthesis**
  - Purpose of synthesis is to convert RTL to a circuit out of component from the stadndar cell library(SCL)
  - The result of circuit is described in HDL or in gate level netlist.
@@ -95,4 +96,42 @@
    - Macro floor-planing : Dimensions,pin locations and rows definition.
    - Power Planning : The power is provided to the every macros,standard cells and all other cells are present in the design.Typically,the power distribution network        using upper metal layers sice they are thicker than lower metal layers.
   
-  >![image](https://user-images.githubusercontent.com/118953939/212283483-036fb3f7-8eb5-44f0-84e1-3e98ef5fa8f4.png)
+  >![image](https://user-images.githubusercontent.com/118953939/212283483-036fb3f7-8eb5-44f0-84e1-3e98ef5fa8f4.png) 
+  Source : Takens from lecture video.
+
+  **Placement**
+  - Place the cells on the floopplan rows,aligned with the sites.Should place closed to preven interdisconnted .
+  - Usually done in 2 steps : Global and detailed.
+      -Global : It aims to generate a rough placement solution that may flout some placement restrictions while maintaining a broad view of the entire netlist in the                   very first stage of placement, where cells are placed inside the core area for the first time while considering timing and congestion.
+      -Detailed :The position obtained from global placements are minimally altered.
+  
+  >![image](https://user-images.githubusercontent.com/118953939/212284737-5b9ee148-7a7f-4217-8257-0f8277ad1ef3.png)
+  Source : Takens from lecture video.
+ 
+ **Clock Tree Synthesis (CTS)**
+ 
+  -Create a clock distribution network 
+    -To deliver the clock to all sequential elements (eg FF)
+    -With minimum skew (zero is hard to achive)
+    - And in a good shape.
+    -Usually a tree (H,X,..)
+  
+  >![image](https://user-images.githubusercontent.com/118953939/212286257-cb528e70-0bc8-4a2f-9cdd-8ef6f19dba35.png)
+  
+ **Routing**
+  
+ - The process of implementing the interconnect using the available metal layers.
+ - Metals is tracks from a routing grid and this routing grid is huge.So,devide and conquere approach.
+    - Global Routing :Generating routing guides 
+    - Detailed Routing :Using routing guides to implement the actual wiring.
+>![image](https://user-images.githubusercontent.com/118953939/212286543-ea5ea5c5-516a-48c7-a418-a818235bd70e.png)
+  
+ **Sign Off** 
+ 
+ Final layout 
+ -Physical Verifications 
+    - Design Rules Checking (DRC) -to maek sure the fnal layout follow all the design rules. 
+    - Layout vs Schematic (LVS) - Ensuring the final layout matches the gate level netlist of th design 
+ - Timing Verification
+    - Static Timing Analysis (STA) -To make sure all the timing constraints are met and the circuit will run at designated clock frequencies.
+  </details>
