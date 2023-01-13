@@ -248,7 +248,7 @@ source :lecture's video
       - We took a preventive approach  
         - Add a fake antenna diode next to every cell input after placement 
         - Run the antenna checker (MAGIC) in the routed layout 
-        - Ift he checker reports a vilation ont he cell input pin,replace fake diode cell by a real one.
+        - Ift he checker reports a violation on the cell input pin,replace fake diode cell by a real one.
       
        >![image](https://user-images.githubusercontent.com/118953939/212366895-e6a891c0-d232-421d-b11d-1738fdf70713.png)
          source :lecture's video
@@ -259,5 +259,6 @@ source :lecture's video
          - STA: OpenSTA (OpenROAD)
   
       **Physical verification DRC and LVS
+  
           - Magic is used for DRC and SPICE Extraction from Layout
           - Magic and Netgen are used for LVS where extracted SPICE by Magic vs. Verilog netlist
