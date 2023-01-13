@@ -192,6 +192,7 @@
 source :lecture's video
   
 -From RTL to synthesis using yosys with the design constraints.This Yosys will translate the RTL into logic circuits component and optimized it and then mapped using abc.
+  
 -Synthesis Exploration = used to generate reports that shows how the design delay and area(can pick the best strategy base on this).Its also generate report design .
 
 >![image](https://user-images.githubusercontent.com/118953939/212361936-789849f1-f538-4321-92a6-6fb0035eec1c.png)
