@@ -274,9 +274,10 @@ source :lecture's video
 
 >![image](https://user-images.githubusercontent.com/118953939/212477313-41338577-8e4c-4b25-9021-d03e00aa75ae.png)
 
-  </details>
+</details>
   
-   <Details>
+  
+  <Details>
  <summary>Design Preparation Step</summary>
  
   - Step to invoke OPEN LANE 
@@ -299,7 +300,8 @@ source :lecture's video
 
   </details>
   
-   <Details>
+  
+ <Details>
  <summary>Review files after design prep and run synthesis</summary>
   
   >![image](https://user-images.githubusercontent.com/118953939/212477625-6c17e78e-6738-49ae-8dab-0e838ca926e8.png)
@@ -309,10 +311,11 @@ source :lecture's video
   ```
   >![image](https://user-images.githubusercontent.com/118953939/212477631-ebec86cd-a3b0-41d0-9965-a733f36ee369.png)
 
-  </details>
+</details>
   
   
-     <Details>
+  
+  <Details>
  <summary>OpenLANE Project Git Link Description</summary>
  
  ```
@@ -321,9 +324,9 @@ source :lecture's video
 >![image](https://user-images.githubusercontent.com/118953939/212477652-28d008bf-8fba-4010-8613-040fe6dc7f40.png)
 
   
-  </details>
+ </details>
   
-    <Details>
+ <Details>
  <summary>Step to Charactize Synthesis Result</summary>
   
   >![image](https://user-images.githubusercontent.com/118953939/212477695-57335e78-d3a5-41c7-b3d5-e8873ed7ee36.png)
