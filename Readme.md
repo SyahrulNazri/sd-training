@@ -2834,7 +2834,7 @@ source :lecture's video
           - Magic and Netgen are used for LVS where extracted SPICE by Magic vs. Verilog netlist
   </details>
   
-  ## Get Familiar to open-source EDA tools
+  ### Get Familiar to open-source EDA tools
   
     
   <Details>
