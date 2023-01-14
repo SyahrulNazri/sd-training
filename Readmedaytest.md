@@ -262,3 +262,76 @@ source :lecture's video
   
           - Magic is used for DRC and SPICE Extraction from Layout
           - Magic and Netgen are used for LVS where extracted SPICE by Magic vs. Verilog netlist
+  </details>
+  
+  ## Get Familiar to open-source EDA tools
+  
+    
+  <Details>
+ <summary>OpenLANE Directory Structure in Details</summary>
+  
+>![image](https://user-images.githubusercontent.com/118953939/212477299-3c68965f-2033-491a-a514-ed37f07ac534.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/212477313-41338577-8e4c-4b25-9021-d03e00aa75ae.png)
+
+  </details>
+  
+   <Details>
+ <summary>Design Preparation Step</summary>
+ 
+  - Step to invoke OPEN LANE 
+  ```
+ 1)make mount 
+  
+ 2)./flow.tcl -interactive
+  
+ 3)package require openLane 0.9
+  
+ >[Uploading image.png…]()
+  
+  - Design File 
+
+ >![image](https://user-images.githubusercontent.com/118953939/212477521-622a611b-6e54-4e70-8cf0-5f986a3c2ab1.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/212477571-18da216a-12f2-46ac-943b-048a2d7ddb15.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/212477591-fcc788ac-c464-4193-a21b-37f7710c26fc.png)
+
+  </details>
+  
+   <Details>
+ <summary>Review files after design prep and run synthesis</summary>
+  
+  >![image](https://user-images.githubusercontent.com/118953939/212477625-6c17e78e-6738-49ae-8dab-0e838ca926e8.png)
+
+  ```
+  run_synthesis --> execute synthesis 
+  ```
+  >![image](https://user-images.githubusercontent.com/118953939/212477631-ebec86cd-a3b0-41d0-9965-a733f36ee369.png)
+
+  </details>
+  
+  
+     <Details>
+ <summary>OpenLANE Project Git Link Description</summary>
+ 
+ ```
+ More about OPEN LANE can read on this GitHub : https://github.com/efabless/OpenLane
+  
+>![image](https://user-images.githubusercontent.com/118953939/212477652-28d008bf-8fba-4010-8613-040fe6dc7f40.png)
+
+  
+  </details>
+  
+    <Details>
+ <summary>Step to Charactize Synthesis Result</summary>
+  
+  >![image](https://user-images.githubusercontent.com/118953939/212477695-57335e78-d3a5-41c7-b3d5-e8873ed7ee36.png)
+
+  >![image](https://user-images.githubusercontent.com/118953939/212477701-86f4be2d-7a4f-4d96-a265-6e612bf60a0b.png)
+
+  >![image](https://user-images.githubusercontent.com/118953939/212477707-ffba286b-f772-4589-90c8-24de0dd48cbd.png)
+
+  </details>
+  
+  
