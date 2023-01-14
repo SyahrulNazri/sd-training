@@ -320,9 +320,9 @@ source :lecture's video
  
  ```
  More about OPEN LANE can read on this GitHub : https://github.com/efabless/OpenLane
-  
+ ``` 
 >![image](https://user-images.githubusercontent.com/118953939/212477652-28d008bf-8fba-4010-8613-040fe6dc7f40.png)
-```
+
   
  </details>
   
