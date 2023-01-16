@@ -1,10 +1,10 @@
 
-## Day 15 
-### Topic Inception of Open-source EDA,OpenLANE and Sky130 PDK
+## Day 16
+### Topic Good Fllorplan vs bad floorpan and introduction to library cells
 
   
  <Details>
- <summary>Introduction to QFN-48 PAckage,Chips,PAds,Core,Die adn IPs</summary>
+ <summary>Utilization factor and aspec ratio </summary>
  
  Package it is the material that contains semiconductor device attached with a die using wire bonding. Package is a container that holds die and was connected to outside (external device) by using wire bonding. Example of package - Quadruple in-line package (QIP) and Dual in-line package (DIP).  
    
