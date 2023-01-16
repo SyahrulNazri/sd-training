@@ -10,8 +10,6 @@
   
 >![image](https://user-images.githubusercontent.com/118953939/212715520-a1a1e8c8-5429-47f9-95e7-b2e1057aa15c.png)
 
-
- source :https://www.vlsisystemdesign.com/
   </details>
   
  <Details>
@@ -26,6 +24,11 @@
   <Details>
  <summary>Decoupling Capacitor</summary>
  
+>![image](https://user-images.githubusercontent.com/118953939/212716686-35ca751e-1f9a-4c23-8fc4-b1593049ae96.png)
+ 
+>![image](https://user-images.githubusercontent.com/118953939/212716728-e180e2bb-e53c-4372-9e44-d28fa85897d6.png)
+ 
+>![image](https://user-images.githubusercontent.com/118953939/212716782-d2d9b84e-9a6c-4e8c-be99-c2d1f8f17512.png)
 
 </details>
  
