@@ -150,13 +150,24 @@
 
 >![image](https://user-images.githubusercontent.com/118953939/213116905-820f448e-e303-4045-a66a-69f3882f0c12.png)
 
+>![image](https://user-images.githubusercontent.com/118953939/213117298-9916e46b-5709-4a1c-80f3-d2611edcdde3.png)
+ 
+>![image](https://user-images.githubusercontent.com/118953939/213117362-50e59a68-0c4f-4c77-acd4-063c81a6743f.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/213117397-8fbf09c7-4a3b-4307-ae8a-ff1d5c480049.png)
+
 </details>
 
 <details>
 <summary>Propagation delay and transition time</summary>
 
- 
+>![image](https://user-images.githubusercontent.com/118953939/213117434-b1050779-7c8d-4923-be58-c9dc992c11ac.png)
 
-content
+>![image](https://user-images.githubusercontent.com/118953939/213117465-43ceda4c-186b-4fe0-8854-f286eb0bee9a.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/213117529-7cc77f64-0568-4db8-90fc-6d3b36205a1b.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/213117576-646a08ed-6d0f-48cd-b0aa-5978e492886a.png)
+
 </details>   
  
