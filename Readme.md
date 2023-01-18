@@ -18,6 +18,7 @@
 * [ Day 13 -Post-Synthesis](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-13)
 * [ Day 14 -PVT Corner](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-14)
 * [ Day 15 - Inception of EDA and PDK ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-15)
+* [ Day 16 - Good Floorpan vs Bad Floorplan and Introduction to Library cells ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-16)
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 <Details>
