@@ -181,9 +181,48 @@
 </details>
 
 <details>
- <summary>LAB INTRODUCTION TO MAGIC TOOL OPTION AND DRC RULES</summary>
+ <summary>Lab Introduction to Magic Tool Option and DRC Rules</summary>
  
  >![image](https://user-images.githubusercontent.com/118953939/214267636-691e02bc-3e18-4f14-ba8b-9cc910904bd1.png)
 
  - Refference  http://opencircuitdesign.com/magic/
+</details>
+
+<details>
+ <summary>Lab introduction to sky130 pdk’s and steps to download labs</summary>
+ 
+>![image](https://user-images.githubusercontent.com/118953939/214268146-550f8203-6ecf-478e-8e3a-cb346ac2dcb5.png)
+</details>
+
+
+<details>
+ <summary>Lab introduction to Magic and steps to load Sky130 tech-rules</summary>
+ 
+ >![image](https://user-images.githubusercontent.com/118953939/214268363-70de186c-c464-45be-86b9-588e25d7090e.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214268403-7bb512b0-d317-4eff-bd7f-189587efefc6.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214268439-66e9be92-fbe3-4e24-a163-86d416bf0291.png)
+
+ </details>
+ 
+ <details>
+ <summary>Lab exercise to fix poly.9 error in Sky130.tech-file</summary>
+ 
+ >![image](https://user-images.githubusercontent.com/118953939/214268644-56691e76-efb4-41f8-a861-51b3189c474c.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214268671-35c078c5-2095-4439-94b4-17aedb5a00cb.png)
+</details>
+
+ <details>
+ <summary>Lab challenge exercise to describe DRC error as geometrical construct</summary>
+ 
+>![image](https://user-images.githubusercontent.com/118953939/214268967-3fefc634-5882-4bf0-a7e8-b40548427701.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/214269036-fe0be159-c7a2-4076-aeca-2359197de54c.png)
+ </details>
+ 
+  <details>
+ <summary>Lab challenge to find missing or incorrect rules and fix them</summary>
+![image](https://user-images.githubusercontent.com/118953939/214269236-bde9c4bf-3e5c-442b-8218-44700b3f7e08.png)
 </details>
