@@ -224,5 +224,7 @@
  
   <details>
  <summary>Lab challenge to find missing or incorrect rules and fix them</summary>
-![image](https://user-images.githubusercontent.com/118953939/214269236-bde9c4bf-3e5c-442b-8218-44700b3f7e08.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214269236-bde9c4bf-3e5c-442b-8218-44700b3f7e08.png)
+
 </details>
