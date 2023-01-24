@@ -141,3 +141,49 @@
 
  >![image](https://user-images.githubusercontent.com/118953939/214266096-bbef8c71-d171-41f6-9068-adc62d9ebcfd.png)
 </details>
+
+
+ <details>
+ <summary>Lab introduction to sky130 basic layers layout and LEF using inverter </summary>
+ 
+ >![image](https://user-images.githubusercontent.com/118953939/214266371-366ba8c8-6f1d-4fdb-a825-deee8cdd35b7.png)
+ 
+ >![image](https://user-images.githubusercontent.com/118953939/214266394-8be659a8-050e-4233-90e3-fb957f7ea7c2.png)
+ 
+ >![image](https://user-images.githubusercontent.com/118953939/214266419-e3766e0b-071b-4feb-9993-5e274efaabe7.png)
+ 
+- Different between the layout and the lef.More detail on https://github.com/nickson-jose/vsdstdcelldesign#introduction-to-lef
+
+>![image](https://user-images.githubusercontent.com/118953939/214266464-01233343-873b-4ca9-8e5d-913ce4225a19.png)
+</details>
+
+ <details>
+ <summary>Lab steps to create std cell layout and extract spice netlist.</summary>
+ 
+ >![image](https://user-images.githubusercontent.com/118953939/214266750-d3adcc42-ac26-4c5e-9da3-1e82401b42de.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214266795-983387bb-c873-4d41-ba71-9c427d9dbdba.png)
+</details>
+
+### Topic SKY130 Tech File Labs 
+<details>
+ <summary>Steps to create final SPICE deck using Sky130 tech </summary>
+ 
+ >![image](https://user-images.githubusercontent.com/118953939/214267229-522ec585-83b6-4cd8-a34c-f5456df7190b.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214267267-8f575911-1b84-40c8-80bc-1ba44eeceb1c.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214267308-7aa19286-eae3-4080-900f-2d4221610d0b.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214267344-87fca278-fe36-4085-a484-0e39f6f2e1d3.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214267386-ad8e5223-8ad3-4397-bf90-f4bf65e37d5d.png)
+</details>
+
+<details>
+ <summary>LAB INTRODUCTION TO MAGIC TOOL OPTION AND DRC RULES</summary>
+ 
+ >![image](https://user-images.githubusercontent.com/118953939/214267636-691e02bc-3e18-4f14-ba8b-9cc910904bd1.png)
+
+ - Refference  http://opencircuitdesign.com/magic/
+</details>
