@@ -1,173 +1,143 @@
 
-## Day 16
-### Topic Good Fl0orplan vs bad floorpan and introduction to library cells
+## Day 17  
 
-### Topic:Chip Floor Planing Consideration  
- <Details>
- <summary>Utilization factor and aspec ratio </summary>
- 
->![image](https://user-images.githubusercontent.com/118953939/212715488-dbc350da-b9bb-432a-896f-a5661762323a.png)
-  
->![image](https://user-images.githubusercontent.com/118953939/212715520-a1a1e8c8-5429-47f9-95e7-b2e1057aa15c.png)
+### Topic : Design Library cell using Magic layout and Ngspice characterization 
 
-  </details>
-  
- <Details>
- <summary>Concept of pre place cells</summary>
- 
- >![image](https://user-images.githubusercontent.com/118953939/212715673-a4f79c96-da28-4b07-a407-35a9c9c9262a.png)
-  
- >![image](https://user-images.githubusercontent.com/118953939/212715709-cdb45af0-cc18-443b-8f36-32ab818351a2.png)
+### Topic - IO Placer Version 
 
-   </details>
-   
-  <Details>
- <summary>Decoupling Capacitor</summary>
- 
->![image](https://user-images.githubusercontent.com/118953939/212716686-35ca751e-1f9a-4c23-8fc4-b1593049ae96.png)
- 
->![image](https://user-images.githubusercontent.com/118953939/212716728-e180e2bb-e53c-4372-9e44-d28fa85897d6.png)
- 
->![image](https://user-images.githubusercontent.com/118953939/212716782-d2d9b84e-9a6c-4e8c-be99-c2d1f8f17512.png)
+<details>
+ <summary>IO placer revision</summary> 
 
+ >![image](https://user-images.githubusercontent.com/118953939/214262318-787972dc-0666-42cf-b853-c9918d637dd2.png)
+ 
+ >![image](https://user-images.githubusercontent.com/118953939/214262403-8ecde286-249f-4cf3-afcd-0950231607fc.png)
 </details>
+
+<details>
+ <summary>Spice Deck Creation for CMOS inverter </summary> 
  
-  <Details>
-<summary>Power Planing </summary>
- 
->![image](https://user-images.githubusercontent.com/118953939/212716314-e179e386-2d3d-4294-9867-4795b37939db.png)
-
->![image](https://user-images.githubusercontent.com/118953939/212716368-62b1c117-a447-4830-960a-e5bde5fab000.png)
-
-  </details>
-  
-  <details>
-<summary>Pin placement and logical cell placement blockage</summary>
-
- ![image](https://user-images.githubusercontent.com/118953939/213113500-53f1786a-8fe0-413a-9932-c06aed0ef0c9.png)
+ >![image](https://user-images.githubusercontent.com/118953939/214262585-63367e5f-65b2-4f92-ad69-809b121b6151.png)
 
 </details>
 
 <details>
-<summary>Steps to run floorplan using OpenLANE</summary>
+ <summary>Lab Spice simulation lab for CMOS inverter </summary> 
+ 
+ >![image](https://user-images.githubusercontent.com/118953939/214262852-0cbf5d43-56e5-45d5-ade2-17164d7246d7.png)
 
->![image](https://user-images.githubusercontent.com/118953939/213113609-c3b4bc4f-090b-4e46-ae63-7867b8ad50e0.png)
+ >![image](https://user-images.githubusercontent.com/118953939/214262883-45cb71d9-f042-4916-99aa-6419e4a55c1a.png)
 
->![image](https://user-images.githubusercontent.com/118953939/213113642-e54e1a83-e52f-4227-b1b8-a70c3530ff24.png)
+ >![image](https://user-images.githubusercontent.com/118953939/214262984-e437d2d5-7399-4415-93b2-1cded8d80a47.png)
 
->![image](https://user-images.githubusercontent.com/118953939/213113668-1bbf6e13-3653-4e87-bfa6-3c43624b3d28.png)
+ >![image](https://user-images.githubusercontent.com/118953939/214263016-89f25d82-7b58-45b7-b13e-be756841cd71.png)
 
->![image](https://user-images.githubusercontent.com/118953939/213113698-5b27baf1-1c80-4fce-bd12-394551c8faa1.png)
+ >![image](https://user-images.githubusercontent.com/118953939/214263057-732b6111-2e30-4a65-a027-db4eb2eb8a67.png)
 
+ >![image](https://user-images.githubusercontent.com/118953939/214263083-68595c01-10c6-4b73-bdf3-f659eaa8de44.png)
 </details>
 
 
 <details>
-<summary>Review floorplan files and steps to view floorplan</summary>
-
- >![image](https://user-images.githubusercontent.com/118953939/213113816-fb3fddc6-bdde-4586-b48e-176cbd2ea467.png)
-
->![image](https://user-images.githubusercontent.com/118953939/213113858-bc463924-89bb-4d74-bb0c-79b55d8bdd65.png)
+ <summary>Switching Threshold Vm </summary> 
  
+ >![image](https://user-images.githubusercontent.com/118953939/214263337-8ffac728-96ac-47f0-9221-18968b25db39.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214263375-10a1ea9d-dcef-4239-b162-778bac6ed8be.png)
 </details>
 
-###  Library Binding and Placement
+<details>
+ <summary>Static and Dynamic Simulation of CMOS inverter</summary> 
+ 
+ >![image](https://user-images.githubusercontent.com/118953939/214263535-0d81365a-fb76-424a-87d4-28b5607a1b38.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214263611-4abafd5f-e722-4062-b67b-2e0afbd48f8e.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214263649-0785bfc5-feb1-47fa-beb5-964edaf4c707.png)
+ 
+ >![image](https://user-images.githubusercontent.com/118953939/214263701-16dc380b-900c-4397-9c40-f291f574933c.png)
+ </details>
+ 
+ 
+<details>
+ <summary>LAB STEPS TO GIT CLONE VSDSTDCELLDESIGN </summary> 
+
+>![image](https://user-images.githubusercontent.com/118953939/214263928-6d3c392b-15b5-4e96-9249-defb5bbdec5b.png)
+</details>
+
+### Topic Inception of Layout and CMOS fabrication process
 
 <details>
-<summary>Netlist binding and initial place design</summary>
-
- >![image](https://user-images.githubusercontent.com/118953939/213114145-3dd1549d-e527-4f82-949c-e8a333b0f252.png)
-
- >![image](https://user-images.githubusercontent.com/118953939/213114212-d2cced5a-16bd-4b77-b001-e366d96c8076.png)
+ <summary>Create Active Regions </summary> 
  
- >![image](https://user-images.githubusercontent.com/118953939/213114356-cff8c02c-008a-47f7-85ce-5be1f32cabc8.png)
+ >![image](https://user-images.githubusercontent.com/118953939/214264150-8ae1a4ca-c611-4a02-b356-3825bb677fd4.png)
 
+ >![image](https://user-images.githubusercontent.com/118953939/214264216-105b3833-aab2-4bf2-a455-ccd21fa55787.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214264259-a087576d-975c-4a1f-b82e-7c724bfa27a7.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214264295-68753666-5f0a-495a-b681-e2ccfad29c51.png)
+</details>
+
+<details>
+ <summary>Formation Nwell and P well </summary> 
+ 
+ >![image](https://user-images.githubusercontent.com/118953939/214264498-50b3df6c-06f5-40be-923f-7743eca93e0d.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214264543-64ca628c-f6d8-4eec-8fe8-1cad71446200.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214264579-4a09c795-c1dd-48cc-8c9f-25d0fcec0730.png)
  </details>
  
  <details>
- <summary>Optimize placement using estimated wire-length,capacitance and final placement </summary>
+ <summary>Formation of Gate Terminal </summary> 
  
- >![image](https://user-images.githubusercontent.com/118953939/213114612-27568e06-bc7e-49b1-aaaa-3b0dd4a84a90.png)
+ >![image](https://user-images.githubusercontent.com/118953939/214264768-972850dc-c6d9-4d71-994b-9c25e9243084.png)
 
+ >![image](https://user-images.githubusercontent.com/118953939/214264789-6305065d-e376-4f3b-84e6-0fd93c0dc22c.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214264825-7ef38297-7158-49ce-9873-dd447a7fc516.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214264852-ae6eeab8-5790-4218-a250-e5fe38268ca4.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214264879-2a7df07d-caa3-44b8-aa49-3e70f1728d79.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214264910-239e9a0d-3f91-4ae7-81a3-84f05942665e.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214264997-c9653064-acf4-491b-b3f6-73ffd9b3b66d.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214265031-3ceef52f-39b9-4fa0-96c6-f607cd1b432b.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214265090-15ae1bad-6d7c-4897-bdb6-8a08b5915e9e.png)
+</details>
+
+ <details>
+ <summary>Source and Drain Formation</summary>
+
+ >![image](https://user-images.githubusercontent.com/118953939/214265329-ef10dd5f-442d-4679-9d20-69ccfc8dc702.png)
+
+ >![image](https://user-images.githubusercontent.com/118953939/214265356-88c45036-a50c-4676-b11e-31d55bb2c9eb.png)
 </details>
 
 <details>
-<summary>Congestion aware placement using RePlAcee</summary>
+ <summary>Local Interconnection Formation</summary>
 
- >![image](https://user-images.githubusercontent.com/118953939/213116110-2fad588c-441a-4e4a-bd27-dc2153d05c06.png)
+ >![image](https://user-images.githubusercontent.com/118953939/214265649-6b701c59-1d74-430b-8be9-3e630cef6c81.png)
 
+ >![image](https://user-images.githubusercontent.com/118953939/214265717-1b880c2c-9623-4ea3-a68b-8bcf60c88fe1.png)
 
-</details>
-
+ >![image](https://user-images.githubusercontent.com/118953939/214265751-261610da-e92e-455c-a0dc-efefd4b6e357.png)
+ </details>
  
+ <details>
+ <summary>High Level Metal Formation</summary>
 
-###  Cell design and characterization flows
+ >![image](https://user-images.githubusercontent.com/118953939/214265908-d4634718-3839-4e10-925f-ec495383d6e1.png)
 
-<details>
-<summary>Inputs for cell design flow</summary>
+ >![image](https://user-images.githubusercontent.com/118953939/214265954-3b662c08-cce1-438a-89a9-36a8a05fd3d8.png)
 
->![image](https://user-images.githubusercontent.com/118953939/213116181-3c28faf4-6ca3-4bac-a88a-f3a0dd032ce9.png)
+ >![image](https://user-images.githubusercontent.com/118953939/214266026-9dfc7a45-e6e6-430c-8584-4fce032ad959.png)
 
->![image](https://user-images.githubusercontent.com/118953939/213116216-758b24cf-7a4d-4811-adb8-86fef9122895.png)
+ >![image](https://user-images.githubusercontent.com/118953939/214266076-d800d2b5-2df4-4ffe-a13d-64bf43858564.png)
 
+ >![image](https://user-images.githubusercontent.com/118953939/214266096-bbef8c71-d171-41f6-9068-adc62d9ebcfd.png)
 </details>
-
-<details>
-<summary>Circuit design step</summary>
-
- >![image](https://user-images.githubusercontent.com/118953939/213116328-7b2b2863-bb1e-404f-adaa-07088107a8ed.png)
-
- >![image](https://user-images.githubusercontent.com/118953939/213116373-546b875a-5bef-4ce3-98f9-b3360f024501.png)
-
- >![image](https://user-images.githubusercontent.com/118953939/213116550-c8e75b88-0782-486d-a6e4-506227d30a1d.png)
-
-</details>
-
-<details>
-<summary>Layout design step</summary>
-
->![image](https://user-images.githubusercontent.com/118953939/213116614-63cb610f-3225-4038-b11c-f760d39d0875.png)
-
->![image](https://user-images.githubusercontent.com/118953939/213116639-d6e34c5f-baca-49be-94f9-e314492e0b95.png)
-
-</details>
-
-
-<details>
-<summary>Typical characterization flow</summary>
-
->![image](https://user-images.githubusercontent.com/118953939/213116767-22bf1b4b-6eb8-49cf-947a-d0ec6e917818.png)
-
->![image](https://user-images.githubusercontent.com/118953939/213116812-f8b653ef-4f1b-40bc-9735-476c6a3f7aba.png)
-</details>
-
- 
-
-###  General timing characterization parameters
-
-<details>
-<summary>Timing threshold definitions</summary>
-
->![image](https://user-images.githubusercontent.com/118953939/213116905-820f448e-e303-4045-a66a-69f3882f0c12.png)
-
->![image](https://user-images.githubusercontent.com/118953939/213117298-9916e46b-5709-4a1c-80f3-d2611edcdde3.png)
- 
->![image](https://user-images.githubusercontent.com/118953939/213117362-50e59a68-0c4f-4c77-acd4-063c81a6743f.png)
-
->![image](https://user-images.githubusercontent.com/118953939/213117397-8fbf09c7-4a3b-4307-ae8a-ff1d5c480049.png)
-
-</details>
-
-<details>
-<summary>Propagation delay and transition time</summary>
-
->![image](https://user-images.githubusercontent.com/118953939/213117434-b1050779-7c8d-4923-be58-c9dc992c11ac.png)
-
->![image](https://user-images.githubusercontent.com/118953939/213117465-43ceda4c-186b-4fe0-8854-f286eb0bee9a.png)
-
->![image](https://user-images.githubusercontent.com/118953939/213117529-7cc77f64-0568-4db8-90fc-6d3b36205a1b.png)
-
->![image](https://user-images.githubusercontent.com/118953939/213117576-646a08ed-6d0f-48cd-b0aa-5978e492886a.png)
-
-</details>   
- 
