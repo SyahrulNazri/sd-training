@@ -2910,7 +2910,7 @@ source :lecture's video
   </details>
   
   ## Day 16
-### Topic Good Fl0orplan vs bad floorpan and introduction to library cells
+### Topic Good Floor plan vs bad floor plan and introduction to library cells
 
 ### Topic:Chip Floor Planing Consideration  
  <Details>
@@ -3002,7 +3002,7 @@ source :lecture's video
 </details>
 
 <details>
-<summary>Congestion aware placement using RePlAcee</summary>
+<summary>Congestion aware placement using Replace</summary>
 
  >![image](https://user-images.githubusercontent.com/118953939/213116110-2fad588c-441a-4e4a-bd27-dc2153d05c06.png)
 
