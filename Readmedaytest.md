@@ -103,9 +103,13 @@
  <summary>Perform basic timing ECO </summary>
 
 Ways to improve timing :
+
 1)Increasing drive strength of the cell while at the sacrifice of size.
-2)Using cell replace 
+
+ 2)Using cell replace 
+  
   -->Replace_cell <lib cell>
+  
   -->Report_check –from <oldcell>  -through <newcell>
 
  </details>
