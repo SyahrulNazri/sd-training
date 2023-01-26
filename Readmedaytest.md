@@ -118,6 +118,8 @@ Ways to improve timing :
 
  <details>
  <summary>Clock tree routing and buffering using H-Tree algorithm</summary>
+  
+ >![image](https://user-images.githubusercontent.com/118953939/214901322-e6a59c68-b0e1-4be6-bc7f-37a984406943.png)
 
 
 </details>
@@ -126,6 +128,8 @@ Ways to improve timing :
  <details>
 <summary>Crosstalk and clock net shielding</summary>
  
+  >![image](https://user-images.githubusercontent.com/118953939/214901374-8388ae77-e369-4576-acba-5fabaf3d6a34.png)
+
   
 </details>
  
@@ -146,3 +150,4 @@ Ways to improve timing :
 
 </details>
 
+...
