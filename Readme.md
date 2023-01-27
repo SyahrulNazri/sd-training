@@ -21,7 +21,7 @@
 * [ Day 16 - Good Floorpan vs Bad Floorplan and Introduction to Library cells ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-16)
 * [ Day 17 -Design Library cell using Magic layout and Ngspice characterization  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-17)
 * [ Day 18 - Pre-layout timing analysis and importance of good clock tree](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-18)
-* [ Day 19 - Final steps for RTL2GDS using tritonroute and open STA](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-19)
+* [ Day 19 - Final steps for RTL2GDS using tritonroute and open STA](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-19---final-steps-for-rtl2gds-using-tritonroute-and-open-sta)
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 <Details>
