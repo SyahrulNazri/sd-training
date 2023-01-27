@@ -3474,6 +3474,8 @@ Ways to improve timing :
 
 >![image](https://user-images.githubusercontent.com/118953939/215038997-28d344a0-ebfe-4bba-8a33-fc5c945bca7d.png)
 
+</details>
+
 <details>
  <summary>Hold timing analysis using real clocks </summary>
 
