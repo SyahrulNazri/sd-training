@@ -3503,3 +3503,146 @@ Ways to improve timing :
 >![image](https://user-images.githubusercontent.com/118953939/215044376-d2530238-922d-4953-9fb4-53a88f837c45.png)
 
 </details>
+
+## Day 19 - Final steps for RTL2GDS using tritonroute and open STA
+
+###  Routing And design rule check
+
+<details>
+
+<summary>Introduction to Maze Routing Lee’s algorithm</summary>167
+ >
+ 
+ >
+
+ >
+
+content
+169
+</details>
+170
+        
+171
+<details>
+172
+<summary>Lee’s Algorithm conclusion</summary>
+173
+
+174
+content
+175
+</details>
+176
+        
+177
+<details>
+178
+<summary>Design Rule Check</summary>
+179
+
+180
+content
+181
+</details>
+182
+
+183
+###  Power Distribution Network and routing
+184
+
+185
+<details>
+186
+<summary>Lab steps to build power distribution network</summary>
+187
+
+188
+content
+189
+</details>
+190
+        
+191
+<details>
+192
+<summary>Lab steps from power straps to std cell power</summary>
+193
+
+194
+content
+195
+</details>
+196
+        
+197
+<details>
+198
+<summary>Basics of global and detail routing and configure TritonRoute</summary>
+199
+
+200
+content
+201
+</details>
+202
+
+203
+
+204
+### TritonRoute Features
+205
+        
+206
+<details>
+207
+<summary>TritonRoute feature 1 - Honors pre-processed route guides</summary>
+208
+
+209
+content
+210
+</details>
+211
+        
+212
+<details>
+213
+<summary>TritonRoute Feature2 & 3 - Inter-guide connectivity and intra- & inter-layer routing</summary>
+214
+
+215
+content
+216
+</details>
+217
+        
+218
+<details>
+219
+<summary>TritonRoute method to handle connectivity</summary>
+220
+
+221
+content
+222
+</details>
+223
+
+224
+<details>
+225
+<summary>Routing topology algorithm and final files list post-route</summary>
+226
+
+227
+content
+228
+</details>
+229
+
+230
+
+231
+
+232
+
