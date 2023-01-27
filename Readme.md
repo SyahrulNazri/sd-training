@@ -3496,8 +3496,8 @@ Ways to improve timing :
 </details>
 
 <details>
- <summary>Steps to observe impact of bigger CTS buffers on setup and hold timing
+ <summary>Steps to observe impact of bigger CTS buffers on setup and hold timing</summary>
 
 >![image](https://user-images.githubusercontent.com/118953939/215044376-d2530238-922d-4953-9fb4-53a88f837c45.png)
 
-</summary>
+</details>
