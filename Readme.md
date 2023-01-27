@@ -3466,4 +3466,37 @@ Ways to improve timing :
 
 </details>
 
-...
+### TOPIC:Timing Analysis with real clocks using openSTA 
+<details>
+ <summary>Step Timing Analysis using real clocks </summary>
+
+>![image](https://user-images.githubusercontent.com/118953939/215038954-7c79cb98-7164-4676-bf46-bb856cfdfba1.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/215038997-28d344a0-ebfe-4bba-8a33-fc5c945bca7d.png)
+
+<details>
+ <summary>Hold timing analysis using real clocks </summary>
+
+>![image](https://user-images.githubusercontent.com/118953939/215039153-3fdc1de7-6084-4a1b-a3d8-f6b799986561.png)
+
+</details>
+
+<details>
+ <summary>Lab steps to analyze timing with real clocks using OpenSTA</summary>
+>![image](https://user-images.githubusercontent.com/118953939/215039310-4ea1bdbe-e301-402b-ae03-6e8588d74dff.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/215039343-2c75ce45-2efb-4296-ad01-edc8e0743a8d.png)
+</details>
+
+<details>
+ <summary>Steps to execute OpenSTA with right timing libraries and CTS assignment</summary>
+> ![image](https://user-images.githubusercontent.com/118953939/215039606-cc460b88-04c4-4c92-869b-c6300d8eb5b8.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/215039657-68d01530-ecd4-426b-8cfe-a630fa1a48ef.png)
+</details>
+
+<details>
+ <summary>Steps to observe impact of bigger CTS buffers on setup and hold timing
+
+>![image](https://user-images.githubusercontent.com/118953939/215039723-7fb75c4b-29cb-4f95-8b61-252fded1c6fb.png)
+</summary>
