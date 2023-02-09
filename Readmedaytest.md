@@ -1,31 +1,62 @@
 
 ## Day 20 
   
-### Topic - Physical Design flow 
+### Topic - Placement and Route  
 
 
 <details>
 
-<summary>Physical Design Flow</summary>
-
-- process of converting synthesized netlist design restriction and standard library to a layout as per the design rules provided by the foundary. The layout is sent to  the foundary for the chip creation.
+<summary>Placement </summary>
+**PLACEMENT*
+- Placement is the process of determining the locations of circuit devices on a die surface. It is an important stage in the VLSI design flow, because it affects routability, performance, heat distribution, and to a less extent, power consumption of a
+design. 
 - step  
-(i)   Partitioning = devides a circuit into smaller sub-circuits or modules, each of which can be constructed and examined separately.
+1. Global placement. Global placement aims at generating a rough placement solution that may violate some placement constraints (e.g., there may be overlaps among modules) while maintaining a global view of
+the whole netlist.
+2. Legalization. Legalization makes the rough solution from global placement legal (i.e., no placement constraint violation) by moving modules around locally.
+3. Detailed placement. Detailed placement further improves the legalized placement solution in an iterative manner by rearranging a small group of modules in a local region while keeping all other modules fixed.
 
-(ii)  Chip-planning = consists of floorplanning and power planning process.
+**CTS*
 
-(iii) Placement = determines the dimensions of all the blocks and place them in appropriate spots on the chip. 
+- Clock Tree Synthesis (CTS) is the process of inserting buffers/inverters along the clock paths of the ASIC design to balance the clock delay to all clock inputs. So in order to balance the skew and minimize insertion delay CTS is performed
 
-(iv)  Clock Tree Synthesis = establishes how the clock signal is buffered, gated and routed to fulfil specified skew and latency criteria.
+- Check list Befor CTS 
 
-(v)   Signal Routing = signal/global routing which allocates routing resources that are used for connections. Within the global routing resources, detailed routing assigns routes to individual metal layers and routing tracks.
+	1)Placement – Completed
 
-(vi)  Timing closure = unique placement or routing strategies to improve circuit performance.
+	2)power ground nets – Prerouted
 
->![image](https://user-images.githubusercontent.com/118953939/217484529-e9f7b79a-cc90-42b5-affc-9b2be5c20e9b.png)
+	3)Estimated Congestion – acceptable 
 
->![image](https://user-images.githubusercontent.com/118953939/217485087-5d8e653e-d78f-4fa0-9874-0f7c6cd1490e.png)
+	4)Estimated Timing – acceptable (~ 0 ns slack)
 
+	5)Estimated Max Tran/Cap – No violations
+
+	6)High Fanout Nets
+	
+- Inputs required for CTS:
+
+	1)Detailed Placement Database
+
+	2)Target for latency and skew if specified
+
+	3)Buffers or Inverters for building the clock tree
+
+	4)Clock Tree DRC (Max Tran, Max Cap, Max fanout, Max no of buffer levels)
+
+- Output of CTS:
+
+	1)Database with properly build clock tree in the design
+
+- Checklist after CTS:
+
+	1)Skew Report
+
+	2)Clock Tree Report
+
+	3)Timing Reports for setup and hold
+
+	4)Power and Area Report
 </details>
 
 	
