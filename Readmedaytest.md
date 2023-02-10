@@ -85,11 +85,11 @@ the whole netlist.
 
 
 </details>
-
+## Day 22
+  
+### Topic - Analysis labs  
 	
-<summary>Lab 22 </summary>
-
-- Analysis CTS labs 
+<summary>Theory and Summary </summary>
 
 **What is CTS?**
 It is a technique for distributing the clock equally among all sequential parts of a VLSI design
@@ -155,3 +155,4 @@ Clock_opt = which performs clock tree synthesis and incremental physical optimiz
 >![image](https://user-images.githubusercontent.com/118953939/218044549-5cf6eca9-2485-4eaa-8dc2-deab17a9cce3.png)
 
 >![image](https://user-images.githubusercontent.com/118953939/218044593-1abe0d8c-0b5e-4093-9c6d-49458d0d7d9c.png)
+</details>
