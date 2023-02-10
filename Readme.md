@@ -3694,7 +3694,8 @@ git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
 
 </details>
 
-	## Day 21
+
+## Day 21
   
 ### Topic - Placement and Route  
 
