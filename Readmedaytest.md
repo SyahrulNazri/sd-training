@@ -85,10 +85,12 @@ the whole netlist.
 
 
 </details>
+
+
 ## Day 22
   
 ### Topic - Analysis labs  
-	
+<details>	
 <summary>Theory and Summary </summary>
 
 **What is CTS?**
