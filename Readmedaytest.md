@@ -91,7 +91,7 @@ the whole netlist.
   
 ### Topic - Analysis labs  
 <details>	
-<summary>Theory and Summary </summary>
+<summary>Theory and Lab </summary>
 
 **What is CTS?**
 It is a technique for distributing the clock equally among all sequential parts of a VLSI design
