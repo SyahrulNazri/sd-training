@@ -24,7 +24,7 @@
 * [ Day 19 - Final steps for RTL2GDS using tritonroute and open STA](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-19)
 * [ Day 20 - Physical Design flow ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-20)
 * [ Day 21 - Placement and  CTS ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-21)
-* [ Day 20 - Analysis CTS  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-22)
+* [ Day 22 - Analysis CTS  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-22)
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 <Details>
