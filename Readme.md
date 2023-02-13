@@ -3856,11 +3856,42 @@ Clock_opt = which performs clock tree synthesis and incremental physical optimiz
 </details>
 
 
+## Day 22
+  
+### Topic - Analysis labs  
+<details>	
+<summary>Clock Gating Techniques</summary>
 
+Generally, there are two different techniques of implementing clock gating.
 
+- Intent based Clock gating – This type of clock gating is introduced into the design as part of functionality through RTL.
 
+- Tool generated clock gating – This type of clock gating is introduced by tools during synthesis by identifying all the Flip Flops sharing same control logic and enabling all those FFs when needed.
 
+- There is a digital circuit with a lot of clocks, now just imagine designing clock tree, which will be so huge, with so many buffers etc.
 
+- The whole chip is sectioned into smaller versions and then each section will have its own clock tree, and then finally a complete routed tree.
+
+>![image](https://user-images.githubusercontent.com/118953939/218403880-b3c99d24-cc65-47fd-a107-fb8ed84c2b07.png)
+
+**Clock Gating technique using AND,OR Universal NAND gate**
+
+- It has been found that 50% of the dynamic power originates from clock-related circuits. - source: low power vlsi design, AJIT PAL(this answers why CG?)
+
+![image](https://user-images.githubusercontent.com/118953939/218405572-b372314d-f71e-4414-b845-3a72ba3e9339.png)
+
+**Where/When is clock gating done ?**
+Inserted synthesis stage and optimized in the implementation stage(Physical Design stage).
+
+3 Types of Routing 
+```
+1)P/G routing 
+2)clock routing 
+3)signal routing 
+	= Signal routing 
+	= detailed routing 
+```
+>![image](https://user-images.githubusercontent.com/118953939/218407492-808f32d7-3d8a-45c1-aceb-271d918e1a80.png)
 
 
         
