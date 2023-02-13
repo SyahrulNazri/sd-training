@@ -3888,11 +3888,24 @@ Inserted synthesis stage and optimized in the implementation stage(Physical Desi
 1)P/G routing 
 2)clock routing 
 3)signal routing 
-	= Signal routing 
-	= detailed routing 
+	
 ```
 >![image](https://user-images.githubusercontent.com/118953939/218407492-808f32d7-3d8a-45c1-aceb-271d918e1a80.png)
 
+</details>
+	
+<details>	
+<summary>Lab </summary>
 
-        
+Clock Routing 
+```
+place_opt is used to place and optimize the current design
+
+clock_opt is used to synthesize and route the clocks, and then further optimize the design based on the propagated clock latencies
+
+route_auto is used to run global routing, trace assignment, and detailed routing at once/automatically
+```
+>![image](https://user-images.githubusercontent.com/118953939/218408320-5b1abdc8-6e13-456e-9cdb-e89924dd67d1.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/218409226-2cd60df2-5ea4-4673-9ec1-05d3429f701e.png)
 
