@@ -3856,9 +3856,9 @@ Clock_opt = which performs clock tree synthesis and incremental physical optimiz
 </details>
 
 
-## Day 22
+## Day 23
   
-### Topic - Analysis labs  
+### Topic - Clock Gating Technique 
 <details>	
 <summary>Clock Gating Techniques</summary>
 
