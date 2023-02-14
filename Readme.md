@@ -26,7 +26,7 @@
 * [ Day 21 - Placement and  CTS ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-21)
 * [ Day 22 - Analysis CTS  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-22)
 * [ Day 23 - Clock Gating Technique  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-23)
-* [ Day 24 - Clock Gating Technique  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-24)
+* [ Day 24 - ECO Timing  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-24)
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 <Details>
