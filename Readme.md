@@ -3931,6 +3931,11 @@ Engineering Change Order or ECO is how you incorporate last minute changes in yo
 
 4.After implementing and fixing the problem, save it in the database for future.
 
+**How to Improve Timing ?**
+
+- Upsizing the size to improve the timing.
+- So if the sizing  increase the delay will be reduce .  
+	
 >![image](https://user-images.githubusercontent.com/118953939/218633057-02c0e252-4f21-4361-af3d-7f8d59cdc1a6.png)
 
 >![image](https://user-images.githubusercontent.com/118953939/218633094-0d987d13-9839-46cb-a6cf-16015633552b.png)
