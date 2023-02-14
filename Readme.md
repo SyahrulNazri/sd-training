@@ -3911,7 +3911,8 @@ route_auto is used to run global routing, trace assignment, and detailed routing
 
 >![image](https://user-images.githubusercontent.com/118953939/218409226-2cd60df2-5ea4-4673-9ec1-05d3429f701e.png)
 
-
+</details>
+	
 ## Day 24
   
 ### Topic - ECO Timing 
@@ -3946,3 +3947,4 @@ Engineering Change Order or ECO is how you incorporate last minute changes in yo
 
 >![image](https://user-images.githubusercontent.com/118953939/218633181-4de1ef73-80f4-4f5b-a5b3-5a969dc3f115.png)
 
+</details>
