@@ -3963,11 +3963,9 @@ Engineering Change Order or ECO is how you incorporate last minute changes in yo
 >![image](https://user-images.githubusercontent.com/118953939/218697964-8a2e867e-64f3-4141-9403-c944cccaa16f.png)
 
 >![image](https://user-images.githubusercontent.com/118953939/218697996-132993f2-1ac2-48bf-bfca-33c2b947021c.png)
+	
+>![image](https://user-images.githubusercontent.com/118953939/218705666-fdefb161-54c5-4cfc-a194-9ddfbbb02b7f.png)
 
 >![image](https://user-images.githubusercontent.com/118953939/218698061-5ef23f62-4289-42df-bfba-73aa14a9fbaa.png)
-
->![image](https://user-images.githubusercontent.com/118953939/218698121-dafe3d82-d02b-482e-bb1b-e683c5fa304d.png)
-
->![image](https://user-images.githubusercontent.com/118953939/218698193-2c4de80d-a956-448f-82b6-c02ff8f34d4f.png)
 
 </details>
