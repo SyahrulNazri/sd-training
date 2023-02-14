@@ -26,6 +26,7 @@
 * [ Day 21 - Placement and  CTS ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-21)
 * [ Day 22 - Analysis CTS  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-22)
 * [ Day 23 - Clock Gating Technique  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-23)
+* [ Day 24 - Clock Gating Technique  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-24)
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 <Details>
@@ -3909,4 +3910,34 @@ route_auto is used to run global routing, trace assignment, and detailed routing
 >![image](https://user-images.githubusercontent.com/118953939/218408320-5b1abdc8-6e13-456e-9cdb-e89924dd67d1.png)
 
 >![image](https://user-images.githubusercontent.com/118953939/218409226-2cd60df2-5ea4-4673-9ec1-05d3429f701e.png)
+
+
+## Day 24
+  
+### Topic - ECO Timing 
+<details>	
+<summary>ECO Timing </summary>
+
+**What is ECO ?**
+Engineering Change Order or ECO is how you incorporate last minute changes in your design. So typically we do ECO on the gate level netlist. Designer need to edit the gate-level netlist, make the same changes in RTL. Then pass all verifications before it is passed on to layout. Make sure the ECO pass formal and functional verification before you start editing your layout.
+
+**ECO strategies in a nutshell**
+
+1.Investigate the problem using the recent database
+
+2.ECO generation to address the problem
+
+3.ECO implementation with the recent database
+
+4.After implementing and fixing the problem, save it in the database for future.
+
+>![image](https://user-images.githubusercontent.com/118953939/218633057-02c0e252-4f21-4361-af3d-7f8d59cdc1a6.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/218633094-0d987d13-9839-46cb-a6cf-16015633552b.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/218633131-a7c361a7-4d0d-4696-be89-07f0c4e3c4df.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/218633159-8ab8ea6c-0475-49d4-b8f4-059d15960d22.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/218633181-4de1ef73-80f4-4f5b-a5b3-5a969dc3f115.png)
 
