@@ -3941,7 +3941,16 @@ Engineering Change Order or ECO is how you incorporate last minute changes in yo
 
 >![image](https://user-images.githubusercontent.com/118953939/218633094-0d987d13-9839-46cb-a6cf-16015633552b.png)
 
->![image](https://user-images.githubusercontent.com/118953939/218635224-adde46a9-b08e-4ff1-b464-10f667445f19.png)
+```
+- size_cell core/U6 sky130_fd_sc_hd__nand2_4
+- size_cell core/U546 sky130_fd_sc_hd__a22o_4
+- size_cell core/U561 sky130_fd_sc_hd__a21oi_4
+- size_cell core/U207 sky130_fd_sc_hd__inv_4
+- size_cell core/U67 sky130_fd_sc_hd__nand2_8
+- size_cell core/U579 sky130_fd_sc_hd__a21oi_4
+- report_timing -from  core/CPU_is_add_a3_reg  -to core/CPU_Xreg_value_a4_reg[24][31]
+```
+>![image](https://user-images.githubusercontent.com/118953939/218668099-5eb4e1bf-f521-4a9c-ae79-187e54ac0c64.png)
 
 >![image](https://user-images.githubusercontent.com/118953939/218633159-8ab8ea6c-0475-49d4-b8f4-059d15960d22.png)
 
