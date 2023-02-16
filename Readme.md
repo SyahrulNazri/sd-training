@@ -27,6 +27,8 @@
 * [ Day 22 - Analysis CTS  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-22)
 * [ Day 23 - Clock Gating Technique  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-23)
 * [ Day 24 - ECO Timing  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-24)
+* [ Day 25 - RISC-V core RTL2GDS flow ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-25)
+* [ Day 26 - Introduction to mixed-signal flow  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-26)
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 <Details>
@@ -3968,4 +3970,57 @@ Engineering Change Order or ECO is how you incorporate last minute changes in yo
 
 >![image](https://user-images.githubusercontent.com/118953939/218698061-5ef23f62-4289-42df-bfba-73aa14a9fbaa.png)
 
+</details>
+
+## Day 25
+  
+### Topic - RISC-v core RTL2GDS flow 
+<details>	
+<summary>Theory </summary>
+</details>
+
+<details>	
+<summary>LAB </summary>
+</details>
+
+## Day 26
+  
+### Topic - Introduction to mixed signal 
+<details>	
+<summary>Theory </summary>
+
+**What is Mixed Signal?**
+
+Mixed-signal ICs are integrated circuits that contain both analog and digital circuitry on one chip. An analog signal is a continuous time-varying signal, and a digital signal is a noncontinuous signal that takes on only a finite number of values
+
+**Analog mixed signal flow**
+>![image](https://user-images.githubusercontent.com/118953939/219291389-bacfd1b5-870d-46e9-9471-8303c309e2fe.png)
+>![image](https://user-images.githubusercontent.com/118953939/219292443-43522d48-0ec8-456b-a3f7-18559935b1eb.png)
+
+*source : https://www.vlsisystemdesign.com/*
+
+**Explore the example of VSDBabySoc**
+1)RVMYTH processor : digital block
+2)PLL analog block
+3)DAC - analog block(for digital to analog conversion)
+
+**Introduction to various file**
+
+1)Library Exchange Format (LEF) :  representation of the abstract of the standard cells. LEF file contains all the physical information of the cells (Technology and Macro cells) and nets.Physical properties such as width and height.
+
+2)LIBerty file :representation of timing and power parameter associated with cells inside the standard cell library of a particular technology node.
+
+3)GDS ( Graphical Design System or Graphical Data System) :Binary file used in VLSI Design to represent the IC layout
+
+4)Open Artwork System Interchange Standard (OASIS) :Binary file format used by computers to represent and express an electronic pattern for an integrated circuit during its design.
+
+5)What the different between GDS and OASIS : OASIS data represents numerical values with variable byte lengths, whereas the GDS format uses fixed byte lengths.
+
+>![image](https://user-images.githubusercontent.com/118953939/219294310-ac4cc75d-3a6c-4222-90eb-37ccdb58017e.png)
+
+*Source : https://teamvlsi.com/2020/08/inputs-for-physical-design-physical-design-input-files.html*
+</details>
+
+<details>	
+<summary>LAB </summary>
 </details>
