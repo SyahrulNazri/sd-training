@@ -3712,15 +3712,19 @@ git clone https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
 ### Topic - Placement and Route  
 
 <details>
-
 <summary>Core utilization change to 0.4%</summary>
 
+- Core Utilization (Cu): It indicates the amount of core area used for cell placement.
+- The core Utilization was changes from 0.07 to 0.4 and we can see from the final result the size of DAC was bigger than before.
+	
 >![image](https://user-images.githubusercontent.com/118953939/218671583-9664cba1-7147-437d-80fc-352a3aa0894b.png)
 
 >![image](https://user-images.githubusercontent.com/118953939/218671658-393ecad8-a078-4d9a-b06b-3127ba2331ce.png)
 
 >![image](https://user-images.githubusercontent.com/118953939/218671697-0d6ecbd4-6d30-42f7-8dfd-a4f193f0b351.png)
-	
+
+</details>
+
 <details>
 
 <summary>Placement </summary>
