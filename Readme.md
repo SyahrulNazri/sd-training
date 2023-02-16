@@ -4037,17 +4037,15 @@ Mixed-signal ICs are integrated circuits that contain both analog and digital ci
 **What is PnR**
 placing the cells and connecting them to meet the design power, performance, and area (PPA) goals.
 	
+>![image](https://user-images.githubusercontent.com/118953939/219295159-0fe31e4a-e844-4035-9f53-390de28678f4.png)
+
 **Discovering are IP cores**
 - An IP core consists of a block of logic or data that is used in a semiconductor chip.
 - There are two type of IP cores 
 	1) Hard IP cores : can be customized during the physical design phase and mapped to any process technology.
 	2) Soft IP cores : That has the logic implementation and the physical implementation.the physicallayout of a hard macro-IP is finished and fixed in a 	particular process technology.
-
->![image](https://user-images.githubusercontent.com/118953939/219295159-0fe31e4a-e844-4035-9f53-390de28678f4.png)
-
+	
 *Source :https://www.slideshare.net/vlsisyst/vlsi-physical-design-flow*
-
-
 
 </details>
 
