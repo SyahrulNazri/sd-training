@@ -4052,3 +4052,52 @@ placing the cells and connecting them to meet the design power, performance, and
 <details>	
 <summary>LAB </summary>
 </details>
+
+## Day 27
+  
+### Topic - Crosstalk 
+
+<details>	
+<summary>Why and How Crosstalk Occurs in a chip</summary>
+
+- First reason crosstalk noise was high routing Density 
+- Reason Crosstalk noise occur because the high routing Density and large number of standard cells.
+- The cicuit on left figure smaller than the right figure because the number of cells was was lower.
+- When the number of standard cell increase  the  routing also increase and it will  close each other .So,it will give some issue .
+
+>![image](https://user-images.githubusercontent.com/118953939/219590600-a5af8972-98b8-4800-9ca4-a23211ccf66b.png)
+
+- Second reason,increase in number of metal layers resulting in increase in lateral capacitance.
+- Basically, there are 2 kinds of capacitance.
+- Interlayer capacitance: capacitors that is placed between 2 consecutive different layers.
+- Lateral capacitance: capacitors that is placed between 2 wires at the same level and metal layer.
+- Increase in number of metal layers resulting in increase in  lateral capacitance.
+- The overlap area for every metal layer increase because the number of cell increase.
+- So, any switching activity happening will immediately affect an activity on the others metal layer because it was close for each other.
+- 
+
+>![image](https://user-images.githubusercontent.com/118953939/219592671-92303813-22cf-4a95-ac6f-9a19da47a65a.png)
+
+- Noise margin 
+- As we know the inverter logic output will opposite from its input.For example if the input 1 the output will be 0
+- So, when we graph it ,we can see that the slope was infinite.
+- But,In practical devices the slope will not infinite because have some resistance and capacitance.
+- When we see  between 0 and input low voltage(Vil) ,all the output will be treated as logic 1 which is between Vdd and Voh.
+- Input between Vil and Vih the output will be  between Voh and Vol.
+- But between input high voltage (Vih and Vdd ),the output will be treated as output low voltage (Vol).Vol is the value less than Vil.
+- Noise margin define the input voltage range and the output voltage.Basically varied input voltage.
+- Noise margin : Any voltage on between range of Vh and Vih will be detected as logic 1.There should be put under the input or the outputs of the circuit.
+- Any voltage level in NML range will be detected as logic 0.
+- Noise could be easily eliminated or can be ignored at this margin.
+
+>![image](https://user-images.githubusercontent.com/118953939/219594316-30b1d14c-717f-47d8-9431-56cdbf371af8.png)
+
+- Lower Supply Voltage leading to lesser noise margin.
+- When reduce the supply voltage the noise margin also will be reduce.
+- For example, anything below to 200millivolt on the left margin will be consider as low margin but on the right the noise margin will be below 100milivolt.
+
+>![image](https://user-images.githubusercontent.com/118953939/219594738-cc9a0083-18bd-4c97-af3b-3bf1d1e1e8b5.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/219594602-9ff8c128-abe5-4dfd-ba13-9e271342b0c3.png)
+
+</details>
