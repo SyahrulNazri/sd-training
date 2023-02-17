@@ -4062,7 +4062,7 @@ placing the cells and connecting them to meet the design power, performance, and
 
 - First reason crosstalk noise was high routing Density 
 - Reason Crosstalk noise occur because the high routing Density and large number of standard cells.
-- The cicuit on left figure smaller than the right figure because the number of cells was was lower.
+- The cicuit on left figure smaller than the right figure because the different number of cell.For example,if we have two mobile phone.One mobile phone only use for message and call but other one use for running many application.So the number of cell is needed in the chip was different.The chip in the mobile phone that use for running application more complex.
 - When the number of standard cell increase  the  routing also increase and it will  close each other .So,it will give some issue .
 
 >![image](https://user-images.githubusercontent.com/118953939/219590600-a5af8972-98b8-4800-9ca4-a23211ccf66b.png)
@@ -4074,7 +4074,6 @@ placing the cells and connecting them to meet the design power, performance, and
 - Increase in number of metal layers resulting in increase in  lateral capacitance.
 - The overlap area for every metal layer increase because the number of cell increase.
 - So, any switching activity happening will immediately affect an activity on the others metal layer because it was close for each other.
-- 
 
 >![image](https://user-images.githubusercontent.com/118953939/219592671-92303813-22cf-4a95-ac6f-9a19da47a65a.png)
 
@@ -4092,11 +4091,12 @@ placing the cells and connecting them to meet the design power, performance, and
 
 >![image](https://user-images.githubusercontent.com/118953939/219594316-30b1d14c-717f-47d8-9431-56cdbf371af8.png)
 
+- We were given 2.5V ont the 0.25um and have two noise margin which is High noise margin and low noise margin.
+- This margin was use  to check whether the voltage lies on the High region,undefined region or low margin .It because in the pratical it imposibble to get a steady signal or degrade signal 0 .
 - Lower Supply Voltage leading to lesser noise margin.
 - When reduce the supply voltage the noise margin also will be reduce.
 - For example, anything below to 200millivolt on the left margin will be consider as low margin but on the right the noise margin will be below 100milivolt.
 
->![image](https://user-images.githubusercontent.com/118953939/219594738-cc9a0083-18bd-4c97-af3b-3bf1d1e1e8b5.png)
 
 >![image](https://user-images.githubusercontent.com/118953939/219594602-9ff8c128-abe5-4dfd-ba13-9e271342b0c3.png)
 
