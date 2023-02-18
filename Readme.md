@@ -4102,3 +4102,54 @@ placing the cells and connecting them to meet the design power, performance, and
 >![image](https://user-images.githubusercontent.com/118953939/219594602-9ff8c128-abe5-4dfd-ba13-9e271342b0c3.png)
 
 </details>
+
+<details>	
+<summary>Glitch Example and factor affecting the glitch height</summary>
+
+- As we can see from this picture, the two net was present on 2 connecting inverter which is aggressor net and victim net.
+- Between this 2 different net the coupling capacitance was connected called Cm or lateral capacitor.
+- The 2 grounded capacitor also connected.Basically whenever this capacitance charge to logic 1 the output of the inverter will be detected as logic 1 but if the capacitor is discharging the inverter will detect logic 0.
+- So, this is scenario when we called the aggressor and victim 
+- For example, if we take 1 case the aggressor driver input is switching from 1 to 0.The victim driver input is at steady state 1.
+- When the input of driver logic 1 the output will be 0,so it means the capacitor will be discharged.If we try to draw the waveform, we can see the straight line.This is the scenario for victim site.
+- Now let try to see what happen when we provide an aggregate of driver input  that switching from logic 1 to logic 0.
+- When aggressor driver input was logic 1 the aggressor output was logic 0.When the aggressor input start switching from 1 to 0  and after some finite delay the output of aggressor also start to switching from logic 0 to 1.Finally when the aggressor at logic 0 the output will change to 1.
+- When the switching from logic 0 to 1  at the output of aggressor,the capacitor will be leak at effect the at victim net whioh charging the other capacitor.
+- So can we can see from the waveform the voltage on this capacitor rises from 0 to final level and return back to 0.
+- There are two things we need to observe over here,first we need determine whether this  glitch is harmful glitch or how defects this glitch.As previous lecture we have study about the noise margin which we can detect whether the output was on the  logic 0,undefined margin or logic 1 margin.
+- Second thing that we need consider was what is that thing the bringing the violation down to zero which is inverter that  bringing it  down to zero.
+
+>![image](https://user-images.githubusercontent.com/118953939/219873895-067c2eda-3ce7-433e-ad0e-503013a2c345.png)
+
+- So, there are two things we have t try understand from this point  which is this particular glitch is tolerable or its lying somewhere between the noise margin that we have learn on the previous lecture.
+-The second thing that we have to understand, how come this particular glitch return back to zero.
+- When we open the inverter we can see the pmos on the top and nmos at bottom.
+- we have got the logic 1 on this particular inverter,so the pmos will off and nmos will on.
+>![image](https://user-images.githubusercontent.com/118953939/219873929-0050b67b-7bf2-479b-954d-e8ca1d18513e.png)
+
+- So we replace all the  ‘ON’ transistor by open switch  and the off transistor by ‘OFF’ switch that is the save way to model it.So there is one thing that can we observe here.
+- We have discharge part on this load, it means what ever the output which is present overhere,it will charge to potential which is V and then discharge through the nmos transistor .So its completely discharge to 0.
+- So we try to do this scenario again by switching the input driver from one to zero and see what happens to this particular inverter.
+- We have logic 1 on the input of driver aggressor and the output of driver was logic 0.The another output of the inverter which is on victim net was discharged to logic 0 because of the transistor as discuss on the previous .
+- Next, when the input was switching from logic 1 to 0 the output will be moving from the logic 0 to 1 and because of the glitch (cause by leak on Cm) so the two capacitor try to be charge. Because the transistor are not big enough to avoid this glitch so the violation occur.
+- Then because the non switching activity on  the aggressor net, the deciding factor was happen which the glitch became the logic 1,undefine or 0 region.If the transistor strong enough which is have low resistance and have bigger size.So if the transistor strong it will try to avoid the overcharge and become logic 0,so the output on the next inverter will be 1.The same situation occur when the transistor not strong enough to overcome the overcharge.We can say that the deciding factor depend on the transistor.
+- Functionality failure if the transistor not strong enough to overcome the overcharge  and it will be logic 1 and the next inverter output was logic 0.
+>![image](https://user-images.githubusercontent.com/118953939/219873957-feccb12b-9f6e-4fd8-930a-4d09c0f87f7d.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/219874010-a201a492-74a3-4f86-894d-830875440d16.png)
+
+- In second case,the aggressor driver input is switching from 0 to 1 and the victim driver input is at steady state 0.So the output of the inverter at victim net will be 1 
+- The particular capacitor completely charge full voltage.
+- Now the switching happen from logic 0 to logic 1 and the output of driver aggressor switching was logic 1 to 0.So all the capacitor discharge on this node.
+- Let assume this coupling capacitor have the reverse bucket with the hole which is in reverse direction.
+- The victim complete charge the logic 1 and get discharge to the leaky Cm and iverter.
+- So the falling glitch occur.
+- Two thing we need to consider overhere,what is the particular tolerable glitch over here  and how this charge come back to 1.
+
+>![image](https://user-images.githubusercontent.com/118953939/219873938-3cff98f3-191b-4e6f-9185-7a8280e0d6b1.png)
+
+- As we can see the pmos on the top and the bottom have nmos.If we give the logic 0 the pmos will be on and nmos will be off.
+- Same situation we replace the on transistor with the closed switch and off transistor with the open switch.
+- When the aggressor output was on the logic 0,the gltich we be decide whenever it go to logic 1 or logic 0.It will decided by the transistor by pmos transistor.The lower resistance the higher size of the transistor and chance from the glitch combe back to 1 was higher.Because the transitor resistance low the VDD can maintain to supply the charge and it will avoid the glitch come to logic 0.
+
+>![image](https://user-images.githubusercontent.com/118953939/219874052-e04cd297-2547-4ca7-ac4f-2f122c9e545a.png)
