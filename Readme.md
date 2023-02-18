@@ -4134,7 +4134,7 @@ placing the cells and connecting them to meet the design power, performance, and
 - Next, when the input was switching from logic 1 to 0 the output will be moving from the logic 0 to 1 and because of the glitch (cause by leak on Cm) so the two capacitor try to be charge. Because the transistor are not big enough to avoid this glitch so the violation occur.
 - Then because the non switching activity on  the aggressor net, the deciding factor was happen which the glitch became the logic 1,undefine or 0 region.If the transistor strong enough which is have low resistance and have bigger size.So if the transistor strong it will try to avoid the overcharge and become logic 0,so the output on the next inverter will be 1.The same situation occur when the transistor not strong enough to overcome the overcharge.We can say that the deciding factor depend on the transistor.
 - Functionality failure if the transistor not strong enough to overcome the overcharge  and it will be logic 1 and the next inverter output was logic 0.
->![image](https://user-images.githubusercontent.com/118953939/219873957-feccb12b-9f6e-4fd8-930a-4d09c0f87f7d.png)
+
 
 >![image](https://user-images.githubusercontent.com/118953939/219874010-a201a492-74a3-4f86-894d-830875440d16.png)
 
