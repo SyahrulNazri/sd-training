@@ -4153,3 +4153,50 @@ placing the cells and connecting them to meet the design power, performance, and
 - When the aggressor output was on the logic 0,the gltich we be decide whenever it go to logic 1 or logic 0.It will decided by the transistor by pmos transistor.The lower resistance the higher size of the transistor and chance from the glitch combe back to 1 was higher.Because the transitor resistance low the VDD can maintain to supply the charge and it will avoid the glitch come to logic 0.
 
 >![image](https://user-images.githubusercontent.com/118953939/219874052-e04cd297-2547-4ca7-ac4f-2f122c9e545a.png)
+
+- Factor affecting the glitch height 
+- We discuss about the glitch height because we need to determine the tolerable and safe height glitch. We also need to understand if the glitch is to height what the action needed to bring down the height glitch.
+- There are few factors that affecting the height glitch :
+- Coupling Capacitance Cm.Lets see how the Cm can affecting glitch height 
+- We have aggressor and victim  that connected with the Coupling capacitor. If we bring the aggressor and victim close each other the overlap area will be increase and the distance between them will be decrease.
+- By bringing both of this closing each other it will increasing the hole of bucket(example of leak capacitor) which is lot of charger will be flow through the leaking capacitor.in other word more charger get discharged during the switching through the aggressor driver.
+- In conclusion closer the distance between nets “A” and “V” greater the coupling cap Cm and the glitch larger(more dip more bad).
+
+>![image](https://user-images.githubusercontent.com/118953939/219953867-d462f934-8096-4fa7-9d15-cfc49c9aab12.png)
+
+- Another factor was aggressor drive strength.
+- As we can see the gate that connected at the end was driver and the gate was following it was load.
+- If we go to the gate, we can know the pmos on top and nmos on the bottom.
+- If the input was logic 0,the pmos will be turn on and nmos will be turn off.
+- We replace the circuit with closed switched on the pmos and open switch on nmos.
+- The drive strength is dependent on the value of the resistance.
+- When the area was small the resistance will be huge.Only certain of value will pass this high resistor.
+- So, we can say that the smaller have high resistance and the time taken to charge the capacitor  will high but for low area the resistance will be lower, and the - time taken to charge the capacitor  will be high.
+- Low drive strength  = more time taken needed to charge capacitance.
+- High drive strength = less time taken to charge capacitance.
+- For example, if we have the low resistance transistor at the inverter  (higher drive strength).
+- So, the amount of  time to charge the capacitor was short and the glitch will be height.
+>![image](https://user-images.githubusercontent.com/118953939/219953932-f9a77d63-7fc6-4bb2-a513-0877ed955f67.png)
+
+- From the previous video will understood how does aggressor  drive strength affecting the glitch height 
+- Now we understand how the victim drive strength affecting the glitch height.
+- From this figure,we have the same circuit as previous and now we try to open up the victim drive strength.
+- When we open up that inverter we can see the pmos on the top and nmos on bottom 
+- When we apply logic 0 the pmos turn ON and nmos turn OFF.Then we replace the transistor with open and closed switch.
+- As previous the value of the resistance we be decide by the value of transistor which is low or high .
+- We need to use the low resistance transistor to make the output of drive strength was logic 1.Lower resistance transistor  help to charge the capacitor  fast.
+- For example, the high R,time to  current flow through the transistor was high because the resistance was high.In other word it take some time to charge the resistor.
+- So the supply voltage loose hand on the victim capacitance and glitch more dip.
+- Then when we try to increase the pmos transistor area, so the time taken to charge capacitor a little bit faster than before and the supply voltage tightly holding the victim capacitance and the dip glitch reduce.
+- If we reduce R from before we can reduce the glitch because the resistance of transistor is lowerst.So this huge area will make the supply voltage tightly hold the capacitance  and can bring the glitch to logic 1.
+- In conclusion low resistance highest chance to bring back the glitch to logic 1.
+![image](https://user-images.githubusercontent.com/118953939/219953985-66f6fe4a-f398-4bd6-b42b-6d0f84b07263.png)
+
+- Summarizing 
+- First ,The strength  aggressor drive strength will make higher glitch(become the logic 1 will make functionality failure)  and week victim drive strength make the glitch unpredictable (we not know it become 0 or 1).
+- Second if we try to increase the victim strength position or lower down the resistance transistor of the victim you might get the glitch low from the previous.In this case it might come back to 0.Then if we try to reduce strength aggressor drivers you have chance to less the amount of charge store in the capacitance,so the glitch lower than previous and tolerable to comeback to logic 0.
+- third point or the best way to fix the glitch was by increasing the drive strength of the victim to the high level(lower resistance ).Time taken to charge short and chance glitch to come back to 0 was high.Then we reduce the drive strength of the aggressor ,the amount of current that can flow very low,as the result glitch reduce.
+- So the third ways the best one that we have to fix the glitch.
+
+
+>![image](https://user-images.githubusercontent.com/118953939/219954016-d905be7b-7c8a-4de3-a463-5c843f744b90.png)
