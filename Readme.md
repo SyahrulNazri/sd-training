@@ -3992,11 +3992,10 @@ Engineering Change Order or ECO is how you incorporate last minute changes in yo
 ### Topic - RISC-v core RTL2GDS flow 
 <details>	
 <summary>Theory </summary>
+Covered in previous topic 
 </details>
 
-<details>	
-<summary>LAB </summary>
-</details>
+
 
 ## Day 26
   
