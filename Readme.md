@@ -4056,6 +4056,71 @@ placing the cells and connecting them to meet the design power, performance, and
 ## Day 27
   
 ### Topic - Crosstalk 
+<details>	
+<summary>Introduction to crosstalk </summary>
+
+**What is Signal Intergrity and Crosstalk ?**
+- Signal integrity and crosstalk are the quality checks of the clock routes.
+- Signal intgrity is the baility of an electrical signal to carry information reliably and resist the effects of high frequency electromagnetic interference from nearby signals.
+- Crosstalk is the undesirable electrical interaction between two or more physically adjacent nets due to capacitave cross-coupling.
+- Crosstalk is a type of noise that corrupts the actual signal while transimission through the communication medium.
+
+**Aggressor and Victim  nets**
+- A net that receives undersirable cross-coupling effects from a nearby net is called a victim net.
+- A net that causes these effects in a victim net is called an aggressor net.
+
+**Crosstalk-Glitch**
+- When one net is switching and another net is constant then switching signal may cause spikes on other net because of which coupling capacitance (Cc) occurs between two nets,this is called as crosstalk noise.
+- Type of glitches --> Rise,Fall,Overshoot,Undershoot 
+>![image](https://user-images.githubusercontent.com/118953939/220120136-773d3b9b-a063-430a-ad51-d51162fea36e.png) 
+
+*source : https://www.vlsisystemdesign.com/*
+
+**Performing crosstalk delay analysis**
+- Enable PrimeTime SI --> set_app_varsi_enable_analysistrue
+- Back-annotatethedesignwithcross -couplingcapacitanceinformationinaSPEForGPDfileread_parasitics-keep_capacitive_couplingfile_name.spf
+
+**Using check_timing**
+- Type to checking specific to crosstalk analysis 
+	- no_driving_cell
+	- ideal_clocks
+	- partial_input_delay
+	- unexpandable_clocks
+- Timing reports 
+	- report_timing
+	- crosstalk_delta
+	- report_si_bottleneck
+	- report_delay_calculation–crosstalk
+	- report_si_double_switching
+	- report_noise
+- ViewingtheCrosstalkAnalysisReport  
+	- report_timing-transition_time-crosstalk_delta\-input_pins-significant_digits4
+- Bottleneck Reports 
+	- report_si_bottleneck
+	- report_bottleneck
+	- delta_delay
+	- delta_delay_ratio
+	- total_victim_delay_bump
+	- delay_bump_per_aggressor
+	- report_delay_calculation–crosstalk
+	- To get a list of all the victim nets with a delay violation or within 2.0 time units of a violation,listed in order of delta delay 
+		- report_si_bottleneck-cost_typedelta_delay\-slack_lesser_than2.0
+	- size_cell
+	- set_coupling_separation
+	-include_clock_nets
+	-minimum_active_aggressor•
+	- In the following example command,the bottleneck command reports nets where three or more active aggressors are affecting the net
+		- report_si_bottleneck-cost_typedelta_delay\-minimum_active_aggressors 3
+
+- Crosstalk Net Delay Calculation 
+	- report_delay_calculation-crosstalk\-from[get_pinsg1/Z]-to[get_pinsg2/A]
+	
+- Reporting Crosstalk Settings 
+	- To check your crosstalk settings
+		- report_si_delay_analysis
+		- report_si_noise_analysis
+		- report_si_aggressor_exclusion
+</details>
 
 <details>	
 <summary>Why and How Crosstalk Occurs in a chip</summary>
@@ -4067,6 +4132,8 @@ placing the cells and connecting them to meet the design power, performance, and
 
 >![image](https://user-images.githubusercontent.com/118953939/219590600-a5af8972-98b8-4800-9ca4-a23211ccf66b.png)
 
+*source : https://www.vlsisystemdesign.com/*
+
 - Second reason,increase in number of metal layers resulting in increase in lateral capacitance.
 - Basically, there are 2 kinds of capacitance.
 - Interlayer capacitance: capacitors that is placed between 2 consecutive different layers.
@@ -4076,6 +4143,8 @@ placing the cells and connecting them to meet the design power, performance, and
 - So, any switching activity happening will immediately affect an activity on the others metal layer because it was close for each other.
 
 >![image](https://user-images.githubusercontent.com/118953939/219592671-92303813-22cf-4a95-ac6f-9a19da47a65a.png)
+
+*source : https://www.vlsisystemdesign.com/*
 
 - Noise margin 
 - As we know the inverter logic output will opposite from its input.For example if the input 1 the output will be 0
@@ -4091,6 +4160,8 @@ placing the cells and connecting them to meet the design power, performance, and
 
 >![image](https://user-images.githubusercontent.com/118953939/219594316-30b1d14c-717f-47d8-9431-56cdbf371af8.png)
 
+*source : https://www.vlsisystemdesign.com/*
+
 - We were given 2.5V ont the 0.25um and have two noise margin which is High noise margin and low noise margin.
 - This margin was use  to check whether the voltage lies on the High region,undefined region or low margin .It because in the pratical it imposibble to get a steady signal or degrade signal 0 .
 - Lower Supply Voltage leading to lesser noise margin.
@@ -4099,6 +4170,8 @@ placing the cells and connecting them to meet the design power, performance, and
 
 
 >![image](https://user-images.githubusercontent.com/118953939/219594602-9ff8c128-abe5-4dfd-ba13-9e271342b0c3.png)
+
+*source : https://www.vlsisystemdesign.com/*
 
 </details>
 
@@ -4120,11 +4193,15 @@ placing the cells and connecting them to meet the design power, performance, and
 
 >![image](https://user-images.githubusercontent.com/118953939/219873895-067c2eda-3ce7-433e-ad0e-503013a2c345.png)
 
+*source : https://www.vlsisystemdesign.com/*
+
 - So, there are two things we have t try understand from this point  which is this particular glitch is tolerable or its lying somewhere between the noise margin that we have learn on the previous lecture.
 -The second thing that we have to understand, how come this particular glitch return back to zero.
 - When we open the inverter we can see the pmos on the top and nmos at bottom.
 - we have got the logic 1 on this particular inverter,so the pmos will off and nmos will on.
 >![image](https://user-images.githubusercontent.com/118953939/219873929-0050b67b-7bf2-479b-954d-e8ca1d18513e.png)
+
+*source : https://www.vlsisystemdesign.com/*
 
 - So we replace all the  ‘ON’ transistor by open switch  and the off transistor by ‘OFF’ switch that is the save way to model it.So there is one thing that can we observe here.
 - We have discharge part on this load, it means what ever the output which is present overhere,it will charge to potential which is V and then discharge through the nmos transistor .So its completely discharge to 0.
@@ -4134,8 +4211,9 @@ placing the cells and connecting them to meet the design power, performance, and
 - Then because the non switching activity on  the aggressor net, the deciding factor was happen which the glitch became the logic 1,undefine or 0 region.If the transistor strong enough which is have low resistance and have bigger size.So if the transistor strong it will try to avoid the overcharge and become logic 0,so the output on the next inverter will be 1.The same situation occur when the transistor not strong enough to overcome the overcharge.We can say that the deciding factor depend on the transistor.
 - Functionality failure if the transistor not strong enough to overcome the overcharge  and it will be logic 1 and the next inverter output was logic 0.
 
-
 >![image](https://user-images.githubusercontent.com/118953939/219874010-a201a492-74a3-4f86-894d-830875440d16.png)
+
+*source : https://www.vlsisystemdesign.com/*
 
 - In second case,the aggressor driver input is switching from 0 to 1 and the victim driver input is at steady state 0.So the output of the inverter at victim net will be 1 
 - The particular capacitor completely charge full voltage.
@@ -4153,6 +4231,8 @@ placing the cells and connecting them to meet the design power, performance, and
 
 >![image](https://user-images.githubusercontent.com/118953939/219874052-e04cd297-2547-4ca7-ac4f-2f122c9e545a.png)
 
+*source : https://www.vlsisystemdesign.com/*
+
 - Factor affecting the glitch height 
 - We discuss about the glitch height because we need to determine the tolerable and safe height glitch. We also need to understand if the glitch is to height what the action needed to bring down the height glitch.
 - There are few factors that affecting the height glitch :
@@ -4162,6 +4242,8 @@ placing the cells and connecting them to meet the design power, performance, and
 - In conclusion closer the distance between nets “A” and “V” greater the coupling cap Cm and the glitch larger(more dip more bad).
 
 >![image](https://user-images.githubusercontent.com/118953939/219953867-d462f934-8096-4fa7-9d15-cfc49c9aab12.png)
+
+*source : https://www.vlsisystemdesign.com/*
 
 - Another factor was aggressor drive strength.
 - As we can see the gate that connected at the end was driver and the gate was following it was load.
@@ -4177,6 +4259,8 @@ placing the cells and connecting them to meet the design power, performance, and
 - So, the amount of  time to charge the capacitor was short and the glitch will be height.
 >![image](https://user-images.githubusercontent.com/118953939/219953932-f9a77d63-7fc6-4bb2-a513-0877ed955f67.png)
 
+*source : https://www.vlsisystemdesign.com/*
+
 - From the previous video will understood how does aggressor  drive strength affecting the glitch height 
 - Now we understand how the victim drive strength affecting the glitch height.
 - From this figure,we have the same circuit as previous and now we try to open up the victim drive strength.
@@ -4191,11 +4275,14 @@ placing the cells and connecting them to meet the design power, performance, and
 - In conclusion low resistance highest chance to bring back the glitch to logic 1.
 ![image](https://user-images.githubusercontent.com/118953939/219953985-66f6fe4a-f398-4bd6-b42b-6d0f84b07263.png)
 
+*source : https://www.vlsisystemdesign.com/*
+
 - Summarizing 
 - First ,The strength  aggressor drive strength will make higher glitch(become the logic 1 will make functionality failure)  and week victim drive strength make the glitch unpredictable (we not know it become 0 or 1).
 - Second if we try to increase the victim strength position or lower down the resistance transistor of the victim you might get the glitch low from the previous.In this case it might come back to 0.Then if we try to reduce strength aggressor drivers you have chance to less the amount of charge store in the capacitance,so the glitch lower than previous and tolerable to comeback to logic 0.
 - third point or the best way to fix the glitch was by increasing the drive strength of the victim to the high level(lower resistance ).Time taken to charge short and chance glitch to come back to 0 was high.Then we reduce the drive strength of the aggressor ,the amount of current that can flow very low,as the result glitch reduce.
 - So the third ways the best one that we have to fix the glitch.
 
-
 >![image](https://user-images.githubusercontent.com/118953939/219954016-d905be7b-7c8a-4de3-a463-5c843f744b90.png)
+
+*source : https://www.vlsisystemdesign.com/*
