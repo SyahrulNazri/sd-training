@@ -4077,8 +4077,9 @@ placing the cells and connecting them to meet the design power, performance, and
 *source : https://www.vlsisystemdesign.com/*
 
 **Performing crosstalk delay analysis**
-- Enable PrimeTime SI --> set_app_varsi_enable_analysistrue
-- Back-annotatethedesignwithcross -couplingcapacitanceinformationinaSPEForGPDfileread_parasitics-keep_capacitive_couplingfile_name.spf
+- Enable PrimeTime SI --> set_app_varsi_enable_analysis true
+- Back-annotate the design with ross -coupling capacitance information in a SPEFor GPD file
+	- read_parasitics-keep_capacitive_couplingfile_name.spf
 
 **Using check_timing**
 - Type to checking specific to crosstalk analysis 
@@ -4093,7 +4094,7 @@ placing the cells and connecting them to meet the design power, performance, and
 	- report_delay_calculation–crosstalk
 	- report_si_double_switching
 	- report_noise
-- ViewingtheCrosstalkAnalysisReport  
+- Viewing the Cross talk Analysis Report  
 	- report_timing-transition_time-crosstalk_delta\-input_pins-significant_digits4
 - Bottleneck Reports 
 	- report_si_bottleneck
