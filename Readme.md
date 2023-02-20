@@ -29,7 +29,7 @@
 * [ Day 24 - ECO Timing  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-24)
 * [ Day 25 - RISC-V core RTL2GDS flow ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-25)
 * [ Day 26 - Introduction to mixed-signal flow  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-26)
-* [ Day 27 - Introduction to mixed-signal flow  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-27)
+* [ Day 27 - Introduction to crosstalk - glitch and delta delay ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-27)
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 <Details>
