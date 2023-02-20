@@ -4288,5 +4288,6 @@ placing the cells and connecting them to meet the design power, performance, and
 
 *source : https://www.vlsisystemdesign.com/*
 
-Continue 
+
 </details>
+To be continue 
