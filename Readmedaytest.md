@@ -75,6 +75,9 @@
 - **xschem --tcl filename.tcl -q** --> can be run in batch mode with the command.
 - **ngspice** --> has its own prompt and runs its own set of interpreter commands that aren't based on tcl 
 - **ngspice-b** --> can be run batch mode
+
+>![image](https://user-images.githubusercontent.com/118953939/220299272-ea709ef6-ae7b-4516-a3c6-5742e9d75ccd.png)
+
 	
 </details>
 
