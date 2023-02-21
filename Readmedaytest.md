@@ -28,54 +28,41 @@
 	- xcircuit
 - To install SKY130 PDKs,we must clone the respository and specify the process to compile and install.
 - Can use command below
+	```
 	- git clone https://github.com/RTimothyEdwards/open_pdks
 	- cd open_pdks
 	- configure --enable-sky130-pdk
-	- make 
+	- make  --> grabs the SKY130 repository and submodules,as well as a few third party repositories to use in the install. 
 	- sudo make install
+	```
+- The libraries supported by oepn_pdks are :
+	- Digit standard cells 
+	- Primitive devices/analog 
+	- I/O cells 
+	- 3rd party libraries
+- Open_PDKs uses a common installed filesystem structure :
+	- SkyWater PDKs are placed under the directory /usr/share//usr/share/pdk/sky130A/.
+	- Under this main SK130 PDK directory, are 2 subdirectories .
+		- libs.tech = contains all subdirectories for the open source tool setups 
+		- libs.ref = contains the reference libraries in various formats.
 
+**Physical Verification and Designs Flows**
 
-**CTS**
+- check if the voltage,signals and timings match the specification;
+	- Physical verification is to check whether you have a mask layout that matches what you think the circuit should be.The figure below shows the design flow for physical verification.
+	>![image](https://user-images.githubusercontent.com/118953939/220269232-bccad20c-60c1-420c-a65a-7181357f4a6b.png)
+- Two major steps in physical verification 
+	- Design Rule Checking = to ensure that your layout matches all the rules provided by the foundy for that specific process.
+	- Layout Vs Schematic = ensure that your layout netlist matches with your schematic netlist.
 
-- Clock Tree Synthesis (CTS) is the process of inserting buffers/inverters along the clock paths of the ASIC design to balance the clock delay to all clock inputs. So in order to balance the skew and minimize insertion delay CTS is performed
-
-- Check list Befor CTS 
-
-	1)Placement – Completed
-
-	2)power ground nets – Prerouted
-
-	3)Estimated Congestion – acceptable 
-
-	4)Estimated Timing – acceptable (~ 0 ns slack)
-
-	5)Estimated Max Tran/Cap – No violations
-
-	6)High Fanout Nets
+**Lab-Checking Tool Installations**
 	
-- Inputs required for CTS:
-
-	1)Detailed Placement Database
-
-	2)Target for latency and skew if specified
-
-	3)Buffers or Inverters for building the clock tree
-
-	4)Clock Tree DRC (Max Tran, Max Cap, Max fanout, Max no of buffer levels)
-
-- Output of CTS:
-
-	1)Database with properly build clock tree in the design
-
-- Checklist after CTS:
-
-	1)Skew Report
-
-	2)Clock Tree Report
-
-	3)Timing Reports for setup and hold
-
-	4)Power and Area Report
+	- can be run using command *magic* --> birngs up a layout window and a console window that is a stock tcl  interpreter used to run commands for layout actions.
+	- *magic -noconsole* --> Can get the tcl interpreter in the terminal itseld instead of the seperate console window.
+	- *magic -dnull -noconsole* --> can be run without the graphics layout window.
+	- *magic -dnull -noconsole filename.tcl* --> to run magic in bactch mode.
+	
+	
 </details>
 
 	
