@@ -57,6 +57,7 @@
 - Two major steps in physical verification 
 	- Design Rule Checking = to ensure that your layout matches all the rules provided by the foundy for that specific process.
 	- Layout Vs Schematic = ensure that your layout netlist matches with your schematic netlist.
+
 </details>
 
 <details>
@@ -67,7 +68,13 @@
 - **magic -noconsole** --> Can get the tcl interpreter in the terminal itseld instead of the seperate console window.
 - **magic -dnull -noconsole** --> can be run without the graphics layout window.
 - **magic -dnull -noconsole filename.tcl** --> to run magic in bactch mode.
-	
+- **netgen** --> completely command driven and has no graphics interface. Its console window is a stock tcl interpreter like magic as well. 
+- **netgen -noconsole** --> can get tcl interpreter in the terminal itself instead of the seperate console window.
+- **netgen -batch source filename.tcl** --> run netgen in batch mode 
+- **xschem** --> bring up a schematic window.Unlike other this has no seperate console window and uses the native command line terminal for tcl commands.
+- **xschem --tcl filename.tcl -q** --> can be run in batch mode with the command.
+- **ngspice** --> has its own prompt and runs its own set of interpreter commands that aren't based on tcl 
+- **ngspice-b** --> can be run batch mode
 	
 </details>
 
