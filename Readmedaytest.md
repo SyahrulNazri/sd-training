@@ -1,24 +1,38 @@
 
-## Day 21
+## Day 28
   
-### Topic - Placement and Route  
+### Topic -  Introduction to DRC/LVS
 
 
 <details>
 
-<summary>Placement </summary>
+<summary>Introduction to SkyWater SKY130 and Open-Source EDA tools </summary>
 	
-**PLACEMENT**
+**Skywater PDK**
 	
-- Placement is the process of determining the locations of circuit devices on a die surface. It is an important stage in the VLSI design flow, because it affects routability, performance, heat distribution, and to a less extent, power consumption of a
-design. 
-	
-- step  
-	
-1. Global placement. Global placement aims at generating a rough placement solution that may violate some placement constraints (e.g., there may be overlaps among modules) while maintaining a global view of
-the whole netlist.
-2. Legalization. Legalization makes the rough solution from global placement legal (i.e., no placement constraint violation) by moving modules around locally.
-3. Detailed placement. Detailed placement further improves the legalized placement solution in an iterative manner by rearranging a small group of modules in a local region while keeping all other modules fixed.
+- Skywater Open source PDK is a joint project between Google and Skywater Technology Foundary.It provides a fully open source Process Design kit(PDK) and its related resources.
+- SkyWater open PDK public respository contains documentation,PDK library and files.
+
+**Open-Source EDA Tools**
+- Open_PDKs is a make file based installer that takes files from the SkyWater PDKs and reformats them for a number of open source EDA tools.
+- Tools currently supported 
+	- Magic 
+	- Klayout 
+	- Openlane 
+	- Xschem 
+	- Netgen 
+	- Ngspice 
+	- Iverilog 
+	- qflow 
+	- IRSIM 
+	- xcircuit
+- To install SKY130 PDKs,we must clone the respository and specify the process to compile and install.
+- Can use command below
+	- git clone https://github.com/RTimothyEdwards/open_pdks
+	- cd open_pdks
+	- configure --enable-sky130-pdk
+	- make 
+	- sudo make install
 
 
 **CTS**
