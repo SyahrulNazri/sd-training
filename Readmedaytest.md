@@ -45,8 +45,11 @@
 	- Under this main SK130 PDK directory, are 2 subdirectories .
 		- libs.tech = contains all subdirectories for the open source tool setups 
 		- libs.ref = contains the reference libraries in various formats.
+</details>
 
-**Physical Verification and Designs Flows**
+<details>
+
+<summary>Physical Verification and Designs Flows</summary>
 
 - check if the voltage,signals and timings match the specification;
 	- Physical verification is to check whether you have a mask layout that matches what you think the circuit should be.The figure below shows the design flow for physical verification.
@@ -54,13 +57,16 @@
 - Two major steps in physical verification 
 	- Design Rule Checking = to ensure that your layout matches all the rules provided by the foundy for that specific process.
 	- Layout Vs Schematic = ensure that your layout netlist matches with your schematic netlist.
+</details>
 
-**Lab-Checking Tool Installations**
-	
-	- can be run using command *magic* --> birngs up a layout window and a console window that is a stock tcl  interpreter used to run commands for layout actions.
-	- *magic -noconsole* --> Can get the tcl interpreter in the terminal itseld instead of the seperate console window.
-	- *magic -dnull -noconsole* --> can be run without the graphics layout window.
-	- *magic -dnull -noconsole filename.tcl* --> to run magic in bactch mode.
+<details>
+
+<summary>Lab-Checking Tool Installations</summary>
+ 
+- **magic** --> birngs up a layout window and a console window that is a stock tcl  interpreter used to run commands for layout actions.
+- **magic -noconsole** --> Can get the tcl interpreter in the terminal itseld instead of the seperate console window.
+- **magic -dnull -noconsole** --> can be run without the graphics layout window.
+- **magic -dnull -noconsole filename.tcl** --> to run magic in bactch mode.
 	
 	
 </details>
