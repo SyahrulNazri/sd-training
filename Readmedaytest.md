@@ -84,11 +84,17 @@ We create directory for the design and initialise subdirectories  for each of th
 
 >![image](https://user-images.githubusercontent.com/118953939/220502712-e4124d4e-5b7e-4681-adfd-eeb8615fba62.png)
 
+</details>
+
+<details>
+
+<summary>Creating Sky130 device layout in magic</summary>
 - Use command **magic -d XR** and it will bring up the 2 magic windows with the layout window displaying **Technology :sky130A**.
 - We can create some device by clicking the device 1 and set the width tp 2um,length 0.5um and fingers 3 .This should result as below.
+- Then change the device type to sky130_fd_pr_nfet_g5v0d10v5
 	
-
 >![image](https://user-images.githubusercontent.com/118953939/220510012-52329fb6-7864-4c53-a5bf-c7368de82efb.png)
+>![image](https://user-images.githubusercontent.com/118953939/220511716-e932e3bb-dd86-433a-87dd-4d02645f9903.png)
 
 </details>
 
