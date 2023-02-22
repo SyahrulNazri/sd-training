@@ -1,7 +1,7 @@
 
 ## Day 28
   
-### Topic -  Introduction to DRC/LVS
+### Topic -  
 
 
 <details>
