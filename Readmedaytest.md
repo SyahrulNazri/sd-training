@@ -104,18 +104,17 @@ We create directory for the design and initialise subdirectories  for each of th
 
 <summary>Creating an inverter design </summary>
 
+- run xschem and create new file 
+- To add component press **insert** and search fd_pr library.
+- Select nfet and pfet window and place it anywhere in the schematic 
+- As pins are not PDK specific,it can be found in library and choose ipin.sym,opin.sym and iopin.sym.
+- Then press W to wire all the connection and press Q to edit the parameter(as shows in the figure).
+- After finish it we save in our directory and and click menu to select **Make symbol from schematic"
+- Now we can create a testbench schematic using the new schematic option and insert the generated symbol from the local directory using the lns key.
 
->![image](https://user-images.githubusercontent.com/118953939/218029209-7f232a28-a274-46f6-9ea7-bb8f5a7083d9.png)
+	
+>![image](https://user-images.githubusercontent.com/118953939/220539214-694fade0-675f-45c1-9714-4c97a2301bd4.png)
 
->![image](https://user-images.githubusercontent.com/118953939/218029300-60e3ea40-a1ec-4692-a23e-51d53b1d92d9.png)
-
->![image](https://user-images.githubusercontent.com/118953939/218029339-1e0f32e8-af43-4e89-a805-6086a95793db.png)
-
->![image](https://user-images.githubusercontent.com/118953939/218029395-a27116bd-5aba-46dd-a2de-4749f1b7280c.png)
-
->![image](https://user-images.githubusercontent.com/118953939/218029443-ff6d8ea2-7e65-4981-924f-bd7f2928f58b.png)
-
->![image](https://user-images.githubusercontent.com/118953939/218029560-bb0199f2-e987-44b6-a0e2-40b2ad2028e8.png)
 
 
 </details>
