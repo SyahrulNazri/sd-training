@@ -30,6 +30,7 @@
 * [ Day 25 - RISC-V core RTL2GDS flow ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-25)
 * [ Day 26 - Introduction to mixed-signal flow  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-26)
 * [ Day 27 - Introduction to crosstalk - glitch and delta delay ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-27)
+* [ Day 28 -  Introduction to DRC/LVS ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-27)
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 <Details>
@@ -4291,9 +4292,10 @@ placing the cells and connecting them to meet the design power, performance, and
 
 </details>
 To be continue 
+
 ## Day 28
   
-### Topic -  Introduction to DRC/LVS
+### Topic - Introduction to DRC/LVS
 
 
 <details>
