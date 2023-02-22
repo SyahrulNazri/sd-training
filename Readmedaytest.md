@@ -102,7 +102,7 @@ We create directory for the design and initialise subdirectories  for each of th
 
 <details>
 
-<summary>Lab 21 </summary>
+<summary>Creating an inverter design </summary>
 
 
 >![image](https://user-images.githubusercontent.com/118953939/218029209-7f232a28-a274-46f6-9ea7-bb8f5a7083d9.png)
