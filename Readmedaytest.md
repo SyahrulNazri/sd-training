@@ -78,7 +78,18 @@
 
 >![image](https://user-images.githubusercontent.com/118953939/220299272-ea709ef6-ae7b-4516-a3c6-5742e9d75ccd.png)
 
+We create directory for the design and initialise subdirectories  for each of the open source tools that we will be using.Then we must set up each directory for its respective tool to run properly with the Skywater PDKs.Using  **ln -s /filepath** we can creating a symbolic link between the inititalised subdirectories and SKY130 submodules with the open_pdks installer.After thaht lets run **xschem** to brings up the display .
 	
+>![image](https://user-images.githubusercontent.com/118953939/220501678-f5be8ba9-5942-4681-bdb6-d43aecf3c9f9.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/220502712-e4124d4e-5b7e-4681-adfd-eeb8615fba62.png)
+
+- Use command **magic -d XR** and it will bring up the 2 magic windows with the layout window displaying **Technology :sky130A**.
+- We can create some device by clicking the device 1 and set the width tp 2um,length 0.5um and fingers 3 .This should result as below.
+	
+
+>![image](https://user-images.githubusercontent.com/118953939/220510012-52329fb6-7864-4c53-a5bf-c7368de82efb.png)
+
 </details>
 
 	
