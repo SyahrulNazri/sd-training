@@ -4494,7 +4494,7 @@ We create directory for the design and initialise subdirectories  for each of th
 - Port 1 class 
 - Port 1 use 
 
->![image](https://user-images.githubusercontent.com/118953939/220923818-8ba41c98-0afe-42ff-b626-5aa4f5ee2d6e.png)
+>![image](https://user-images.githubusercontent.com/118953939/220924988-e95b29d0-f749-45e9-824e-245e63edff14.png)
 
 - The cell definition shows the first port to be port A,the gds read of the file in magic shows the first port as VPWR.
 - However port numbering is considered metadata and is not included in the gds file.
