@@ -4507,4 +4507,67 @@ We create directory for the design and initialise subdirectories  for each of th
 - To read port from spice file we can use this comman **readspice /usr/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice** 
 	
 >![image](https://user-images.githubusercontent.com/118953939/220924383-e6ef6194-e719-4ec5-aa23-1a5f8e149f80.png)
+</details>
 
+<details>
+<summary>(DAY2)Labs Abstract views</summary>
+
+- Open new magic and read lef library  **lef read /usr/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef**
+- Load sky130_fd_sc_hd_and2_1
+- The result as below   
+
+>![image](https://user-images.githubusercontent.com/118953939/220962178-c2d44c38-3975-40ad-93eb-345d0141be58.png)
+
+- If we check port information,we can see that port order metadata isn’t present in the lef file
+
+>![image](https://user-images.githubusercontent.com/118953939/220962349-39e74493-e3c5-4784-8ddb-5397295bbec7.png)
+
+- Read spice as before readspice /usr/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice
+
+- Write port 1 and port 3 to know the name. 
+
+>![image](https://user-images.githubusercontent.com/118953939/220962526-bfbfc02c-e965-4df6-a232-5eba762bcfb0.png)
+
+- Using load test to create new layout 
+- Then instantiate the AND cell using **getcell sky130_fd_sc_hd__and2_1**
+- Press **X** button to get full view of cell.
+- It will brings up the abstract view
+
+>![image](https://user-images.githubusercontent.com/118953939/220962708-935a6303-4d38-498e-b28f-13abc7a17ac0.png)
+
+- If we try write gds we got following error 
+>![image](https://user-images.githubusercontent.com/118953939/220962896-d398a095-7f3f-44d9-9f07-6f275e0f6990.png)
+
+- If we try read gds file back,we get new layout
+- The loaded gds looks different because Magic is not supposed to write abstraction views to gds.
+- Save the test file and load it.
+
+>![image](https://user-images.githubusercontent.com/118953939/220963088-d7b1f637-5702-4c32-99b4-d6d941d612cf.png)
+
+- After loaded it back to new session of magic
+
+>![image](https://user-images.githubusercontent.com/118953939/220963256-b222a1c9-b8bf-4971-b505-1c93f2413aa8.png)
+
+-As we have done a save test and not write all,only the cell that was currently being edited gets saved and not any subcells. As the cell currently being edited was from the SkyWater PDKs ,it found the standard cell content from the library path,using **path** command.
+
+>![image](https://user-images.githubusercontent.com/118953939/220963379-01da269d-26aa-4f73-a2ee-2ef4b2769211.png)
+
+- Write **gds write test** and we would get a valid gds file.
+- If we go deeper into this and2_1 cell we will observe that a magic  is referencing the metadata from a file .
+- It can be checked by selecting the cell  by pressing “I” button and press “>” button and type property.
+
+>![image](https://user-images.githubusercontent.com/118953939/220963500-3534a50d-7f0b-4c68-bd3b-702835ff3514.png)
+
+- If we were to make the cell writeable and paint a layer of local interconnect over the cell 
+- Then a new gds file would remain unchanged without the painted layer.
+
+>![image](https://user-images.githubusercontent.com/118953939/220963668-804b71df-6af3-4476-9b95-e70dada535cc.png)
+
+```
+Gds readonly true
+Gds rescale false
+Gds read /usr/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds
+Load sky130_fd_sc_hd__and2-1
+Property 
+```
+>![image](https://user-images.githubusercontent.com/118953939/220963875-949cc74a-f4ea-4bef-a42c-36773eeb1b9f.png)
