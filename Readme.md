@@ -4426,7 +4426,7 @@ We create directory for the design and initialise subdirectories  for each of th
 
 >![image](https://user-images.githubusercontent.com/118953939/220840576-2f8e0b78-fed5-4011-a527-48d137722233.png)
 
-- Rm *ext  clear unwanted rm *ext
+- Rm *ext --> clear unwanted rm *ext
 - Checking the LVS and the result is not match.Need to recheck the layout and modified the design to make sure it is match  
 
 >![image](https://user-images.githubusercontent.com/118953939/220840801-ed1f6673-6d7b-4a6a-b135-1edeb4e056f4.png)
@@ -4445,5 +4445,9 @@ We create directory for the design and initialise subdirectories  for each of th
 - The output waveform not same need to check again the design. 
 
 >![image](https://user-images.githubusercontent.com/118953939/220840881-bf6d42c2-0d29-4325-b829-ccb0c88381e5.png)
+	
+</details>
 
+<details>
+<summary>(DAY2) Design Rule Checks and Layout Vs. Simulation</summary>
 </details>
