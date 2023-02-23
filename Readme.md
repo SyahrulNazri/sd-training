@@ -4356,7 +4356,7 @@ To be continue
 
 <details>
 
-<summary>Lab-Checking Tool Installations</summary>
+<summary>(Day 1)Lab-Checking Tool Installations</summary>
  
 - **magic** --> birngs up a layout window and a console window that is a stock tcl  interpreter used to run commands for layout actions.
 - **magic -noconsole** --> Can get the tcl interpreter in the terminal itseld instead of the seperate console window.
@@ -4382,7 +4382,7 @@ We create directory for the design and initialise subdirectories  for each of th
 
 <details>
 
-<summary>Creating Sky130 device layout in magic</summary>
+<summary>(DAY1)Creating Sky130 device layout in magic</summary>
 - Use command **magic -d XR** and it will bring up the 2 magic windows with the layout window displaying **Technology :sky130A**.
 - We can create some device by clicking the device 1 and set the width tp 2um,length 0.5um and fingers 3 .This should result as below.
 - Then change the device type to sky130_fd_pr_nfet_g5v0d10v5
@@ -4396,7 +4396,7 @@ We create directory for the design and initialise subdirectories  for each of th
 
 <details>
 
-<summary>Creating an inverter design </summary>
+<summary>(DAY1)Creating an inverter design </summary>
 
 - run xschem and create new file 
 - To add component press **insert** and search fd_pr library.
