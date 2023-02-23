@@ -4455,5 +4455,54 @@ We create directory for the design and initialise subdirectories  for each of th
 	
 <summary>(DAY2) GDS read and input styles </summary>
 
+- Create project directory and set it up for running a magic environment 
+
+>![image](https://user-images.githubusercontent.com/118953939/220921029-ed6e2dc8-81b3-4566-8f42-5bcfac87a538.png)
+
+- cif listall istyle  =   To view the possible styles
+- cif list istyle  = we can also see the current style .
+- Cif istyle rng =  check the sky130 style 
+
+>![image](https://user-images.githubusercontent.com/118953939/220921170-8ac764ee-a216-40ed-9858-c69427263d74.png)
+
+- Lets read the GDS files from the PDK using the command gds read **/usr/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/gds/sky130_fd_sc_hd.gds**
+- To see all available top level cells,we can run command **cellname top**
+
+>![image](https://user-images.githubusercontent.com/118953939/220921365-340f9772-bb39-411c-931e-6b38c69c37a9.png)
+
+- List of all cell top name 
+
+>![image](https://user-images.githubusercontent.com/118953939/220921753-cda8a597-0f2f-421c-a187-be9eafc14988.png)
+
+- Go to menu  option and click cell manager and pick 1 of the cell sky130_fd_sc_hd_and2_1
+
+>![image](https://user-images.githubusercontent.com/118953939/220922091-e34d06bf-5c9b-4fd0-9df1-f1c1589b9485.png)
+
+- Cif istyle sky130(vendor) = the current file will be overwritten and no more yellow markes treat as regylar text.
+- Gds noduplicates true =  If you do not want to automatically overwrite existing cells when reading from gds,
+
+>![image](https://user-images.githubusercontent.com/118953939/220922386-5d67f7e9-4c67-42a8-a3ec-214e5c38391b.png)
+
 </details>
 
+<details>
+<summary>(DAY2)Port</summary>
+	
+- Port index = select port and use this command to know the port.
+- command port first to find the index of the first port and to inquire about the port use 
+- Port 1 name 
+- Port 1 class 
+- Port 1 use 
+
+>![image](https://user-images.githubusercontent.com/118953939/220923818-8ba41c98-0afe-42ff-b626-5aa4f5ee2d6e.png)
+
+- The cell definition shows the first port to be port A,the gds read of the file in magic shows the first port as VPWR.
+- However port numbering is considered metadata and is not included in the gds file.
+- To add medata to gds we read from lef file by using this command ** lef read /usr/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef**
+- After that run the port inquires like previous 
+
+>![image](https://user-images.githubusercontent.com/118953939/220924008-2de91785-476e-4976-b984-b1bc05cf7e96.png)
+
+- To read port from spice file we can use this comman **readspice /usr/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice** 
+	
+>![image](https://user-images.githubusercontent.com/118953939/220924383-e6ef6194-e719-4ec5-aa23-1a5f8e149f80.png)
