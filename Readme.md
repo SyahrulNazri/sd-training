@@ -4409,6 +4409,37 @@ We create directory for the design and initialise subdirectories  for each of th
 	
 >![image](https://user-images.githubusercontent.com/118953939/220539214-694fade0-675f-45c1-9714-4c97a2301bd4.png)
 
+>![image](https://user-images.githubusercontent.com/118953939/220840328-91d5cf42-5177-4ffc-9585-cde2ee0429da.png)
 
+- For pfet the source via coverage set to +40 and top guard ring via coverage to 100
+- The drain via coverage also change to -40
+- For nfet the Bottom guard ring via coverage to 100, while the source and drain via coverages are set to +40 and -40, respectively, like the pfet
+- 
+
+>![image](https://user-images.githubusercontent.com/118953939/220840480-761c1171-f4f6-468a-ade4-29eef5fc7c69.png)
+
+- Cd ../mag/
+- Magic  -d  XR
+- Import inverter.spice file
+- Drawing the routing design 
+
+
+>![image](https://user-images.githubusercontent.com/118953939/220840576-2f8e0b78-fed5-4011-a527-48d137722233.png)
+
+- Rm *ext  clear unwanted rm *ext
+- Checking the LVS and the result is not match.Need to recheck the layout and modified the design to make sure it is match  
+
+>![image](https://user-images.githubusercontent.com/118953939/220840801-ed1f6673-6d7b-4a6a-b135-1edeb4e056f4.png)
+
+- Before do  ngspice inverter_tb.spice 
+- Open **magic –d XR** and run command below
+- extract do local 
+- extract all
+- ext2spice lvs 
+- ext2spice cthresh 0
+- ext2spice
+- The output waveform not same need to check again the design. 
+
+>![image](https://user-images.githubusercontent.com/118953939/220840881-bf6d42c2-0d29-4325-b829-ccb0c88381e5.png)
 
 </details>
