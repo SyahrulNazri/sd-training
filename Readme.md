@@ -4431,13 +4431,17 @@ We create directory for the design and initialise subdirectories  for each of th
 
 >![image](https://user-images.githubusercontent.com/118953939/220840801-ed1f6673-6d7b-4a6a-b135-1edeb4e056f4.png)
 
-- Before do  ngspice inverter_tb.spice 
 - Open **magic –d XR** and run command below
 - extract do local 
 - extract all
 - ext2spice lvs 
-- ext2spice cthresh 0
+- ext2spice cthresh 0 --> tells magic to add all parasitic capacitance in the inverter.spice
 - ext2spice
+
+
+>![image](https://user-images.githubusercontent.com/118953939/220843308-fc73d1ab-0b50-45e3-90d2-936eb6e866cd.png)
+
+- Before do  ngspice inverter_tb.spice 
 - The output waveform not same need to check again the design. 
 
 >![image](https://user-images.githubusercontent.com/118953939/220840881-bf6d42c2-0d29-4325-b829-ccb0c88381e5.png)
