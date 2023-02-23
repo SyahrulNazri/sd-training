@@ -4452,7 +4452,8 @@ We create directory for the design and initialise subdirectories  for each of th
 <summary>(DAY2) Design Rule Checks and Layout Vs. Simulation</summary>
 
 </details>
-	
+
+<details>
 <summary>(DAY2) GDS read and input styles </summary>
 
 - Create project directory and set it up for running a magic environment 
@@ -4506,3 +4507,4 @@ We create directory for the design and initialise subdirectories  for each of th
 - To read port from spice file we can use this comman **readspice /usr/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice/sky130_fd_sc_hd.spice** 
 	
 >![image](https://user-images.githubusercontent.com/118953939/220924383-e6ef6194-e719-4ec5-aa23-1a5f8e149f80.png)
+
