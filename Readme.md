@@ -4450,4 +4450,10 @@ We create directory for the design and initialise subdirectories  for each of th
 
 <details>
 <summary>(DAY2) Design Rule Checks and Layout Vs. Simulation</summary>
+
 </details>
+	
+<summary>(DAY2) GDS read and input styles </summary>
+
+</details>
+
