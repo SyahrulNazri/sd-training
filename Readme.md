@@ -30,7 +30,7 @@
 * [ Day 25 - RISC-V core RTL2GDS flow ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-25)
 * [ Day 26 - Introduction to mixed-signal flow  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-26)
 * [ Day 27 - Introduction to crosstalk - glitch and delta delay ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-27)
-* [ Day 28 & 29 -  Introduction and DRC DRC/LVS ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-27)
+* [ Day 28 & 29 -  Introduction and DRC DRC/LVS ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-28)
 
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
@@ -4294,7 +4294,7 @@ placing the cells and connecting them to meet the design power, performance, and
 </details>
 To be continue 
 
-## Day 28
+## Day 28 & 29
   
 ### Topic - Introduction to DRC/LVS
 
@@ -4738,3 +4738,5 @@ When jumping up by two or more levels, it is possible to violate this rule, as s
 - To fix this we must manually erase sections of the metal till the hole is big enough to pass DRC.
 	
 >![image](https://user-images.githubusercontent.com/118953939/221228615-0c7ac80b-4fe2-4be9-b8aa-3445902faa1f.png)
+
+</details>
