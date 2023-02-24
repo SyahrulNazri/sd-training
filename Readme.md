@@ -30,7 +30,7 @@
 * [ Day 25 - RISC-V core RTL2GDS flow ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-25)
 * [ Day 26 - Introduction to mixed-signal flow  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-26)
 * [ Day 27 - Introduction to crosstalk - glitch and delta delay ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-27)
-* [ Day 28 -  Introduction to DRC/LVS ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-27)
+* [ Day 28 & 29 -  Introduction and DRC DRC/LVS ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-27)
 
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
@@ -4651,6 +4651,90 @@ Property
 	
 <details>
 <summary>(DAY3)Lab - Width and Spacing Rules </summary>
-	
+
+
+- git clone https://github.com/RTimothyEdwards/vsd_drc_lab.git
+- After git clone use magic to see exercise_1.mag
+- Zoom and select the area and go to menu DRC report.
+
+>![image](https://user-images.githubusercontent.com/118953939/221224148-265cf27c-0ab1-40f7-b830-20fbc035a14a.png)
+
+- Increase width of metal layer and paint using the command bpx width 0.14um and pain m2
+
+>![image](https://user-images.githubusercontent.com/118953939/221224503-31eb130c-3c0b-4cda-81c4-b2df06762988.png)
+
+- Report_drc on spacing rule.The  white dots indicate 1 error meaning magic count this apcing error as 2 DRC errors.
+
+>![image](https://user-images.githubusercontent.com/118953939/221224901-8d1fbef9-9a20-4b6d-aab7-c6469b606538.png)
+
+- By moving using move e 0.14um or numpad keys 4 and 6
+
+>![image](https://user-images.githubusercontent.com/118953939/221225018-9915dd94-592b-44c1-962b-42b7eb81ce87.png)
 	
 </details>
+
+<details>
+<summary>(DAY3)Lab-spacing notch rules </summary>
+
+- For exercise 1c we have  2 error when run DRC report
+- The first is a regular spacing error for the smaller rectangle, and the second shows a wide spacing error for the larger rectangle.
+
+>![image](https://user-images.githubusercontent.com/118953939/221225593-bc723b6a-20ad-4baa-b316-a8bc47611478.png)
+
+- Have two error report and after select the box half and press 4 and 6 to move it.
+>![image](https://user-images.githubusercontent.com/118953939/221225776-238d0f23-65ed-4ff3-8290-d31d1066b44f.png)
+
+</details>
+	
+<details>
+<summary>(DAY3)Lab-Contact cuts(via) and its DRC error </summary>
+	
+![image](https://user-images.githubusercontent.com/118953939/221226120-e290f0e4-e441-40b8-bf62-9cf63c033ae6.png)
+
+- Have 1 overlap error
+![image](https://user-images.githubusercontent.com/118953939/221226193-3f63109e-3fea-4af6-9657-37ebddac8a2b.png)
+
+- Still have overlap error.Can fix by box grow   
+
+>![image](https://user-images.githubusercontent.com/118953939/221226379-a80a0a11-0966-4f04-be95-b55809f64cc5.png)
+
+- After box grow error was missing 
+
+>![image](https://user-images.githubusercontent.com/118953939/221226410-c68d53a5-39bc-418d-837b-9cbb62612eda.png)
+
+- Use wiring tool  we can draw wires.By clicking SHIFT+left we can move up a metal layer until we reach the top most metal 5 layer.Move down layer by SHIFT + right 
+
+>![image](https://user-images.githubusercontent.com/118953939/221227151-49bfc01b-60f0-40df-8fc1-bd4f681e9b49.png)
+
+</details>
+
+<details>
+<summary>(DAY3)Lab- Minimum Area and Minimum Hole Rule</summary>
+
+- Load in example3.mag. Make box at 3a and run DRC error
+
+>![image](https://user-images.githubusercontent.com/118953939/221227705-c90d03b1-aba0-43c1-bfc9-bf3911dc1e7e.png)
+
+- Select the metal and press B key, we see that the current area is 0.2um.
+
+>![image](https://user-images.githubusercontent.com/118953939/221227994-8bfe3187-718e-4522-9bf7-903ccb339fe5.png)
+
+- To fix  select area and stretch the layer to meet the requirement
+
+>![image](https://user-images.githubusercontent.com/118953939/221228141-fb2a707d-a275-493a-b6f4-5be92d595007.png)
+
+- By utilising the wiring tool, wire paths nearly usually fulfil the minimum area rules. 
+When jumping up by two or more levels, it is possible to violate this rule, as seen below, because there isn't enough metal 1 to meet the minimum area rule, among other violations.
+
+>![image](https://user-images.githubusercontent.com/118953939/221228265-3a876e7d-6fe2-4c3c-ab31-789911cb4f6d.png)
+
+- click DRC then click DRC mode to see this DRC error. 
+- Then click DRC complete . 
+- Next we must tell Magic to update the DRC count, and then run a DRC report.
+	
+>![image](https://user-images.githubusercontent.com/118953939/221228351-6a2a22d6-6056-4f8c-8d73-8d16bdb88851.png)
+
+- Set the cursor box to the size of the hole manually , we see it is 0.07um2 which is smaller than allowed.  
+- To fix this we must manually erase sections of the metal till the hole is big enough to pass DRC.
+	
+>![image](https://user-images.githubusercontent.com/118953939/221228615-0c7ac80b-4fe2-4be9-b8aa-3445902faa1f.png)
