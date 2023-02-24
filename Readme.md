@@ -4292,7 +4292,7 @@ placing the cells and connecting them to meet the design power, performance, and
 
 
 </details>
-To be continue 
+
 
 ## Day 28 & 29
   
