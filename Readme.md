@@ -4602,6 +4602,8 @@ Property
 
 >![image](https://user-images.githubusercontent.com/118953939/221193369-6c03f4d9-5083-4c2d-b855-00e9c4f1b65b.png)
 
+	</details>
+	
 <details>
 <summary>(DAY2) Setup DRC </summary>
 
@@ -4620,6 +4622,7 @@ Property
 -  add and align a cell in the existing layout by getcell sky_fd_sc_hd__tapvpwrvgnd_1 , we see that there are no more DRC errors in the top level.
 - If we descend into the and2_1 cell layer though, the DRC errors are still present. But in the top level layout, these errors get fixed.
 >![image](https://user-images.githubusercontent.com/118953939/221194619-6705a082-54fb-4fa2-b9d3-1d5ef85968e5.png)
+
 </details>
 	
 <details>
@@ -4644,4 +4647,4 @@ Property
 
 >![image](https://user-images.githubusercontent.com/118953939/221195736-dbfd71fe-1216-449a-907c-2baa0f20d7ac.png)
 
-	</details>
+</details>
