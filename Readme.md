@@ -31,6 +31,7 @@
 * [ Day 26 - Introduction to mixed-signal flow  ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-26)
 * [ Day 27 - Introduction to crosstalk - glitch and delta delay ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-27)
 * [ Day 28 -  Introduction to DRC/LVS ](https://github.com/SyahrulNazri/sd-training/blob/main/Readme.md#day-27)
+
 ## Day 0
 ### Topic - System/Tool Setup Check. GitHub ID creation
 <Details>
@@ -4584,3 +4585,51 @@ Property
 
 >![image](https://user-images.githubusercontent.com/118953939/221136209-b66bc0d0-7257-4165-b5b6-d37b3b4f88b9.png)
 
+- vi sky130_fd_sc_hd__and2_1.spice
+- Ext2spic cthresh 0 = to add parasitic 
+- Reopen spice file again
+- The ext2spice cthresh 0.01 
+- Ext2spice 
+- Reopen spice file again 
+
+>![image](https://user-images.githubusercontent.com/118953939/221191801-5402bfe6-2997-46ff-9e8b-6f20c8fad27c.png)
+	
+- To run full R-C extraction can use command below 
+- Ext2 sim labels on 
+- Extresist tolerance 10
+- Extresist 
+- This shows the number of resistor nets found usable and creates a .res.ext file which holds information to modify the existing .ext file for R parasitics.
+
+>![image](https://user-images.githubusercontent.com/118953939/221193369-6c03f4d9-5083-4c2d-b855-00e9c4f1b65b.png)
+
+<details>
+<summary>(DAY2) Setup DRC </summary>
+
+- As we can see,there are DRC errors in the vendor .mag file for the and2_1 subcell since the standard cell layouts do not have internal connections to the well and substrate to save room .
+- The reason we does not have seen this error in magic because it run DRC check,while the default drc style in magic was fast DRC.
+- If we change DRC style to full, and force a DRC check, we can see DRC errors present in the standard cell.
+
+>![image](https://user-images.githubusercontent.com/118953939/221194336-139136d6-9920-499f-9838-72a7fe5938fd.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/221194497-62c2119a-f88d-4eac-974c-428127eadbb7.png)
+
+- In this picture we can see the error are when dow a drc find 
+
+>![image](https://user-images.githubusercontent.com/118953939/221194554-4f718168-a547-4737-adc9-fa52febb084f.png)
+
+-  add and align a cell in the existing layout by getcell sky_fd_sc_hd__tapvpwrvgnd_1 , we see that there are no more DRC errors in the top level.
+- If we descend into the and2_1 cell layer though, the DRC errors are still present. But in the top level layout, these errors get fixed.
+>![image](https://user-images.githubusercontent.com/118953939/221194619-6705a082-54fb-4fa2-b9d3-1d5ef85968e5.png)
+</details>
+	
+<details>
+<summary>(DAY2) Setup LVS </summary>
+
+- Extract and quit
+- make new directory and copy setup.tcl file 
+
+>![image](https://user-images.githubusercontent.com/118953939/221195180-a917ca1f-ba57-4a55-a5c8-d198da935075.png)
+
+- When executing we get the following result that showing the netlist match .
+
+>![image](https://user-images.githubusercontent.com/118953939/221195217-123d5cb9-cd15-47b1-a12d-b446c8e7a27c.png)
