@@ -4633,3 +4633,15 @@ Property
 - When executing we get the following result that showing the netlist match .
 
 >![image](https://user-images.githubusercontent.com/118953939/221195217-123d5cb9-cd15-47b1-a12d-b446c8e7a27c.png)
+
+</details>
+	
+<details>
+<summary>(DAY2) Setup XOR </summary>
+
+-  When executing we get the following result that showing the netlist match .
+- As we can see the result just contain  the small layer of polysilicon that was erased.
+
+>![image](https://user-images.githubusercontent.com/118953939/221195736-dbfd71fe-1216-449a-907c-2baa0f20d7ac.png)
+
+	</details>
