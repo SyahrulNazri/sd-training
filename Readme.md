@@ -4602,7 +4602,7 @@ Property
 
 >![image](https://user-images.githubusercontent.com/118953939/221193369-6c03f4d9-5083-4c2d-b855-00e9c4f1b65b.png)
 
-	</details>
+</details>
 	
 <details>
 <summary>(DAY2) Setup DRC </summary>
@@ -4647,4 +4647,10 @@ Property
 
 >![image](https://user-images.githubusercontent.com/118953939/221195736-dbfd71fe-1216-449a-907c-2baa0f20d7ac.png)
 
+</details>
+	
+<details>
+<summary>(DAY3)Lab - Width and Spacing Rules </summary>
+	
+	
 </details>
