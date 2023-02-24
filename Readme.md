@@ -4571,3 +4571,16 @@ Load sky130_fd_sc_hd__and2-1
 Property 
 ```
 >![image](https://user-images.githubusercontent.com/118953939/220963875-949cc74a-f4ea-4bef-a42c-36773eeb1b9f.png)
+	
+</details>
+
+<details>
+<summary>(DAY2)Labs Basic Extraction </summary>
+
+- Load sky130_fd_sc_hd_and2_1
+- Extract all 
+- Ext2spice lvs 
+- Ext2spice 
+
+>![image](https://user-images.githubusercontent.com/118953939/221136209-b66bc0d0-7257-4165-b5b6-d37b3b4f88b9.png)
+
