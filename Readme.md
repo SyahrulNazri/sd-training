@@ -4294,6 +4294,19 @@ placing the cells and connecting them to meet the design power, performance, and
 
 - Invoke pt_shell
 - Set target library and set link library  
+- set target_library [list /nfs/png/disks/png_mip_gen6p9ddr_0032/SyahrulNazri/ICC2/ICC2project/VSDBabySoC/src/run_top/sky130_fd_sc_hd__tt_025C_1v80.db /nfs/png/disks/png_mip_gen6p9ddr_0032/SyahrulNazri/ICC2/ICC2project/VSDBabySoC/src/run_top/avsdpll.db /nfs/png/disks/png_mip_gen6p9ddr_0032/SyahrulNazri/ICC2/ICC2project/VSDBabySoC/src/run_top/avsddac.db]    
+- set link_library [list /nfs/png/disks/png_mip_gen6p9ddr_0032/SyahrulNazri/ICC2/ICC2project/VSDBabySoC/src/run_top/sky130_fd_sc_hd__tt_025C_1v80.db /nfs/png/disks/png_mip_gen6p9ddr_0032/SyahrulNazri/ICC2/ICC2project/VSDBabySoC/src/run_top/avsdpll.db /nfs/png/disks/png_mip_gen6p9ddr_0032/SyahrulNazri/ICC2/ICC2project/VSDBabySoC/src/run_top/avsddac.db]  
+- read_verilog write_data_dir/vsdbabysoc/vsdbabysoc.pt.v
+- link_design
+- current_design
+- read_sdc func1.sdc
+- report_si_bottleneck 
+- report_si_bottleneck -cost_type delta_delay
+- report_si_bottleneck -slack_lesser_than 2.0
+- report_si_bottleneck -slack_lesser_than 1.0
+- report_si_delay_analysis
+- report_si_aggressor_exclusion 
+- report_si_noise_analysis 
 
 >![image](https://user-images.githubusercontent.com/118953939/221361698-7c7160f8-e372-44f9-bf7a-212d9c9c7da7.png)
 
