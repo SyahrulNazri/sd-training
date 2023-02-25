@@ -4292,6 +4292,7 @@ placing the cells and connecting them to meet the design power, performance, and
 <details>	
 <summary>LAB </summary>
 
+
 - Invoke pt_shell
 - Set target library and set link library  
 - set target_library [list /nfs/png/disks/png_mip_gen6p9ddr_0032/SyahrulNazri/ICC2/ICC2project/VSDBabySoC/src/run_top/sky130_fd_sc_hd__tt_025C_1v80.db /nfs/png/disks/png_mip_gen6p9ddr_0032/SyahrulNazri/ICC2/ICC2project/VSDBabySoC/src/run_top/avsdpll.db /nfs/png/disks/png_mip_gen6p9ddr_0032/SyahrulNazri/ICC2/ICC2project/VSDBabySoC/src/run_top/avsddac.db]    
@@ -4299,7 +4300,8 @@ placing the cells and connecting them to meet the design power, performance, and
 - read_verilog write_data_dir/vsdbabysoc/vsdbabysoc.pt.v
 - link_design
 - current_design
-- read_sdc func1.sdc
+- gzip -d /nfs/png/disks/png_mip_gen6p9ddr_0032/nazahah/lab/d20/shell/write_data_dir/vsdbabysoc/vsdbabysoc.pt.v.gz --> before run command the file need to unzip 
+- read_sdc func1.sdc --> this sdc file need to unzip from the previous run at icc2_shell
 - report_si_bottleneck 
 - report_si_bottleneck -cost_type delta_delay
 - report_si_bottleneck -slack_lesser_than 2.0
