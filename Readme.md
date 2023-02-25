@@ -4306,7 +4306,7 @@ placing the cells and connecting them to meet the design power, performance, and
 - report_si_bottleneck -cost_type delta_delay
 - report_si_bottleneck -slack_lesser_than 2.0
 - report_si_bottleneck -slack_lesser_than 1.0
-- report_si_delay_analysis
+- report_si_delay_analysis --> report of multiple min/max delay violation 
 - report_si_aggressor_exclusion 
 - report_si_noise_analysis 
 
