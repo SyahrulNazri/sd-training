@@ -4290,6 +4290,22 @@ placing the cells and connecting them to meet the design power, performance, and
 
 *source : https://www.vlsisystemdesign.com/*
 
+</details>
+<details>	
+<summary>LAB </summary>
+
+- Invoke pt_shell
+- Set target library and set link library  
+
+>![image](https://user-images.githubusercontent.com/118953939/221361698-7c7160f8-e372-44f9-bf7a-212d9c9c7da7.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/221361715-0b563ffc-1418-4182-81d2-96e280cb3cad.png)
+
+- this command reports the nets that have the largest crosstalk effects that constribute to timing violation 
+
+>![image](https://user-images.githubusercontent.com/118953939/221361725-c2161888-1f53-422e-b635-beda3eeb46a9.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/221361728-1fa901f7-a23c-46f3-a43b-3f2a25e9ede0.png)
 
 </details>
 
