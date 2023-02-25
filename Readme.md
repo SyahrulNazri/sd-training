@@ -4051,9 +4051,7 @@ placing the cells and connecting them to meet the design power, performance, and
 
 </details>
 
-<details>	
-<summary>LAB </summary>
-</details>
+
 
 ## Day 27
   
