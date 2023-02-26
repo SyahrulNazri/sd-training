@@ -4789,3 +4789,169 @@ When jumping up by two or more levels, it is possible to violate this rule, as s
 >![image](https://user-images.githubusercontent.com/118953939/221228615-0c7ac80b-4fe2-4be9-b8aa-3445902faa1f.png)
 
 </details>
+
+<details>
+<summary>(DAY3) Lab For Wells And Deep N-Well</summary>
+- Load exercise4.mag 
+- There is  wells and taps, do the DRC check. 
+- Example 4a have a basic well error, since the wells do not have taps. 
+- The n-well shows an error as it is currently floating, though the "p-well" does not since this process doesn't actually consider p-wells unless they are in deep n-wells, and are instead counted as p-substrates.
+
+- Need to paint a layer of n type material into the n well. The layer is called nsubstratendiff. (Problem still not fix)
+- The tap should be connected to a layer of local interconnect.
+- Adjust the layers using what we have learnt till now by growing, stretching and adding in local interconnect, until get no DRC errors.
+
+>![image](https://user-images.githubusercontent.com/118953939/221406605-971802ec-e699-457b-b65d-6222be2acd5c.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/221406648-fb0b80b1-d4be-407a-8637-ad1a3fec05ed.png)
+
+</details>
+
+
+
+<details>
+<summary>(DAY3)Lab For Derived Layers</summary>
+
+- Here we can check the layers with the what command as before.
+
+>![image](https://user-images.githubusercontent.com/118953939/221406821-96608938-5ecf-4c96-b8c1-894c3be01207.png)
+
+- Magic regards this as a nmos, rather than a nmoslvt as previously. Based on the directions in the tech file, we must specifically paint in a layer of nmoslvt to get a layer of nmoslvt. We've already discussed Magic's implant layers and how they're employed for autogeneration. Let us visualise these implant layers using the commands below.
+
+![image](https://user-images.githubusercontent.com/118953939/221406911-73091fcb-4807-4103-b22b-8c186812b4dc.png)
+
+
+</details>
+
+<details>
+<summary>(DAY3)Lab For Paramterized And PDK Devices</summary>
+
+>![image](https://user-images.githubusercontent.com/118953939/221406931-10d41eaa-1e07-4222-8fbb-3e4ed8bdf797.png)
+
+- If we descend into the subcell with this key “>”,we can see DRC error does exist and it have been fixed 
+
+>![image](https://user-images.githubusercontent.com/118953939/221406943-c4daf7a9-0655-488b-a67c-de87fc39c7fb.png)
+
+- We know the cellname and location of the cell
+- So we need to relocate this cell
+
+>![image](https://user-images.githubusercontent.com/118953939/221406971-cb398f71-60be-4545-9d67-1b9d6ae099f6.png)
+
+- Descend into cell by press button “>” and save it.can confirm that cell still point to a valid gds file with property command
+
+>![image](https://user-images.githubusercontent.com/118953939/221406987-292c795b-67a8-4293-8286-ab78cdcf7736.png)
+
+- Fix drc error by erase poly command 
+>![image](https://user-images.githubusercontent.com/118953939/221407019-61bebed1-f9f2-4df6-9831-8a3bdad71918.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/221407047-d07afd7c-2388-4fa2-9152-c3790019759b.png)
+
+</details>
+
+
+<details>
+<summary>(DAY3)Lab For Angle Error And Overlap Rule</summary>
+
+
+</details>
+
+
+<details>
+<summary>(DAY3)Lab For Angle Error And Overlap Rule</summary>
+>![image](https://user-images.githubusercontent.com/118953939/221407056-3a7ed15a-0109-4496-9c98-a406f9811126.png)
+
+- To fix this angle error using press s button and press scroll button on the mouse to paint it.
+>![image](https://user-images.githubusercontent.com/118953939/221407073-200994f1-1b53-4d62-ac3d-ab5a39b602fd.png)
+
+- To fix this error just click the error scroll button with cursor on the poly.
+
+>![image](https://user-images.githubusercontent.com/118953939/221407114-630853b4-888c-4ea3-a67e-a5ecdf6a44d5.png)
+
+- To fix this use command below 
+>![image](https://user-images.githubusercontent.com/118953939/221407128-96951bf8-f9b0-4eaf-ab60-e0df79314919.png)
+
+- We can see the  overlap error because the poly have different rules.to fix we can flatten it by copy DRC.
+
+>![image](https://user-images.githubusercontent.com/118953939/221407143-265fe000-40c4-49f8-9c95-4be1fa57c99b.png)
+
+- To fix this we can easily select one of them and move them horizontally 
+>![image](https://user-images.githubusercontent.com/118953939/221407154-4ff98b13-f6de-4af1-ab2c-4b00dd57fd97.png)
+
+</details>
+
+
+<details>
+<summary>(DAY3)Lab For Unimplemented Rules</summary>
+
+- Seal rings are just layers that have no electrical meaning, and are just a physical barrier between the chip and the outside world. These seal ring layers break multiple design rules, and are not worth the effort to include in the tech file
+
+>![image](https://user-images.githubusercontent.com/118953939/221407188-136e4c8d-8524-4e38-aaec-b7cfb66f04d5.png)
+
+- So the SkyWater PDK actually has a seal ring generator that can generate gds correct seal rings, though these cannot be imported into Magic unless as abstract views. We can use the seal ring generator with the command below.This should create a .mag and .gds file 
+
+>![image](https://user-images.githubusercontent.com/118953939/221407210-0f6a22a3-2975-4c2c-9396-c0b4f5ebbff0.png)
+
+- Run magic again and load advSeal_6um_gen and use this corner created complete seal ring 
+
+>![image](https://user-images.githubusercontent.com/118953939/221407223-5296fbb4-d939-46e7-ac00-ee08b681ff68.png)
+
+- open up the magic console and use the command addpath <created_directory>, and then open up the seal ring file with load <file_name>.
+- Now, we can run a script launch for magic that runs magic with the appropriate tech file to view the seal ring, with the command ./gds_magic. Now we load the gds file with gds read seal_test/adv_6um_gen to see the seal ring.
+
+>![image](https://user-images.githubusercontent.com/118953939/221407235-7c098ba6-538d-44be-9b13-04f30d850295.png)
+
+</details>
+
+<details>
+<summary>(DAY3)Lab for Latch-up And Antenna Rule</summary>
+ 
+- In exercise9.mag, we have a layout with standard cells that violates some of the basic rules.
+
+>![image](https://user-images.githubusercontent.com/118953939/221407514-52c626ba-df83-4182-878c-8a49eb81f25b.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/221407540-a4544e6b-f222-4bfd-8121-b3691e01a75e.png)
+
+- Now we can look at ERC which have a few standard cell layout with very long route between them.
+> ![image](https://user-images.githubusercontent.com/118953939/221407576-107b5f5b-571b-4c82-8505-737e74c9afc5.png)
+
+- To get knowledge of the circuit, the circuit needs to be extracted. We can extract the layout as follows.
+
+
+>![image](https://user-images.githubusercontent.com/118953939/221407583-9d193692-fbe6-4b18-aa09-189a291a609e.png)
+
+- The antenna check show up as feedback on the layout and we can use feedback why for some more information and detail also can use command antennacheck debug 
+
+>![image](https://user-images.githubusercontent.com/118953939/221407613-4c2a9478-9b56-419b-8e95-09f340b85060.png)
+>![image](https://user-images.githubusercontent.com/118953939/221407641-647df3c6-53bc-4096-998b-48e2bb9e86ac.png)
+
+
+</details>
+<details>
+<summary>(DAY3)Lab For Density Rules</summary>
+
+- The metal1 layer is just a thin section going around the layout, which depicts under-density for that metal layer. Then metal2 covers pretty much the entire layout, leading to over-density for the metal2 layer.So, to check for density coverage, we use the following commands.
+
+>![image](https://user-images.githubusercontent.com/118953939/221407672-af9c3d92-347f-4d20-9b00-f206262fd6db.png)
+
+- The metal1 layer is just a thin section going around the layout that depicts the metal layer's under-density. Similarly, metal2 covers almost the entire layout, resulting in metal2 layer over-density. The following commands are used to check for density coverage.So to do this gds write exercise11
+
+>![image](https://user-images.githubusercontent.com/118953939/221407684-0dc5558e-475c-4348-b03e-85d758c23b90.png)
+
+To fix we use this command below 
+
+>![image](https://user-images.githubusercontent.com/118953939/221407701-ab86c8cd-562a-4b68-ad94-0ec40436dac3.png)
+
+>![image](https://user-images.githubusercontent.com/118953939/221407716-679cee98-ee3c-4f79-abb4-91466338d0ef.png)
+
+- Read gds file.to see only specific layer we can use all command in this Picture 
+>![image](https://user-images.githubusercontent.com/118953939/221407722-fd8869c8-8aff-49f5-85b8-e399766e8800.png)
+
+- we load the exercise_11.mag file again. We need to make  sure that  the position of both the layout and fill patterns align properly. To do this, we follow the command steps below.
+
+>![image](https://user-images.githubusercontent.com/118953939/221407736-451cd3b5-0a0a-4066-a87b-48bedb4d845b.png)
+
+- We can see that fill were align and now we can check for density coverage again by setting the cif output style to density 
+>![image](https://user-images.githubusercontent.com/118953939/221407751-d5489e81-2bdc-4b61-8d01-a947d61c9c3e.png)
+
+</details>
+
