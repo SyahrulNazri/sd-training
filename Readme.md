@@ -4851,13 +4851,6 @@ When jumping up by two or more levels, it is possible to violate this rule, as s
 
 <details>
 <summary>(DAY3)Lab For Angle Error And Overlap Rule</summary>
-
-
-</details>
-
-
-<details>
-<summary>(DAY3)Lab For Angle Error And Overlap Rule</summary>
 >![image](https://user-images.githubusercontent.com/118953939/221407056-3a7ed15a-0109-4496-9c98-a406f9811126.png)
 
 - To fix this angle error using press s button and press scroll button on the mouse to paint it.
