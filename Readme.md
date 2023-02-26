@@ -4292,16 +4292,44 @@ placing the cells and connecting them to meet the design power, performance, and
 <details>	
 <summary>LAB </summary>
 
-
+- To start this lab we need to invoke pt _shell and set the target  and link library using command below :
+```
 - Invoke pt_shell
 - Set target library and set link library  
 - set target_library [list /nfs/png/disks/png_mip_gen6p9ddr_0032/SyahrulNazri/ICC2/ICC2project/VSDBabySoC/src/run_top/sky130_fd_sc_hd__tt_025C_1v80.db /nfs/png/disks/png_mip_gen6p9ddr_0032/SyahrulNazri/ICC2/ICC2project/VSDBabySoC/src/run_top/avsdpll.db /nfs/png/disks/png_mip_gen6p9ddr_0032/SyahrulNazri/ICC2/ICC2project/VSDBabySoC/src/run_top/avsddac.db]    
 - set link_library [list /nfs/png/disks/png_mip_gen6p9ddr_0032/SyahrulNazri/ICC2/ICC2project/VSDBabySoC/src/run_top/sky130_fd_sc_hd__tt_025C_1v80.db /nfs/png/disks/png_mip_gen6p9ddr_0032/SyahrulNazri/ICC2/ICC2project/VSDBabySoC/src/run_top/avsdpll.db /nfs/png/disks/png_mip_gen6p9ddr_0032/SyahrulNazri/ICC2/ICC2project/VSDBabySoC/src/run_top/avsddac.db]  
+````
+>![image](https://user-images.githubusercontent.com/118953939/221392700-b49869c3-749a-4736-b587-da992397e288.png)
+
+- read Verilog file that generated from the previous run in icc2.
+- This zip file need to be extract first.
+- Link design and check the current design 
+
+```
 - read_verilog write_data_dir/vsdbabysoc/vsdbabysoc.pt.v
+-gzip -d /nfs/png/disks/png_mip_gen6p9ddr_0032/nazahah/lab/d20/shell/write_data_dir/vsdbabysoc/vsdbabysoc.pt.v.gz --> before run command the file need to unzip 
 - link_design
 - current_design
-- gzip -d /nfs/png/disks/png_mip_gen6p9ddr_0032/nazahah/lab/d20/shell/write_data_dir/vsdbabysoc/vsdbabysoc.pt.v.gz --> before run command the file need to unzip 
+```
+>![image](https://user-images.githubusercontent.com/118953939/221392718-4d4eae81-1744-4128-9ffd-4bd9cf73a237.png)
+
+- read parasitic file from the previous run on the icc2
+- Check the timing and 5 ports with parastici with no driving cell was showed.
+- Read constraint file .
+
+```
+- read_parasitics -keep_capacitive_coupling <spef file>
+- check timing 
 - read_sdc func1.sdc --> this sdc file need to unzip from the previous run at icc2_shell
+```
+>![image](https://user-images.githubusercontent.com/118953939/221392880-dbfca6e7-78a3-427e-82ae-14b9f77101c6.png)
+
+
+- report_si_bottle_neck - this command reports the nets that have the largest corsstalk effects that constribute to timing violation 
+-  PTE-076 (Information) Setting %s to TRUE and updating timing.
+-  XTALK-019  (information) report_si_bottleneck found zero net to report.You received this error message because the  report_si_bottleneck  command has filter out all the candidate nets.
+
+```
 - report_si_bottleneck 
 - report_si_bottleneck -cost_type delta_delay
 - report_si_bottleneck -slack_lesser_than 2.0
@@ -4309,17 +4337,9 @@ placing the cells and connecting them to meet the design power, performance, and
 - report_si_delay_analysis --> report of multiple min/max delay violation 
 - report_si_aggressor_exclusion 
 - report_si_noise_analysis 
-
->![image](https://user-images.githubusercontent.com/118953939/221361698-7c7160f8-e372-44f9-bf7a-212d9c9c7da7.png)
-
->![image](https://user-images.githubusercontent.com/118953939/221361715-0b563ffc-1418-4182-81d2-96e280cb3cad.png)
-
-- this command reports the nets that have the largest crosstalk effects that constribute to timing violation 
-
->![image](https://user-images.githubusercontent.com/118953939/221361725-c2161888-1f53-422e-b635-beda3eeb46a9.png)
-
->![image](https://user-images.githubusercontent.com/118953939/221361728-1fa901f7-a23c-46f3-a43b-3f2a25e9ede0.png)
-
+```
+>![image](https://user-images.githubusercontent.com/118953939/221392907-64498d83-649b-4903-851a-bbac7896751f.png)
+>![image](https://user-images.githubusercontent.com/118953939/221392916-4ddcb5d7-38f0-4033-b29a-ad0213bcad64.png)
 </details>
 
 
